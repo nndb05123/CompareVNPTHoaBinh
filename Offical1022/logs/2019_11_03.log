@@ -1,0 +1,17 @@
+INFO  2019-11-04 08:27:16,964 76681078ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-04 08:27:20,620 76684734ms DangNhapController     Index              - do login...
+INFO  2019-11-04 08:27:21,417 76685531ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-04 08:39:24,448 77408562ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-04 08:39:36,042 77420156ms DangNhapController     Index              - do login...
+INFO  2019-11-04 08:39:36,058 77420171ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-11-04 09:55:32,058 81976171ms PortalController       verifyCaptcha      - verifyCaptcha: from client 113.164.232.218
+DEBUG 2019-11-04 09:55:32,058 81976171ms PortalController       verifyCaptcha      -   token: 03AOLTBLRnGs2xuzWl9I74EQxyhmKzpotp6l9oetDGAYoZC9UER2QIAoSDKB8Vkb9QZduqA1XABLt7G0whZ53GxTb8V7w6BpMWvM4fMGNt1vuifVHpcdqkbFV5WeiCIRs-647qBqIgwp43Z3M70P0Mz8S9EpZ0CX6WrOkFru8tgyQQYVTDvZMOr1-xaH2gYgjpc5-p-bf5-4ej7u1b1CxESwD-tSc8B86pze5O1AaW64zhHyXziGMGZzfUcyuYmdHbjM1goL81ZUHe60v7OGMiTr4-FX-VkpZYj-j-WMNKp-130Bsq_rU7INcVWDJocce_aJ6RMxb1iQzI-zF_TxFHszndpi2wzasHOSVPFtgpsSEs8Ni7n9yAPJ0xBbYw3zDRnjvJ5KDIV_Et0dbKx4ONzJA3EY_CL3o1MtjSTMqWG7u1uhyJwEIeQmODYFCgGQIcsfKOjsxH-9XwHKF5wTqVNu0t0nLjB2bi8aPqZjz_91gHoaDBTbldMdypfVJdkZ28bPrfrFQrSrFf
+DEBUG 2019-11-04 09:55:32,058 81976171ms PortalController       verifyCaptcha      -   result: 
+DEBUG 2019-11-04 09:55:32,105 81976218ms PortalController       verifyCaptcha      - Exception: Object reference not set to an instance of an object.
+DEBUG 2019-11-04 09:55:33,558 81977671ms _PageTongHop           createRequest      - portal createRequest displayName QUÁCH TH? THOA, phoneNumber 0916561106 content Tôi mu?n du?c hu?ng d?n th? t?c dang ký tài s?n g?n li?n v?i d?t vào gi?y ch?ng nh?n dã c?p
+INFO  2019-11-04 14:47:32,886 99497000ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-04 14:47:42,792 99506906ms DangNhapController     Index              - do login...
+INFO  2019-11-04 14:47:42,823 99506937ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-04 15:53:48,230 103472343ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-04 15:53:50,292 103474406ms DangNhapController     Index              - do login...
+INFO  2019-11-04 15:53:50,308 103474421ms HomeController         Index              - Enter Home/Index

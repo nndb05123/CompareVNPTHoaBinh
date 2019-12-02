@@ -1,0 +1,314 @@
+﻿@using WebUI
+@using HotlineCore
+
+
+<div id="appPlayBack">
+    <input v-model="record_file" type="file" accept=".mp3,.wav" id="btn-upload" name="upload" v-on:change="uploadRecordedFile" style="visibility: hidden; width: 1px; height: 1px" />
+    <div class="modal" id="dlg-playback" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><b>Danh sách ghi âm của phản ánh có mã yêu cầu: {{record_yeucau_id}}</b></h4>
+                </div>
+                <div id="dlg-playback-content" class="modal-body">
+                    <div id="playback-controller">
+                        <span id="active-audio-name" style="padding:10px;float:left"></span>
+                        <audio controls id="audio-player" controlsList="nodownload">
+                            <source id="playback-audio-src" src="" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="tab-pane active" id="playlist-table">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên tập tin</th>
+                                @*<th>Người tải lên</th>*@
+                                @*<th>Ngày tải lên</th>*@
+                                @*<th>Độ dài</th>*@
+                                <th colspan="3" style="text-align:center">Lệnh</th>
+                            </tr>
+                            <tr v-for="(item, index) in playlist" class="audio-row" v-bind:id="item.id">
+                                <td>{{ index + 1 }}</td>
+                                <td>{{ item.name }}</td>
+                                @*<td>{{ item.uploader_name }}</td>*@
+                                @*<td>{{ item.date}}</td>*@
+                                @*TODO: show Audio time length: <td>{{ item.duration}}</td>*@
+                                <td>
+                                    <a class="btn btn-primary btn-flat audio-command" style="display:block" v-bind:id="item.id" v-on:click="playAudio(item)">Nghe</a>
+                                    <img class="ico-equalizer" style="display:none;margin:auto" v-bind:id="item.id" src="~/Content/Images/equalizer.gif" />
+                                </td>
+                                @*<td>
+                            <a class="btn btn-danger btn-flat" style="display:block" v-if="canUploadAudio" v-on:click="deleteAudio(item)">Xóa</a>
+                        </td>*@
+                                <td>
+                                    <a class="btn btn-info btn-flat" style="display:block" v-if="canDownloadAudio" v-on:click="downloadAudio(item)">Tải về...</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                
+                <label class="btn btn-info" style="margin-left:5px">Nội dung phản ánh:</label>
+                
+                <div style="padding:10px;margin:5px;border:1px solid #ddd">{{record_yeucau_noidung}}</div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal" v-on:click="stopAudio()">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="dlg-upload-progress" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    @*<button type="button" class="close" data-dismiss="modal">&times;</button>*@
+                    <h4 class="modal-title"><b>Tải lên tập tin ghi âm cho phản ánh có mã yêu cầu: {{record_yeucau_id}}</b></h4>
+                </div>
+                <div class="modal-body">
+                    <span v-if="!record_upload_finished">Đang tải lên tập tin: <b>{{record_file_name}}</b>, xin chờ giây lát...</span>
+                    <span v-if="record_upload_finished">{{get_upload_result_msg}}</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" v-if="record_upload_finished" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="dlg-delete-ghiam" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    @*<button type="button" class="close" data-dismiss="modal">&times;</button>*@
+                    <h4 class="modal-title"><b>Xóa tập tin ghi âm <span style="color:red">{{ghiam_id_to_delete}}</span></b></h4>
+                </div>
+                <div class="modal-body" style="font-size:20pt">
+                    <span>Bạn có chắc muốn <span style="color:red;font-weight:bold;">XÓA</span> không?</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info pull-left" data-dismiss="modal">Không</button>
+                    <button type="button" class="btn btn-danger pull-right" data-dismiss="modal" v-on:click="onUserConfirmDeleteAudio()">Đồng ý Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var App2 = new Vue({
+        el: '#appPlayBack',
+        data: {
+            record_upload_finished: false,
+            record_yeucau_id: '',
+            record_file: null,
+            record_file_name: '',
+            cache_id_playing_audio: 0,
+            active_yeucau: null,
+            active_audio_url: '',
+            playlist: [],
+            canUploadAudio: false,
+            canDownloadAudio: false,
+            upload_err_msg: '',
+            record_yeucau_noidung: '',
+            ghiam_id_to_delete: '',
+            del_ghiam_item: null
+        },
+        methods: {
+            clickButtonUpload: function (item) {
+                App2.active_yeucau = item;
+                this.record_yeucau_id = item.yeucau_id;
+                document.getElementById('btn-upload').click();
+            },
+            uploadRecordedFile: function (e) {
+                try {
+                    App2.record_upload_finished = false;
+                    this.record_file_name = e.target.files[0].name;
+                    $('#dlg-upload-progress').modal('show');
+
+                    App2.upload_err_msg = '';
+
+                    var fileData = new FormData();
+                    fileData.append(e.target.files[0].name, e.target.files[0]);
+                    fileData.append('yeucau_id', App2.record_yeucau_id);
+                    $.ajax({
+                        url: '/CapDo1/UploadRecordFile',
+                        type: "POST",
+                        contentType: false, // Not to set any content header
+                        processData: false, // Not to process data
+                        data: fileData,
+                        success: function (result) {
+                            App2.upload_err_msg = result;
+                            App2.record_upload_finished = true;
+
+                            $('#' + App2.record_yeucau_id + '.btn-play-audio').css('display', 'block');
+
+                            App2.active_yeucau.sl_file_ghi_am++;
+                        },
+                        error: function (err) {
+                            App2.upload_err_msg = err;
+                            console.log(err.statusText);
+                        }
+                    });
+                }
+                finally { }
+
+            },
+            showPlayList: function (item) {
+                if (item.sl_file_ghi_am < 1) {
+                    showWarningNotification(`Hệ thống đang lấy ghi âm cuộc gọi, xin quay lại sau 5 phút`);
+                    return;
+                }
+
+                App2.record_yeucau_id = item.yeucau_id;
+                App2.record_yeucau_noidung = item.yeucau_noidung;
+                App2.playlist = [];
+
+                $('#dlg-playback').modal('show');
+
+                $.ajax({
+                    url: '/CapDo1/GetPlayList?yeucau_id=' + item.yeucau_id,
+                    type: "POST",
+                    contentType: false, // Not to set any content header
+                    processData: false, // Not to process data
+                    data: null,
+                    success: function (result) {
+                        console.log(result);
+                        $.each(result, function (i, v) {
+                            App2.playlist.push(v);
+                        });
+                    },
+                    error: function (err) {
+                        App2.upload_err_msg = err;
+                        console.log(err.statusText);
+                    }
+                });
+            },
+            playAudio: function (item) {
+                App2.cache_id_playing_audio = item.id;
+                $('#active-audio-name').text('Đang nghe: ' + item.name);
+                $(".audio-row").css('background-color', '#fff');
+                //$(".audio-command").css('display', 'block');
+                // hide play buttons
+                $(".audio-command").css('display', 'none');
+
+                $('.ico-equalizer').css('display', 'none');
+
+                $('#' + item.id + '.audio-row').css('background-color', '#dff0d8');
+                //$('#' + item.id + ".audio-command").css('display', 'none');
+
+                $.ajax({
+                    url: '/PlayAudio/GetAudioURL?audio_id=' + item.id,
+                    type: "POST",
+                    contentType: false, // Not to set any content header
+                    processData: false, // Not to process data
+                    data: null,
+                    success: function (result) {
+                        console.log(result);
+                        App2.active_audio_url = result;
+                        //$('#playback-audio-src').attr('src', result);
+
+                        var audioPlayer = $('#audio-player');
+                        var audioSource = $(audioPlayer).children('source');
+                        audioSource[0].src = result;
+                        audioPlayer[0].load();
+                        audioPlayer[0].play();
+                        $('#' + item.id + '.ico-equalizer').css('display', 'block');
+                    },
+                    error: function (err) {
+                        console.log(err.statusText);
+                    }
+                });
+            },
+            downloadAudio: function (item) {
+                $.ajax({
+                    url: '/PlayAudio/GetAudioURL?audio_id=' + item.id,
+                    type: "POST",
+                    contentType: false, // Not to set any content header
+                    processData: false, // Not to process data
+                    data: null,
+                    success: function (result) {
+                        console.log(result);
+                        var temp = document.createElement('a');
+                        temp.href = result;
+                        temp.download = 'yc_' + App2.record_yeucau_id + '_' + item.name;
+                        temp.click();
+                    },
+                    error: function (err) {
+                        console.log(err.statusText);
+                    }
+                });
+            },
+            onUserConfirmDeleteAudio: function () {
+                showPleaseWaitDialog('Cập nhật hệ thống...', 'Đang xóa ghi âm trên hệ thống, xin chờ giây lát...');
+                App2.playlist.splice(App2.playlist.indexOf(App2.del_ghiam_item), 1);
+
+                if (App2.playlist.length == 0) {
+                    $('#' + App2.record_yeucau_id + '.btn-play-audio').css('display', 'none');
+                }
+
+                $.ajax({
+                    url: '/PlayAudio/DeleteAudio?audio_id=' + App2.del_ghiam_item.id,
+                    type: "POST",
+                    contentType: false, // Not to set any content header
+                    processData: false, // Not to process data
+                    data: null,
+                    success: function (result) {
+                        closePleaseWaitDialog();
+                        showSuccessNotification(`Đã xóa ghi âm trên hệ thống!`);
+                    },
+                    error: function (err) {
+                        console.log(err.statusText);
+                        closePleaseWaitDialog();
+                        showErrorNotification(`Lỗi! Không xóa ghi âm trên hệ thống được!`);
+                    }
+                });
+            },
+            showDialogConfirmDeleteAudio: function (item) {
+                App2.ghiam_id_to_delete = item.name;
+                App2.del_ghiam_item = item;
+                //$('#dlg-delete-ghiam').modal('show');
+                showConfirmDialog(`Xóa ghi âm [${item.name}]`, 'Bạn có chắc muốn xóa không?',
+                    function () {
+                        closeConfirmDialog();
+                        App2.onUserConfirmDeleteAudio();
+                    }, true, false);
+            },
+            deleteAudio: function (item) {
+                App2.stopAudio();
+                App2.showDialogConfirmDeleteAudio(item);
+            },
+            stopAudio: function () {
+                var audioPlayer = $('#audio-player');
+                var audioSource = $(audioPlayer).children('source');
+
+                if (audioPlayer[0].paused == false) {
+                    $('#active-audio-name').text('');
+                    audioSource[0].src = '';
+                    audioPlayer[0].pause();
+                    audioPlayer[0].currentTime = 0;
+                    audioPlayer[0].load();
+                }
+            }
+        },
+        computed: {
+            get_upload_result_msg: function () {
+                if (App2.upload_err_msg == 'ok') {
+                    return 'Xong, tập tin "' + App2.record_file_name + '" đã được tải lên hệ thống!';
+                }
+                return App2.upload_err_msg;
+            }
+        }
+    })
+    Vue.filter('formatDate', function (value) {
+        if (value) {
+            return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+        }
+    });
+
+    $(document).ready(function () {
+        $.post("@Url.Action("GetAudioPermission", "capdo1")", null, function (data) {
+            App2.canUploadAudio = data.upload;
+            App2.canDownloadAudio = data.download;
+        });
+    });
+</script>

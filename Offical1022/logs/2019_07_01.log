@@ -1,0 +1,156 @@
+INFO  2019-07-01 07:30:29,805 13390012ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 07:30:39,027 13399234ms DangNhapController     Index              - do login...
+INFO  2019-07-01 07:30:40,342 13400549ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 07:41:20,646 14040853ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 07:41:25,582 14045789ms DangNhapController     Index              - do login...
+INFO  2019-07-01 07:41:25,609 14045816ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 07:43:51,812 14192019ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 07:43:59,438 14199645ms DangNhapController     Index              - do login...
+INFO  2019-07-01 07:43:59,463 14199670ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 07:44:45,243 14245450ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 07:44:50,014 14250221ms DangNhapController     Index              - do login...
+INFO  2019-07-01 07:44:50,037 14250244ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 08:22:43,287 16523494ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 08:22:45,184 16525391ms DangNhapController     Index              - do login...
+INFO  2019-07-01 08:22:45,226 16525433ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 08:29:03,082 16903289ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 08:29:10,722 16910929ms DangNhapController     Index              - do login...
+INFO  2019-07-01 08:29:10,749 16910956ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 08:31:20,217 17040424ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 08:31:24,140 17044347ms DangNhapController     Index              - do login...
+INFO  2019-07-01 08:31:24,174 17044381ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 08:40:32,525 17592732ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 08:40:34,123 17594330ms DangNhapController     Index              - do login...
+INFO  2019-07-01 08:40:34,177 17594384ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 08:46:05,520 17925727ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 09:10:21,707 19381914ms DangNhapController     Index              - do login...
+DEBUG 2019-07-01 09:10:21,721 19381928ms DangNhapController     Index              - user not exist: admin pass 96354F52806D798DE8C4AD99E67FB18C
+INFO  2019-07-01 09:10:27,415 19387622ms DangNhapController     Index              - do login...
+INFO  2019-07-01 09:10:27,438 19387645ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 09:43:21,538 21361745ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 09:43:36,373 21376580ms DangNhapController     Index              - do login...
+INFO  2019-07-01 09:43:36,398 21376605ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 13:46:45,932 35966139ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 13:47:13,876 35994083ms DangNhapController     Index              - do login...
+DEBUG 2019-07-01 13:47:13,881 35994088ms DangNhapController     Index              - user not exist: hoalth.hcc pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-01 13:47:27,342 36007549ms DangNhapController     Index              - do login...
+DEBUG 2019-07-01 13:47:27,346 36007553ms DangNhapController     Index              - user not exist: hoalth.hcc pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-01 13:47:31,124 36011331ms DangNhapController     Index              - do login...
+DEBUG 2019-07-01 13:47:31,128 36011335ms DangNhapController     Index              - user not exist: hoalth.hcc pass 89BF4623AF7287EDECDC7AB2B126A10F
+INFO  2019-07-01 13:47:36,170 36016377ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 13:47:45,779 36025985ms DangNhapController     Index              - do login...
+DEBUG 2019-07-01 13:47:45,785 36025991ms DangNhapController     Index              - user not exist: admin pass 2D1A1DD3CE44B5DA194ACD4685731817
+INFO  2019-07-01 13:47:54,044 36034251ms DangNhapController     Index              - do login...
+DEBUG 2019-07-01 13:47:54,048 36034255ms DangNhapController     Index              - user not exist: admin pass 91911D1AA7E9BAA63E03D29D0B4917F4
+INFO  2019-07-01 13:48:30,220 36070426ms DangNhapController     Index              - do login...
+DEBUG 2019-07-01 13:48:30,224 36070430ms DangNhapController     Index              - user not exist: admin pass 6ECDF23340E13255DFD8C78540347492
+INFO  2019-07-01 13:48:44,019 36084226ms DangNhapController     Index              - do login...
+INFO  2019-07-01 13:48:44,092 36084299ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 13:49:44,096 36144303ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 13:49:57,107 36157314ms DangNhapController     Index              - do login...
+DEBUG 2019-07-01 13:49:57,111 36157318ms DangNhapController     Index              - user not exist: admin pass 84EC87F133979599229F158A71DAB46F
+INFO  2019-07-01 13:50:07,428 36167635ms DangNhapController     Index              - do login...
+INFO  2019-07-01 13:50:07,458 36167665ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 13:50:22,887 36183094ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 13:50:28,822 36189029ms DangNhapController     Index              - do login...
+INFO  2019-07-01 13:50:28,865 36189072ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 13:55:15,156 36475363ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-01 13:55:25,804 36486011ms DangNhapController     Index              - do login...
+INFO  2019-07-01 13:55:25,828 36486035ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-01 13:55:43,718 36503925ms PhanAnhController      CapNhatKQTL        - nguoidung_id 37BCA010719 yeucau_id hoaltt.hcc kqtl testtttttttt
+INFO  2019-07-01 13:55:43,761 36503968ms ServiceCenter          send_sms_citizen   - yeucau_id 37BCA010719 sdt 0918909966
+INFO  2019-07-01 13:55:47,206 36507413ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:55:49,405 36509612ms PhanAnhController      CapNhatKQTL        - nguoidung_id 37BCA010719 yeucau_id hoaltt.hcc kqtl testtttttttt
+INFO  2019-07-01 13:55:49,426 36509633ms ServiceCenter          send_sms_citizen   - yeucau_id 37BCA010719 sdt 0918909966
+INFO  2019-07-01 13:55:49,825 36510032ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:55:50,157 36510364ms PhanAnhController      CapNhatKQTL        - nguoidung_id 37BCA010719 yeucau_id hoaltt.hcc kqtl testtttttttt
+INFO  2019-07-01 13:55:50,172 36510379ms ServiceCenter          send_sms_citizen   - yeucau_id 37BCA010719 sdt 0918909966
+INFO  2019-07-01 13:55:50,564 36510771ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:56:11,636 36531843ms PhanAnhController      CapNhatKQTL        - nguoidung_id 1736B010719 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so g?m:
++ T? khai yêu c?u c?p phi?u lý l?ch tu pháp theo m?u.
++ B?n sao gi?y ch?ng minh nhân dân ho?c h? chi?u .
++ B?n sao s? h? kh?u ho?c gi?y ch?ng nhân thu?ng trú ho?c t?m trú.
++ Van b?n ?y quy?n trong tru?ng h?p ?y quy?n cho ngu?i khác làm th? t?c .
+N?p h? so t?i trung tâm hanh chính công t?nh , t?i qu?y tu pháp .
+INFO  2019-07-01 13:56:11,653 36531860ms ServiceCenter          send_sms_citizen   - yeucau_id 1736B010719 sdt 0846967799
+INFO  2019-07-01 13:56:12,046 36532253ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:56:22,662 36542869ms PhanAnhController      CapNhatKQTL        - nguoidung_id 5781D280619 yeucau_id hoaltt.hcc kqtl + Ðon d? ngh? c?p ch?ng ch? hành ngh? khám ch?a b?nh ghi rõ d?a ch? theo noi dang ký thu?ng trú ho?c t?m trú.
++ B?n sao h?p l? van b?ng chuyên môn phù h?p v?i ph?m vi ho?t d?ng chuyên môn d? ngh? c?p ch?ng ch? hành ngh? .
++ Giay xác nh?n quá trình th?c hành hoawch b?n sao h?p l? các van b?ng t?t nghi?p BS n?i trú , BS chuyên khoa 1 , BS chuyên khoa 2 tr? tru?ng h?p là luong y, ngu?i có bài thu?c gia truy?n, ngu?i có phuong pháp ch?a b?nh gia truy?n .
++ Giay ch?ng nh?n s?c kh?e do co s? y t? có th?m quy?n quy d?nh .
++ phi?u lý l?ch tu pháp .
++ So y?u lý l?ch t? thu?t .
++ 2 ?nh màu .
+N?p h? so t?i trung tâm hành chính công t?nh t?i qu?y c?a s? y t?.
+
+INFO  2019-07-01 13:56:22,681 36542888ms ServiceCenter          send_sms_citizen   - yeucau_id 5781D280619 sdt 0846967799
+INFO  2019-07-01 13:56:23,081 36543288ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:56:33,780 36553987ms PhanAnhController      CapNhatKQTL        - nguoidung_id 23DFD280619 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so g?m:
++ Ðon d? ngh? d?i gi?y phép lái xe.
++ B?n d?ch gi?y phép lái xe c?a ngu?i nu?c ngoài sang ti?ng vi?t du?c b?o ch?ng ch?t lu?ng d?ch thu?t c?a co quan công ch?ng ho?c d?i s? quán lãnh s? quán Vi?t Nam mà ngu?i d?ch làm vi?c dóng giáp lai v?i b?n sao gi?y phép lái xe .
++ B?n sao h? chi?u ( th? cu trú , luu trú , t?m trú , thu?ng trú , ngu?i th?c hi?n ch?p hình tr?c ti?p )
+N?p h? so t?i trung tâm hành chính công t?nh  , t?i qu?y c?a s? giao thông v?n t?i.
+INFO  2019-07-01 13:56:33,796 36554003ms ServiceCenter          send_sms_citizen   - yeucau_id 23DFD280619 sdt 0846967799
+INFO  2019-07-01 13:56:34,189 36554396ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:56:49,866 36570073ms PhanAnhController      CapNhatKQTL        - nguoidung_id A4628010719 yeucau_id hoaltt.hcc kqtl - Thành ph?n h? so : - Ðon xin ly hôn ( theo m?u, t?i tòa án ) - Gi?y dang ký k?t hôn ( b?n chính ) - Gi?y khai sinh c?a con chung ( b?n sao ) - Gi?y CMND và H? kh?u c?a v? và ch?ng ( ho?c passport, b?n sao ) - Gi?y t? ch?ng minh quy?n s? h?u, quy?n s? h?u n?u có tranh ch?p tài s?n ( b?o sao )
+- Co quan ti?p nh?n : Tòa án huy?n, thành ph?, th? xã. * Th?i h?n gi?i quy?t : Trong th?i h?n 5 ngày nh?n du?c don yêu c?u, Tòa án thông báo duong s? n?p ti?n t?m ?ng án phí. Sau khi n?p án phí, ngu?i kh?i ki?n n?p cho tòa án biên lai n?p ti?n t?m ?ng án phí d? Tòa án th? lý.
+
+INFO  2019-07-01 13:56:49,882 36570089ms ServiceCenter          send_sms_citizen   - yeucau_id A4628010719 sdt 0823130986
+INFO  2019-07-01 13:56:50,278 36570485ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:56:59,665 36579872ms PhanAnhController      CapNhatKQTL        - nguoidung_id 02F7F280619 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so gôm.
++ Ðon dang ký c?p gi?y ch?ng nhân d? di?u ki?n buôn bán nh?p kh?u thu?c thú y theo m?u .
++ B?n thuy?t minh chi ti?t v? co s? v?t ch?t , k? thu?t buôn bán, nh?p kh?u thu?c thú y theo m?u.
++ Giay ch?ng nh?n dang ký doanh nghi?p ho?c gi?y ch?ng nh?n dang ký kinh doanh ( b?n sao có công ch?ng).
++ Ch?ng ch? hành ngh? thú y ( b?n sao có công ch?ng ).
+N?p h? so t?i trung tâm hành chính công t?nh 
+INFO  2019-07-01 13:56:59,682 36579889ms ServiceCenter          send_sms_citizen   - yeucau_id 02F7F280619 sdt 0965833668
+INFO  2019-07-01 13:57:00,085 36580292ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:57:09,889 36590096ms PhanAnhController      CapNhatKQTL        - nguoidung_id 96844280619 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so g?m :
+- Phi?u cung c?p thông tin d? c?p b?n sao 
+- Ch?ng minh nhân dân ( b?n g?c + b?n sao)
+- Gi?y khai sinh b?n sao 
+- Gi?y ?y quy?n ( n?u không ph?i b?n thân d? ngh? c?p b?n sao)
+N?p h? so t?i trung tâm hành chính công t?nh Hòa Bình ( t?i qu?y c?a s? giáo d?c và dào t?o)
+INFO  2019-07-01 13:57:09,905 36590112ms ServiceCenter          send_sms_citizen   - yeucau_id 96844280619 sdt 0823130986
+INFO  2019-07-01 13:57:10,296 36590503ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:57:26,075 36606282ms PhanAnhController      CapNhatKQTL        - nguoidung_id 84698270619 yeucau_id hoaltt.hcc kqtl không có gi?y t? gì thay th?.d?i làm xong s? h? kh?u thì làm l?i ch?ng minh thu
+INFO  2019-07-01 13:57:26,092 36606299ms ServiceCenter          send_sms_citizen   - yeucau_id 84698270619 sdt 0918909966
+INFO  2019-07-01 13:57:26,486 36606693ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:57:35,054 36615261ms PhanAnhController      CapNhatKQTL        - nguoidung_id CA004260619 yeucau_id hoaltt.hcc kqtl Vâng, d?ng ý v?i ý ki?n nêu trên.
+INFO  2019-07-01 13:57:35,070 36615277ms ServiceCenter          send_sms_citizen   - yeucau_id CA004260619 sdt 0916144888
+INFO  2019-07-01 13:57:35,573 36615780ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 13:57:46,228 36626435ms PhanAnhController      CapNhatKQTL        - nguoidung_id 8D76A260619 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so g?m :
+- Ðon d? ngh? c?p l?i ch?ng minh nhân dân có xác nh?n c?a công an xã phu?ng th? tr?n noi thu?ng trú, có dán ?nh dóng d?u giáp lai vào góc ?nh)
+- S? h? kh?u
+- ?nh chân dung ( là ?nh màu ch?p chính di?n d?u d? tr?n rõ 2 tai, không deo kính tác phong nghiêm trang l?ch s?)
+Ð?a di?m n?p t?i trung tâm hành chính công t?nh Hòa Bình, t?i qu?y công an
+
+INFO  2019-07-01 13:57:46,244 36626451ms ServiceCenter          send_sms_citizen   - yeucau_id 8D76A260619 sdt 0932210877
+INFO  2019-07-01 13:57:46,609 36626816ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-01 16:45:14,393 46674600ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 106321
+INFO  2019-07-01 16:45:14,475 46674682ms PlayAudioController    GetAudioURL        - tmp download url: /dl/106321.wav
+INFO  2019-07-01 16:45:14,476 46674683ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701085904.wav
+INFO  2019-07-01 16:45:14,477 46674684ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701085904.wav to c:\tmp\1022staticfiles\106321.wav
+INFO  2019-07-01 16:47:17,241 46797448ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 106334
+INFO  2019-07-01 16:47:17,246 46797453ms PlayAudioController    GetAudioURL        - tmp download url: /dl/106334.wav
+INFO  2019-07-01 16:47:17,247 46797454ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\1\16-209-a-90918909966---20190701135047.wav
+INFO  2019-07-01 16:47:17,247 46797454ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\1\16-209-a-90918909966---20190701135047.wav to c:\tmp\1022staticfiles\106334.wav
+INFO  2019-07-01 16:47:27,294 46807501ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 106335
+INFO  2019-07-01 16:47:27,299 46807506ms PlayAudioController    GetAudioURL        - tmp download url: /dl/106335.wav
+INFO  2019-07-01 16:47:27,299 46807506ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701135440.wav
+INFO  2019-07-01 16:47:27,300 46807507ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701135440.wav to c:\tmp\1022staticfiles\106335.wav
+INFO  2019-07-01 16:49:03,991 46904198ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 106342
+INFO  2019-07-01 16:49:03,995 46904202ms PlayAudioController    GetAudioURL        - tmp download url: /dl/106342.wav
+INFO  2019-07-01 16:49:03,996 46904203ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701085904.wav
+INFO  2019-07-01 16:49:03,997 46904204ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701085904.wav to c:\tmp\1022staticfiles\106342.wav
+INFO  2019-07-01 16:49:35,925 46936132ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 106346
+INFO  2019-07-01 16:49:35,931 46936138ms PlayAudioController    GetAudioURL        - tmp download url: /dl/106346.wav
+INFO  2019-07-01 16:49:35,931 46936138ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\1\16-209-a-90918909966---20190701135047.wav
+INFO  2019-07-01 16:49:35,932 46936139ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\1\16-209-a-90918909966---20190701135047.wav to c:\tmp\1022staticfiles\106346.wav
+INFO  2019-07-01 16:50:23,701 46983908ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 106353
+INFO  2019-07-01 16:50:23,706 46983913ms PlayAudioController    GetAudioURL        - tmp download url: /dl/106353.wav
+INFO  2019-07-01 16:50:23,706 46983913ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701135440.wav
+INFO  2019-07-01 16:50:23,707 46983914ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701135440.wav to c:\tmp\1022staticfiles\106353.wav
+INFO  2019-07-02 07:35:45,107 100105314ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-02 07:35:55,451 100115658ms DangNhapController     Index              - do login...
+INFO  2019-07-02 07:35:55,491 100115698ms HomeController         Index              - Enter Home/Index

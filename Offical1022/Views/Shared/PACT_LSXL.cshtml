@@ -1,0 +1,26 @@
+﻿@using WebUI
+@using HotlineCore
+
+<div class="tab-pane" id="tab_lich_su_xu_ly">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            @*<div v-if="phieu_dtb" style="color:#f00">Đã thông báo kết quả cho người dân.</div>*@
+            <table class="table table-bordered">
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Người dùng</th>
+                    <th>Thao tác</th>
+                    <th>Nội dung</th>
+                </tr>
+                <tbody>
+                    <tr v-for="item in danhSachLichSu">
+                        <td>{{ item.action_dating | formatDate }}</td>
+                        <td> <span class="cell-capdo" :title="'Cấp độ ' + item.capdo_id">{{ item.capdo_id }}</span> {{ item.nguoidung_ten }} <br />  {{ item.nguoidung_sdt }}</td>
+                        <td>{{ item.action }}</td>
+                        <td>{{ item.noi_dung }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

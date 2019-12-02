@@ -1,0 +1,119 @@
+INFO  2019-07-08 09:44:47,717 2965660ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 09:44:57,749 2975692ms DangNhapController     Index              - do login...
+DEBUG 2019-07-08 09:44:57,905 2975848ms DangNhapController     Index              - user not exist: admin pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-08 09:45:03,484 2981427ms DangNhapController     Index              - do login...
+DEBUG 2019-07-08 09:45:03,499 2981442ms DangNhapController     Index              - user not exist: admin pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-08 09:54:06,305 3524248ms DangNhapController     Index              - do login...
+INFO  2019-07-08 09:54:07,430 3525373ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 09:57:57,251 3755194ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 09:58:06,423 3764366ms DangNhapController     Index              - do login...
+DEBUG 2019-07-08 09:58:06,439 3764382ms DangNhapController     Index              - user not exist: admin pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-08 09:58:13,377 3771320ms DangNhapController     Index              - do login...
+DEBUG 2019-07-08 09:58:13,392 3771335ms DangNhapController     Index              - user not exist: admin pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-08 09:58:24,268 3782211ms DangNhapController     Index              - do login...
+INFO  2019-07-08 09:58:24,299 3782242ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 10:18:44,115 5002058ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 10:18:45,693 5003636ms DangNhapController     Index              - do login...
+INFO  2019-07-08 10:18:45,740 5003683ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 10:34:33,407 5951350ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 13:06:49,013  1468ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 13:07:14,545 27000ms DangNhapController     Index              - do login...
+INFO  2019-07-08 13:07:16,654 29109ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 13:09:18,936 151391ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 13:17:55,521 667976ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 13:18:01,727 674182ms DangNhapController     Index              - do login...
+INFO  2019-07-08 13:18:01,758 674213ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 13:19:30,124 762579ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 13:19:34,844 767299ms DangNhapController     Index              - do login...
+DEBUG 2019-07-08 13:19:34,844 767299ms DangNhapController     Index              - user not exist: admin pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-08 13:19:39,923 772377ms DangNhapController     Index              - do login...
+INFO  2019-07-08 13:19:39,954 772409ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 13:19:51,939 784394ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 13:20:05,206 797661ms DangNhapController     Index              - do login...
+INFO  2019-07-08 13:20:05,221 797676ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-08 13:20:25,191 817646ms PhanAnhController      CapNhatKQTL        - nguoidung_id 2B239080719 yeucau_id hoaltt.hcc kqtl M?i anh ch? liên h? van phòng 1 c?a UBND huy?n L?c Th?y d? tr?c ti?p ki?n ngh? ph?n ánh.
+INFO  2019-07-08 13:20:25,738 818193ms ServiceCenter          send_sms_citizen   - yeucau_id 2B239080719 sdt 0375327359
+INFO  2019-07-08 13:20:30,067 822522ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:20:30,239 822694ms PhanAnhController      CapNhatKQTL        - nguoidung_id 2B239080719 yeucau_id hoaltt.hcc kqtl M?i anh ch? liên h? van phòng 1 c?a UBND huy?n L?c Th?y d? tr?c ti?p ki?n ngh? ph?n ánh.
+INFO  2019-07-08 13:20:30,254 822709ms ServiceCenter          send_sms_citizen   - yeucau_id 2B239080719 sdt 0375327359
+INFO  2019-07-08 13:20:30,661 823115ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:20:30,879 823334ms PhanAnhController      CapNhatKQTL        - nguoidung_id 2B239080719 yeucau_id hoaltt.hcc kqtl M?i anh ch? liên h? van phòng 1 c?a UBND huy?n L?c Th?y d? tr?c ti?p ki?n ngh? ph?n ánh.
+INFO  2019-07-08 13:20:30,895 823350ms ServiceCenter          send_sms_citizen   - yeucau_id 2B239080719 sdt 0375327359
+INFO  2019-07-08 13:20:31,286 823740ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:20:41,724 834178ms PhanAnhController      CapNhatKQTL        - nguoidung_id E7832040719 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so g?m :
+- Ðon d? ngh? c?p Ch?ng ch? hành ngh? du?c th?c hi?n theo M?u s? 02 Ph? l?c I c?a Ngh? d?nh s? 54/2017/NÐ-CP, 02 ?nh chân dung c?a ngu?i d? ngh? c?p Ch?ng ch? hành ngh? du?c trong th?i gian không quá 06 tháng;
+
+- B?n sao có ch?ng th?c van b?ng chuyên môn. Ð?i v?i các van b?ng do co s? dào t?o nu?c ngoài c?p, ph?i kèm theo b?n sao có ch?ng th?c gi?y công nh?n tuong duong c?a co quan có th?m quy?n v? công nh?n tuong duong theo quy d?nh t?i kho?n 2 Ði?u 18 c?a Ngh? d?nh s? 54/2017/NÐ-CP;
+
+- Gi?y ch?ng nh?n s?c kh?e do co s? y t? có th?m quy?n c?p;
+
+- B?n chính ho?c b?n sao có ch?ng th?c Gi?y xác nh?n th?i gian th?c hành theo quy d?nh t?i M?u s? 03 Ph? l?c I c?a Ngh? d?nh s? 54/2017/NÐ-CP; Tru?ng h?p th?c hành t?i nhi?u co s?, th?i gian th?c hành du?c tính là t?ng th?i gian th?c hành t?i các co s? nhung ph?i có Gi?y xác nh?n th?i gian th?c hành c?a t?ng co s? dó;
+
+- Tru?ng h?p d? ngh? c?p Ch?ng ch? hành ngh? du?c v?i ph?m vi ho?t d?ng khác nhau và yêu c?u th?i gian th?c hành, co s? th?c hành chuyên môn khác nhau thì h? so ph?i có Gi?y xác nh?n th?i gian th?c hành chuyên môn và n?i dung th?c hành chuyên môn c?a m?t ho?c m?t s? co s? dáp ?ng yêu c?u c?a m?i ph?m vi, v? trí hành ngh?. Tru?ng h?p các ph?m vi ho?t d?ng chuyên môn có cùng yêu c?u v? th?i gian th?c hành và co s? th?c hành chuyên môn thì không yêu c?u ph?i có Gi?y xác nh?n riêng d?i v?i t?ng ph?m vi ho?t d?ng chuyên môn;
+
+- Gi?y xác nh?n hoàn thành chuong trình dào t?o, c?p nh?t ki?n th?c chuyên môn v? du?c d?i v?i tru?ng h?p dã b? thu h?i Ch?ng ch? hành ngh? du?c quy d?nh t?i Kho?n 9 Ði?u 28 c?a Lu?t du?c.
+
+- B?n sao có ch?ng th?c can cu?c công dân, gi?y ch?ng minh nhân dân ho?c h? chi?u.
+
+- Phi?u lý l?ch tu pháp. Tru?ng h?p là ngu?i nu?c ngoài, ngu?i Vi?t Nam d?nh cu ? nu?c ngoài ph?i có lý l?ch tu pháp ho?c van b?n xác nh?n hi?n không ph?i là ngu?i ph?m t?i ho?c b? truy c?u trách nhi?m hình s?, không thu?c tru?ng h?p b? c?m hành ngh?, c?m làm công vi?c liên quan d?n ho?t d?ng du?c theo b?n án, quy?t d?nh c?a Tòa án do co quan có th?m quy?n c?a nu?c ngoài c?p.
+
+ (Yêu c?u d?i v?i các gi?y t? do co quan có th?m quy?n nu?c ngoài c?p n?p trong h? so d? ngh? c?p Ch?ng ch? hành ngh? du?c: các gi?y t? do co quan có th?m quy?n nu?c ngoài c?p ph?i du?c h?p pháp hóa lãnh s? theo quy d?nh. Các gi?y t? này ph?i có b?n d?ch sang ti?ng Vi?t và du?c công ch?ng theo quy d?nh).
+2 ?nh chân dung 4x6 cm
+s? lu?ng h? so : 1 b?
+N?p h? so tr?c ti?p ho?c thông qua d?ch v? buu chính d?n b? ph?n ti?p nh?n và tr? k?t qu? c?a s? ý t? t?i trung tâm hành chính công t?nh Hòa Bình
+L? phí : 500.000 d?ng
+INFO  2019-07-08 13:20:41,755 834210ms ServiceCenter          send_sms_citizen   - yeucau_id E7832040719 sdt 0911013311
+INFO  2019-07-08 13:20:42,224 834678ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:20:53,661 846116ms PhanAnhController      CapNhatKQTL        - nguoidung_id 9CDF8040719 yeucau_id hoaltt.hcc kqtl - Thành ph?n h? so: 
++ M?t (01) van b?n d? ngh? th?m d?nh, phê duy?t báo cáo dánh giá tác d?ng môi tru?ng;
++ B?y (07) b?n báo cáo dánh giá tác d?ng môi tru?ng c?a d? án. Tru?ng h?p s? lu?ng thành viên h?i d?ng th?m d?nh nhi?u hon b?y (07) ngu?i, ch? d? án ph?i cung c?p thêm s? lu?ng báo cáo dánh giá tác d?ng môi tru?ng;
++ M?t (01) b?n báo cáo nghiên c?u kh? thi ho?c báo cáo d? án d?u tu ho?c tài li?u tuong duong khác.
+- S? lu?ng h? so: 01 b?.
+N?p t?i b? ph?n ti?p nh?n và tr? k?t qu? c?a s? tài nguyên và môi tru?ng t?i trung tâm hành chính công t?nh Hòa Bình
+INFO  2019-07-08 13:20:53,677 846132ms ServiceCenter          send_sms_citizen   - yeucau_id 9CDF8040719 sdt 0825701999
+INFO  2019-07-08 13:20:54,130 846585ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:21:18,897 871352ms PhanAnhController      CapNhatKQTL        - nguoidung_id FC2CB040719 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so :
+- Van b?n d? ngh? c?p gi?y phép lao d?ng c?a ngu?i s? d?ng lao d?ng.
+- Gi?y ch?ng nh?n s?c kh?e du?c c?p ? nu?c ngoài ho?c ? Vi?t Nam theo quy d?nh c?a B? Y t? có giá tr? trong th?i h?n 12 tháng, k? t? ngày ký k?t lu?n s?c kh?e d?n ngày n?p h? so.
+- Van b?n xác nh?n không ph?i là ngu?i ph?m t?i ho?c b? truy c?u trách nhi?m hình s? theo quy d?nh c?a pháp lu?t Vi?t Nam và pháp lu?t nu?c ngoài có giá tr? trong th?i h?n 06 tháng, tính d?n th?i di?m n?p h? so, c? th? nhu sau:
+- Ð?i v?i ngu?i nu?c ngoài dã cu trú t?i Vi?t Nam: Phi?u lý l?ch tu pháp do Vi?t Nam c?p;
+- Ð?i v?i ngu?i nu?c ngoài chua t?ng cu trú t?i Vi?t Nam: Phi?u lý l?ch tu pháp ho?c van b?n xác nh?n ngu?i lao d?ng nu?c ngoài không ph?i là ngu?i ph?m t?i ho?c b? truy c?u trách nhi?m hình s? c?a nu?c ngoài c?p;
+*** Ð?i v?i ngu?i lao d?ng nu?c ngoài là lao d?ng k? thu?t thì ph?i có các gi?y t? sau:
++ Gi?y t? ch?ng minh ho?c van b?n xác nh?n c?a co quan, t? ch?c, doanh nghi?p t?i nu?c ngoài v? vi?c dã du?c dào t?o chuyên ngành k? thu?t ho?c chuyên ngành khác v?i th?i gian ít nh?t 01 nam phù h?p v?i v? trí công vi?c mà ngu?i lao d?ng nu?c ngoài d? ki?n s? làm vi?c t?i Vi?t Nam;
++ Gi?y t? ch?ng minh dã có ít nh?t 03 nam làm vi?c trong chuyên ngành k? thu?t du?c dào t?o phù h?p v?i v? trí công vi?c mà ngu?i lao d?ng nu?c ngoài d? ki?n s? làm vi?c t?i Vi?t Nam.
+N?p h? so t?i b? ph?n ti?p nh?n và tr? k?t qu? ban qu?n lý khu công nghi?p t?i trung tâm hành chính công t?nh Hòa Bình.
+INFO  2019-07-08 13:21:18,928 871383ms ServiceCenter          send_sms_citizen   - yeucau_id FC2CB040719 sdt 0942628680
+INFO  2019-07-08 13:21:19,616 872070ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:21:29,850 882305ms PhanAnhController      CapNhatKQTL        - nguoidung_id 53F83030719 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so g?m:
++ S? h? Kh?u
++ Ðon d? ngh? c?p l?i ch?ng minh thu có xác nh?n c?a công an phu?ng th? tr?n noi dang ký thu?ng trú ( có dán ?nh dóng d?u giáp lai góc ?nh).
++ Anh chân dung .
+N?p h? so t?i công an thành ph? hà n?i 
+
+INFO  2019-07-08 13:21:29,866 882320ms ServiceCenter          send_sms_citizen   - yeucau_id 53F83030719 sdt 0942628680
+INFO  2019-07-08 13:21:30,335 882789ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:21:45,725 898180ms PhanAnhController      CapNhatKQTL        - nguoidung_id CB9C4020719 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so g?m:
++ S? h? kh?u .
++ Ch?ng minh nhân dân .
++ Quy?t d?nh dã hoàn thành án tích .
+N?p h? so t?i s? tu pháp c?a trung tâm hành chính công t?nh 
+L? phí : 200.000 
+INFO  2019-07-08 13:21:45,741 898196ms ServiceCenter          send_sms_citizen   - yeucau_id CB9C4020719 sdt 0948055078
+INFO  2019-07-08 13:21:46,272 898727ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:21:54,960 907415ms PhanAnhController      CapNhatKQTL        - nguoidung_id E13A8010719 yeucau_id hoaltt.hcc kqtl Thành ph?n h? so g?m :
+- Ðon d? ngh? dang ký hành ngh? lu?t su
+- B?n sao ch?ng ch? hành ngh? lu?t su, b?n sao th? lu?t su
+- B?n sao h?p d?ng lao d?ng ký k?t v?i co quan t? ch?c
+S? lu?ng h? so : 01 b?
+N?p t?i b? ph?n ti?p nh?n và tr? k?t qu? s? tu pháp t?i trung trung tâm hành chính công t?nh Hòa Bình.
+INFO  2019-07-08 13:21:55,007 907462ms ServiceCenter          send_sms_citizen   - yeucau_id E13A8010719 sdt 0823130986
+INFO  2019-07-08 13:21:55,429 907884ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-08 13:22:05,898 918352ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-07-08 13:49:19,748 2552203ms PortalController       verifyCaptcha      - verifyCaptcha: from client 192.168.3.254
+DEBUG 2019-07-08 13:49:19,811 2552266ms PortalController       verifyCaptcha      -   token: 03AOLTBLSbuFLj7Wfy-iF-oFDBrzZK3VG2vmBPByxKxG_8DSxcEGFz5C6uonZiR2gLaWttK4ASyXIO8hCusc6Mfm-vTyD3Td5uQ4IH-ZSS9csyw6QIgFJp8Nj6O77DTyhGVlKMUDyqg3Oe4xYctnA1gOjN0fi162_x-01rDXaGhEQ5HLvxTDbZvhaJR-A0ibpqZXO4ZZSwmQ4m5bZbw9MHvZRt25PevI-1B62kBpIn5-FxC1eZ-vc_YLnFqtFlIncKqmis0hSmOqC3wkBM8Pw235X1kvFXqCincIeyb2SFfnF9g4UIreDk-ykcIih-Q6SCNrW-t78anp8q74ibZdMqvuZgbb-z_jiKTg
+DEBUG 2019-07-08 13:49:19,826 2552281ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-07-08 13:49:24,873 2557328ms _PageTongHop           createRequest      - portal createRequest displayName bùi van t?nh, phoneNumber 0912345678 content cho h?i: ? hoà bình có xây du?c nhà 12 t?ng không.n?u xây du?c thì th? t?c c?p phép và các th? t?c c?n thi?t d?n s? ban ngành nào d? hoàn thi?n.còn n?u không xây du?c nhà 12 t?ng thì ? hoà bình xây d?ng du?c t?i da trên bao nhiêu m2, s? t?ng là bao nhiêu.có c?n luu ý m?c nào không.g?i ki?n ngh? 13h50p ngày 08.7.2019
+INFO  2019-07-08 13:49:40,968 2573422ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 15:57:59,796 1875720ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-08 15:58:09,983 1885908ms DangNhapController     Index              - do login...
+INFO  2019-07-08 15:58:10,124 1886048ms HomeController         Index              - Enter Home/Index

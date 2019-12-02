@@ -1,0 +1,49 @@
+INFO  2019-06-05 07:33:19,077  1031ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 07:33:19,077  1031ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 07:40:40,409 442362ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 07:41:19,113 481066ms DangNhapController     Index              - do login...
+INFO  2019-06-05 07:41:20,285 482238ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-05 08:14:40,355 2482308ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 08:14:49,496 2491449ms DangNhapController     Index              - do login...
+INFO  2019-06-05 08:14:49,543 2491496ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-05 09:45:20,011 2154691ms ServiceCenter          send_sms_citizen   - yeucau_id BC611050619 sdt 0828200019
+ERROR 2019-06-05 09:45:23,605 2158284ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-06-05 09:54:26,447 2701127ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 09:54:31,541 2706221ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:54:31,573 2706252ms DangNhapController     Index              - user not exist: admin pass 21232F297A57A5A743894A0E4A801FC3
+INFO  2019-06-05 09:54:37,292 2711971ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:54:37,307 2711987ms DangNhapController     Index              - user not exist: admin pass 89BF4623AF7287EDECDC7AB2B126A10F
+INFO  2019-06-05 09:54:45,557 2720237ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:54:45,573 2720253ms DangNhapController     Index              - user not exist: admin pass 5E51FC628374F49ED9F6CA5AD4D01CE3
+INFO  2019-06-05 09:54:50,526 2725206ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:54:50,526 2725206ms DangNhapController     Index              - user not exist: admin pass 21232F297A57A5A743894A0E4A801FC3
+INFO  2019-06-05 09:55:04,496 2739175ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:55:04,511 2739191ms DangNhapController     Index              - user not exist: admin pass 21232F297A57A5A743894A0E4A801FC3
+INFO  2019-06-05 09:55:09,324 2744004ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 09:55:19,230 2753910ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:55:19,230 2753910ms DangNhapController     Index              - user not exist: admin pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-06-05 09:55:25,262 2759941ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:55:25,262 2759941ms DangNhapController     Index              - user not exist: admin pass A66ABB5684C45962D887564F08346E8D
+INFO  2019-06-05 09:55:30,668 2765348ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:55:30,684 2765363ms DangNhapController     Index              - user not exist: admin pass 0192023A7BBD73250516F069DF18B500
+INFO  2019-06-05 09:55:34,824 2769504ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 09:55:48,450 2783130ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 09:55:54,450 2789130ms DangNhapController     Index              - do login...
+DEBUG 2019-06-05 09:55:54,450 2789130ms DangNhapController     Index              - user not exist: admin pass 21232F297A57A5A743894A0E4A801FC3
+INFO  2019-06-05 09:55:56,747 2791427ms DangNhapController     Index              - do login...
+INFO  2019-06-05 09:55:56,747 2791427ms DangNhapController     Index              - Form Model State is Invalid
+INFO  2019-06-05 09:55:58,122 2792802ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 10:41:03,830 5498510ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 14:07:30,882 1484153ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 14:07:32,241 1485512ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 14:07:33,194 1486465ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 14:07:34,116 1487387ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 14:07:51,945 1505215ms DangNhapController     Index              - do login...
+INFO  2019-06-05 14:07:52,898 1506169ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-05 14:41:29,504   218ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 14:41:29,597   312ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 14:41:34,410  5125ms DangNhapController     Index              - do login...
+INFO  2019-06-05 14:41:34,848  5562ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-05 20:44:03,894   500ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-05 20:44:18,629 15234ms DangNhapController     Index              - do login...
+INFO  2019-06-05 20:44:20,332 16937ms HomeController         Index              - Enter Home/Index

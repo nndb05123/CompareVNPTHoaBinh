@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="68b98b3dc45f4dd59e721551b343e66e" Name="Diagram1" ZoomLevel="67">
+        <EntityTypeShape EntityType="HotlineModel.CapDo" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.DoiTuongGoi" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="HotlineModel.DonVi" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.DonVi_LinhVuc" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="HotlineModel.HinhThuc" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.Huyen" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="HotlineModel.KenhTiepNhan" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="HotlineModel.LinhVuc" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="HotlineModel.LoaiYeuCau" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="HotlineModel.LogFile" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.MangXaHoi" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="HotlineModel.NguoiDan" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="HotlineModel.NguoiDung" Width="1.5" PointX="4.75" PointY="9.75" />
+        <EntityTypeShape EntityType="HotlineModel.NhomLogFile" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.Phuong" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="HotlineModel.TrangThai" Width="1.5" PointX="10.75" PointY="7.75" />
+        <EntityTypeShape EntityType="HotlineModel.VaiTro" Width="1.5" PointX="12.75" PointY="11.75" />
+        <EntityTypeShape EntityType="HotlineModel.YeuCau_Phieu" Width="1.5" PointX="8.75" PointY="14.75" />
+        <EntityTypeShape EntityType="HotlineModel.YeuCauAudio" Width="1.5" PointX="10.75" PointY="14.75" />
+        <EntityTypeShape EntityType="HotlineModel.YeuCauFile" Width="1.5" PointX="12.75" PointY="14.75" />
+        <EntityTypeShape EntityType="HotlineModel.YeuCauWeb" Width="1.5" PointX="14.75" PointY="13.75" />
+        <EntityTypeShape EntityType="HotlineModel.Phan_Loai_Thu_Tuc" Width="1.5" PointX="5.375" PointY="16.75" />
+        <EntityTypeShape EntityType="HotlineModel.TK_YEU_CAU_CHUA_CO_FILE_GHI_AM_THEO_NGAY" Width="1.5" PointX="17.375" PointY="7.75" />
+        <EntityTypeShape EntityType="HotlineModel.TK_YEU_CAU_TIEP_NHAN_THEO_NGAY" Width="1.5" PointX="17.375" PointY="10.75" />
+        <EntityTypeShape EntityType="HotlineModel.V_YeuCau" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.V_YEUCAU_SONOIVU" Width="1.5" PointX="5.375" PointY="19.75" />
+        <EntityTypeShape EntityType="HotlineModel.V_YEUCAU_TINHTRANG" Width="1.5" PointX="19.375" PointY="16.75" />
+        <EntityTypeShape EntityType="HotlineModel.CauHoi" Width="1.5" PointX="21.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.YeuCauFileData" Width="1.5" PointX="21.375" PointY="3.75" />
+        <EntityTypeShape EntityType="HotlineModel.AUDIOPERMISSION1" Width="1.5" PointX="11.375" PointY="18.75" />
+        <EntityTypeShape EntityType="HotlineModel.YEUCAU_DELETED1" Width="1.5" PointX="21.375" PointY="6.75" />
+        <EntityTypeShape EntityType="HotlineModel.Lydo" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.NhomLyDo" Width="1.5" PointX="13.375" PointY="3.75" />
+        <EntityTypeShape EntityType="HotlineModel.SITE_INFO" Width="1.5" PointX="13.375" PointY="6.75" />
+        <EntityTypeShape EntityType="HotlineModel.SMS_Loai" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HotlineModel.IPCCLineDevices" Width="1.5" PointX="11.375" PointY="21.75" />
+        <EntityTypeShape EntityType="HotlineModel.SMSLog" Width="1.5" PointX="15.375" PointY="3.75" />
+        <EntityTypeShape EntityType="HotlineModel.IPCCUserDevices" Width="1.5" PointX="17.375" PointY="21.75" />
+        <EntityTypeShape EntityType="HotlineModel.TaiLieu" Width="1.5" PointX="19.375" PointY="21.75" />
+        <EntityTypeShape EntityType="HotlineModel.IPCCLINEDEVICES2" Width="1.5" PointX="21.375" PointY="20.75" />
+        <EntityTypeShape EntityType="HotlineModel.YeuCau" Width="1.5" PointX="0.75" PointY="13.75" />
+        <EntityTypeShape EntityType="HotlineModel.YeuCau_Log" Width="1.5" PointX="2.75" PointY="14.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

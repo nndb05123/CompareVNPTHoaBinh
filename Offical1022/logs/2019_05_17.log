@@ -1,0 +1,425 @@
+INFO  2019-05-17 07:46:15,355 13958ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 07:46:27,780 26384ms DangNhapController     Index              - do login...
+INFO  2019-05-17 07:46:28,440 27044ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 07:47:38,740 97344ms ServiceCenter          send_sms_citizen   - yeucau_id 02E7A170519 sdt 0918909966
+ERROR 2019-05-17 07:47:43,497 102100ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 07:47:52,346 110950ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 07:47:58,817 117420ms DangNhapController     Index              - do login...
+INFO  2019-05-17 07:47:58,853 117456ms HomeController         Index              - Enter Home/Index
+ERROR 2019-05-17 07:48:52,587 171190ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\5c8064510cc0497e8634b3876b855537.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:52,737 171340ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\2b04808eceb845bebc1e089a954c5bec.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:52,956 171559ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\4f79aea147e74c67b1295225813546f2.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:53,130 171733ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\9778a6eb52ef4f5eb6f7be8dbfd2a6cc.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:53,268 171871ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\5def862231364605be0b9725d3af3068.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:53,448 172051ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\da60988e756143a096a6ddec9e34a085.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:53,620 172223ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\580200b7915f438984004c56ae780fbd.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:53,805 172408ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\0f94df4ee83f48b099b9781e4f40a5e8.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:53,989 172592ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\7cca8d821daf4d46821d60ad1a026093.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:54,163 172766ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\11ffaea3250a460d904453cb6c80789c.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:54,345 172948ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\3dc271a5f5c44e3cb7463882007e6518.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:54,539 173142ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\adf3bf66b6f444cfafd8cc99d579ba24.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:54,671 173274ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\3b4701e896bb4226beb2b3ef010bb8ae.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:54,929 173532ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\d3a4d8d1e9b74a7398c6428401180ced.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:55,080 173683ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\407c0d84cbf742789d2046b21439d8e6.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:55,236 173839ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\06a32cf00dbf4da299c11ca8b08ee106.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:55,429 174032ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\155c67166f3e4a4cb1f030f067bd7138.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:55,628 174231ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\39ff5db0c0e749e8b5b60a5921e40ff8.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:55,758 174362ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\dcabcc065b204925a63b41ba4e4c57e7.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:55,998 174602ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\7ad204e17778414f9a731c30b9e1b30f.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:56,181 174785ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\4217f3a5601f412696bcbe48f045ab44.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:56,291 174895ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\469e2b46098b401d8519d14bd2228e85.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:56,513 175117ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\8d1f3536c0294ea4aba9742902b8fd28.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:56,697 175301ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\f144a6bd1a434e8cabeeab53643e7088.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:56,871 175475ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\c505d988f2764edfa3058e5942d75e98.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:57,102 175706ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\24bff633ab2546a2aea846b104f89223.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:57,279 175883ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\51f746607a934c6292007636a87b4c31.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:57,421 176025ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\223040ca8b364acc8cbe19ecd40c9e4e.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:57,665 176269ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\4bd98bd33c974856b4540c41f093ece4.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:57,922 176526ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\06afe23af9344f4ba917f93a23ca4de8.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:58,100 176704ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\762b657ebdb94afa816b34e5b0e91b1d.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:58,316 176920ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\d48ccf15d8ab43cc855ff223ea645ac4.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:58,503 177107ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\0161fc58af464783aeadb95a42b2d38b.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:58,669 177273ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\b12239182e5e4b6ba205a4fc08b826dd.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:58,911 177515ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\a9ae2149d85545ecac47b499d8af4800.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:59,114 177718ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\f66e1c1ddf9445aab54721ed6c85ffd0.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:59,245 177849ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\78e07654d84d4b2fbab84db7a28f92dd.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 07:48:59,805 178409ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\9f88297bec874941850f1ae7b348fdfa.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+INFO  2019-05-17 07:50:43,742 282346ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 07:51:17,668 316272ms DangNhapController     Index              - do login...
+INFO  2019-05-17 07:51:17,701 316305ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 07:52:18,378 376982ms ServiceCenter          send_sms_citizen   - yeucau_id 9D274170519 sdt 0918909966
+ERROR 2019-05-17 07:52:18,801 377405ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 07:52:42,336 400939ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 07:52:48,948 407552ms DangNhapController     Index              - do login...
+INFO  2019-05-17 07:52:48,976 407580ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 07:54:39,467 518071ms ServiceCenter          send_sms_citizen   - yeucau_id 9D87F170519 sdt 0918909966
+ERROR 2019-05-17 07:54:39,882 518485ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 07:55:33,917 572520ms ServiceCenter          send_sms_citizen   - yeucau_id 9D4B1170519 sdt 0947857847
+ERROR 2019-05-17 07:55:34,311 572914ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 09:21:42,567 1207299ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 09:21:42,960 1207692ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 09:22:02,271 1227003ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 09:22:27,016 1251748ms DangNhapController     Index              - do login...
+INFO  2019-05-17 09:22:27,792 1252524ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 09:32:13,133 1837865ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 09:32:34,311 1859043ms DangNhapController     Index              - do login...
+INFO  2019-05-17 09:32:34,463 1859195ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 09:44:00,359 2545091ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 09:44:09,907 2554639ms DangNhapController     Index              - do login...
+INFO  2019-05-17 09:44:10,005 2554737ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 09:44:55,089 2599821ms PhanAnhController      CapNhatKQTL        - nguoidung_id 02E7A170519 yeucau_id daoad.hcc kqtl ra c?a hàng mua
+INFO  2019-05-17 09:44:55,403 2600135ms ServiceCenter          send_sms_citizen   - yeucau_id 02E7A170519 sdt 0918909966
+ERROR 2019-05-17 09:45:00,037 2604769ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 10:14:09,234  3231ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 10:14:14,747  8744ms DangNhapController     Index              - do login...
+INFO  2019-05-17 10:14:15,479  9476ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 10:17:13,420 187417ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 10:17:17,069 191065ms DangNhapController     Index              - do login...
+INFO  2019-05-17 10:17:17,110 191106ms HomeController         Index              - Enter Home/Index
+ERROR 2019-05-17 10:17:24,452 198449ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\1ead9df495f0451c8fceb2ada6fa964d.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:17:28,873 202870ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\2367ab9e2ef541a0901e566478ced062.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:17:30,481 204478ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\f010accece064d11a9200f255e76a6b1.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:17:31,327 205324ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\ea53f49d949041dd8f96a96a00f55e58.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:17:31,696 205693ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\5ee78c2e7b804fb2a7611601b0ac6496.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:17:32,390 206387ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\72cca8dfce4e497796bda90ad12d4a6f.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:17:32,528 206525ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\43683e02a7a04d05b413043c916cb0df.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:17:32,707 206704ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\ef6a1783babd496dac9f5aabbf180043.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:17:32,931 206928ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\4f5fc68787eb486a92d738fc382e5b3b.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+ERROR 2019-05-17 10:19:18,913 312909ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\483e47dfad6448618eb46c35ea0a48d3.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213
+INFO  2019-05-17 10:29:42,540 936537ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 10:30:05,601 959597ms DangNhapController     Index              - do login...
+INFO  2019-05-17 10:30:05,639 959635ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 10:32:36,560 1110557ms ServiceCenter          send_sms_citizen   - yeucau_id 4B51F170519 sdt 0823030986
+ERROR 2019-05-17 10:32:40,653 1114650ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 10:37:25,572 1399569ms ServiceCenter          send_sms_citizen   - yeucau_id 036CB170519 sdt 0918001185
+ERROR 2019-05-17 10:37:26,057 1400054ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 10:38:53,472 1487469ms ServiceCenter          send_sms_citizen   - yeucau_id C0BD7170519 sdt 0918001185
+ERROR 2019-05-17 10:38:53,854 1487851ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 13:09:51,115 87047ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:09:55,396 91328ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:09:56,036 91968ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:11:24,787 180719ms ServiceCenter          send_sms_citizen   - yeucau_id C34D2170519 sdt 0919254565
+ERROR 2019-05-17 13:11:29,521 185453ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 13:12:46,037 261969ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:12:49,771 265703ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:12:52,787 268719ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:12:52,834 268766ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:13:25,537 301469ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:13:28,459 304391ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:13:28,490 304422ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:14:13,537 349469ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:14:21,178 357110ms DangNhapController     Index              - do login...
+DEBUG 2019-05-17 13:14:21,178 357110ms DangNhapController     Index              - user not exist: bdcap2 pass C2C5CC0AC0E710C226ADD4F0925C8462
+INFO  2019-05-17 13:14:24,146 360078ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:14:24,193 360125ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:15:07,412 403344ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:15:14,678 410610ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:15:14,725 410657ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:16:34,272 490204ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:16:37,537 493469ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:16:37,584 493516ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:17:26,662 542594ms PhanAnhController      CapNhatKQTL        - nguoidung_id C34D2170519 yeucau_id dtv01 kqtl K/g anh,
+    Ho so cua a da duoc xu ly xong.
+INFO  2019-05-17 13:17:26,709 542641ms ServiceCenter          send_sms_citizen   - yeucau_id C34D2170519 sdt 0919254565
+ERROR 2019-05-17 13:17:27,147 543079ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 13:26:43,170 56432ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:26:46,108 59370ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:26:46,686 59948ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:28:25,592 158854ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:28:29,764 163026ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:28:29,811 163073ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:47:19,688 1292950ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:47:30,906 1304168ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:47:30,953 1304215ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:52:19,579 1592841ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:52:32,907 1606169ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:52:34,251 1607513ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:52:34,282 1607544ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:52:40,548 1613810ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:52:41,595 1614857ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:52:41,641 1614903ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:52:43,454 1616716ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:52:47,876 1621138ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:52:47,923 1621185ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 13:52:51,095 1624357ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 13:52:54,016 1627278ms DangNhapController     Index              - do login...
+INFO  2019-05-17 13:52:54,048 1627310ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 14:18:20,806 136812ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 14:18:28,916 144922ms DangNhapController     Index              - do login...
+INFO  2019-05-17 14:18:29,650 145656ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-05-17 14:24:23,963 499969ms PortalController       verifyCaptcha      - verifyCaptcha: from client 113.164.232.218
+DEBUG 2019-05-17 14:24:23,963 499969ms PortalController       verifyCaptcha      -   token: 03AOLTBLQdTKOPz6kMHol6HhEc7v205My9Jd6FV7dHiJUbHgAz-h9J3ktPKNc48WJFeI9y6g8EL4Hpbf-3B69ywA0SpT63tUfOyDei_T9v9usGjHeT6yxYO2zHIF7EDQAS9O8Vfan-niBsAOud-iRNwqcqkuUC4OWMdyj21dObkg8MtelV2ZI7GfrkdqIISsYfz8tDssbhFp1qgHaWA86D4dXFgtsAmd7bgp6dx8RYl7zbn5vPxGZwJ44A9Uyw9jJ6qtU2EeKS5MClWgENJ4ZOQwItmDyQBpFwzkX8Vmy1p3cFH6kjTBALpMVZRTMYOyzJuwa8n6CJV1eezooxcdxRdNXkkkoiXECDTg
+DEBUG 2019-05-17 14:24:23,963 499969ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-17 14:24:32,995 509000ms _PageTongHop           createRequest      - portal createRequest displayName Minh Ð?c, phoneNumber 0912112981 content Tôi xin h?i hình th?c gi?i quy?t TTHC qua h? th?ng buu di?n th?c hi?n th? nào?
+INFO  2019-05-17 14:27:40,464 696470ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 14:28:49,167 765173ms ServiceCenter          send_sms_citizen   - yeucau_id 9AC38170519 sdt 0912112981
+ERROR 2019-05-17 14:28:53,667 769673ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 14:29:16,464 792470ms DangNhapController     Index              - do login...
+INFO  2019-05-17 14:29:16,573 792579ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-05-17 14:30:49,745 885751ms PortalController       verifyCaptcha      - verifyCaptcha: from client 113.164.232.218
+DEBUG 2019-05-17 14:30:49,761 885767ms PortalController       verifyCaptcha      -   token: 03AOLTBLRf2HsqpYrq5_4tdfNhuQ8lmnN2P7mJFHu00W-POhCgcyVqo7WqohJWx5IjMFLfx2enpFj6H5IG_fQesXXOYuRDhUJdlswvW8aCOQX-MBf_-T-8nKG5Qjs1BZrA7RN1Ib_XyhLwrq8qcP69HR1_GQFzwlhfa75VsOJdyI1yViH1QndPWO7ml0ybOS7kZpSrn4q1ZP0sPD9tsN3GmR6k6yMg54IHBdZXhV5fjXCu5Nt9CGCkVi6u4kGtC37_9z8Ywy5kNxCuR-MIk96J0-AHZELh9wpfQvcQNlRivRV8OU-eZFaAt0Gk7xwi1SvcN342Zbk1XSRpuBt8kIx3z1-aRDlHeUj8Rg
+DEBUG 2019-05-17 14:30:49,761 885767ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+INFO  2019-05-17 14:33:21,121 1037127ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 14:33:32,183 1048189ms DangNhapController     Index              - do login...
+INFO  2019-05-17 14:33:32,215 1048220ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 14:36:47,496 1243502ms ServiceCenter          send_sms_citizen   - yeucau_id CED27170519 sdt 0912112981
+ERROR 2019-05-17 14:36:47,918 1243924ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-17 14:57:22,655 2478661ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 14:57:29,952 2485958ms DangNhapController     Index              - do login...
+INFO  2019-05-17 14:57:30,155 2486161ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 15:00:48,202 2684208ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 15:00:57,515 2693520ms DangNhapController     Index              - do login...
+INFO  2019-05-17 15:00:57,546 2693552ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 15:47:08,258 5464264ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 15:47:32,455 5488461ms DangNhapController     Index              - do login...
+DEBUG 2019-05-17 15:47:32,472 5488478ms DangNhapController     Index              - user not exist: tiepnhan1_soyet pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-17 15:47:53,300 5509306ms DangNhapController     Index              - do login...
+INFO  2019-05-17 15:47:53,409 5509415ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-17 15:49:15,052 5591057ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 15:49:16,936 5592942ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 15:49:16,936 5592942ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 15:49:17,455 5593461ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 16:30:05,113 536396ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-17 17:24:01,569   453ms DangNhapController     Index              - do login...
+INFO  2019-05-17 17:24:02,631  1515ms DangNhapController     Index              - do login...
+INFO  2019-05-17 17:24:07,694  6578ms HomeController         Index              - Enter Home/Index

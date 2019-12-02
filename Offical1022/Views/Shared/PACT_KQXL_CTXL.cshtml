@@ -1,0 +1,105 @@
+﻿@using WebUI
+@using HotlineCore
+
+<div class="panel panel-default">
+    <div class="panel-heading">Chi tiết xử lý</div>
+    <div class="panel-body">
+        <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.DIEN_THOAI_VIEN)" style="margin-top: 5px">
+            <div class="block bg-info">
+                <div class="">
+                    <h4><span class="label label-info">Cấp độ 1</span></h4>
+                    <div>
+                        <p>- Nội dung xử lý:</p>
+                        <p>
+                            <textarea :disabled="lock_edit_xuly_cap_1" class="form-control" v-model="noidung_c1_xuly" rows="5" spellcheck="false"></textarea>
+                        </p>
+                        <p>- Thời gian xử lý: <i>{{ tgian_c1_xuly | formatDate }}</i></p>
+                        <p v-if="c1_file_name != ''">
+                            - File đính kèm:
+                            <a class="btn btn-info" v-bind:href="downloadUrl_c1" target="_blank">Xem</a>
+                            <a href="#" v-on:click="askBeforeDeleteAttachmentLevel1()" v-if="!lock_edit_xuly_cap_1">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </p>
+                        <p>
+                            <div v-if="!lock_edit_xuly_cap_1 && (c1_file_name == '' || c1_file_name == null)" class="btn-upload-wrapper">
+                                <label for="c1_file_name" class="btn btn-primary">Tải lên tập tin</label>
+                                <input v-if="!lock_edit_xuly_cap_1" type="file" id="c1_file_name" name="c1_file_name" v-on:change="onFileChange" class="hiden-btn" />
+                            </div>
+                            @*<i v-if="user_capdo_id == 1">Chú ý: bạn chỉ có thể bổ sung tập tin đính kèm khi phiếu chưa bị đóng ( chưa xử lý xong )!</i>*@
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.CHUYEN_VIEN_BAN_NGANH)" style="margin-top: 5px">
+            <div class="block bg-success">
+                <div :disabled="phieu_dxl">
+                    <h4><span class="label label-success">Cấp độ 2</span></h4>
+                    <div>
+                        <p>- Đơn vị xử lý: <i>{{ donvi_c2_ten }}</i></p>
+                        <p>- Thời gian để xử lý từ <i>{{ tgian_c2_xuly_tu | formatDate }}</i> đến <i>{{ tgian_c2_xuly_den | formatDate }}</i></p>
+                        <p>- Thời gian xử lý: <i>{{ tgian_c2_xuly | formatDate }}</i></p>
+                        <p>- Nội dung xử lý: <i>{{ noidung_c2_xuly }}</i></p>
+                        <p v-if="c2_file_name!=''">
+                            - File đính kèm:
+                            <a class="btn btn-info" v-bind:href="downloadUrl_c2" target="_blank">Tệp tin</a>
+                            @*<a v-if="!phieu_dxl"  target="_blank">Tệp tin</a>*@
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.LANH_DAO_BAN_NGANH)" style="margin-top: 5px">
+            <div class="block bg-warning">
+                <div :disabled="phieu_dxl">
+                    <h4><span class="label label-warning">Cấp độ 3</span></h4>
+                    <div>
+                        <p>- Đơn vị xử lý: <i>{{ donvi_c3_ten }}</i></p>
+                        <p>- Thời gian để xử lý từ <i>{{ tgian_c2_xuly_den | formatDate }}</i> đến <i>{{ tgian_c3_xuly_den | formatDate }}</i></p>
+                        <p>- Thời gian xử lý: <i>{{ tgian_c3_xuly | formatDate }}</i></p>
+                        <p>- Nội dung xử lý: <i>{{ noidung_c3_xuly }}</i></p>
+                        <p v-if="c3_file_name!=''">
+                            - File đính kèm:
+                            <a v-bind:href="downloadUrl_c3" target="_blank">Tệp tin</a>
+                        </p>
+                        <p v-if="capdo_id === 3">
+                            <input v-if="!phieu_dxl" type="file" id="c3_file_name" name="c3_file_name" v-on:change="onFileChange" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.LANH_DAO_UY_BAN_NHAN_DAN)" style="margin-top: 5px">
+            <div class="block bg-danger">
+                <div>
+                    <h4><span class="label label-danger">Cấp độ 4</span></h4>
+                    <div>
+                        <p>- Đơn vị xử lý: <i>{{ donvi_c4_ten }}</i></p>
+                        <p>- Nội dung xử lý: <i>{{ noidung_c4_xuly }}</i></p>
+                        <p>- Thời gian xử lý: <i>{{ tgian_c4_xuly | formatDate }}</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div v-if="trangthai_id == @Html.Raw((int)TRANG_THAI_YEU_CAU.DA_XU_LY)">
+            <div class="block bg-info">
+                <div>
+                    <h4><span class="label label-danger">Kết quả trả lời cho người dân</span></h4>
+                    <i>Thông tin này sẽ hiển thị trên trang Cổng tiếp nhận cho người dân xem</i>
+                    <div v-if="userHasPermissionToEditAnswer">
+                        <textarea class="form-control" v-model="tra_loi_nguoi_dan" rows="10" spellcheck="false"></textarea>
+                        <p><i>Thời gian cập nhật KQTL gần đây nhất: {{ tra_loi_nguoi_dan_tgian  | formatDate}}</i></p>
+                        <br />
+                        <button class="btn btn-primary" v-on:click="capNhatKQTL()">Cập nhật kết quả trả lời người dân</button>
+                    </div>
+                    <div v-if="userHasPermissionToEditAnswer == false">
+                        <div style="background-color:#fff;padding:10px;border:1px solid #eee;" v-html="beautyAnswer(tra_loi_nguoi_dan)"></div>
+                        <p><i>Thời gian cập nhật KQTL gần đây nhất: {{ tra_loi_nguoi_dan_tgian  | formatDate}}</i></p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

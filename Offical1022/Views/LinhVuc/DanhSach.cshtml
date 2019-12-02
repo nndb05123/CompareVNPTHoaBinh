@@ -1,0 +1,261 @@
+﻿@using HotlineCore
+
+@{
+    ViewBag.Title = "Danh sách Lĩnh Vực";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+@section breadcrumb  {
+    <li class="active">Danh sách Lĩnh Vực</li>
+}
+
+@Html.Partial("DialogPleaseWait")
+
+<div id="MyApp1" class="row">
+    @*<div class="col-md-12">
+        <label>Đơn vị</label>
+        <select name="dsDonVi" v-model="selectedDonViID" v-on:change="donviChanged">
+            <option v-for="dv in dsDonVi" v-bind:key="dv.donvi_id" v-bind:value="dv.donvi_id">{{ dv.donvi_ten }}</option>
+        </select>
+    </div>*@
+    <div class="col-md-12">
+        <table>
+            <tr>
+                <td>
+                    @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                    {
+                        <a class="btn btn-primary btn-flat" v-on:click="showDialogAddNew">Thêm</a>
+                    }
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-12">
+        <table class="table table-bordered table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                    {
+                        <th>Thao tác</th>
+                    }
+                    <th>Tên</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item, index in dsLinhVuc">
+                    <td align="center">
+                        {{ index + 1 }}
+                    </td>
+
+
+                    @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                    {
+                        <td align="center" style="min-width:80px" >
+                            <a style="padding-left:10px;cursor:pointer" v-on:click="showDlgConfirmDelete(item)"><i class="fa fa-trash-o text-red"></i></a>
+                        </td>
+                        <td style="min-width:200px" v-on:click="showDialogEditLinhVuc(item)">{{ item.linhvuc_ten }}</td>
+                    }
+                    else
+                    {
+                        <td style="min-width:200px">{{ item.linhvuc_ten }}</td>
+                    }
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+@section Foot {
+    <script>
+        var MyApp1 = new Vue({
+            el: '#MyApp1',
+            data: {
+                //selectedDonViID: 1,
+                //dsDonVi: @Html.Raw(ViewBag.dsDonViTheoUser),
+                //dsDonViTheoLV: [],
+                dsLinhVuc: [],
+                dsLinhVuc_edit: [],
+                linhvuc_id_edit: 0,
+                linhvuc_ten_edit: '',
+                thongbao: '',
+                thanhcong: false,
+                loi: false
+            },
+            mounted() {
+                //this.donviChanged();
+            },
+            methods: {
+                //getDsDonVi: function () {
+                //    MyApp1.dsDonVi = [];
+                //   $.get("@Url.Action("GetDsDonVi", "DonVi", new { area = "" })", function (data) {
+                //        $.each(data, function (i, v) {
+                //            MyApp1.dsDonVi.push(v);
+                //        });
+                //        console.log(`[DONVI] ${data.length}`);
+                //    });
+                //},
+
+                //dvbyID: function (id) {
+                //    for (var i in MyApp1.dsDonVi) {
+                //        var dv = MyApp1.dsDonVi[i];
+                //        if (dv.donvi_id === id) return dv;
+                //    }
+                //    return null;
+                //},
+
+                //donviChanged: function () {
+                //    console.log(`donvi changed ${this.selectedDonViID}`);
+                //    this.getDsLinhVuc();
+                //},
+
+                getDsLinhVuc: function () {
+                    $.get("@Url.Action("getListLinhVuc", "LinhVuc",new { area = ""})",
+                        function (data) {
+                            var ls = [];
+                            $.each(data, function (i, v) {
+                                ls.push(v);
+                            });
+                            MyApp1.dsLinhVuc = ls;
+                            showSuccessNotification("Lấy danh sách lĩnh vực: Xong");
+                        });
+                },
+                //getDonViByID: function (dvid) {
+                //    for (var i in this.dsDonVi) {
+                //        if (this.dsDonVi[i].donvi_id === dvid) return this.dsDonVi[i];
+                //    }
+                //    return null;
+                //},
+                showDialogAddNew: function () {
+                    var objEditorModel = {
+                        type: 'add.new',
+                        //title: `[${this.getDonViByID(this.selectedDonViID).donvi_ten}] Thêm Lĩnh Vực`,
+                        title: `Thêm Lĩnh Vực`,
+                        msgTop: 'Chú ý: tránh trùng lặp tên lĩnh vực.',
+                        btnConfirmCaption: 'Lưu',
+                        fields: [
+                            { id: 'linhvuc_ten', caption: 'Tên lĩnh vực', type: 'textbox', value: '', placeholder: 'Nhập ở đây' }
+                        ]
+                    };
+
+                    showObjectEditor(objEditorModel, function (fields) {
+                        console.log('TODO: save new LinhVuc');
+                        //fields.donvi_id = MyApp1.selectedDonViID;
+                        console.log(fields);
+
+                        $.post("@Url.Action("SaveNew", "LinhVuc", new { area = "" })", fields, function (result) {
+                            if (result === 'ok') {
+                                closeObjectEditorDialog();
+                                showSuccessNotification(`Lĩnh vực "${fields.linhvuc_ten}" đã được lưu lên hệ thống!`);
+                                MyApp1.getDsLinhVuc();
+                            } else {
+                                showErrorNotification(`Lưu không thành công, xin thử lại!`);
+                            }
+                        });
+                    });
+                },
+
+
+
+                showDialogEditLinhVuc: function (linhvuc) {
+                    MyApp1.loi = false;
+                    MyApp1.thongbao = '';
+                    MyApp1.thanhcong = false;
+                    
+
+                    var objEditorModel = {
+                        type: 'edit',
+                        title: 'Chỉnh sửa Lĩnh Vực',
+                        btnConfirmCaption: 'Lưu',
+                        fields: [
+                            { type: 'textbox', id: 'linhvuc_ten', caption: 'Tên', value: linhvuc.linhvuc_ten }
+                            //{
+                            //    id: 'donvilist', caption: 'Đơn vị', type: 'option',
+                            //    src: MyApp1.dsDonVi,
+                            //    selected: linhvuc.donvi_id,
+                            //    key_id: 'donvi_id', key_text: 'donvi_ten'
+                            //},
+                        ]
+                    };
+
+                    showObjectEditor(objEditorModel, function (fields) {
+                        console.log(linhvuc);
+                        var postData = { linhvuc_id: linhvuc.linhvuc_id, linhvuc_ten: fields.linhvuc_ten };
+                        $.post("@Url.Action("Update", "LinhVuc")", postData, function (result) {
+                            closeObjectEditorDialog();
+                            if (result === "1") {
+                                linhvuc.linhvuc_ten = fields.linhvuc_ten;
+                                showSuccessNotification(`Đã đổi tên lĩnh vực thành "${fields.linhvuc_ten}"!`);
+                                MyApp1.getDsLinhVuc();
+                            }
+                            else if (result === "-1") {
+                                showErrorNotification(`Trùng tên với lĩnh vực khác!`);
+                            } else {
+                                showErrorNotification(`Lưu không thành công, xin thử lại!`);
+                            }
+                        });
+                    });
+                    @*$.post("@Url.Action("getdsDonVi", "LinhVuc", new { area = "" })", postData, function (data) {
+                        MyApp1.donvi_id_edit = data.donvi_id;
+                        MyApp1.donvi_ten_edit = data.donvi_ten;
+                        MyApp1.donvi_diachi_edit = data.donvi_diachi;
+                        MyApp1.donvi_website_edit = data.donvi_website;
+                        MyApp1.donvi_sdt_edit = data.donvi_sdt;
+                        MyApp1.donvi_cha_chon_edit = data.donvi_cha_id;
+                        MyApp1.capdo_chon_edit = data.capdo_id;
+                        $('#update').modal('show');
+                    });*@
+                },
+                capnhat: function () {
+                    MyApp1.loi = false;
+                    MyApp1.thongbao = '';
+                    MyApp1.thanhcong = false;
+                    @*var donvi_ten_edit = MyApp1.donvi_ten_edit;
+                    if (donvi_ten_edit.trim() == "") {
+                        MyApp1.loi = true;
+                        MyApp1.thongbao = 'Bạn chưa nhập tên đơn vị';
+                        return;
+                    }
+                    var postData = {
+                        donvi_id: MyApp1.donvi_id_edit,
+                        donvi_ten: MyApp1.donvi_ten_edit,
+                        donvi_diachi: MyApp1.donvi_diachi_edit,
+                        donvi_website: MyApp1.donvi_website_edit,
+                        donvi_sdt: MyApp1.donvi_sdt_edit,
+                        donvi_cha_id: MyApp1.donvi_cha_chon_edit,
+                        capdo_id: MyApp1.capdo_chon_edit
+                    };
+                    $.post("@Url.Action("capnhat", "DonVi")", postData, function (data) {
+                        if (data > 0) {
+                            MyApp1.thanhcong = true;
+                            MyApp1.thongbao = "Cập nhật thành công!";
+                            MyApp1.getDsDonVi();
+                        }
+                    });*@
+                },
+                showDlgConfirmDelete: function (lv) {
+                    showConfirmDialog(`Xóa Lĩnh Vực: ${lv.linhvuc_ten}`, 'Bạn có chắc muốn xóa không?', function () {
+                        closeConfirmDialog();
+                        MyApp1.doDeleteLinhVuc(lv);
+                    }, true);
+                },
+                doDeleteLinhVuc: function (lv) {
+                    var postData = { linhvuc_id: lv.linhvuc_id };
+                    showPleaseWaitDialog(`Xóa Lĩnh Vực: ${lv.linhvuc_ten}`, 'Đang xóa trên hệ thống, xin chờ giây lát...');
+                    $.post("@Url.Action("xoa", "LinhVuc")", postData, function (data) {
+                        //console.log(`delete LinhVuc ${data}`);
+                        MyApp1.getDsLinhVuc();
+                        closePleaseWaitDialog();
+                        showSuccessNotification(`Lĩnh vực [${lv.linhvuc_ten}] đã bị hủy trên hệ thống!`);
+                    });
+                }
+                //xoa: function (donvi_id) {
+                //    var postData = { donvi_id: donvi_id };
+                    @*$.post("@Url.Action("xoa", "DonVi", new { area = "" })", postData, function (data) {
+                        MyApp1.getDsDonVi();
+                    });*@
+                //}
+            }
+        })
+        MyApp1.getDsLinhVuc();
+    </script>
+}

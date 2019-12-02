@@ -1,0 +1,443 @@
+INFO  2019-05-29 11:59:47,821 11594ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1957
+INFO  2019-05-29 11:59:48,055 11828ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1957.wav
+INFO  2019-05-29 11:59:48,055 11828ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 11:59:48,055 11828ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\1957.wav
+ERROR 2019-05-29 11:59:48,055 11828ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:59:57,618 21391ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1956
+INFO  2019-05-29 11:59:57,634 21407ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1956.wav
+INFO  2019-05-29 11:59:57,634 21407ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 11:59:57,634 21407ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\1956.wav
+ERROR 2019-05-29 11:59:57,634 21407ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 12:19:21,633 1185406ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1957
+ERROR 2019-05-29 12:19:21,633 1185406ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 1957
+INFO  2019-05-29 12:19:25,555 1189328ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2230
+INFO  2019-05-29 12:19:25,571 1189344ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2230.wav
+INFO  2019-05-29 12:19:25,571 1189344ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:19:25,571 1189344ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\2230.wav
+INFO  2019-05-29 12:19:26,837 1190609ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2229
+INFO  2019-05-29 12:19:26,837 1190609ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2229.wav
+INFO  2019-05-29 12:19:26,837 1190609ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:19:26,837 1190609ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\2229.wav
+INFO  2019-05-29 12:19:27,540 1191313ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2228
+INFO  2019-05-29 12:19:27,555 1191328ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2228.wav
+INFO  2019-05-29 12:19:27,555 1191328ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:19:27,555 1191328ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\2228.wav
+INFO  2019-05-29 12:22:48,284 1392056ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2258
+ERROR 2019-05-29 12:22:48,284 1392056ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2258
+INFO  2019-05-29 12:22:50,815 1394588ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2259
+ERROR 2019-05-29 12:22:50,830 1394603ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2259
+INFO  2019-05-29 12:22:55,143 1398916ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2263
+INFO  2019-05-29 12:22:55,143 1398916ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2263.wav
+INFO  2019-05-29 12:22:55,143 1398916ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:22:55,143 1398916ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\2263.wav
+INFO  2019-05-29 12:22:56,284 1400057ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2264
+INFO  2019-05-29 12:22:56,284 1400057ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2264.wav
+INFO  2019-05-29 12:22:56,284 1400057ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:22:56,284 1400057ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\2264.wav
+INFO  2019-05-29 12:22:57,159 1400932ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2265
+INFO  2019-05-29 12:22:57,159 1400932ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2265.wav
+INFO  2019-05-29 12:22:57,159 1400932ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:22:57,159 1400932ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\2265.wav
+INFO  2019-05-29 12:23:00,753 1404526ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2263
+INFO  2019-05-29 12:23:00,753 1404526ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2263.wav
+INFO  2019-05-29 12:23:00,753 1404526ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:23:01,253 1405026ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2264
+INFO  2019-05-29 12:23:01,268 1405041ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2264.wav
+INFO  2019-05-29 12:23:01,268 1405041ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:01,690 1405463ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2265
+INFO  2019-05-29 12:23:01,706 1405479ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2265.wav
+INFO  2019-05-29 12:23:01,706 1405479ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:04,472 1408244ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2265
+INFO  2019-05-29 12:23:04,472 1408244ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2265.wav
+INFO  2019-05-29 12:23:04,472 1408244ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:04,909 1408682ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2264
+INFO  2019-05-29 12:23:04,909 1408682ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2264.wav
+INFO  2019-05-29 12:23:04,909 1408682ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:07,691 1411463ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2265
+INFO  2019-05-29 12:23:07,691 1411463ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2265.wav
+INFO  2019-05-29 12:23:07,691 1411463ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:08,050 1411823ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2264
+INFO  2019-05-29 12:23:08,066 1411838ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2264.wav
+INFO  2019-05-29 12:23:08,066 1411838ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:08,925 1412698ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2263
+INFO  2019-05-29 12:23:08,925 1412698ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2263.wav
+INFO  2019-05-29 12:23:08,925 1412698ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:23:14,503 1418276ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2264
+ERROR 2019-05-29 12:23:14,503 1418276ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2264
+INFO  2019-05-29 12:23:15,066 1418839ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2265
+ERROR 2019-05-29 12:23:15,066 1418839ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2265
+INFO  2019-05-29 12:23:18,676 1422448ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2264
+ERROR 2019-05-29 12:23:18,691 1422464ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2264
+INFO  2019-05-29 12:23:19,097 1422870ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2263
+ERROR 2019-05-29 12:23:19,097 1422870ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2263
+INFO  2019-05-29 12:23:29,145 1432917ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2268
+INFO  2019-05-29 12:23:29,160 1432933ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2268.wav
+INFO  2019-05-29 12:23:29,160 1432933ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:23:29,160 1432933ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\2268.wav
+INFO  2019-05-29 12:23:30,364 1434136ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:30,379 1434152ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:30,379 1434152ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:30,379 1434152ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\2269.wav
+INFO  2019-05-29 12:23:31,895 1435668ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:31,895 1435668ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:31,895 1435668ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:31,895 1435668ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\2270.wav
+INFO  2019-05-29 12:23:33,395 1437168ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:33,410 1437183ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:33,410 1437183ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:34,426 1438199ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2268
+INFO  2019-05-29 12:23:34,442 1438214ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2268.wav
+INFO  2019-05-29 12:23:34,442 1438214ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:23:34,895 1438668ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:34,895 1438668ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:34,895 1438668ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:35,661 1439433ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:35,676 1439449ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:35,676 1439449ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:36,067 1439840ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2268
+INFO  2019-05-29 12:23:36,067 1439840ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2268.wav
+INFO  2019-05-29 12:23:36,067 1439840ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:23:36,629 1440402ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:36,629 1440402ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:36,629 1440402ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:36,958 1440730ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:36,958 1440730ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:36,958 1440730ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:37,411 1441183ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2268
+INFO  2019-05-29 12:23:37,411 1441183ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2268.wav
+INFO  2019-05-29 12:23:37,411 1441183ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:23:37,911 1441684ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:37,911 1441684ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:37,911 1441684ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:38,208 1441980ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:38,223 1441996ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:38,223 1441996ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:38,520 1442293ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:38,520 1442293ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:38,520 1442293ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:39,067 1442840ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:39,083 1442855ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:39,083 1442855ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:39,380 1443152ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:39,380 1443152ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:39,380 1443152ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:39,645 1443418ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:39,645 1443418ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:39,645 1443418ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:40,411 1444184ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:40,426 1444199ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:40,426 1444199ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:40,677 1444449ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:40,677 1444449ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:40,677 1444449ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:41,458 1445231ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:41,458 1445231ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:41,458 1445231ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:41,755 1445527ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+INFO  2019-05-29 12:23:41,770 1445543ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2269.wav
+INFO  2019-05-29 12:23:41,770 1445543ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:23:42,067 1445840ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+INFO  2019-05-29 12:23:42,083 1445855ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2270.wav
+INFO  2019-05-29 12:23:42,083 1445855ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:23:42,364 1446137ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+ERROR 2019-05-29 12:23:42,364 1446137ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2269
+INFO  2019-05-29 12:23:42,645 1446418ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+ERROR 2019-05-29 12:23:42,645 1446418ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2270
+INFO  2019-05-29 12:23:42,942 1446715ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+ERROR 2019-05-29 12:23:42,942 1446715ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2269
+INFO  2019-05-29 12:24:17,381 1481154ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2270
+ERROR 2019-05-29 12:24:17,381 1481154ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2270
+INFO  2019-05-29 12:24:29,444 1493217ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2269
+ERROR 2019-05-29 12:24:29,460 1493233ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2269
+INFO  2019-05-29 12:24:40,789 1504561ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2280
+INFO  2019-05-29 12:24:40,789 1504561ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2280.wav
+INFO  2019-05-29 12:24:40,789 1504561ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:24:40,789 1504561ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\2280.wav
+INFO  2019-05-29 12:24:43,523 1507296ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2279
+ERROR 2019-05-29 12:24:43,523 1507296ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2279
+INFO  2019-05-29 12:24:44,976 1508749ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2278
+ERROR 2019-05-29 12:24:44,976 1508749ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2278
+INFO  2019-05-29 12:24:48,180 1511952ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2283
+INFO  2019-05-29 12:24:48,195 1511968ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2283.wav
+INFO  2019-05-29 12:24:48,195 1511968ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:24:48,195 1511968ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\2283.wav
+INFO  2019-05-29 12:24:58,102 1521875ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+INFO  2019-05-29 12:24:58,102 1521875ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2284.wav
+INFO  2019-05-29 12:24:58,117 1521890ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:24:58,117 1521890ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\2284.wav
+INFO  2019-05-29 12:25:00,071 1523843ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+INFO  2019-05-29 12:25:00,071 1523843ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2285.wav
+INFO  2019-05-29 12:25:00,071 1523843ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:25:00,071 1523843ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\2285.wav
+INFO  2019-05-29 12:25:01,883 1525656ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2283
+INFO  2019-05-29 12:25:01,899 1525672ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2283.wav
+INFO  2019-05-29 12:25:01,899 1525672ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:25:04,540 1528312ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+INFO  2019-05-29 12:25:04,540 1528312ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2284.wav
+INFO  2019-05-29 12:25:04,540 1528312ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:25:06,665 1530438ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+INFO  2019-05-29 12:25:06,665 1530438ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2285.wav
+INFO  2019-05-29 12:25:06,665 1530438ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:25:08,149 1531922ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2283
+INFO  2019-05-29 12:25:08,149 1531922ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2283.wav
+INFO  2019-05-29 12:25:08,149 1531922ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 12:25:09,118 1532891ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+INFO  2019-05-29 12:25:09,118 1532891ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2284.wav
+INFO  2019-05-29 12:25:09,118 1532891ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:25:09,743 1533516ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+INFO  2019-05-29 12:25:09,743 1533516ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2285.wav
+INFO  2019-05-29 12:25:09,743 1533516ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:25:10,290 1534063ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+INFO  2019-05-29 12:25:10,290 1534063ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2284.wav
+INFO  2019-05-29 12:25:10,290 1534063ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:25:10,587 1534360ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+INFO  2019-05-29 12:25:10,587 1534360ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2285.wav
+INFO  2019-05-29 12:25:10,587 1534360ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:25:11,071 1534844ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+INFO  2019-05-29 12:25:11,071 1534844ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2284.wav
+INFO  2019-05-29 12:25:11,071 1534844ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:25:11,556 1535328ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+INFO  2019-05-29 12:25:11,556 1535328ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2285.wav
+INFO  2019-05-29 12:25:11,556 1535328ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:25:12,290 1536063ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+INFO  2019-05-29 12:25:12,290 1536063ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2284.wav
+INFO  2019-05-29 12:25:12,290 1536063ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:25:12,806 1536578ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+INFO  2019-05-29 12:25:12,806 1536578ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2285.wav
+INFO  2019-05-29 12:25:12,806 1536578ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:25:13,071 1536844ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+INFO  2019-05-29 12:25:13,071 1536844ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2284.wav
+INFO  2019-05-29 12:25:13,071 1536844ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 12:25:13,290 1537063ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+INFO  2019-05-29 12:25:13,306 1537078ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2285.wav
+INFO  2019-05-29 12:25:13,306 1537078ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 12:25:13,524 1537297ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+ERROR 2019-05-29 12:25:13,524 1537297ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2284
+INFO  2019-05-29 12:25:13,743 1537516ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+ERROR 2019-05-29 12:25:13,743 1537516ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2285
+INFO  2019-05-29 12:25:14,009 1537782ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2284
+ERROR 2019-05-29 12:25:14,024 1537797ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2284
+INFO  2019-05-29 13:06:49,958   906ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2285
+ERROR 2019-05-29 13:06:55,380  6328ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 2285
+INFO  2019-05-29 13:25:59,930 1150878ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 13:26:09,962 1160910ms DangNhapController     Index              - do login...
+INFO  2019-05-29 13:26:10,868 1161816ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 13:26:30,525 1181473ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2888
+INFO  2019-05-29 13:26:30,541 1181489ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2888.wav
+INFO  2019-05-29 13:26:30,541 1181489ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 13:26:30,541 1181489ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\2888.wav
+INFO  2019-05-29 13:26:35,166 1186114ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2889
+INFO  2019-05-29 13:26:35,166 1186114ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2889.wav
+INFO  2019-05-29 13:26:35,166 1186114ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 13:26:35,166 1186114ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\2889.wav
+INFO  2019-05-29 13:26:39,557 1190505ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 2890
+INFO  2019-05-29 13:26:39,572 1190520ms PlayAudioController    GetAudioURL        - tmp download url: /dl/2890.wav
+INFO  2019-05-29 13:26:39,572 1190520ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 13:26:39,572 1190520ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\2890.wav
+INFO  2019-05-29 13:27:50,122 1261070ms ServiceCenter          send_sms_citizen   - yeucau_id 8500F290519 sdt 0918909966
+ERROR 2019-05-29 13:27:54,779 1265727ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 13:41:46,879 2097827ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 13:42:08,880 2119828ms DangNhapController     Index              - do login...
+INFO  2019-05-29 13:42:08,895 2119843ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 13:55:39,479 2930427ms ServiceCenter          send_sms_citizen   - yeucau_id FF85A290519 sdt 0918909966
+ERROR 2019-05-29 13:55:39,916 2930864ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 14:23:02,582 4573530ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3470
+INFO  2019-05-29 14:23:02,598 4573546ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3470.wav
+INFO  2019-05-29 14:23:02,598 4573546ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529135525.wav
+INFO  2019-05-29 14:23:02,598 4573546ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529135525.wav to c:\tmp\1022staticfiles\3470.wav
+INFO  2019-05-29 14:23:05,192 4576140ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3469
+ERROR 2019-05-29 14:23:05,192 4576140ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 3469
+INFO  2019-05-29 14:23:05,583 4576531ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3468
+ERROR 2019-05-29 14:23:05,583 4576531ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 3468
+INFO  2019-05-29 14:23:09,442 4580390ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3478
+INFO  2019-05-29 14:23:09,442 4580390ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3478.wav
+INFO  2019-05-29 14:23:09,442 4580390ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133705.wav
+INFO  2019-05-29 14:23:09,442 4580390ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133705.wav to c:\tmp\1022staticfiles\3478.wav
+INFO  2019-05-29 14:23:10,552 4581499ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3479
+INFO  2019-05-29 14:23:10,552 4581499ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3479.wav
+INFO  2019-05-29 14:23:10,552 4581499ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133855.wav
+INFO  2019-05-29 14:23:10,552 4581499ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133855.wav to c:\tmp\1022staticfiles\3479.wav
+INFO  2019-05-29 14:23:11,739 4582687ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3480
+INFO  2019-05-29 14:23:11,739 4582687ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3480.wav
+INFO  2019-05-29 14:23:11,739 4582687ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529134328.wav
+INFO  2019-05-29 14:23:11,739 4582687ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529134328.wav to c:\tmp\1022staticfiles\3480.wav
+INFO  2019-05-29 14:23:13,161 4584109ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3481
+INFO  2019-05-29 14:23:13,161 4584109ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3481.wav
+INFO  2019-05-29 14:23:13,161 4584109ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529135525.wav
+INFO  2019-05-29 14:23:13,161 4584109ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529135525.wav to c:\tmp\1022staticfiles\3481.wav
+INFO  2019-05-29 14:23:14,380 4585328ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3475
+INFO  2019-05-29 14:23:14,380 4585328ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3475.wav
+INFO  2019-05-29 14:23:14,380 4585328ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 14:23:14,380 4585328ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\3475.wav
+INFO  2019-05-29 14:23:15,333 4586281ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3476
+INFO  2019-05-29 14:23:15,349 4586297ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3476.wav
+INFO  2019-05-29 14:23:15,349 4586297ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 14:23:15,349 4586297ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\3476.wav
+INFO  2019-05-29 14:23:16,396 4587344ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3477
+INFO  2019-05-29 14:23:16,396 4587344ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3477.wav
+INFO  2019-05-29 14:23:16,396 4587344ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 14:23:16,396 4587344ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\3477.wav
+INFO  2019-05-29 14:23:17,271 4588219ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3478
+INFO  2019-05-29 14:23:17,271 4588219ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3478.wav
+INFO  2019-05-29 14:23:17,271 4588219ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133705.wav
+INFO  2019-05-29 14:39:39,393 5570341ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 14:39:44,941 5575889ms DangNhapController     Index              - do login...
+INFO  2019-05-29 14:39:44,987 5575935ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 14:41:15,570 5666518ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3860
+INFO  2019-05-29 14:41:15,570 5666518ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3860.wav
+INFO  2019-05-29 14:41:15,570 5666518ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 14:41:15,570 5666518ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\3860.wav
+INFO  2019-05-29 14:41:28,305 5679253ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3862
+INFO  2019-05-29 14:41:28,305 5679253ms PlayAudioController    GetAudioURL        - tmp download url: /dl/3862.wav
+INFO  2019-05-29 14:41:28,305 5679253ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 14:41:28,305 5679253ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\3862.wav
+INFO  2019-05-29 14:41:42,524 5693472ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 3865
+ERROR 2019-05-29 14:41:42,524 5693472ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 3865
+INFO  2019-05-29 14:43:35,466 5806414ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 14:55:29,452 6520400ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 14:55:37,046 6527994ms DangNhapController     Index              - do login...
+INFO  2019-05-29 14:55:37,077 6528025ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-05-29 15:11:57,141 7508089ms PortalController       verifyCaptcha      - verifyCaptcha: from client 192.168.3.254
+DEBUG 2019-05-29 15:11:57,141 7508089ms PortalController       verifyCaptcha      -   token: 03AOLTBLTEyPoe1jifYsjmw4bCan-vIRqxGNcEybKNiLwTcozk2gTefSJoJFDFjd0HJIUdIktm_jFz6ybt0we2D7MJxWouJT9pJ_ZUTQ9U6xjtouuej2dXJJoz5H10ZIrTiQq0GEa_6FTIAyuhSrzyDsWggg7QTfIijna9uOJ3u6jE1_NodXSj6bWeq9eH0p9WYcDSOcunZhNWpQ-v82wWcpHaxKu30JVoyEBxkyMFFq5mo7Wvdk5iMT_Gng4_0ggK8mKgd3gNU_YRTG07RpuE9TdR2K4S8wbNNALEtS8h-6uAtndzEtZVLypQhSWzLnLYq8hRWsNiTkd_ohdNapjoyj2bx3GK2pfgig
+DEBUG 2019-05-29 15:11:57,141 7508089ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-29 15:12:03,359 7514307ms _PageTongHop           createRequest      - portal createRequest displayName Huong, phoneNumber 0947857847 content H?i v? th? t?c sang tên nhà d?t test........................................
+INFO  2019-05-29 15:12:34,892 7545840ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 15:12:43,049 7553997ms DangNhapController     Index              - do login...
+INFO  2019-05-29 15:12:43,096 7554044ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 15:14:07,303 7638250ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 15:14:10,240 7641188ms DangNhapController     Index              - do login...
+INFO  2019-05-29 15:14:10,287 7641235ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 15:14:45,804 7676752ms ServiceCenter          send_sms_citizen   - yeucau_id ADD09290519 sdt 0918909966
+ERROR 2019-05-29 15:14:50,695 7681643ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 15:16:02,464 7753412ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 15:16:12,964 7763912ms DangNhapController     Index              - do login...
+INFO  2019-05-29 15:16:12,996 7763944ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 15:16:55,013 7805961ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 4630
+INFO  2019-05-29 15:16:55,029 7805977ms PlayAudioController    GetAudioURL        - tmp download url: /dl/4630.wav
+INFO  2019-05-29 15:16:55,029 7805977ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 15:16:55,029 7805977ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\4630.wav
+INFO  2019-05-29 15:17:08,483 7819431ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 4631
+INFO  2019-05-29 15:17:08,483 7819431ms PlayAudioController    GetAudioURL        - tmp download url: /dl/4631.wav
+INFO  2019-05-29 15:17:08,483 7819431ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 15:17:08,483 7819431ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\4631.wav
+INFO  2019-05-29 15:17:21,327 7832275ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 4632
+ERROR 2019-05-29 15:17:21,342 7832290ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 4632
+INFO  2019-05-29 15:17:37,046 7847994ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 4647
+INFO  2019-05-29 15:17:37,046 7847994ms PlayAudioController    GetAudioURL        - tmp download url: /dl/4647.wav
+INFO  2019-05-29 15:17:37,046 7847994ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529135525.wav
+INFO  2019-05-29 15:17:37,046 7847994ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529135525.wav to c:\tmp\1022staticfiles\4647.wav
+INFO  2019-05-29 15:17:40,515 7851463ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 4646
+INFO  2019-05-29 15:17:40,515 7851463ms PlayAudioController    GetAudioURL        - tmp download url: /dl/4646.wav
+INFO  2019-05-29 15:17:40,515 7851463ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529134328.wav
+INFO  2019-05-29 15:17:40,515 7851463ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529134328.wav to c:\tmp\1022staticfiles\4646.wav
+INFO  2019-05-29 15:17:43,015 7853963ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 4645
+INFO  2019-05-29 15:17:43,015 7853963ms PlayAudioController    GetAudioURL        - tmp download url: /dl/4645.wav
+INFO  2019-05-29 15:17:43,015 7853963ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133855.wav
+INFO  2019-05-29 15:17:43,015 7853963ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133855.wav to c:\tmp\1022staticfiles\4645.wav
+INFO  2019-05-29 15:17:45,156 7856104ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 4644
+ERROR 2019-05-29 15:17:45,172 7856120ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 4644
+INFO  2019-05-29 15:17:47,656 7858604ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 4643
+ERROR 2019-05-29 15:17:47,656 7858604ms PlayAudioController    GetAudioURL        - ERROR: audio not exist in table YeuCauFile for cache id 4643
+INFO  2019-05-29 15:18:52,159 7923107ms ServiceCenter          send_sms_citizen   - yeucau_id 40E42290519 sdt 0947857847
+ERROR 2019-05-29 15:18:52,581 7923529ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 16:18:28,189 11499137ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 16:18:35,033 11505980ms DangNhapController     Index              - do login...
+INFO  2019-05-29 16:18:35,064 11506012ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 16:56:11,769 13762717ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 16:56:25,176 13776124ms DangNhapController     Index              - do login...
+INFO  2019-05-29 16:56:25,207 13776155ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 16:57:27,100 13838048ms ServiceCenter          send_sms_citizen   - yeucau_id 609AE290519 sdt 0918909966
+ERROR 2019-05-29 16:57:31,772 13842720ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 17:25:58,925 15549873ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 17:26:01,378 15552326ms DangNhapController     Index              - do login...
+INFO  2019-05-29 17:26:01,472 15552420ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 17:26:13,660 15564608ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1176
+INFO  2019-05-29 17:26:13,675 15564623ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1176.wav
+INFO  2019-05-29 17:26:13,675 15564623ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 17:26:13,675 15564623ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\1176.wav
+INFO  2019-05-29 17:26:14,801 15565749ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1177
+INFO  2019-05-29 17:26:14,801 15565749ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1177.wav
+INFO  2019-05-29 17:26:14,801 15565749ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 17:26:14,801 15565749ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\1177.wav
+INFO  2019-05-29 17:26:15,707 15566655ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1178
+INFO  2019-05-29 17:26:15,722 15566670ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1178.wav
+INFO  2019-05-29 17:26:15,722 15566670ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 17:26:15,722 15566670ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\1178.wav
+INFO  2019-05-29 17:26:16,644 15567592ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1179
+INFO  2019-05-29 17:26:16,644 15567592ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1179.wav
+INFO  2019-05-29 17:26:16,644 15567592ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133705.wav
+INFO  2019-05-29 17:26:16,644 15567592ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133705.wav to c:\tmp\1022staticfiles\1179.wav
+INFO  2019-05-29 17:26:17,395 15568342ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1180
+INFO  2019-05-29 17:26:17,395 15568342ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1180.wav
+INFO  2019-05-29 17:26:17,395 15568342ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133855.wav
+INFO  2019-05-29 17:26:17,395 15568342ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529133855.wav to c:\tmp\1022staticfiles\1180.wav
+INFO  2019-05-29 17:26:18,082 15569030ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1181
+INFO  2019-05-29 17:26:18,082 15569030ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1181.wav
+INFO  2019-05-29 17:26:18,082 15569030ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529134328.wav
+INFO  2019-05-29 17:26:18,082 15569030ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529134328.wav to c:\tmp\1022staticfiles\1181.wav
+INFO  2019-05-29 17:26:18,988 15569936ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1182
+INFO  2019-05-29 17:26:18,988 15569936ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1182.wav
+INFO  2019-05-29 17:26:18,988 15569936ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529135525.wav
+INFO  2019-05-29 17:26:19,004 15569952ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\29\16-209-A-90918909966---20190529135525.wav to c:\tmp\1022staticfiles\1182.wav
+INFO  2019-05-30 07:36:08,034 66558982ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 07:36:09,425 66560373ms DangNhapController     Index              - do login...
+INFO  2019-05-30 07:36:09,471 66560419ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 07:49:29,258 67360206ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 07:49:36,008 67366956ms DangNhapController     Index              - do login...
+INFO  2019-05-30 07:49:36,086 67367034ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 07:51:03,684 67454632ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 07:51:05,840 67456788ms DangNhapController     Index              - do login...
+INFO  2019-05-30 07:51:05,871 67456819ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 07:57:01,042 67811990ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 07:57:01,151 67812099ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 07:57:01,167 67812115ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 07:57:01,167 67812115ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 07:57:01,167 67812115ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 07:59:58,823 67989771ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 08:00:00,792 67991740ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 08:00:06,277 67997225ms DangNhapController     Index              - do login...
+INFO  2019-05-30 08:00:06,324 67997272ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 08:00:43,669 68034617ms DangNhapController     Index              - do login...
+INFO  2019-05-30 08:00:43,685 68034633ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 08:02:16,345 68127293ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 08:02:18,080 68129028ms DangNhapController     Index              - do login...
+INFO  2019-05-30 08:02:18,095 68129043ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 08:02:28,549 68139497ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 08:02:38,799 68149747ms DangNhapController     Index              - do login...
+INFO  2019-05-30 08:02:38,815 68149763ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 08:03:03,535 68174483ms ServiceCenter          send_sms_citizen   - yeucau_id 4BD54300519 sdt 0918909966
+ERROR 2019-05-30 08:03:08,004 68178952ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 08:05:04,494 68295442ms ServiceCenter          send_sms_citizen   - yeucau_id CFE60300519 sdt 0942628680
+ERROR 2019-05-30 08:05:04,915 68295863ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 08:20:17,299 69208247ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 08:20:21,878 69212826ms DangNhapController     Index              - do login...
+INFO  2019-05-30 08:20:21,924 69212872ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 08:20:39,597 69230545ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14219
+INFO  2019-05-30 08:20:39,597 69230545ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14219.wav
+INFO  2019-05-30 08:20:39,597 69230545ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90942628680---20190530080404.wav
+INFO  2019-05-30 08:20:39,597 69230545ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90942628680---20190530080404.wav to c:\tmp\1022staticfiles\14219.wav
+INFO  2019-05-30 08:32:21,124 69932072ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14233
+INFO  2019-05-30 08:32:21,140 69932088ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14233.wav
+INFO  2019-05-30 08:32:21,140 69932088ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90942628680---20190530080404.wav
+INFO  2019-05-30 08:32:21,140 69932088ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90942628680---20190530080404.wav to c:\tmp\1022staticfiles\14233.wav
+INFO  2019-05-30 08:32:24,906 69935854ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14232
+INFO  2019-05-30 08:32:24,906 69935854ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14232.wav
+INFO  2019-05-30 08:32:24,906 69935854ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90918909966---20190530080239.wav
+INFO  2019-05-30 08:32:24,906 69935854ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90918909966---20190530080239.wav to c:\tmp\1022staticfiles\14232.wav
+INFO  2019-05-30 08:32:32,261 69943209ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14232
+INFO  2019-05-30 08:32:32,261 69943209ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14232.wav
+INFO  2019-05-30 08:32:32,261 69943209ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90918909966---20190530080239.wav
+INFO  2019-05-30 08:39:07,749 70338697ms ServiceCenter          send_sms_citizen   - yeucau_id E83FD300519 sdt 0918909966
+ERROR 2019-05-30 08:39:12,359 70343307ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 08:40:14,268 70405216ms ServiceCenter          send_sms_citizen   - yeucau_id 48158300519 sdt 0918909966
+ERROR 2019-05-30 08:40:14,705 70405653ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 08:41:51,663 70502611ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14268
+INFO  2019-05-30 08:41:51,663 70502611ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14268.wav
+INFO  2019-05-30 08:41:51,678 70502626ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90942628680---20190530080404.wav
+INFO  2019-05-30 08:41:51,678 70502626ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\30\16-209-A-90942628680---20190530080404.wav to c:\tmp\1022staticfiles\14268.wav

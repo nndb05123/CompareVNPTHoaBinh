@@ -1,0 +1,17 @@
+INFO  2019-07-18 07:30:46,764   296ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-18 07:30:58,264 11796ms DangNhapController     Index              - do login...
+INFO  2019-07-18 07:30:59,108 12640ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-18 07:36:33,249 346781ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-18 07:36:36,624 350156ms DangNhapController     Index              - do login...
+INFO  2019-07-18 07:36:36,655 350187ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-18 15:09:15,561   265ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-18 15:09:15,561   265ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-18 15:09:27,514 12218ms DangNhapController     Index              - do login...
+INFO  2019-07-18 15:09:28,421 13125ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-18 15:57:03,764   250ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-18 16:32:40,624 618421ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-18 16:32:47,280 625078ms DangNhapController     Index              - do login...
+INFO  2019-07-18 16:32:48,358 626156ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-18 20:31:55,608   250ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-18 20:32:03,967  8609ms DangNhapController     Index              - do login...
+INFO  2019-07-18 20:32:05,108  9750ms HomeController         Index              - Enter Home/Index

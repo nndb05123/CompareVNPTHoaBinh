@@ -1,0 +1,443 @@
+﻿@{
+    ViewBag.Title = "Xử lý phản ánh - cấp độ 3";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <tr>
+                <td style="width: 60px">
+                    <label for="startDayString" class="control-label">Từ ngày</label>
+                </td>
+                <td style="width: 150px">
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right nhapngay input-sm" id="startDayString" data-bind="value: startDayString" />
+                    </div>
+                </td>
+                <td style="width: 70px">
+                    <label for="endDayString" class="control-label">Đến ngày</label>
+                </td>
+                <td style="width: 150px">
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right nhapngay input-sm" id="endDayString" data-bind="value: endDayString" />
+                    </div>
+                </td>
+                <td style="width: 80px">
+                    <label for="trangthai_id" class="control-label">Tình trạng</label>
+                </td>
+                <td style="width: 120px">
+                    <select id="trangthai_id" class="form-control input-sm" data-bind="value: trangthai_id">
+                        <option value="0">-Tất cả-</option>
+                        <option value="1">Đang xử lý</option>
+                        <option value="2">Chuyển sai đơn vị</option>
+                        <option value="3">Đã xử lý</option>
+                    </select>
+                </td>
+                <td style="width: 70px">
+                    <button type="button" class="btn btn-flat btn-default pull-right" data-bind="click: timkiem">Tìm kiếm</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-primary">
+            <div class="box-header ui-sortable-handle" style="cursor: move;">
+                <i class="ion ion-clipboard"></i>
+                <h3 class="box-title">Danh sách chi tiết</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table id="dgTiepNhan" class="table table-bordered table-striped">
+                    <tr>
+                        <th></th>
+                        <th>Mã YC</th>
+                        <th>TGian</th>
+                        <th>Họ tên</th>
+                        <th>SĐT</th>
+                        <th>Nội dung</th>
+                        <th>Lĩnh vực</th>
+                        <th>Cấp độ</th>
+                        <th>Đơn vị</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                    <tbody data-bind="foreach: DsTiepNhan">
+                        <tr>
+                            <td align="center"><a style="cursor:pointer" data-bind="click: $parent.showModal"><i class="fa fa-edit text-blue"></i></a></td>
+                            <td data-bind="text: yeucau_id"></td>
+                            <td data-bind="text: s_tgian_tiepnhan"></td>
+                            <td data-bind="text: nguoigoi_hoten"></td>
+                            <td data-bind="text: nguoigoi_sdt"></td>
+                            <td data-bind="text: yeucau_noidung"></td>
+                            <td data-bind="text: linhvuc_ten"></td>
+                            <td data-bind="text: capdo_ten"></td>
+                            <td data-bind="text: donvi_ten_dangxuly"></td>
+                            <td data-bind="visible: trangthai_id==3">
+                                <span class="label label-info">Đã xử lý</span>
+                            </td>
+                            <td data-bind="visible: trangthai_id==2">
+                                <span class="label label-warning">Sai đơn vị</span>
+                            </td>
+                            <td data-bind="visible: trangthai_id==1">
+                                <span class="label label-danger">Đang xử lý</span>
+                            </td>
+                            @*<td align="center"><a style="cursor:pointer" data-bind="click: $parent.xoa"><i class="fa fa-trash-o text-red"></i></a></td>*@
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal" id="update" role="dialog">
+    <div class="modal-dialog">
+        Modal content
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thông tin phản ánh</h4>
+            </div>
+            <div class="modal-body">
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_1" data-toggle="tab">Thông tin phản ánh</a></li>
+                        <li><a href="#tab_2" data-toggle="tab">Thông tin công dân</a></li>
+                        <li><a href="#tab_3" data-toggle="tab">Trạng thái xử lý</a></li>
+                        <li><a href="#tab_4" data-toggle="tab">Lịch sử tác động</a></li>
+                    </ul>
+                    <div class="tab-content" style="font-family: Tahoma; font-family: 10px">
+                        <div class="tab-pane active" id="tab_1">
+                            <table class="table" style="width: 100%;">
+                                <tr>
+                                    <td style="width: 150px">
+                                        <label class="control-label">Mã tiếp nhận</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm text-bold" data-bind="value: yeucau_id_edit" readonly />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label">TG tiếp nhận</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: s_tgian_tiepnhan_edit" readonly />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label">Nội dung phản ánh</label>
+                                    </td>
+                                    <td>
+                                        <textarea class="form-control input-sm" data-bind="value: yeucau_noidung_edit" rows="10" spellcheck="false"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label">Lĩnh vực</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: linhvuc_ten_edit" readonly />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label">Tiếp nhận bởi</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: kenhtn_ten_edit" readonly />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="tab_2">
+                            <table class="table" style="width: 100%">
+                                <tr>
+                                    <td style="width: 80px">
+                                        <label class="control-label">Họ tên</label>
+                                    </td>
+                                    <td colspan="5">
+                                        <input type="text" class="form-control input-sm" data-bind="value: nguoigoi_hoten_edit" readonly />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label">Số ĐT</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: nguoigoi_sdt_edit" readonly />
+                                    </td>
+                                    <td>
+                                        <label class="control-label">Email</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: nguoigoi_email_edit" readonly />
+                                    </td>
+                                    <td>
+                                        <label class="control-label">CMND</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: nguoigoi_cmnd_edit" readonly />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label">Địa chỉ</label>
+                                    </td>
+                                    <td colspan="5">
+                                        <input type="text" class="form-control input-sm" data-bind="value: nguoigoi_diachi_edit" readonly />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label">Phường</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: phuong_ten_edit" readonly />
+                                    </td>
+                                    <td>
+                                        <label class="control-label">Huyện/TP</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: huyen_ten_edit" readonly />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label">Mạng XH</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: mangxh_id_edit" readonly />
+                                    </td>
+                                    <td>
+                                        <label class="control-label">Nickname</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control input-sm" data-bind="value: nguoigoi_nickname_edit" readonly />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="tab_3">
+                            <table class="table" style="width: 100%">
+                                <tr>
+                                    <td style="width: 150px">
+                                        <label>Tình trạng xử lý</label>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm bg-purple btn-flat margin" data-bind="html: trangthai_ten_edit"></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Cấp độ đang xử lý</label>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm bg-maroon btn-flat margin" data-bind="html: capdo_dangxuly_edit"></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Đơn vị đang xử lý</label>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn bg-olive btn-flat margin" data-bind="html: donvi_ten_dangxuly_edit"></button>
+                                        <i><span data-bind="html: s_capdo_dangxuly_xem"></span></i>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="tab_4">
+                            <table id="dgTacDong" class="table" style="width: 100%">
+                                <thead>
+                                    <tr>
+                                        <th>Cấp độ</th>
+                                        <th>Đơn vị</th>
+                                        <th>TG nhận</th>
+                                        <th>Đã xem</th>
+                                        <th>TG xem</th>
+                                        <th>Trạng thái</th>
+                                        <th>Nội dung xử lý</th>
+                                        <th>TG tác động</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach: DsTacDong">
+                                    <tr>
+                                        <td data-bind="text: capdo_id"></td>
+                                        <td data-bind="text: donvi_ten"></td>
+                                        <td data-bind="text: s_tgian_tiepnhan"></td>
+                                        <td data-bind="text: xem"></td>
+                                        <td data-bind="text: s_tgian_xem"></td>
+                                        <td data-bind="text: trangthai_ten"></td>
+                                        <td data-bind="text: noidung_xuly"></td>
+                                        <td data-bind="text: s_tgian_tacdong"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table" style="width: 100%">
+                            <tr>
+                                <td style="width: 120px">
+                                    <label id="noidung_xuly_edit" class="control-label">
+                                        Nội dung xử lý:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input id="noidung_xuly_edit" type="text" class="form-control input-sm" data-bind="value: noidung_xuly_edit" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button type="button" class="btn btn-default btn-sm pull-right" data-dismiss="modal"> Đóng</button>
+                        <button type="button" class="btn btn-primary btn-sm pull-right" data-bind="click : capnhat"> Xác nhận Đã xử lý</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+@section Foot {
+    <script>
+        var viewModel = {
+            self: this,
+            DsTiepNhan: ko.observableArray(),
+            DsTacDong: ko.observableArray(),
+            startDayString: ko.observable('@ViewBag.startDayString'),
+            endDayString: ko.observable('@ViewBag.endDayString'),
+            trangthai_id: ko.observable(0),
+
+            yeucau_id_edit: ko.observable(),
+            s_tgian_tiepnhan_edit: ko.observable(),
+            yeucau_noidung_edit: ko.observable(),
+            nguoigoi_hoten_edit: ko.observable(),
+            nguoigoi_sdt_edit: ko.observable(),
+            nguoigoi_email_edit: ko.observable(),
+            nguoigoi_cmnd_edit: ko.observable(),
+            nguoigoi_nickname_edit: ko.observable(),
+            mangxh_id_edit: ko.observable(),
+            nguoigoi_diachi_edit: ko.observable(),
+            huyen_ten_edit: ko.observable(),
+            phuong_ten_edit: ko.observable(),
+            linhvuc_ten_edit: ko.observable(),
+            kenhtn_ten_edit: ko.observable(),
+            capdo_dangxuly_edit: ko.observable(),
+            donvi_ten_dangxuly_edit: ko.observable(),
+            trangthai_ten_edit: ko.observable(),
+            s_capdo_dangxuly_xem: ko.observable(),
+            noidung_xuly_edit: ko.observable(),
+            timkiem: function () {
+                viewModel.DsTiepNhan.removeAll();
+                $.ajax({
+                    type: 'POST',
+                    url: "@Url.Action("GetDsXuLyC3", "XuLy", new { area = "" })",
+                    data: {
+                        startDayString: viewModel.startDayString(),
+                        endDayString: viewModel.endDayString(),
+                        trangthai_id: viewModel.trangthai_id()
+                    }
+                }).done(function (data) {
+                    $(data).each(function (index, element) {
+                        viewModel.DsTiepNhan.push(element);
+                    });
+                }).error(function (ex) {
+                    //alert("Error");
+                });
+            },
+            showModal: function () {
+                //noi dung phan anh
+                $.ajax({
+                    type: 'POST',
+                    url: "@Url.Action("GetThongTin", "XuLy", new { area = "" })",
+                    data: {
+                        yeucau_id: this.yeucau_id,
+                        yeucau_ct_id: this.yeucau_ct_id
+                    }
+                }).done(function (data) {
+                    viewModel.yeucau_id_edit(data.yeucau_id);
+                    viewModel.s_tgian_tiepnhan_edit(data.s_tgian_tiepnhan);
+                    viewModel.yeucau_noidung_edit(data.yeucau_noidung);
+                    viewModel.nguoigoi_hoten_edit(data.nguoigoi_hoten);
+                    viewModel.nguoigoi_sdt_edit(data.nguoigoi_sdt);
+                    viewModel.nguoigoi_email_edit(data.nguoigoi_email);
+                    viewModel.nguoigoi_cmnd_edit(data.nguoigoi_cmnd);
+                    viewModel.nguoigoi_nickname_edit(data.nguoigoi_nickname);
+                    viewModel.mangxh_id_edit(data.nguoigoi_mangxh_id);
+                    viewModel.nguoigoi_diachi_edit(data.nguoigoi_diachi);
+                    viewModel.huyen_ten_edit(data.huyen_ten);
+                    viewModel.phuong_ten_edit(data.phuong_ten);
+                    viewModel.linhvuc_ten_edit(data.linhvuc_ten);
+                    viewModel.kenhtn_ten_edit(data.kenhtn_ten);
+                    viewModel.capdo_dangxuly_edit(data.capdo_dangxuly);
+                    viewModel.donvi_ten_dangxuly_edit(data.donvi_ten_dangxuly);
+                    viewModel.trangthai_ten_edit(data.trangthai_ten);
+                    viewModel.s_capdo_dangxuly_xem(data.s_capdo_dangxuly_xem);
+                    $('#update').modal('show');
+                }).error(function (ex) {
+                    //alert("Error");
+                });
+                //lich su tac dong
+                viewModel.DsTacDong.removeAll();
+                $.ajax({
+                    type: 'POST',
+                    url: "@Url.Action("GetThongTinChiTiet", "TiepNhan", new { area = "" })",
+                    data: {
+                        yeucau_id: this.yeucau_id
+                    }
+                }).done(function (data) {
+                    $(data).each(function (index, element) {
+                        viewModel.DsTacDong.push(element);
+                    });
+                }).error(function (ex) {
+                    //alert("Error");
+                });
+            },
+            capnhat: function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "@Url.Action("HoanTatC3", "XuLy", new { area = "" })",
+                    data: {
+                        yeucau_id: viewModel.yeucau_id_edit(),
+                        noidung_xuly: viewModel.noidung_xuly_edit()
+                    }
+                }).done(function (data) {
+                    alert(data);
+                    $('#update').modal('hide');
+                    viewModel.timkiem();
+                }).error(function (ex) {
+                    //alert("Error");
+                });
+            }
+        }
+        ko.applyBindings(viewModel);
+        viewModel.timkiem();
+        $(document).ready(function () {
+            $('.nhapngay').datepicker({
+                autoclose: true,
+                format: 'dd/mm/yyyy'
+            });
+        });
+    </script>
+}

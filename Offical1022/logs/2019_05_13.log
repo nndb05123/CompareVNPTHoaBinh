@@ -1,0 +1,29 @@
+INFO  2019-05-13 19:03:50,133 18453ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-13 19:03:52,273 20593ms DangNhapController     Index              - do login...
+INFO  2019-05-13 19:03:52,945 21265ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-13 19:04:06,852 10828ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-05-13 19:05:46,353 110329ms PortalController       verifyCaptcha      - verifyCaptcha: from client 113.161.144.222
+DEBUG 2019-05-13 19:05:46,353 110329ms PortalController       verifyCaptcha      -   token: 03AOLTBLTehrk9EOqV6HMV2DukWyPIDvAkPgW0E_O4S-kEYM66mqU-Pl6jIelCIZggtSlW0blblzX-AQ-p13IywXLtLdz4R-e1Ad-ikiSMJw0p_4Kvj5TeLwQGCVVRFXv5j9zKzT2rqp6CFY7w-7c8wlezeQBP7LNnZ-WCmLZys28tRPIrbR2845PSUxSIjTO7vWxd6YUly74PIleuQXN1e9pYPM0yNQKSy_ap0bxtGp6MjwuLQ0jETx4bEhBtdfPWf1R_C6VZZw4v9lZZunxlEglYOgDSh8tSD_TVmpTbP_xg3wEiyYESVJWqwtVgMvDM5JiOf3qYQrSt7xO18CJ-AAWfAcTNmOdX5Q
+DEBUG 2019-05-13 19:05:46,353 110329ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-13 19:05:48,212 112188ms _PageTongHop           createRequest      - portal createRequest displayName Ng Van A, phoneNumber 0919112233 content Lorem ipsum dolor sit amet, an tantas virtute duo, quando phaedrum id ius, suas commodo feugait nam ex. 
+Vel et soluta vituperatoribus, eius saepe nominati duo et, dictas phaedrum repudiandae cu mea. 
+Ut pro nullam dicunt propriae, at est praesent mnesarchum. 
+
+Lorem ipsum dolor sit amet, an tantas virtute duo, quando phaedrum id ius, suas commodo feugait nam ex. 
+Vel et soluta vituperatoribus, eius saepe nominati duo et, dictas phaedrum repudiandae cu mea. 
+Ut pro nullam dicunt propriae, at est praesent mnesarchum.
+INFO  2019-05-13 19:24:05,953 1209929ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-13 19:24:07,750 1211726ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-13 19:24:13,359 1217335ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-13 19:24:20,531 1224507ms DangNhapController     Index              - do login...
+DEBUG 2019-05-13 19:24:20,562 1224538ms DangNhapController     Index              - user not exist: admin pass C2C5CC0AC0E710C226ADD4F0925C8462
+INFO  2019-05-13 19:24:22,391 1226367ms DangNhapController     Index              - do login...
+INFO  2019-05-13 19:24:22,453 1226429ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-13 19:24:38,672 1242648ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-13 19:24:44,281 1248257ms DangNhapController     Index              - do login...
+DEBUG 2019-05-13 19:24:44,281 1248257ms DangNhapController     Index              - user not exist: bhxhc2 pass 21232F297A57A5A743894A0E4A801FC3
+INFO  2019-05-13 19:24:49,266 1253242ms DangNhapController     Index              - do login...
+INFO  2019-05-13 19:24:49,313 1253289ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-13 19:25:14,328 1278304ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-13 19:25:17,125 1281101ms DangNhapController     Index              - do login...
+INFO  2019-05-13 19:25:17,172 1281148ms HomeController         Index              - Enter Home/Index

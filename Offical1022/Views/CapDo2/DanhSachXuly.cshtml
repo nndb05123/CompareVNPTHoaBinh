@@ -1,0 +1,1171 @@
+﻿@using WebUI
+@using HotlineCore
+
+@{
+    ViewBag.Title = "Xử lý cấp độ 2";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<!--Anh Linh - PlayList -->
+@Html.Partial("GhiAmPlayListDialog")
+<!--Anh Linh - PlayList -->
+@Html.Partial("DialogPleaseWait")
+
+
+<div id="MyApp" class="row">
+    @*<div class="col-md-12">
+            <div class="btn btn-default" v-on:click="clickEnableFilter">Bộ lọc</div><br />
+            <div v-if="enableFilter == 1" class="form-group">
+                <div class="col-md-3">
+                    <label class="control-label">{{ listFilter[0].VALUE }}</label>
+                    <select v-model="condition0" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[0]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="control-label">{{ listFilter[1].VALUE }}</label>
+                    <select v-model="condition1" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[1]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="control-label">{{ listFilter[2].VALUE }}</label>
+                    <select v-model="condition2" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[2]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="control-label">{{ listFilter[3].VALUE }}</label>
+                    <select v-model="condition3" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[3]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="control-label">{{ listFilter[4].VALUE }}</label>
+                    <select v-model="condition4" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[4]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="control-label">{{ listFilter[5].VALUE }}</label>
+                    <select v-model="condition5" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[5]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="control-label">{{ listFilter[7].VALUE }}</label>
+                    <select v-model="condition7" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[7]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="control-label">{{ listFilter[8].VALUE }}</label>
+                    <select v-model="condition8" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[8]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+            </div>
+            <form class="form-group">
+                <label for="startDayString" class="control-label">Từ ngày</label>
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right nhapngay" id="startDayString" v-model="startDayString" />
+                </div>
+                <label for="endDayString" class="control-label">Đến ngày</label>
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right nhapngay" id="endDayString" v-model="endDayString" />
+                </div>
+                <br />
+                <button type="button" class="btn btn-primary" v-on:click="locDuLieu">Lọc dữ liệu</button>
+            </form>
+        </div>*@
+    @Html.Partial("FilterPanel")
+
+    <div class="col-md-12" v-if="hasRedirectCall" style="margin: 6px; padding: 6px; background-color:#ffc9c9;">
+        <div>
+            <label style="color:#f00">Các cuộc gọi đang chuyển đến bạn xử lý:</label>
+        </div>
+
+        <button class="btn btn-info" v-for="call in redirectCalls" v-on:click="showModal(call.yeucau_id)">Xem phản ánh của SĐT: {{call.sdt}}</button>
+    </div>
+
+    <div class="col-md-12">
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-pills mynav">
+                <li class="active"><a href="#tab_dang_xu_ly" data-toggle="tab"><strong class="text-primary">Đang xử lý<span>({{ dsDangXuLy.length}})</span></strong></a></li>
+                <li><a href="#tab_sai_don_vi" data-toggle="tab"><strong class="text-success">Sai đơn vị<span>({{ dsSaiDonVi.length}})</span></strong></a></li>
+                <li><a href="#tab_dang_phoi_hop_xu_ly" data-toggle="tab"><strong class="text-warning">Đang phối hợp xử lý<span>({{ dsPhoiHop.length}})</span></strong></a></li>
+                <li><a href="#tab_da_xu_ly" data-toggle="tab"><strong class="text-danger">Đã xử lý<span>({{ dsDaXuLy.length}})</span></strong></a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_dang_xu_ly">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th><i class="fa fa-edit text-white"></i></th>
+                            <th>Cấp độ</th>
+                            <th>Mã YC</th>
+                            <th>Thời gian</th>
+                            <th>Họ tên</th>
+                            <th>SĐT</th>
+                            <th>Nội dung</th>
+                            <th>Loại YC</th>
+                            <th>Lĩnh vực</th>
+                            <th>Đ.vị đang xử lý</th>
+                            <th>Điện thoại viên</th>
+                            @*<th>Đã gọi kiểm?</th>*@
+                            <th><img src="~/Content/Images/equalizer.gif" /></th>
+                        </tr>
+                        <tr v-for="item in dsDangXuLy" v-bind:class="{ 'text-bold': item.c2_xem==false, 'text-danger' : item.c2_xem==false }">
+                            <td align="center">
+                                @if (ViewBag.canViewDetail_PL2 == 1)
+                                {
+                                    <a style="cursor:pointer" v-on:click="showModal(item.yeucau_id)"><i class="fa fa-edit text-blue"></i></a>
+                                }
+                            </td>
+                            <td>{{ item.capdo_id }}</td>
+                            <td>{{ item.yeucau_id }}</td>
+                            <td>{{ item.tgian_tiepnhan | formatDate }}</td>
+                            <td>{{ item.nguoigoi_hoten }}</td>
+                            <td>{{ item.nguoigoi_sdt }}</td>
+                            <td>{{ clampText(item.yeucau_noidung, 100) }}</td>
+                            <td>{{ item.loaiyc_ten }}</td>
+                            <td>{{ item.linhvuc_ten }}</td>
+
+                            <td>{{ item.donvi_ten }}</td>
+                            <td>{{ item.nguoidung_c1_ten }} <br /> {{ item.nguoidung_c1_sdt }}</td>
+                            @*<td class="text-center">
+                                    <span v-if="item.dagoikiem==true" class="fa fa-check"></span>
+                                </td>*@
+
+                            <td class="text-center">
+                                <a class="btn btn-primary btn-flat btn-play-audio" v-bind:id="item.yeucau_id" style="display:block;width:auto;margin-top:4px" v-if="(item.sl_file_ghi_am>0)" href="#" v-on:click="App2.showPlayList(item)">Nghe lại</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_sai_don_vi">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th><i class="fa fa-edit text-white"></i></th>
+                            <th>Cấp độ</th>
+                            <th>Mã YC</th>
+                            <th>Thời gian</th>
+                            <th>Họ tên</th>
+                            <th>SĐT</th>
+                            <th>Nội dung</th>
+                            <th>Loại YC</th>
+                            <th>Lĩnh vực</th>
+
+                            <th>Đ.vị đang xử lý</th>
+                            <th>Điện thoại viên</th>
+                            @*<th>Đã gọi kiểm?</th>*@
+                            <th><img src="~/Content/Images/equalizer.gif" /></th>
+                        </tr>
+                        <tr v-for="item in dsSaiDonVi" v-bind:class="{ 'text-bold': item.c2_xem==false, 'text-danger' : item.c2_xem==false }">
+                            <td align="center">
+                                @if (ViewBag.canViewDetail_PL2 == 1)
+                                {
+                                    <a style="cursor:pointer" v-on:click="showModal(item.yeucau_id)"><i class="fa fa-edit text-blue"></i></a>
+                                }
+                            </td>
+                            <td>{{ item.capdo_id }}</td>
+                            <td>{{ item.yeucau_id }}</td>
+                            <td>{{ item.tgian_tiepnhan | formatDate }}</td>
+                            <td>{{ item.nguoigoi_hoten }}</td>
+                            <td>{{ item.nguoigoi_sdt }}</td>
+                            <td>{{ clampText(item.yeucau_noidung, 100) }}</td>
+                            <td>{{ item.loaiyc_ten }}</td>
+                            <td>{{ item.linhvuc_ten }}</td>
+
+                            <td>{{ item.donvi_ten }}</td>
+                            <td>{{ item.nguoidung_c1_ten }} <br /> {{ item.nguoidung_c1_sdt }}</td>
+                            @*<td class="text-center">
+                                    <span v-if="item.dagoikiem==true" class="fa fa-check"></span>
+                                </td>*@
+
+                            <td class="text-center">
+                                <a class="btn btn-primary btn-flat btn-play-audio" v-bind:id="item.yeucau_id" style="display:block;width:auto;margin-top:4px" v-if="(item.sl_file_ghi_am>0)" href="#" v-on:click="App2.showPlayList(item)">Nghe lại</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane" id="tab_dang_phoi_hop_xu_ly">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th><i class="fa fa-edit text-white"></i></th>
+                            <th>Cấp độ</th>
+                            <th>Mã YC</th>
+                            <th>Thời gian</th>
+                            <th>Họ tên</th>
+                            <th>SĐT</th>
+                            <th>Nội dung</th>
+                            <th>Loại YC</th>
+                            <th>Lĩnh vực</th>
+
+                            <th>Đ.vị đang phối hợp</th>
+                            <th>Điện thoại viên</th>
+                            @*<th>Đã gọi kiểm?</th>*@
+                            <th><img src="~/Content/Images/equalizer.gif" /></th>
+                        </tr>
+                        <tr v-for="item in dsPhoiHop">
+                            <td align="center">
+
+                                @if (ViewBag.canViewDetail_PL2 == 1)
+                                {
+                                    <a style="cursor:pointer" v-on:click="showModal(item.yeucau_id)"><i class="fa fa-edit text-blue"></i></a>
+                                }
+                            </td>
+                            <td>{{ item.capdo_id }}</td>
+                            <td>{{ item.yeucau_id }}</td>
+                            <td>{{ item.tgian_tiepnhan | formatDate }}</td>
+                            <td>{{ item.nguoigoi_hoten }}</td>
+                            <td>{{ item.nguoigoi_sdt }}</td>
+                            <td>{{ clampText(item.yeucau_noidung, 100) }}</td>
+                            <td>{{ item.loaiyc_ten }}</td>
+                            <td>{{ item.linhvuc_ten }}</td>
+
+                            <td>{{ item.donvi_ten }}</td>
+                            <td>{{ item.nguoidung_c1_ten }} <br /> {{ item.nguoidung_c1_sdt }}</td>
+                            @*<td class="text-center">
+                                    <span v-if="item.dagoikiem==true" class="fa fa-check"></span>
+                                </td>*@
+
+                            <td class="text-center">
+                                <a class="btn btn-primary btn-flat btn-play-audio" v-bind:id="item.yeucau_id" style="display:block;width:auto;margin-top:4px" v-if="(item.sl_file_ghi_am>0)" href="#" v-on:click="App2.showPlayList(item)">Nghe lại</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_da_xu_ly">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th><i class="fa fa-edit text-white"></i></th>
+                            <th>Cấp độ</th>
+                            <th>Mã YC</th>
+                            <th>Thời gian</th>
+                            <th>Họ tên</th>
+                            <th>SĐT</th>
+                            <th>Nội dung</th>
+                            <th>Loại YC</th>
+                            <th>Lĩnh vực</th>
+
+                            <th>Đ.vị đã xử lý</th>
+                            <th>Điện thoại viên</th>
+                            @*<th>Đã gọi kiểm?</th>*@
+                            <th><img src="~/Content/Images/equalizer.gif" /></th>
+                        </tr>
+                        <tr v-for="item in dsDaXuLy" v-bind:class="{ 'text-bold': item.c2_xem==false, 'text-danger' : item.c2_xem==false }">
+                            <td align="center">
+
+                                @if (ViewBag.canViewDetail_PL2 == 1)
+                                {
+                                    <a style="cursor:pointer" v-on:click="showModal(item.yeucau_id)"><i class="fa fa-edit text-blue"></i></a>
+                                }
+                            </td>
+                            <td>{{ item.capdo_id }}</td>
+                            <td>{{ item.yeucau_id }}</td>
+                            <td>{{ item.tgian_tiepnhan | formatDate }}</td>
+                            <td>{{ item.nguoigoi_hoten }}</td>
+                            <td>{{ item.nguoigoi_sdt }}</td>
+                            <td>{{ clampText(item.yeucau_noidung, 100) }}</td>
+                            <td>{{ item.loaiyc_ten }}</td>
+                            <td>{{ item.linhvuc_ten }}</td>
+
+                            <td>{{ item.donvi_ten }}</td>
+                            <td>{{ item.nguoidung_c1_ten }} <br /> {{ item.nguoidung_c1_sdt }}</td>
+                            @*<td class="text-center">
+                                    <span v-if="item.dagoikiem==true" class="fa fa-check"></span>
+                                </td>*@
+
+                            <td class="text-center">
+                                <a class="btn btn-primary btn-flat btn-play-audio" v-bind:id="item.yeucau_id" style="display:block;width:auto;margin-top:4px" v-if="(item.sl_file_ghi_am>0)" href="#" v-on:click="App2.showPlayList(item)">Nghe lại</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+            <!-- /.tab-content -->
+        </div>
+    </div>
+    <div class="modal" id="update" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" v-html="dlg_detail_title()"></h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-pills mynav">
+                        <li class="active"><a href="#tab_thong_tin_chung" data-toggle="tab"><strong class="text-primary">Thông tin chung</strong></a></li>
+                        <li><a href="#tab_thong_tin_nguoi_dan" data-toggle="tab"><strong class="text-success">Thông tin người dân</strong></a></li>
+                        <li><a href="#tab_ket_qua_xu_ly" data-toggle="tab"><strong class="text-danger">Kết quả xử lý</strong></a></li>
+                        <li><a href="#tab_lich_su_xu_ly" data-toggle="tab"><strong>Lịch sử xử lý</strong></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_thong_tin_chung">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">T.gian tiếp nhận</label>
+                                            <div class="col-sm-10">
+                                                <span class="form-control">{{ tgian_tiepnhan | formatDate }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Nội dung phản ánh</label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" v-model="yeucau_noidung" rows="10" disabled spellcheck="false" disabled></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Đơn vị</label>
+                                            <div class="col-sm-10">
+                                                <div class="form-control">
+                                                    {{donvi_ten}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Lĩnh vực</label>
+                                            <div class="col-sm-10">
+                                                <select v-model="linhvuc_id" id="cboLinhVuc" class="form-control" disabled>
+                                                    <option v-for="item in dsLinhVuc" v-bind:value="item.linhvuc_id">{{ item.linhvuc_ten }}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @*<label class="control-label col-sm-2">Đã gọi kiểm</label>
+
+                                                <div class="col-sm-2">
+                                                    <input type="checkbox" v-model="dagoikiem" disabled />
+                                                </div>*@
+                                        </div>
+                                    </form>
+                                </div>
+
+                                @*<div v-if="dagoikiem" style="color:#fff;background-color:#76bb60;padding:5px">
+                                        <span>Đã trả lời kết quả cho người dân</span>
+                                    </div>*@
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_thong_tin_nguoi_dan">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Họ tên</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" v-model="nguoigoi_hoten" disabled />
+                                            </div>
+                                            <label class="control-label col-sm-2">Số ĐT</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" v-model="nguoigoi_sdt" disabled />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Email</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" v-model="nguoigoi_email" disabled />
+                                            </div>
+                                            <label class="control-label col-sm-2">CMND</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" v-model="nguoigoi_cmnd" disabled />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Đối tượng</label>
+                                            <div class="col-sm-4">
+                                                <select v-model="doituong_id" name="doituong_id" class="form-control" disabled>
+                                                    <option v-for="item in dsDoiTuong" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Mạng XH</label>
+                                            <div class="col-sm-4">
+                                                <select v-model="mangxh_id" class="form-control" disabled>
+                                                    <option value="">-Không-</option>
+                                                    <option value="FACEBOOK">Facebook</option>
+                                                    <option value="VIBER">Viber</option>
+                                                    <option value="ZALO">Zalo</option>
+                                                </select>
+                                            </div>
+                                            <label class="control-label col-sm-2">Nickname</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" v-model="nguoigoi_nickname" disabled />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Địa chỉ</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" v-model="nguoigoi_diachi" disabled />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2">Xã/Phường</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" v-model="phuong_ten" readonly />
+                                            </div>
+                                            <label class="control-label col-sm-2">Huyện/Tp</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" v-model="huyen_ten" readonly />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_ket_qua_xu_ly">
+                            <div class="panel-group">
+                                <div v-if="canChangeDV" class="panel panel-default">
+                                    <div class="panel-heading">Chuyển đơn vị</div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <textarea class="form-control" v-model="noidung_xuly_baosai" placeholder="Nội dung chuyển đơn vị" rows="2" spellcheck="false" :disabled="phieu_dxl"></textarea>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div>
+                                                <div class="col-sm-9">
+                                                    <select v-model="donvi_id" name="donvi_id" class="form-control">
+                                                        <option v-for="item in dsDonVi" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <button type="button" class="btn btn-default" v-on:click="chuyenlaiDonVi">Chuyển đơn vị</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Chi tiết xử lý</div>
+                                    <div class="panel-body">
+                                        <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.DIEN_THOAI_VIEN)" style="margin-top: 5px">
+                                            <div class="block bg-info">
+                                                <div class="">
+                                                    <h4><span class="label label-info">Cấp độ 1</span></h4>
+                                                    <div>
+                                                        <p>- Đơn vị xử lý: <i>{{ donvi_c1_ten }}</i></p>
+                                                        <p>- Nội dung xử lý: <i>{{ noidung_c1_xuly }}</i></p>
+                                                        <p>- Thời gian xử lý: <i>{{ tgian_c1_xuly | formatDate }}</i></p>
+                                                        <p v-if="c1_file_name != ''">
+                                                            - File đính kèm:
+                                                            <a v-bind:href="downloadUrl_c1" target="_blank">Tệp tin</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.CHUYEN_VIEN_BAN_NGANH)" style="margin-top: 5px">
+                                            <div class="block bg-success">
+                                                <div>
+                                                    <h4><span class="label label-success">Cấp độ 2</span></h4>
+                                                    <div>
+                                                        <p>- Đơn vị xử lý: <i>{{ donvi_c2_ten }}</i></p>
+                                                        <p>- Thời gian để xử lý từ <i>{{ tgian_c2_xuly_tu | formatDate }}</i> đến <i>{{ tgian_c2_xuly_den | formatDate }}</i></p>
+                                                        <p>- Thời gian xử lý: <i>{{ tgian_c2_xuly | formatDate }}</i></p>
+                                                        <p>- Nội dung xử lý:</p>
+                                                        <p>
+                                                            <textarea v-model="noidung_c2_xuly" class="form-control" rows="5" spellcheck="false" :disabled="phieu_dxl"></textarea>
+                                                        </p>
+                                                        <p v-if="c2_file_name != ''">
+                                                            - File đính kèm:
+                                                            @*<a v-bind:href="downloadUrl_c2" target="_blank">Tệp tin</a>
+                                                                <a href="#" v-on:click="DetachFile">
+                                                                    <i class="fa fa-remove"></i>
+                                                                </a>*@
+                                                            <a class="btn btn-info" v-bind:href="downloadUrl_c2" target="_blank">Xem</a>
+                                                            <a href="#" v-on:click="askBeforeDeleteAttachmentLevel2()" v-if="phieu_dxl == false">
+                                                                <i class="fa fa-remove"></i>
+                                                            </a>
+                                                        </p>
+                                                        <p>
+                                                            @*<input v-if="phieu_dxl == false" id="c2_file_name" type="file" name="c2_file_name" v-on:change="onFileChange" />*@
+
+                                                            <div v-if="canUploadAttachmentC2" class="btn-upload-wrapper">
+                                                                <label for="c2_file_name" class="btn btn-primary">Tải lên tập tin</label>
+                                                                <input type="file" id="c2_file_name" name="c2_file_name" v-on:change="onFileChange" class="hiden-btn" />
+                                                            </div>
+                                                            <i v-if="user_capdo_id == 2">Chú ý: bạn chỉ có thể bổ sung tập tin đính kèm khi phiếu chưa bị đóng ( chưa xử lý xong )!</i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.LANH_DAO_BAN_NGANH)" style="margin-top: 5px">
+                                            <div class="block bg-warning">
+                                                <div>
+                                                    <h4><span class="label label-warning">Cấp độ 3</span></h4>
+                                                    <div>
+                                                        <p>- Đơn vị xử lý: <i>{{ donvi_c3_ten }}</i></p>
+                                                        <p>- Thời gian để xử lý từ <i>{{ tgian_c2_xuly_den | formatDate }}</i> đến <i>{{ tgian_c3_xuly_den | formatDate }}</i></p>
+                                                        <p>- Thời gian xử lý: <i>{{ tgian_c3_xuly | formatDate }}</i></p>
+                                                        <p>- Nội dung xử lý: <i>{{ noidung_c3_xuly }}</i></p>
+                                                        <p v-if="c3_file_name!=''">
+                                                            - File đính kèm:
+                                                            <a v-bind:href="downloadUrl_c3" target="_blank">Tệp tin</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.LANH_DAO_UY_BAN_NHAN_DAN)" style="margin-top: 5px">
+                                            <div class="block bg-danger">
+                                                <div>
+                                                    <h4><span class="label label-danger">Cấp độ 4</span></h4>
+                                                    <div>
+                                                        <p>- Đơn vị xử lý: <i>{{ donvi_c4_ten }}</i></p>
+                                                        <p>- Nội dung xử lý: <i>{{ noidung_c4_xuly }}</i></p>
+                                                        <p>- Thời gian xử lý: <i>{{ tgian_c4_xuly | formatDate }}</i></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_lich_su_xu_ly">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Thời gian</th>
+                                            <th>Người dùng</th>
+                                            <th>Thao tác</th>
+                                            <th>Nội dung</th>
+                                        </tr>
+                                        <tr v-for="item in dsLichSuXuLy">
+                                            <td>{{ item.action_dating | formatDate }}</td>
+                                            <td><span class="cell-capdo" :title="'Cấp độ ' + item.capdo_id">{{ item.capdo_id }}</span> {{ item.nguoidung_ten }} <br />  {{ item.nguoidung_sdt }}</td>
+                                            <td>{{ item.action }}</td>
+                                            <td>{{ item.noi_dung }}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div v-if="loi || thanhcong">
+                            <div class="row">
+                                <div class="col-md-12" v-if="loi">
+                                    <div class="alert alert-danger">
+                                        <i class="icon fa fa-info"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                                <div class="col-md-12" v-if="thanhcong">
+                                    <div class="alert alert-success">
+                                        <i class="icon fa fa-check"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN || ViewBag.mp_vaitro == WebUI.VAI_TRO.XU_LY_CAP_DO_2)
+                    {
+                        <div class="row">
+                            <div class="col-md-8" v-if="capdo_id==2">
+                                <button v-if="canMaskAsWrongDept" type="button" class="btn btn-danger pull-left" v-on:click="setStatus_WrongDept()" title="Nếu phản ánh này không thuộc phạm vi xử lý của đơn vị bạn">Sai đơn vị</button>
+                                <button v-if="trangthai_id == @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DANG_XU_LY)" type="button" class="btn btn-default pull-left" v-on:click="capnhat(@Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DANG_PHOI_HOP_XU_LY))" title="Nếu bạn cần phối hợp với đơn vị khác để xử lý phản ánh này">Đang phối hợp</button>
+                                <button v-if="trangthai_id == @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DANG_XU_LY)" type="button" class="btn btn-default pull-left" v-on:click="capnhat(@Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.CHUYEN_CAP_DO_TREN))" title="Nếu bạn không đủ thẩm quyền để giải quyết phản ánh này, và cần chuyển lên để cấp trên xử lý">Chuyển lên cấp trên</button>
+                                <button v-if="trangthai_id == @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DANG_XU_LY) || trangthai_id == @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DANG_PHOI_HOP_XU_LY)" type="button" class="btn btn-primary pull-left" v-on:click="capnhat(@Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DA_XU_LY))" title="Bạn đã xử lý xong rồi">Đã xử lý</button>
+
+                                @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN || ViewBag.mp_vaitro == WebUI.VAI_TRO.XU_LY_CAP_DO_2)
+                                {
+                                    if (FeatureManager.EnableFunction_HuyXuLy)
+                                    {
+                                        <button v-if="trangthai_id == @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DA_XU_LY)" type="button" class="btn btn-danger pull-left" v-on:click="huyXuLy()">Hủy xử lý</button>
+                                    }
+                                }
+                            </div>
+                            <div class="col-md-4 pull-right">
+                                <a v-bind:href="url_word" target="_blank" class="btn btn-default">MS WORD</a>
+                                <button id="btnModalClose" type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    @section Foot {
+
+
+<script type="text/javascript">
+    var SELECT_ALL_VALUE = @SystemConfigs.SELECT_ALL_VALUE;
+    var url_LinhVuc_getListByDonViWithSelectChoice = "@Url.Action("getListByDonViWithSelectChoice", "LinhVuc")";
+
+    var MyApp = new Vue({
+        el: '#MyApp',
+        data: {
+            redirectCalls: [],
+            redirectRequestID: null,
+            redirectPhoneNo: null,
+            enable_xuatExcelDanhSachDaXuLy: false,
+            enableSearchByKeyword: false,
+            enableFilter: 0,
+            //condition0: SELECT_ALL_VALUE,
+            //condition1: SELECT_ALL_VALUE,
+            //condition2: SELECT_ALL_VALUE,
+            //condition3: SELECT_ALL_VALUE,
+            //condition4: SELECT_ALL_VALUE,
+            //condition5: SELECT_ALL_VALUE,
+            //condition6: SELECT_ALL_VALUE,
+            //condition7: SELECT_ALL_VALUE,
+            //condition8: SELECT_ALL_VALUE,
+            filters: @Html.Raw(ViewBag.filters),
+            filtersData: @Html.Raw(ViewBag.filtersData),
+            ///listValue: @Html.Raw(ViewBag.listValue),
+            ///listFilter: @Html.Raw(ViewBag.listFilter),
+            startDayString: '@ViewBag.startDayString',
+            endDayString: '@ViewBag.endDayString',
+            dsHuyen: [],
+            dsPhuong: [],
+            dsDoiTuong: [],
+            dsLinhVuc: [],
+            dsDonVi: [],
+            dsDangXuLy: [],
+            dsSaiDonVi: [],
+            dsPhoiHop: [],
+            dsDaXuLy: [],
+            dsLichSuXuLy: [],
+            yeucau_id: '',
+            tgian_tiepnhan: '',
+            yeucau_noidung: '',
+            nguoigoi_hoten: '',
+            nguoigoi_sdt: '',
+            nguoigoi_cmnd: '',
+            nguoigoi_diachi: '',
+            nguoigoi_huyen_id: null,
+            nguoigoi_phuong_id: null,
+            huyen_ten: '',
+            phuong_ten: '',
+            nguoigoi_email: '',
+            nguoigoi_nickname: '',
+            mangxh_id: '',
+            loaiyc_id: 1,
+            linhvuc_id: 1,
+            doituong_id: 1,
+            hinhthuc_id: 1,
+            trangthai_id: 1,
+            trangthai_ten: '',
+            capdo_id: 1,
+            donvi_id: 2,
+            noidung_xuly_baosai: '',
+            c1_file_name: '',
+            c1_file_title: '',
+            noidung_c1_xuly: '',
+            tgian_c1_xuly: '',
+            tgian_c2_xuly_tu: '',
+            tgian_c2_xuly_den: '',
+            tgian_c2_xuly: '',
+            noidung_c2_xuly: '',
+            c2_file_name: '',
+            c2_file_title: '',
+            tgian_c3_xuly: '',
+            tgian_c3_xuly_den: '',
+            noidung_c3_xuly: '',
+            c3_file_name: '',
+            c3_file_title: '',
+            tgian_c4_xuly: '',
+            noidung_c4_xuly: '',
+            donvi_ten: '',
+            donvi_c1_ten: '',
+            donvi_c2_ten: '',
+            donvi_c3_ten: '',
+            donvi_c4_ten: '',
+            dagoikiem: false,
+            thongbao: '',
+            loi: false,
+            thanhcong: false,
+            url_word: '',
+            kenhtn_id: 1,
+            user_capdo_id: @Html.Raw((int)ViewBag.mp_vaitro),
+            // reason list for Canceling Processing Step
+            cpsReasonList: [],
+            curYeuCauExtra: {}
+            ///////////////////////////////////////////// GHI AM
+            //record_upload_finished: false,
+            //record_yeucau_id: '',
+            //record_file: null,
+            //record_file_name: '',
+            //cache_id_playing_audio: 0,
+            //active_yeucau: null,
+            //active_audio_url: '',
+            //playlist: [],
+            //canUploadAudio: false,
+            //canDownloadAudio: false,
+            //upload_err_msg: '',
+            //record_yeucau_noidung: '',
+            //ghiam_id_to_delete: '',
+            //del_ghiam_item: null
+        },
+        methods: {
+            onFilterOptionChange: function (filterOptionIndex) {
+                //console.log(`${filterOptionIndex} FILTER ${this.filters[filterOptionIndex].Id} changed...`);
+                if (this.filters[filterOptionIndex].Id === 'donvi') {
+                    this.filter_locLVTheoDV();
+                }
+            },
+            filter_locLVTheoDV: function () {
+                var postData = { donvi_id: MyApp.filters[FILTER_INDEX_DONVI].Value };
+                $.get("@Url.Action("listByDonVi", "LinhVuc")", postData, function (data) {
+                    var ls = [];
+                    $.each(data, function (i, v) {
+                        ls.push({ Value: v.linhvuc_id, Label: v.linhvuc_ten });
+                    });
+                    ls.push({ Value: -1, Label: 'Tất cả' });
+                    MyApp.filtersData[FILTER_INDEX_LINHVUC] = ls;
+                    MyApp.filters[FILTER_INDEX_LINHVUC].Value = -1;
+                })
+            },
+            dlg_detail_title: function () {
+                return `<span class="text-danger text-bold">${this.yeucau_id} - cấp độ ${this.capdo_id} <span class="text-lowercase">${this.trangthai_ten}</span> </span>`;
+            },
+            xuatExcelDanhSachDaXuLy: function () {
+
+            },
+            execCancelingProcessingStep: function () {
+                var postData = {
+                    yeucau_id: MyApp.yeucau_id
+                };
+                $.post("@Url.Action("HuyXuLy", "PhanAnh", new { area = "" })", postData, function (data) {
+                    closePleaseWaitDialog();
+                    if (data === 'ok') {
+                        // MyApp.locDuLieu();
+                        //$("#btnModalClose").click();
+                        showSuccessNotification('Cập nhật trạng thái thành công!');                        
+                    }
+                    else {
+                        showErrorNotification('Cập nhật trạng thái thất bại!');
+                    }
+                });
+            },
+            huyXuLy: function () {
+                showConfirmDialog('Hủy xử lý', 'Hủy bước xử lý cuối của phiếu phản ánh này, phục hồi trạng thái về bước xử lý trước đó! Bạn có chắc không?',
+                    function () {
+                        showPleaseWaitDialog('Hủy xử lý', 'Đang hủy bước xử lý cuối trên hệ thống, xin chờ giây lát...')
+                        MyApp.execCancelingProcessingStep();
+                    },
+                    true, true, MyApp.cpsReasonList, 'ok'
+                );
+            },
+            setStatus_WrongDept: function () {
+                MyApp.capnhat(@Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.SAI_DON_VI));
+            },
+            clickEnableFilter: function () {
+                MyApp.enableFilter = !MyApp.enableFilter;
+            },
+                locDuLieu: function () {
+                    var postData = {
+                        //condition0: MyApp.condition0,
+                        //condition1: MyApp.condition1,
+                        //condition2: MyApp.condition2,
+                        //condition3: MyApp.condition3,
+                        //condition4: MyApp.condition4,
+                        //condition5: MyApp.condition5,
+                        //condition6: MyApp.condition6,
+                        //condition7: MyApp.condition7,
+                        //condition8: MyApp.condition8,
+                        startDayString: MyApp.startDayString,
+                        endDayString: MyApp.endDayString
+                    }
+                    for (var i in MyApp.filters) {
+                        postData[MyApp.filters[i].Id] = MyApp.filters[i].Value;
+                    }
+                    MyApp.dsDangXuLy = [];
+                    MyApp.dsSaiDonVi = [];
+                    MyApp.dsPhoiHop = [];
+                    MyApp.dsDaXuLy = [];
+
+                    $.post("@Url.Action("GetAudioPermission", "capdo2")", null, function (data) {
+                        MyApp.canUploadAudio = data.upload;
+                        MyApp.canDownloadAudio = data.download;
+                    });
+
+                    $.post("@Url.Action("GetDsPhanAnh","capdo2")", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            switch (v.trangthai_id) {
+                                case 1:
+                                    MyApp.dsDangXuLy.push(v);
+                                    break;
+                                case 2:
+                                    MyApp.dsSaiDonVi.push(v);
+                                    break;
+                                case 3:
+                                    MyApp.dsPhoiHop.push(v);
+                                    break;
+                                case 99:
+                                    MyApp.dsDaXuLy.push(v);
+                                    break;
+                            }
+                        });
+                    });
+                },
+                getDsHuyen: function () {
+                    $.post("@Url.Action("GetDsHuyen", "Dvhc")", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsHuyen.push(v);
+                        });
+                    })
+                },
+                getDsPhuong: function () {
+                    MyApp.dsPhuong = [];
+                    var postData = { huyen_id: MyApp.nguoigoi_huyen_id };
+                    $.post("@Url.Action("GetDsPhuongTheoHuyen", "Dvhc")", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsPhuong.push(v);
+                        });
+                    })
+                },
+                showModal: function (yeucau_id) {
+                    var $el = $('#c2_file_name');
+                    MyApp.loi = false;
+                    MyApp.thongbao = '';
+                    MyApp.thanhcong = false;
+
+                    //var postData2 = { yeucau_id: yeucau_id };
+                    //$.post("@Url.Action("DaXem", "CapDo2", new { area = "" })", postData2, function (data) { });
+
+                    var postData = { yeucau_id: yeucau_id, capdo: 2 };
+                    $.post("@Url.Action("OpenRequestDetail", "CapDo1", new { area = "" })", postData, function (data) {
+                        MyApp.yeucau_id = data.yeucau_id;
+                        MyApp.tgian_tiepnhan = data.tgian_tiepnhan;
+                        MyApp.yeucau_noidung = data.yeucau_noidung;
+                        MyApp.nguoigoi_hoten = data.nguoigoi_hoten;
+                        MyApp.nguoigoi_sdt = data.nguoigoi_sdt;
+                        MyApp.linhvuc_id = data.linhvuc_id;
+                        MyApp.nguoigoi_cmnd = data.nguoigoi_cmnd;
+                        MyApp.nguoigoi_diachi = data.nguoigoi_diachi;
+                        MyApp.huyen_ten = data.huyen_ten;
+                        MyApp.phuong_ten = data.phuong_ten;
+                        MyApp.nguoigoi_huyen_id = data.nguoigoi_huyen_id;
+                        MyApp.nguoigoi_phuong_id = data.nguoigoi_phuong_id;
+                        MyApp.nguoigoi_email = data.nguoigoi_email;
+                        MyApp.nguoigoi_nickname = data.nguoigoi_nickname;
+                        MyApp.mangxh_id = data.mangxh_id;
+                        MyApp.doituong_id = data.doituong_id;
+                        MyApp.capdo_id = data.capdo_id;
+                        MyApp.donvi_id = data.donvi_id;
+                        MyApp.trangthai_id = data.trangthai_id;
+                        MyApp.trangthai_ten = data.trangthai_ten;
+                        MyApp.noidung_c1_xuly = data.noidung_c1_xuly;
+                        MyApp.c1_file_name = data.c1_file_name;
+                        MyApp.c1_file_title = data.c1_file_title;
+                        MyApp.c1_file_name = data.c1_file_name;
+                        MyApp.tgian_c1_xuly = data.tgian_c1_xuly;
+                        MyApp.tgian_c2_xuly_tu = data.tgian_c2_xuly_tu;
+                        MyApp.tgian_c2_xuly_den = data.tgian_c2_xuly_den;
+                        MyApp.noidung_c2_xuly = data.noidung_c2_xuly;
+                        MyApp.c2_file_name = data.c2_file_name;
+                        MyApp.c2_file_title = data.c2_file_title;
+                        MyApp.tgian_c2_xuly = data.tgian_c2_xuly;
+                        MyApp.tgian_c3_xuly = data.tgian_c3_xuly;
+                        MyApp.tgian_c3_xuly_den = data.tgian_c3_xuly_den;
+                        MyApp.noidung_c3_xuly = data.noidung_c3_xuly;
+                        MyApp.tgian_c4_xuly = data.tgian_c4_xuly;
+                        MyApp.noidung_c4_xuly = data.noidung_c4_xuly;
+                        MyApp.donvi_ten = data.donvi_ten;
+                        MyApp.donvi_c1_ten = data.donvi_c1_ten;
+                        MyApp.donvi_c2_ten = data.donvi_c2_ten;
+                        MyApp.donvi_c3_ten = data.donvi_c3_ten;
+                        MyApp.donvi_c4_ten = data.donvi_c4_ten;
+                        MyApp.dagoikiem = data.dagoikiem;
+                        MyApp.kenhtn_id = data.kenhtn_id;
+                        MyApp.url_word = '@Url.Action("ExportWord","CapDo1")' + '/?yeucau_id=' + MyApp.yeucau_id;
+
+                        
+                        MyApp.reloadListLinhVuc({ yeucau_id: data.yeucau_id, old_linhvuc_id: data.linhvuc_id, donvi_id: data.donvi_c2_id, saiLV : false });
+                        
+                        $('#update').modal('show');
+
+                        MyApp.reloadActionHistory();
+                    });
+            },
+            reloadListLinhVuc: function (curExtra) {
+                this.curYeuCauExtra = curExtra;
+                var postData = { donvi_id: curExtra.donvi_id };
+                MyApp.dsLinhVuc = [];
+                $.post(url_LinhVuc_getListByDonViWithSelectChoice, postData, function (data) {
+                    MyApp.curYeuCauExtra.saiLV = true;
+                    $.each(data, function (i, v) {
+                        MyApp.dsLinhVuc.push(v);
+                        if (v.linhvuc_id === curExtra.old_linhvuc_id)
+                            MyApp.curYeuCauExtra.saiLV = false;
+                    });
+                    if (MyApp.curYeuCauExtra.saiLV) {
+                        $('#cboLinhVuc').removeAttr('disabled');
+                        MyApp.linhvuc_id = 0;
+                    } else {
+                        $('#cboLinhVuc').attr('disabled', 'disabled');
+                    }
+                    // Bug
+                    $('#cboLinhVuc').val(MyApp.linhvuc_id).trigger('change');
+                });
+            },
+            chuyenlaiDonVi: function () {
+                var postData = {
+                    yeucau_id: MyApp.yeucau_id,
+                    donvi_id: MyApp.donvi_id,
+                    noidung_xuly_baosai: MyApp.noidung_xuly_baosai
+                };
+
+                $.post("@Url.Action("ChuyenLaiDonVi", "CapDo2", new { area = "" })", postData, function (data) {
+                    if (data > 0) {
+                        $("#btnModalClose").click();
+                        showSuccessNotification('Chuyển đơn vị thành công!');
+                        MyApp.locDuLieu();                            
+                    }
+                    else {
+                        showErrorNotification('Không thể chuyển đơn vị!');
+                    }
+                });
+            },
+            capnhat: function (newStatusCode) {
+                MyApp.loi = false;
+                MyApp.thongbao = '';
+                MyApp.thanhcong = false;
+                if (MyApp.noidung_c2_xuly == "") {
+                    showErrorNotification('Vui lòng nhập nội dung xử lý');
+                    return;
+                }
+
+                if ('saiLV' in this.curYeuCauExtra) {
+                    if (this.curYeuCauExtra.saiLV && this.linhvuc_id === 0) {
+                        showErrorNotification('Vui lòng sửa lại Lĩnh Vực của đơn vị.');
+                        return;
+                    }
+                }
+                if (newStatusCode === @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.SAI_DON_VI)) {
+                    showConfirmDialog('Sai đơn vị', 'Trả phiếu này về cấp 1 do sai đơn vị xử lý ( phiếu này không thuộc phạm vi xử lý của đơn vị bạn ), bạn có chắc muốn trả về không?.',
+                        function () {
+                            showPleaseWaitDialog('Cập nhật trạng thái phiếu phản ánh', 'Đang cập nhật, xin chờ giây lát...');
+                            MyApp.execUpdateWithStatusCode(newStatusCode);
+                        }, true, false, null, 'ok'
+                    );
+                }
+                else if (newStatusCode === @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DANG_PHOI_HOP_XU_LY)) {
+                    showConfirmDialog('Đang phối hợp xử lý', 'Đánh dấu phiếu này là Đang phối hợp xử lý ( phiếu sẽ không bị tự động chuyển lên cấp trên ), bạn có chắc không?.',
+                        function () {
+                            showPleaseWaitDialog('Cập nhật trạng thái phiếu phản ánh', 'Đang cập nhật, xin chờ giây lát...');
+                            MyApp.execUpdateWithStatusCode(newStatusCode);
+                        }, true, false, null, 'ok'
+                    );
+                }
+                else if (newStatusCode === @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.CHUYEN_CAP_DO_TREN)) {
+                    showConfirmDialog('Chuyển phiếu lên để cấp trên xử lý', 'Bạn không đủ thẩm quyền để xử lý phản ánh này và cần chuyển lên cấp trên, bạn có chắc không?.',
+                        function () {
+                            showPleaseWaitDialog('Cập nhật trạng thái phiếu phản ánh', 'Đang cập nhật, xin chờ giây lát...');
+                            MyApp.execUpdateWithStatusCode(newStatusCode);
+                        }, true, false, null, 'ok'
+                    );
+                }
+                else {
+                    showConfirmDialog('Cập nhật trạng thái phản ánh', 'Bạn có chắc muốn cập nhật không?.',
+                        function () {
+                            showPleaseWaitDialog('Cập nhật trạng thái phiếu phản ánh', 'Đang cập nhật, xin chờ giây lát...');
+                            MyApp.execUpdateWithStatusCode(newStatusCode);
+                        }, true, false, null, 'ok'
+                    );
+                }
+            },
+            execUpdateWithStatusCode: function (newStatusCode) {
+                var postData = {
+                    yeucau_id: MyApp.yeucau_id,
+                    noidung_c2_xuly: MyApp.noidung_c2_xuly,
+                    trangthai_id: newStatusCode
+                };
+                                       
+                $.post("@Url.Action("CapNhat", "CapDo2")", postData, function (data) {
+                    closePleaseWaitDialog();
+                    if (data > 0) {
+                        $("#btnModalClose").click();
+                        showSuccessNotification('Cập nhật trạng thái thành công!');
+                        MyApp.updateRedirectCalls();
+                        MyApp.locDuLieu();
+                    }
+                    else {
+                        showErrorNotification('Cập nhật trạng thái thất bại!', 3000);
+                    }
+                });
+            },
+                onFileChange: function (e) {
+                    MyApp.loi = false;
+                    MyApp.thongbao = '';
+                    MyApp.thanhcong = false;
+                    if (window.FormData !== undefined) {
+                        var fileUpload = $("#c2_file_name").get(0);
+                        var files = fileUpload.files;
+                        if (files.length == 0) {
+                            showErrorNotification("Vui lòng chọn 1 tập tin trên máy của bạn làm tập tin đính kèm!");
+                            return;
+                        }
+                        // Create FormData object
+                        var fileData = new FormData();
+                        // Looping over all files and add it to FormData object
+                        for (var i = 0; i < files.length; i++) {
+                            fileData.append(files[i].name, files[i]);
+                        }
+
+                        fileData.append('yeucau_id', MyApp.yeucau_id);
+
+                        $.ajax({
+                            url: '' + '@Url.Action("AttachFile","CapDo2")' + '/yeucau_id=' + MyApp.yeucau_id,
+                            type: "POST",
+                            contentType: false, // Not to set any content header
+                            processData: false, // Not to process data
+                            data: fileData,
+                            success: function (result) {
+                                MyApp.c2_file_name = result;
+                                if (MyApp.c2_file_name !== '') {
+                                    MyApp.reloadActionHistory();
+                                    showSuccessNotification('Gắn tập tin đính kèm: Xong!', 2000);
+                                } else {
+                                    showErrorNotification('Gắn tập tin đính kèm: Lỗi!', 3000);
+                                }
+                            },
+                            error: function (err) {
+                                showErrorNotification('Gắn tập tin đính kèm: Lỗi!', 3000);
+                            }
+                        });
+                    } else {
+                        alert("FormData is not supported.");
+                    }
+            },
+            askBeforeDeleteAttachmentLevel2: function () {
+                showConfirmDialog('Xóa tập tin đính kèm', 'Bạn có chắc muốn xóa tập tin đính kèm không?',
+                    function () {
+                        MyApp.execDeleteAttachmentLevel2();
+                    }
+                );
+            },
+            reloadActionHistory: function () {
+                MyApp.dsLichSuXuLy = [];
+                $.post("@Url.Action("lichSuXuLy", "capdo1")", { yeucau_id: MyApp.yeucau_id }, function (data, textStatus) {
+                    if (textStatus === 'success') {
+                        MyApp.dsLichSuXuLy = data;
+                    }
+                });
+            },
+            execDeleteAttachmentLevel2: function () {
+                    var postData = {
+                        yeucau_id: MyApp.yeucau_id
+                    };
+                    $.post("@Url.Action("DetachFile", "CapDo2", new { area = "" })", postData, function (data) {
+                        if (data > 0) {
+                            MyApp.c2_file_name = '';
+                            MyApp.reloadActionHistory();
+                            showSuccessNotification('Đã xóa tập tin đính kèm!', 2000);
+                        } else {
+                            showErrorNotification('Xóa tập tin đính kèm: Lỗi!', 3000);
+                        }
+                    });
+            },
+            updateRedirectCalls: function () {
+                $.get("@Url.Action("updateRedirectCalls", "PhanAnh")", function (data) {
+                    MyApp.redirectCalls = data;
+                });
+            }
+            },
+            mounted() {
+                //$('#startDayString').datepicker().on('change.dp', () => { console.log(this); });
+                this.cpsReasonList = [];
+                $.get("@Url.Action("getCancelProcessingStepReason", "PhanAnh")", function (data) {
+                    var ls = [];
+                    $.each(data, function (i, v) {
+                        ls.push([v.id, v.noidung]);
+                    });
+                    MyApp.cpsReasonList = ls;
+                });
+                setInterval(function () { MyApp.updateRedirectCalls(); }, 10000);
+                this.updateRedirectCalls();
+            },
+        computed: {
+            hasRedirectCall: function () {
+                return this.redirectCalls.length > 0;
+            },
+            canUploadAttachmentC2: function () {
+                if (this.trangthai_id === @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DA_XU_LY)) return false;
+                if (this.trangthai_id === @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.SAI_DON_VI)) return false;
+                if (this.c2_file_name === '' || this.c2_file_name === null) {
+                    return true;
+                }
+                return false;
+            },
+                phieu_dxl: function () {
+                    return this.trangthai_id >= @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DA_XU_LY);
+                },
+                canMaskAsWrongDept: function() {
+                    return this.trangthai_id !== @Html.Raw((int)TRANG_THAI_YEU_CAU.SAI_DON_VI) &&
+                        this.trangthai_id < @Html.Raw((int)TRANG_THAI_YEU_CAU.DA_XU_LY);
+                },
+                canChangeDV: function () {
+                    @*if (this.trangthai_id !== @Html.Raw((int)TRANG_THAI_YEU_CAU.SAI_DON_VI)) return false;
+
+                    if (this.kenhtn_id === 2) {
+                        return (@ViewBag.mp_donvi_id === @Html.Raw((int)DON_VI_MAC_DINH.DON_VI_KIEM_SOAT_THU_TUC_HANH_CHINH));
+                    } else {
+                        return true;
+                    }*@
+                    return false;
+                },
+                downloadUrl_c1: function () {
+                    if (!MyApp || !MyApp.c1_file_name) return "";
+                    return MyApp.c1_file_name;
+                },
+                downloadUrl_c2: function () {
+                    if (!MyApp || !MyApp.c2_file_name) return "";
+                    return MyApp.c2_file_name;
+                },
+                downloadUrl_c3: function () {
+                    if (!MyApp || !MyApp.c3_file_name) return "";
+                    return MyApp.c3_file_name;
+                }
+            }
+        })
+        Vue.filter('formatDate', function (value) {
+            if (value) {
+                return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+            }
+        });
+        $(document).ready(function () {
+            ///MyApp.dsDoiTuong = MyApp.listValue[4];
+            ///MyApp.dsLinhVuc = MyApp.listValue[1];
+            ///MyApp.dsDonVi = MyApp.listValue[0];
+            MyApp.dsDoiTuong = MyApp.filtersData[4];
+            MyApp.dsLinhVuc = MyApp.filtersData[1];
+            MyApp.dsDonVi = MyApp.filtersData[0];
+            MyApp.locDuLieu();
+            $(".nhapngay").datepicker({
+                autoclose: true,
+                dateFormat: 'dd/mm/yy'
+            });
+            $('.fa-calendar').click(function () {
+                var $this = $(this).parent().parent().find('input');
+                $this.datepicker("show");
+            });
+            $("#startDayString").datepicker().on('change.dp', () => {
+                MyApp.startDayString = $("#startDayString").val();
+            });
+            $("#endDayString").datepicker().on('change.dp', () => {
+                MyApp.endDayString = $("#endDayString").val();
+            });
+        });
+        </script>
+    }

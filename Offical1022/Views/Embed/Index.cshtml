@@ -1,0 +1,83 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+        }
+
+        #wrapper {
+            box-sizing: border-box;
+            color: rgb(22, 89, 216);
+            cursor: pointer;
+            text-decoration: none solid rgb(22, 89, 216);
+            text-size-adjust: 100%;
+            width: 100%;
+        }
+        /*#DIV_1*/
+
+        #title {
+            text-transform: uppercase;
+            cursor: pointer;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: red;
+            color: white;
+        }
+
+            #title p {
+                text-decoration: none;
+                font-size: 125%;
+                color: white;
+            }
+
+        #statistics {
+            background: url(/Content/Images/background_iframe.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 240px;
+        }
+
+            #statistics span {
+                display: block;
+            }
+
+            #statistics .infor {
+                color: #6b1e1e;
+                font-size: 150%;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            #statistics .content {
+                color: red;
+                font-size: 300%;
+                font-weight: bolder;
+                text-align: center;
+                margin: 10px 0;
+            }
+    </style>
+    <a href="@Url.Action("IndexWithoutAuth","Home")" target="_blank" style="text-decoration:none;">
+        <div id="wrapper">
+            <div id="title">
+                <p class="h3">Tổng đài 1022</p>
+            </div>
+            <div id="statistics">
+                <span class="infor" style="padding-top: 20px;">Đến ngày</span>
+                <span class="infor">@Html.Raw(ViewBag.Now)</span>
+                <span class="content">@Html.Raw(ViewBag.Percent)%</span>
+                <span class="infor h4">Đã xử lý</span>
+            </div>
+        </div>
+    </a>
+</body>
+</html>

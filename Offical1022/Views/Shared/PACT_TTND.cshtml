@@ -1,0 +1,56 @@
+﻿@using WebUI
+@using HotlineCore
+
+<div class="tab-pane" id="tab_thong_tin_nguoi_dan">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2">Họ tên</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" v-model="nguoigoi_hoten" :disabled="lock_edit_ttnd" />
+                    </div>
+                    <label class="col-sm-2">Số ĐT</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" v-model="nguoigoi_sdt" :disabled="lock_edit_ttnd_sdt" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2">Email</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" v-model="nguoigoi_email" :disabled="lock_edit_ttnd" />
+                    </div>
+                    <label class="col-sm-2">CMND</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" v-model="nguoigoi_cmnd" :disabled="lock_edit_ttnd" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2">Đối tượng</label>
+                    <div class="col-sm-4">
+                        <select v-model="doituong_id" name="doituong_id" class="form-control" :disabled="lock_edit_ttnd">
+                            <option v-for="item in dsDoiTuong" v-bind:value="item.doituong_id">{{ item.doituong_ten }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2">Địa chỉ</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" v-model="nguoigoi_diachi" :disabled="lock_edit_ttnd" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2">Xã/Phường</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" v-model="phuong_ten" readonly :disabled="lock_edit_ttnd" />
+                    </div>
+
+                    <label class="col-sm-2">Huyện/Tp</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" v-model="huyen_ten" readonly :disabled="lock_edit_ttnd" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

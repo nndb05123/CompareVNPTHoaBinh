@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Kết quả hỗ trợ, tư vấn, giải đáp phản ánh & kiến nghị";
+    Layout = "~/Views/Shared/_LayoutPortalCP.cshtml";
+}
+
+<style>
+    body.modal-open {
+        overflow: hidden;
+        position: fixed;
+    }
+</style>
+
+<script>
+        var confirmCode = @ViewBag.randomCode;
+        var urlApi = '@ViewBag.urlApi';
+        var recaptcha_v3_public_key = '@ViewBag.recaptcha_v3_public_key';
+        var coreapiURL = '@ViewBag.coreapiURL';
+</script>
+
+@Html.Partial("DialogPleaseWait")
+
+<div>
+
+
+    <div id="app-dspa">
+
+        @Html.Partial("DialogDetail")
+
+        @Html.Partial("TabsDSPA")
+        @*<div class="dspa-listview nosel">
+                <div v-for="(section, index) in sections" :class="'dspa-section sec-' + section.id">
+                    <div class="section-title btn-block">{{ section.ten }}</div>
+                    <div class="section-body container-fluid">
+                        <div v-for="pa in section.requests" class="pa-card" v-on:click="viewDetail(pa)">
+                            <div class="pa-title">{{ pa.linhvuc }}</div>
+                            <div class="pa-content">
+                                {{ shorten(pa.content) }}
+                                <br />
+                                <div class="text-right">{{ pa.sendtime | formatDate }}</div>
+                            </div>
+                            <div class="pa-status-desc">
+                                <div v-if="pa.status_code == 1">
+                                    <span>Đang được xử lý bởi: <b class="mono">{{ pa.donvi }}</b></span>
+                                </div>
+
+                                <div v-if="pa.status_code == 3">
+                                    <span>{{ pa.donvi }} Đang phối hợp với sở/ban/ngành khác để xử lý</span>
+                                </div>
+
+                                <div v-if="pa.status_code == 99">
+                                    <span>Đã xử lý bởi {{ pa.donvi }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <img class="imgone loading-img" src="~/Content/Images/loading_icon.gif" />
+                    <br />
+                    <button class="btn btn-success" v-on:click="loadMoreSection(section, index)">Xem thêm</button>
+                </div>
+            </div>*@
+
+        @*<div id="dlg-detail" class="modal dlg-wnd" role="dialog" data-keyboard="false" style="display:none">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header wnd-title-bar">
+                            <span>[{{ detail.ycid }}] Lĩnh vực: {{ detail.linhvuc }}</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="pa-detail">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="detail-content-tab" data-toggle="tab" href="#detail-content" role="tab" aria-controls="detail-content" aria-selected="true">Nội dung</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="detail-answer-tab" data-toggle="tab" href="#detail-answer" role="tab" aria-controls="detail-answer" aria-selected="false">Trả lời</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="detail-tabs">
+                                    <div class="tab-pane fade show active pa-content" id="detail-content" role="tabpanel" aria-labelledby="detail-content-tab">
+                                        <div class="multiline-textbox" v-html="renderMultilineText(detail.content)">
+                                        </div>
+                                        <div class="float-right">Ngày phản ánh: {{detail.sendtime | formatDate}} </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="detail-answer" role="tabpanel" aria-labelledby="detail-answer-tab">
+                                        <div v-if="detail.status_code == 1">
+                                            <span>{{ detail.donvi }} Đang xử lý</span>
+                                        </div>
+
+                                        <div v-if="detail.status_code == 3">
+                                            <span>{{ detail.donvi }} Đang phối hợp với sở/ban/ngành khác để xử lý</span>
+                                        </div>
+
+                                        <div v-if="detail.status_code == 99">
+                                            <label class="section-title">Trả lời từ: {{ detail.donvi }}</label>
+                                            <div class="pa-answer">
+                                                <div class="multiline-textbox" v-html="renderMultilineText(detail.kqtl)"></div>
+                                            </div>
+                                            <div class="d-inline-block text-right float-right">Ngày trả lời: {{detail.kqtl_tgian | formatDate}}</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <br />
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-primary pull-right" data-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+    </div>
+
+
+</div>
+
+<script src="@Url.Content("~/Scripts/portal_controller.js?v=2")"></script>
+<script src="@Url.Content("~/Scripts/portal_dspa_app.js?v=2")"></script>

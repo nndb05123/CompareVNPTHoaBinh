@@ -1,0 +1,12 @@
+INFO  2019-06-06 07:47:01,311   218ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-06 07:47:05,420  4328ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-06 07:47:12,342 11250ms DangNhapController     Index              - do login...
+INFO  2019-06-06 07:47:13,483 12390ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-06 09:30:41,902   187ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-06 09:30:41,917   203ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-06 14:15:57,279 1184650ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-06 14:16:07,983 1195354ms DangNhapController     Index              - do login...
+INFO  2019-06-06 14:16:08,733 1196104ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-06 21:57:04,706   265ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-06 21:57:11,659  7219ms DangNhapController     Index              - do login...
+INFO  2019-06-06 21:57:12,691  8250ms HomeController         Index              - Enter Home/Index

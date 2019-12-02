@@ -1,0 +1,3 @@
+INFO  2019-11-01 11:13:02,323 35962749ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-01 11:13:05,276 35965703ms DangNhapController     Index              - do login...
+INFO  2019-11-01 11:13:06,245 35966671ms HomeController         Index              - Enter Home/Index

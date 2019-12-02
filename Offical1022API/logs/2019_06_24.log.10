@@ -1,0 +1,603 @@
+INFO  2019-06-25 13:16:35,309 57238722ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:17:05,657 57269070ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:17:05,658 57269071ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:17:05,659 57269072ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:17:05,660 57269073ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:17:05,796 57269209ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:17:36,144 57299556ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:17:36,145 57299557ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:17:36,145 57299557ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:17:36,146 57299558ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:17:36,280 57299692ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:18:06,564 57329976ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:18:06,565 57329977ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:18:06,565 57329977ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:18:06,565 57329977ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:18:06,628 57330040ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:18:36,803 57360216ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:18:36,803 57360216ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:18:36,803 57360216ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:18:36,804 57360217ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:18:36,873 57360286ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:19:07,191 57390604ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:19:07,192 57390605ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:19:07,192 57390605ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:19:07,193 57390606ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:19:07,326 57390739ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:19:37,668 57421080ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:19:37,669 57421081ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:19:37,669 57421081ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:19:37,670 57421082ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:19:37,800 57421212ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:20:08,144 57451557ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:20:08,145 57451558ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:20:08,145 57451558ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:20:08,146 57451559ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:20:08,283 57451696ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:20:38,667 57482080ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:20:38,668 57482081ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:20:38,668 57482081ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:20:38,669 57482082ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:20:38,812 57482225ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:21:09,204 57512616ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:21:09,205 57512617ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:21:09,206 57512618ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:21:09,206 57512618ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:21:09,343 57512755ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:21:39,685 57543098ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:21:39,686 57543099ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:21:39,687 57543100ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:21:39,687 57543100ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:21:39,820 57543233ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:22:10,204 57573617ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:22:10,205 57573618ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:22:10,205 57573618ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:22:10,206 57573619ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:22:10,353 57573766ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:22:40,727 57604139ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:22:40,727 57604139ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:22:40,728 57604140ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:22:40,729 57604141ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:22:40,881 57604293ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:23:11,227 57634640ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:23:11,228 57634641ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:23:11,229 57634642ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:23:11,229 57634642ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:23:11,376 57634789ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:23:41,723 57665136ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:23:41,724 57665137ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:23:41,724 57665137ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:23:41,725 57665138ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:23:41,859 57665272ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:24:12,207 57695619ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:24:12,209 57695621ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:24:12,209 57695621ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:24:12,210 57695622ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:24:12,355 57695767ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:24:42,691 57726104ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:24:42,692 57726105ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:24:42,693 57726106ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:24:42,693 57726106ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:24:42,846 57726259ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:25:13,192 57756605ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:25:13,193 57756606ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:25:13,194 57756607ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:25:13,195 57756608ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:25:13,344 57756757ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:25:43,521 57786933ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:25:43,521 57786933ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:25:43,522 57786934ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:25:43,522 57786934ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:25:43,585 57786997ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:26:13,929 57817342ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:26:13,930 57817343ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:26:13,931 57817344ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:26:13,931 57817344ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:26:14,065 57817478ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:26:44,403 57847816ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:26:44,404 57847817ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:26:44,405 57847818ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:26:44,405 57847818ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:26:44,551 57847963ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:27:14,898 57878310ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:27:14,899 57878311ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:27:14,900 57878312ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:27:14,900 57878312ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:27:15,037 57878449ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:27:45,402 57908815ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:27:45,403 57908816ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:27:45,404 57908817ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:27:45,404 57908817ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:27:45,548 57908961ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:28:15,896 57939308ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:28:15,897 57939309ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:28:15,898 57939310ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:28:15,898 57939310ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:28:16,041 57939453ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:28:46,426 57969838ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:28:46,427 57969839ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:28:46,428 57969840ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:28:46,428 57969840ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:28:46,569 57969981ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:29:16,781 58000194ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:29:16,782 58000195ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:29:16,782 58000195ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:29:16,782 58000195ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:29:16,856 58000269ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:29:47,180 58030592ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:29:47,181 58030593ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:29:47,182 58030594ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:29:47,183 58030595ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:29:47,327 58030739ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:30:17,654 58061067ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:30:17,655 58061068ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:30:17,656 58061069ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:30:17,657 58061070ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:30:17,790 58061203ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:30:48,149 58091562ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:30:48,150 58091563ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:30:48,151 58091564ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:30:48,151 58091564ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:30:48,283 58091696ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:31:18,629 58122041ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:31:18,630 58122042ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:31:18,631 58122043ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:31:18,631 58122043ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:31:18,764 58122176ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:31:49,114 58152527ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:31:49,115 58152528ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:31:49,116 58152529ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:31:49,117 58152530ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:31:49,258 58152671ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:32:19,606 58183018ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:32:19,607 58183019ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:32:19,608 58183020ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:32:19,609 58183021ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:32:19,746 58183158ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:32:50,095 58213507ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:32:50,096 58213508ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:32:50,097 58213509ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:32:50,098 58213510ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:32:50,250 58213662ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:33:20,610 58244023ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:33:20,611 58244024ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:33:20,611 58244024ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:33:20,612 58244025ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:33:22,261 58245674ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:33:52,616 58276029ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:33:52,617 58276030ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:33:52,618 58276031ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:33:52,618 58276031ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:33:52,759 58276172ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:34:23,103 58306515ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:34:23,104 58306516ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:34:23,104 58306516ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:34:23,105 58306517ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:34:23,249 58306661ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:34:53,613 58337026ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:34:53,614 58337027ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:34:53,615 58337028ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:34:53,616 58337029ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:34:53,748 58337161ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:35:24,094 58367507ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:35:24,095 58367508ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:35:24,096 58367509ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:35:24,096 58367509ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:35:24,237 58367650ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:35:54,590 58398002ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:35:54,591 58398003ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:35:54,591 58398003ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:35:54,592 58398004ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:35:54,759 58398171ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:36:25,088 58428501ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:36:25,089 58428502ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:36:25,090 58428503ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:36:25,090 58428503ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:36:25,225 58428638ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:36:55,562 58458974ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:36:55,563 58458975ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:36:55,564 58458976ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:36:55,564 58458976ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:36:55,699 58459111ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:37:26,041 58489454ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:37:26,042 58489455ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:37:26,043 58489456ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:37:26,044 58489457ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:37:26,185 58489598ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:37:56,526 58519938ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:37:56,527 58519939ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:37:56,527 58519939ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:37:56,528 58519940ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:37:56,663 58520075ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:38:27,000 58550413ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:38:27,001 58550414ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:38:27,002 58550415ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:38:27,003 58550416ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:38:27,139 58550552ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:38:57,499 58580911ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:38:57,500 58580912ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:38:57,500 58580912ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:38:57,501 58580913ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:38:57,639 58581051ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:39:27,987 58611399ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:39:27,989 58611401ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:39:27,989 58611401ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:39:27,990 58611402ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:39:28,134 58611546ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:39:58,477 58641890ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:39:58,478 58641891ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:39:58,478 58641891ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:39:58,479 58641892ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:39:58,626 58642039ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:40:28,959 58672371ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:40:28,960 58672372ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:40:28,961 58672373ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:40:28,961 58672373ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:40:29,096 58672508ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:40:59,326 58702739ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:40:59,327 58702740ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:40:59,327 58702740ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:40:59,327 58702740ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:40:59,436 58702849ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:41:29,768 58733180ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:41:29,769 58733181ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:41:29,770 58733182ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:41:29,770 58733182ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:41:29,906 58733318ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:42:00,072 58763484ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:42:00,073 58763485ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:42:00,073 58763485ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:42:00,073 58763485ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:42:00,166 58763578ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:42:31,071 58794484ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:42:31,072 58794485ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:42:31,073 58794486ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:42:31,073 58794486ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:42:31,209 58794622ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:43:02,018 58825430ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:43:02,019 58825431ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:43:02,019 58825431ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:43:02,020 58825432ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:43:02,154 58825566ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:43:32,497 58855910ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:43:32,498 58855911ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:43:32,498 58855911ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:43:32,499 58855912ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:43:32,633 58856046ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:44:02,970 58886382ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:44:02,979 58886391ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:44:02,980 58886392ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:44:02,980 58886392ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:44:03,117 58886529ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:44:33,461 58916873ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:44:33,462 58916874ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:44:33,462 58916874ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:44:33,463 58916875ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:44:33,601 58917013ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:45:03,957 58947370ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:45:03,958 58947371ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:45:03,959 58947372ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:45:03,959 58947372ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:45:04,101 58947514ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:45:34,446 58977858ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:45:34,447 58977859ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:45:34,447 58977859ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:45:34,448 58977860ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:45:34,580 58977992ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:46:04,926 59008339ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:46:04,927 59008340ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:46:04,928 59008341ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:46:04,929 59008342ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:46:05,070 59008483ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:46:35,424 59038837ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:46:35,425 59038838ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:46:35,425 59038838ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:46:35,426 59038839ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:46:35,563 59038976ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:47:05,922 59069334ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:47:05,923 59069335ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:47:05,923 59069335ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:47:05,924 59069336ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:47:06,057 59069469ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:47:36,429 59099842ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:47:36,430 59099843ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:47:36,431 59099844ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:47:36,431 59099844ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:47:36,564 59099977ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:48:06,828 59130240ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:48:06,829 59130241ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:48:06,829 59130241ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:48:06,830 59130242ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:48:06,906 59130318ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:48:37,260 59160673ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:48:37,261 59160674ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:48:37,261 59160674ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:48:37,262 59160675ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:48:37,407 59160820ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:49:07,745 59191158ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:49:07,746 59191159ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:49:07,747 59191160ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:49:07,747 59191160ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:49:07,883 59191296ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:49:38,216 59221628ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:49:38,217 59221629ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:49:38,218 59221630ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:49:38,218 59221630ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:49:38,351 59221763ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:50:08,695 59252108ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:50:08,696 59252109ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:50:08,696 59252109ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:50:08,697 59252110ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:50:08,836 59252249ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:50:39,167 59282580ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:50:39,168 59282581ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:50:39,168 59282581ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:50:39,169 59282582ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:50:39,301 59282714ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:51:09,651 59313064ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:51:09,653 59313066ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:51:09,654 59313067ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:51:09,654 59313067ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:51:09,788 59313201ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:51:40,136 59343549ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:51:40,137 59343550ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:51:40,137 59343550ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:51:40,138 59343551ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:51:40,273 59343685ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:52:10,638 59374050ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:52:10,639 59374051ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:52:10,639 59374051ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:52:10,640 59374052ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:52:10,801 59374213ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:52:41,142 59404554ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:52:41,143 59404555ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:52:41,143 59404555ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:52:41,144 59404556ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:52:41,275 59404687ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:53:11,641 59435054ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:53:11,642 59435055ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:53:11,643 59435056ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:53:11,643 59435056ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:53:11,794 59435207ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:53:42,134 59465547ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:53:42,135 59465548ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:53:42,136 59465549ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:53:42,136 59465549ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:53:42,280 59465693ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:54:12,626 59496038ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:54:12,627 59496039ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:54:12,628 59496040ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:54:12,628 59496040ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:54:12,761 59496173ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:54:43,099 59526511ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:54:43,100 59526513ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:54:43,101 59526513ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:54:43,101 59526513ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:54:43,261 59526673ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:55:13,602 59557015ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:55:13,603 59557016ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:55:13,604 59557017ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:55:13,605 59557018ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:55:13,738 59557151ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:55:44,080 59587492ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:55:44,081 59587493ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:55:44,082 59587494ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:55:44,083 59587495ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:55:44,252 59587664ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:56:14,588 59618000ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:56:14,589 59618001ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:56:14,590 59618002ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:56:14,590 59618002ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:56:14,723 59618135ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:56:44,891 59648304ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:56:44,891 59648304ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:56:44,892 59648305ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:56:44,892 59648305ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:56:44,954 59648367ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:57:15,284 59678696ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:57:15,285 59678697ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:57:15,286 59678698ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:57:15,286 59678698ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:57:15,424 59678836ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:57:45,767 59709179ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:57:45,769 59709182ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:57:45,769 59709182ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:57:45,770 59709182ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:57:45,910 59709322ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:58:16,257 59739670ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:58:16,258 59739671ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:58:16,258 59739671ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:58:16,259 59739672ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:58:16,411 59739824ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:58:46,750 59770162ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:58:46,751 59770163ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:58:46,752 59770164ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:58:46,753 59770165ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:58:46,918 59770330ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:59:17,282 59800694ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:59:17,283 59800695ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:59:17,283 59800695ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:59:17,284 59800696ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:59:17,427 59800839ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 13:59:47,791 59831204ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 13:59:47,792 59831205ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 13:59:47,793 59831206ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 13:59:47,793 59831206ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 13:59:47,928 59831341ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:00:18,305 59861717ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:00:18,306 59861718ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:00:18,306 59861718ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:00:18,307 59861719ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:00:18,453 59861865ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:00:48,797 59892209ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:00:48,798 59892210ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:00:48,798 59892210ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:00:48,799 59892211ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:00:48,932 59892344ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:01:19,286 59922699ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:01:19,287 59922700ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:01:19,288 59922701ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:01:19,288 59922701ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:01:19,422 59922835ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:01:49,756 59953168ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:01:49,757 59953169ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:01:49,758 59953170ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:01:49,759 59953171ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:01:49,892 59953304ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:02:20,248 59983661ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:02:20,249 59983662ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:02:20,249 59983662ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:02:20,250 59983663ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:02:20,382 59983795ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:02:50,720 60014133ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:02:50,721 60014134ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:02:50,722 60014135ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:02:50,723 60014136ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:02:50,873 60014286ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:03:21,230 60044642ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:03:21,231 60044643ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:03:21,231 60044643ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:03:21,232 60044644ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:03:21,380 60044792ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:03:51,729 60075142ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:03:51,730 60075143ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:03:51,731 60075144ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:03:51,731 60075144ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:03:51,866 60075279ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:04:22,219 60105632ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:04:22,220 60105633ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:04:22,221 60105634ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:04:22,221 60105634ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:04:22,356 60105769ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:04:52,714 60136126ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:04:52,715 60136127ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:04:52,715 60136127ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:04:52,715 60136127ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:04:52,852 60136264ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:05:23,204 60166617ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:05:23,205 60166618ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:05:23,206 60166619ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:05:23,206 60166619ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:05:23,340 60166753ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:05:53,710 60197122ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:05:53,718 60197130ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:05:53,719 60197131ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:05:53,719 60197131ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:05:53,862 60197274ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:06:24,229 60227641ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:06:24,230 60227642ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:06:24,230 60227642ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:06:24,231 60227643ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:06:24,365 60227777ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:06:54,719 60258132ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:06:54,720 60258133ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:06:54,721 60258134ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:06:54,721 60258134ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:06:54,869 60258282ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:07:25,232 60288644ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:07:25,233 60288645ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:07:25,234 60288646ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:07:25,234 60288646ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:07:25,383 60288795ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:07:55,743 60319156ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:07:55,744 60319157ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:07:55,745 60319158ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:07:55,745 60319158ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:07:55,879 60319292ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:08:26,233 60349646ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:08:26,234 60349647ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:08:26,235 60349648ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:08:26,235 60349648ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:08:26,366 60349779ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:08:56,741 60380153ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:08:56,742 60380154ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:08:56,742 60380154ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:08:56,743 60380155ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:08:56,877 60380289ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:09:27,058 60410471ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:09:27,058 60410471ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:09:27,058 60410471ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:09:27,059 60410472ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:09:27,124 60410537ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:09:57,481 60440894ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:09:57,482 60440895ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:09:57,482 60440895ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:09:57,483 60440896ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:09:57,628 60441040ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:10:27,986 60471398ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:10:27,987 60471399ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:10:27,988 60471400ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:10:27,988 60471400ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:10:28,122 60471534ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:10:58,497 60501910ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:10:58,498 60501911ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:10:58,498 60501911ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:10:58,499 60501912ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:10:58,652 60502065ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:11:29,014 60532426ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:11:29,015 60532427ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:11:29,016 60532428ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:11:29,016 60532428ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:11:29,161 60532573ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:11:59,526 60562939ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:11:59,527 60562940ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:11:59,527 60562940ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:11:59,528 60562941ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:11:59,674 60563087ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:12:30,065 60593478ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:12:30,066 60593479ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:12:30,066 60593479ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:12:30,067 60593480ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:12:30,223 60593636ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:13:00,581 60623993ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:13:00,589 60624001ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:13:00,590 60624002ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:13:00,590 60624002ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:13:00,726 60624138ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:13:31,081 60654494ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:13:31,083 60654496ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:13:31,083 60654496ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:13:31,084 60654497ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:13:31,235 60654648ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:14:01,591 60685004ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:14:01,592 60685005ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:14:01,593 60685006ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:14:01,593 60685006ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:14:01,748 60685161ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:14:32,108 60715520ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:14:32,110 60715522ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:14:32,110 60715522ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:14:32,111 60715523ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:14:32,265 60715677ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:15:02,627 60746040ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:15:02,628 60746041ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:15:02,628 60746041ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:15:02,629 60746042ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:15:02,822 60746235ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:15:33,195 60776607ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:15:33,196 60776608ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:15:33,196 60776608ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:15:33,197 60776609ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:15:33,340 60776752ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:16:03,735 60807148ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:16:03,736 60807149ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:16:03,737 60807150ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:16:03,737 60807150ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:16:03,882 60807295ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:16:34,258 60837671ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:16:34,259 60837672ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:16:34,260 60837673ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:16:34,260 60837673ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:16:34,402 60837815ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:17:04,746 60868158ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:17:04,747 60868159ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:17:04,747 60868159ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:17:04,748 60868160ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:17:04,903 60868315ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:17:35,269 60898682ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:17:35,271 60898684ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}
+INFO  2019-06-25 14:17:35,271 60898684ms AudioModuleV2          <.ctor>b__0_1      - ymdhms: 20190625 113227
+INFO  2019-06-25 14:17:35,272 60898685ms AudioModuleV2          <.ctor>b__0_1      - record_time: 6/25/2019 11:32:27 AM
+INFO  2019-06-25 14:17:35,409 60898822ms AudioModuleV2          <.ctor>b__0_0      - GET v2/audio/checkandmatch
+INFO  2019-06-25 14:18:05,767 60929180ms AudioModuleV2          <.ctor>b__0_1      - POST v2/audio/latest/batch
+INFO  2019-06-25 14:18:05,768 60929181ms AudioModuleV2          <.ctor>b__0_1      - parse item: {"fn":"16-209-A-902183892299---20190625113227.wav","time":"113227","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\6\\25\\16-209-A-902183892299---20190625113227.wav","fs":"100","dno":"209","id":"16-209-A-902183892299---20190625113227.wav","date":"20190625","lno":"16","sdt":"902183892299","type":"A"}

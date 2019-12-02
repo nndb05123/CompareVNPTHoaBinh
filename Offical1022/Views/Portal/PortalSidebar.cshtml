@@ -1,0 +1,43 @@
+﻿<!-- SIDEBAR -->
+<section class="content-sidebar">
+    <div class="panel panel-primary">
+        <div class="panel-heading status_header">
+            <h5><span class="glyphicon glyphicon-search"></span> Tìm kiếm nhanh</h5>
+        </div>
+        <div class="panel-body">
+            <span>Bạn cần nhập chính xác <b>SĐT của bạn</b> và <b>mã phản ánh</b> bạn nhận được qua tin nhắn để tìm kiếm.</span>
+            <input class="form-control vnpt-margin-bottom" placeholder="số điện thoại" title="sdt liên hệ của bạn khi gửi phản ánh" v-model="searchphone">
+            <input class="form-control vnpt-margin-bottom" placeholder="mã phản ánh" title="mã bạn nhận được trong tin nhắn từ 1022" v-model="searchcode">
+            <btn class="btn btn-primary" style="border-radius:17px" v-on:click="verifyBeforeSearch">Tìm kiếm</btn>
+        </div>
+    </div>
+    <div class="panel panel-primary vnpt-margin-top">
+        <div class="panel-heading status_header">
+            <h5><img src="~/Content/img/icon-TTHC.png"> Lưu ý:</h5>
+        </div>
+        <div class="panel-body">
+            <b>1. Hệ thống tiếp nhận các phản ánh, kiến nghị về:</b>
+            <ul>
+                <li>Hành vi chậm trễ, gây phiền hà hoặc không thực hiện, thực hiện không đúng quy định của cán bộ, công chức, viên chức trong giải quyết thủ tục hành chính;</li>
+                <li>Những cơ chế, chính sách, thủ tục hành chính không phù hợp với thực tế, không đồng bộ, không thống nhất, không hợp pháp, trái với các điều ước quốc tế mà Việt Nam đã ký kết hoặc gia nhập;</li>
+                <li>Những giải pháp, sáng kiến ban hành mới quy định về cơ chế, chính sách, thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh và đời sống của người dân.</li>
+            </ul>
+            2. Hệ thống không tiếp nhận <b style="color:red">đơn thư khiếu nại, tố cáo và hướng dẫn giải đáp pháp luật</b>, xin liên hệ trực tiếp bộ phận tương ứng tại Trung tâm hành chính công của tỉnh.
+        </div>
+    </div>
+    <div class="panel panel-primary vnpt-margin-top">
+        <div class="panel-heading status_header">
+            <h5><img src="~/Content/img/icon-TTHC.png"> Phản ánh, kiến nghị mới tiếp nhận</h5>
+        </div>
+        <div class="panel-body">
+            <ul class="list-group">
+                <li v-for="item in latestList5" :title="item.linhvuc" class="list-group-item" v-on:click="showDetail(item)">
+                    <div><b>{{item.linhvuc}}</b></div>
+                    <div>{{ item.summary }}</div>
+                    <span class="pull-right" style="font-style:italic">Người gửi: <b>{{ item.hoten}}</b></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- SIDEBAR -->

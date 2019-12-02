@@ -1,0 +1,46 @@
+﻿@using WebUI
+@using HotlineCore
+
+@{
+    ViewBag.Title = "Audio Match Debug";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<style>
+    .green {
+        color: #0f0;
+    }
+    .red {
+        color: #f00;
+    }
+</style>
+<div id="app" class="container">
+    <table class="table table-bordered">
+        <thead>
+            <th>YeuCau_ID</th>
+            <th><i class="fa fa-calendar fa-white">&#160;</i>Tiếp nhận</th>
+            <th><i class="fa fa-volume-up fa-white">&#160;</i>Ghi âm</th>
+        </thead>
+        <tbody>
+            <tr v-for="(yc, index) in ycls">
+                <td>{{yc.yeucau_id}}</td>
+                <td>{{yc.tgian_tiepnhan}}</td>
+                <td>
+                    <div v-for="file in yc.files">
+                        <div :class="file.matched==1?'green':'red'">{{file.name}}</div>
+                        <div>{{file.ycid}}</div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            ycls: @Html.Raw(ViewBag.ycls)
+        }
+    });
+</script>

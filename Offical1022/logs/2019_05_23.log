@@ -1,0 +1,239 @@
+INFO  2019-05-23 09:42:19,511 976884ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 09:42:28,902 986276ms DangNhapController     Index              - do login...
+INFO  2019-05-23 09:42:30,230 987604ms HomeController         Index              - Enter Home/Index
+ERROR 2019-05-23 09:42:41,325 998698ms PhanAnhController      getListOfPhanAnh   - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.p_YeuCau_DanhSachV6'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__f()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at WebUI.Models.HotlineEntities.p_YeuCau_DanhSachV6(Nullable`1 ngaytu, Nullable`1 ngayden, String tukhoa, Nullable`1 donvi_id, Nullable`1 linhvuc_id, Nullable`1 loaiyc_id, Nullable`1 hinhthuc_id, Nullable`1 doituong_id, Nullable`1 kenhtn_id, Nullable`1 capdo_id, Nullable`1 trangthai_id, Nullable`1 ghiam, Nullable`1 phanloaitthc_id, Nullable`1 nguoidung_id, Nullable`1 phuong_id, Nullable`1 huyen_id) in E:\prjs\HCC_HB\WebUI\Models\Hotline.Context.cs:line 901
+   at WebUI.WebServices.PhanAnhService._GetDanhSachPhanAnh(p_NguoiDung_Result user, DateTime startDay, DateTime endDay, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\WebServices\PhanAnhService.asmx.cs:line 187
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh(String startDayString, String endDayString, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 126
+INFO  2019-05-23 09:43:18,734 1036107ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 09:43:24,171 1041545ms DangNhapController     Index              - do login...
+INFO  2019-05-23 09:43:24,234 1041608ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-23 09:46:09,707 1207080ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 09:46:12,691 1210065ms DangNhapController     Index              - do login...
+INFO  2019-05-23 09:46:12,723 1210097ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-23 09:48:12,781 1330155ms ServiceCenter          send_sms_citizen   - yeucau_id 300B4230519 sdt 0823130986
+ERROR 2019-05-23 09:48:18,203 1335577ms ServiceCenter          send_sms_citizen   -   error ok
+ERROR 2019-05-23 09:49:01,877 1379251ms PhanAnhController      getListOfPhanAnh   - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.p_YeuCau_DanhSachV6'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__f()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at WebUI.Models.HotlineEntities.p_YeuCau_DanhSachV6(Nullable`1 ngaytu, Nullable`1 ngayden, String tukhoa, Nullable`1 donvi_id, Nullable`1 linhvuc_id, Nullable`1 loaiyc_id, Nullable`1 hinhthuc_id, Nullable`1 doituong_id, Nullable`1 kenhtn_id, Nullable`1 capdo_id, Nullable`1 trangthai_id, Nullable`1 ghiam, Nullable`1 phanloaitthc_id, Nullable`1 nguoidung_id, Nullable`1 phuong_id, Nullable`1 huyen_id) in E:\prjs\HCC_HB\WebUI\Models\Hotline.Context.cs:line 901
+   at WebUI.WebServices.PhanAnhService._GetDanhSachPhanAnh(p_NguoiDung_Result user, DateTime startDay, DateTime endDay, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\WebServices\PhanAnhService.asmx.cs:line 187
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh(String startDayString, String endDayString, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 126
+ERROR 2019-05-23 09:50:57,192  6517ms PhanAnhController      getListOfPhanAnh   - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.p_YeuCau_DanhSachV6'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__f()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at WebUI.Models.HotlineEntities.p_YeuCau_DanhSachV6(Nullable`1 ngaytu, Nullable`1 ngayden, String tukhoa, Nullable`1 donvi_id, Nullable`1 linhvuc_id, Nullable`1 loaiyc_id, Nullable`1 hinhthuc_id, Nullable`1 doituong_id, Nullable`1 kenhtn_id, Nullable`1 capdo_id, Nullable`1 trangthai_id, Nullable`1 ghiam, Nullable`1 phanloaitthc_id, Nullable`1 nguoidung_id, Nullable`1 phuong_id, Nullable`1 huyen_id) in E:\prjs\HCC_HB\WebUI\Models\Hotline.Context.cs:line 901
+   at WebUI.WebServices.PhanAnhService._GetDanhSachPhanAnh(p_NguoiDung_Result user, DateTime startDay, DateTime endDay, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\WebServices\PhanAnhService.asmx.cs:line 187
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh(String startDayString, String endDayString, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 126
+INFO  2019-05-23 09:54:07,594 160838ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 09:54:14,302 167546ms DangNhapController     Index              - do login...
+INFO  2019-05-23 09:54:15,475 168719ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-23 09:56:17,557 290800ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 09:59:24,639 477883ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-23 09:59:42,146 495390ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 09:59:44,522 497766ms DangNhapController     Index              - do login...
+INFO  2019-05-23 09:59:44,554 497797ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-23 10:01:32,163 605407ms ServiceCenter          send_sms_citizen   - yeucau_id 1AEF1230519 sdt 0823130986
+ERROR 2019-05-23 10:01:32,757 606001ms ServiceCenter          send_sms_citizen   -   error ok
+ERROR 2019-05-23 10:12:26,604 1259847ms PhanAnhController      getListOfPhanAnh   - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.p_YeuCau_DanhSachV6'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__f()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at WebUI.Models.HotlineEntities.p_YeuCau_DanhSachV6(Nullable`1 ngaytu, Nullable`1 ngayden, String tukhoa, Nullable`1 donvi_id, Nullable`1 linhvuc_id, Nullable`1 loaiyc_id, Nullable`1 hinhthuc_id, Nullable`1 doituong_id, Nullable`1 kenhtn_id, Nullable`1 capdo_id, Nullable`1 trangthai_id, Nullable`1 ghiam, Nullable`1 phanloaitthc_id, Nullable`1 nguoidung_id, Nullable`1 phuong_id, Nullable`1 huyen_id) in E:\prjs\HCC_HB\WebUI\Models\Hotline.Context.cs:line 901
+   at WebUI.WebServices.PhanAnhService._GetDanhSachPhanAnh(p_NguoiDung_Result user, DateTime startDay, DateTime endDay, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\WebServices\PhanAnhService.asmx.cs:line 187
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh(String startDayString, String endDayString, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 126
+INFO  2019-05-23 11:09:51,255   718ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 11:09:55,630  5094ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 11:09:59,458  8922ms DangNhapController     Index              - do login...
+INFO  2019-05-23 11:10:00,974 10438ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-23 11:10:01,396 10859ms DangNhapController     Index              - do login...
+INFO  2019-05-23 11:10:01,427 10891ms HomeController         Index              - Enter Home/Index
+ERROR 2019-05-23 11:10:07,849 17313ms PhanAnhController      getListOfPhanAnh   - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.p_YeuCau_DanhSachV6'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__f()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at WebUI.Models.HotlineEntities.p_YeuCau_DanhSachV6(Nullable`1 ngaytu, Nullable`1 ngayden, String tukhoa, Nullable`1 donvi_id, Nullable`1 linhvuc_id, Nullable`1 loaiyc_id, Nullable`1 hinhthuc_id, Nullable`1 doituong_id, Nullable`1 kenhtn_id, Nullable`1 capdo_id, Nullable`1 trangthai_id, Nullable`1 ghiam, Nullable`1 phanloaitthc_id, Nullable`1 nguoidung_id, Nullable`1 phuong_id, Nullable`1 huyen_id) in E:\prjs\HCC_HB\WebUI\Models\Hotline.Context.cs:line 901
+   at WebUI.WebServices.PhanAnhService._GetDanhSachPhanAnh(p_NguoiDung_Result user, DateTime startDay, DateTime endDay, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\WebServices\PhanAnhService.asmx.cs:line 187
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh(String startDayString, String endDayString, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 126
+INFO  2019-05-23 11:10:24,772 34236ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 11:10:28,428 37892ms DangNhapController     Index              - do login...
+INFO  2019-05-23 11:10:28,475 37939ms HomeController         Index              - Enter Home/Index
+ERROR 2019-05-23 14:32:03,105  8344ms PhanAnhController      getListOfPhanAnh   - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.p_YeuCau_DanhSachV6'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__f()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at WebUI.Models.HotlineEntities.p_YeuCau_DanhSachV6(Nullable`1 ngaytu, Nullable`1 ngayden, String tukhoa, Nullable`1 donvi_id, Nullable`1 linhvuc_id, Nullable`1 loaiyc_id, Nullable`1 hinhthuc_id, Nullable`1 doituong_id, Nullable`1 kenhtn_id, Nullable`1 capdo_id, Nullable`1 trangthai_id, Nullable`1 ghiam, Nullable`1 phanloaitthc_id, Nullable`1 nguoidung_id, Nullable`1 phuong_id, Nullable`1 huyen_id) in E:\prjs\HCC_HB\WebUI\Models\Hotline.Context.cs:line 901
+   at WebUI.WebServices.PhanAnhService._GetDanhSachPhanAnh(p_NguoiDung_Result user, DateTime startDay, DateTime endDay, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\WebServices\PhanAnhService.asmx.cs:line 187
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh(String startDayString, String endDayString, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 126
+INFO  2019-05-23 14:44:04,497 729735ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 14:44:09,059 734298ms DangNhapController     Index              - do login...
+INFO  2019-05-23 14:44:10,028 735267ms HomeController         Index              - Enter Home/Index
+ERROR 2019-05-23 14:46:15,782 861021ms PhanAnhController      getListOfPhanAnh   - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.p_YeuCau_DanhSachV6'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__f()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at WebUI.Models.HotlineEntities.p_YeuCau_DanhSachV6(Nullable`1 ngaytu, Nullable`1 ngayden, String tukhoa, Nullable`1 donvi_id, Nullable`1 linhvuc_id, Nullable`1 loaiyc_id, Nullable`1 hinhthuc_id, Nullable`1 doituong_id, Nullable`1 kenhtn_id, Nullable`1 capdo_id, Nullable`1 trangthai_id, Nullable`1 ghiam, Nullable`1 phanloaitthc_id, Nullable`1 nguoidung_id, Nullable`1 phuong_id, Nullable`1 huyen_id) in E:\prjs\HCC_HB\WebUI\Models\Hotline.Context.cs:line 901
+   at WebUI.WebServices.PhanAnhService._GetDanhSachPhanAnh(p_NguoiDung_Result user, DateTime startDay, DateTime endDay, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\WebServices\PhanAnhService.asmx.cs:line 187
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh(String startDayString, String endDayString, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 126
+INFO  2019-05-23 14:47:26,082 931321ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 14:47:33,613 938852ms DangNhapController     Index              - do login...
+INFO  2019-05-23 14:47:33,645 938883ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-23 14:59:03,011 1628250ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-23 14:59:08,339 1633578ms DangNhapController     Index              - do login...
+INFO  2019-05-23 14:59:08,370 1633609ms HomeController         Index              - Enter Home/Index
+ERROR 2019-05-23 15:32:49,343 3654582ms PhanAnhController      getListOfPhanAnh   - System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.p_YeuCau_DanhSachV6'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__f()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass10`1.<ExecuteFunction>b__e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at WebUI.Models.HotlineEntities.p_YeuCau_DanhSachV6(Nullable`1 ngaytu, Nullable`1 ngayden, String tukhoa, Nullable`1 donvi_id, Nullable`1 linhvuc_id, Nullable`1 loaiyc_id, Nullable`1 hinhthuc_id, Nullable`1 doituong_id, Nullable`1 kenhtn_id, Nullable`1 capdo_id, Nullable`1 trangthai_id, Nullable`1 ghiam, Nullable`1 phanloaitthc_id, Nullable`1 nguoidung_id, Nullable`1 phuong_id, Nullable`1 huyen_id) in E:\prjs\HCC_HB\WebUI\Models\Hotline.Context.cs:line 901
+   at WebUI.WebServices.PhanAnhService._GetDanhSachPhanAnh(p_NguoiDung_Result user, DateTime startDay, DateTime endDay, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\WebServices\PhanAnhService.asmx.cs:line 187
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh(String startDayString, String endDayString, String keyWord, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8, Nullable`1 condition9) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 126

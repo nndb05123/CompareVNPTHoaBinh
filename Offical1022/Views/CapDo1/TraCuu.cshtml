@@ -1,0 +1,614 @@
+﻿@using WebUI
+@using HotlineCore
+
+@{
+    ViewBag.Title = "Tra cứu phản ánh - cấp độ 1";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+@Html.Partial("DialogPleaseWait")
+
+<div id="MyApp">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="startDayString" class="control-label col-sm-1">Từ ngày</label>
+                    <div class="col-sm-5">
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right nhapngay" id="startDayString" v-model="startDayString" />
+                        </div>
+                    </div>
+                    <label for="endDayString" class="control-label col-sm-1">Đến ngày</label>
+                    <div class="col-sm-5">
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right nhapngay" id="endDayString" v-model="endDayString" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="loai" class="control-label col-sm-1">Từ khóa</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control pull-right input-sm" id="tukhoa" v-model="tukhoa" />
+                    </div>
+                    <label for="loai" class="control-label col-sm-1">Loại</label>
+                    <div class="col-sm-5">
+                        <select id="loai" class="form-control input-sm" v-model="loaibc">
+                            <option value="1">Mã phản ánh</option>
+                            <option value="2">Số điện thoại</option>
+                            <option value="3">Họ tên</option>
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <button type="button" class="btn btn-primary" v-on:click="locDuLieu">Lọc dữ liệu</button>
+            </form>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Danh sách chi tiết
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered" style="font-size: 12px">
+                        <tr>
+                            <th></th>
+                            <th>Mã YC</th>
+                            <th>Thời gian</th>
+                            <th>Họ tên</th>
+                            <th>SĐT</th>
+                            <th>Nội dung</th>
+                            <th>Loại YC</th>
+                            <th>Lĩnh vực</th>
+                            <th>Cấp độ</th>
+                            <th>Trạng thái</th>
+                            <th>Đ.vị đang xử lý</th>
+                            <th>ND xử lý</th>
+                        </tr>
+                        <tr v-for="item in dsTraCuu">
+                            <td align="center"><a style="cursor:pointer" v-on:click="showModal(item.yeucau_id)"><i class="fa fa-edit text-blue"></i></a></td>
+                            <td>{{ item.yeucau_id }}</td>
+                            <td>{{ item.s_tgian_tiepnhan }}</td>
+                            <td>{{ item.nguoigoi_hoten }}</td>
+                            <td>{{ item.nguoigoi_sdt }}</td>
+                            <td>{{ item.yeucau_noidung }}</td>
+                            <td>{{ item.loaiyc_ten }}</td>
+                            <td>{{ item.linhvuc_ten }}</td>
+                            <td>{{ item.capdo_ten }}</td>
+                            <td>{{ item.trangthai_ten }}</td>
+                            <td>{{ item.donvi_ten }}</td>
+                            <td>
+                                <p>C2 : {{ item.noidung_c2_xuly }}</p>
+                                <p>C1 : {{ item.noidung_c1_xuly }}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="update" role="dialog">
+        <div class="modal-dialog modal-lg">
+            Modal content
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thông tin phản ánh <span class="text-danger text-bold">{{ yeucau_id }}</span></h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="box-body">
+                            <div class="nav-tabs-custom">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#tab_4" data-toggle="tab">Thông tin chung</a></li>
+                                    <li><a href="#tab_5" data-toggle="tab">Thông tin người dân</a></li>
+                                    <li><a href="#tab_6" data-toggle="tab">Kết quả xử lý</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab_4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">T.gian tiếp nhận</label>
+                                                    <div class="col-sm-10">
+                                                        <span class="form-control">{{ tgian_tiepnhan | formatDate }}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Nội dung phản ánh</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" v-model="yeucau_noidung" rows="10" spellcheck="false"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Lĩnh vực</label>
+                                                    <div class="col-sm-10">
+                                                        <select v-model="linhvuc_id" class="form-control">
+                                                            <option v-for="item in dsLinhVuc" v-bind:value="item.linhvuc_id">{{ item.linhvuc_ten }}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Đã gọi kiểm</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="checkbox" v-model="dagoikiem" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                    <div class="tab-pane" id="tab_5">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Họ tên</label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" v-model="nguoigoi_hoten" />
+                                                    </div>
+                                                    <label class="control-label col-sm-2">Số ĐT</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="text" class="form-control" v-model="nguoigoi_sdt" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Email</label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" v-model="nguoigoi_email" />
+                                                    </div>
+                                                    <label class="control-label col-sm-2">CMND</label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" v-model="nguoigoi_cmnd" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Đối tượng</label>
+                                                    <div class="col-sm-4">
+                                                        <select v-model="doituong_id" name="doituong_id" class="form-control">
+                                                            <option v-for="item in dsDoiTuong" v-bind:value="item.doituong_id">{{ item.doituong_ten }}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Mạng XH</label>
+                                                    <div class="col-sm-4">
+                                                        <select v-model="mangxh_id" class="form-control">
+                                                            <option value="">-Không-</option>
+                                                            <option value="FACEBOOK">Facebook</option>
+                                                            <option value="VIBER">Viber</option>
+                                                            <option value="ZALO">Zalo</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="control-label col-sm-2">Nickname</label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" v-model="nguoigoi_nickname" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Địa chỉ</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" v-model="nguoigoi_diachi" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2">Huyện/Tp</label>
+                                                    <div class="col-sm-4">
+                                                        <select v-on:change="getDsPhuong" v-model="nguoigoi_huyen_id" class="form-control">
+                                                            <option v-for="item in dsHuyen" v-bind:value="item.huyen_id">{{ item.huyen_ten }}</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="control-label col-sm-2">Xã/Phường</label>
+                                                    <div class="col-sm-4">
+                                                        <select id="cboPhuong" class="form-control" v-model="nguoigoi_phuong_id">
+                                                            <option v-for="item in dsPhuong" v-bind:value="item.phuong_id">{{ item.phuong_ten }}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                    <div class="tab-pane" id="tab_6">
+                                        <div class="row">
+                                            <div class="col-sm-12 bg-success">
+                                                <div class="form-group">
+                                                    <div class="col-sm-3">
+                                                        <label class="control-label">Trạng thái</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <label class="control-label">{{ trangthai_ten }}</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <label class="control-label">Cấp độ</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <label class="control-label">{{ capdo_id }}</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-3">
+                                                        <label class="control-label">Đơn vị đang xử lý</label>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <select v-model="donvi_id" name="donvi_id" class="form-control">
+                                                            <option v-for="item in dsDonVi" v-bind:value="item.donvi_id">{{ item.donvi_ten }}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 10px">
+
+                                            <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.DIEN_THOAI_VIEN)" style="margin-top: 5px">
+                                                <div class="block bg-info">
+                                                    <div class="">
+                                                        <h4><span class="label label-info">Cấp độ 1</span></h4>
+                                                        <div>
+                                                            <p>- Nội dung xử lý:<i>{{noidung_c1_xuly}}</i></p>
+                                                            <p>- Thời gian xử lý: <i>{{ tgian_c1_xuly | formatDate }}</i></p>
+                                                            <p v-if="c1_file_name != ''">
+                                                                - File đính kèm:
+                                                                <a v-bind:href="downloadUrl_c1" target="_blank">Tệp tin</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.CHUYEN_VIEN_BAN_NGANH)" style="margin-top: 5px">
+                                                <div class="block bg-success">
+                                                    <div>
+                                                        <h4><span class="label label-success">Cấp độ 2</span></h4>
+                                                        <div>
+                                                            <p>- Đơn vị xử lý: <i>{{ donvi_c2_ten }}</i></p>
+                                                            <p>- Thời gian để xử lý từ <i>{{ tgian_c2_xuly_tu | formatDate }}</i> đến <i>{{ tgian_c2_xuly_den | formatDate }}</i></p>
+                                                            <p>- Thời gian xử lý: <i>{{ tgian_c2_xuly | formatDate }}</i></p>
+                                                            <p>- Nội dung xử lý: <i>{{ noidung_c2_xuly }}</i></p>
+                                                            <p v-if="c2_file_name!=''">
+                                                                - File đính kèm:
+                                                                <a v-bind:href="downloadUrl_c2" target="_blank">Tệp tin</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.LANH_DAO_BAN_NGANH)" style="margin-top: 5px">
+                                                <div class="block bg-warning">
+                                                    <div>
+                                                        <h4><span class="label label-warning">Cấp độ 3</span></h4>
+                                                        <div>
+                                                            <p>- Đơn vị xử lý: <i>{{ donvi_c3_ten }}</i></p>
+                                                            <p>- Thời gian để xử lý từ <i>{{ tgian_c2_xuly_den | formatDate }}</i> đến <i>{{ tgian_c3_xuly_den | formatDate }}</i></p>
+                                                            <p>- Thời gian xử lý: <i>{{ tgian_c3_xuly | formatDate }}</i></p>
+                                                            <p>- Nội dung xử lý: <i>{{ noidung_c3_xuly }}</i></p>
+                                                            <p v-if="c3_file_name!=''">
+                                                                - File đính kèm:
+                                                                <a v-bind:href="downloadUrl_c3" target="_blank">Tệp tin</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div v-if="capdo_id >= @Html.Raw((int)CAP_DO_YEU_CAU.LANH_DAO_UY_BAN_NHAN_DAN)" style="margin-top: 5px">
+                                                <div class="block bg-danger">
+                                                    <div>
+                                                        <h4><span class="label label-danger">Cấp độ 4</span></h4>
+                                                        <div>
+                                                            <p>- Đơn vị xử lý: <i>{{ donvi_c4_ten }}</i></p>
+                                                            <p>- Nội dung xử lý: <i>{{ noidung_c4_xuly }}</i></p>
+                                                            <p>- Thời gian xử lý: <i>{{ tgian_c4_xuly | formatDate }}</i></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                </div>
+                                <!-- /.tab-content -->
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <div class="row">
+                                <div class="col-md-12" v-if="loi">
+                                    <div class="alert alert-danger">
+                                        <i class="icon fa fa-info"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                                <div class="col-md-12" v-if="thanhcong">
+                                    <div class="alert alert-success">
+                                        <i class="icon fa fa-check"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-footer -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Foot {
+    <script>
+        var MyApp = new Vue({
+            el: '#MyApp',
+            data: {
+                dsTraCuu: [],
+                startDayString: '@ViewBag.startDayString',
+                endDayString: '@ViewBag.endDayString',
+                tukhoa: '',
+                loaibc: 2,
+                dsHuyen: [],
+                dsPhuong: [],
+                dsDoiTuong: [],
+                dsLinhVuc: [],
+                dsDonVi: [],
+                dsDangXuLy: [],
+                dsSaiDonVi: [],
+                dsDaXuLy: [],
+                yeucau_id: '',
+                tgian_tiepnhan: '',
+                yeucau_noidung: '',
+                nguoigoi_hoten: '',
+                nguoigoi_sdt: '',
+                nguoigoi_cmnd: '',
+                nguoigoi_diachi: '',
+                nguoigoi_huyen_id: null,
+                nguoigoi_phuong_id: null,
+                nguoigoi_email: '',
+                nguoigoi_nickname: '',
+                mangxh_id: '',
+                loaiyc_id: 1,
+                linhvuc_id: 1,
+                doituong_id: 1,
+                hinhthuc_id: 1,
+                trangthai_id: 1,
+                trangthai_ten: '',
+                capdo_id: 1,
+                donvi_id: 2,
+                donvi_dangxuly_ten: '',
+                noidung_c1_xuly: '',
+                c1_file_name: '',
+                c1_file_title: '',
+                tgian_c1_xuly: '',
+                tgian_c2_xuly_tu: '',
+                tgian_c2_xuly_den: '',
+                tgian_c2_xuly: '',
+                noidung_c2_xuly: '',
+                c2_file_name: '',
+                c2_file_title: '',
+                tgian_c3_xuly: '',
+                tgian_c3_xuly_den: '',
+                c3_file_name: '',
+                c3_file_title: '',
+                noidung_c3_xuly: '',
+                tgian_c4_xuly: '',
+                noidung_c4_xuly: '',
+                donvi_c2_ten: '',
+                donvi_c3_ten: '',
+                donvi_c4_ten: '',
+                dagoikiem: false,
+                thongbao: '',
+                loi: false,
+                thanhcong: false
+            },
+            methods: {
+                locDuLieu: function () {
+                    var postData = {
+                        startDayString: MyApp.startDayString,
+                        endDayString: MyApp.endDayString,
+                        tukhoa: MyApp.tukhoa,
+                        loaibc: MyApp.loaibc
+                    }
+                    MyApp.dsTraCuu = [];
+                    $.post("@Url.Action("GetDsTraCuu","capdo1")", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsTraCuu.push(v);
+                        });
+                    });
+                },
+                getDsDoiTuong: function () {
+                    $.post("@Url.Action("GetDsDoiTuong","DoiTuong")", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsDoiTuong.push(v);
+                        });
+                    })
+                },
+                getDsLinhVuc: function () {
+                    $.post("@Url.Action("GetDsLinhVuc", "LinhVuc")", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsLinhVuc.push(v);
+                        });
+                    })
+                },
+                getDsHuyen: function () {
+                    $.post("@Url.Action("GetDsHuyen", "Dvhc")", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsHuyen.push(v);
+                        });
+                        //MyApp.getDsPhuong();
+                    })
+                },
+                getDsPhuong: function () {
+                    MyApp.dsPhuong = [];
+                    var postData = { huyen_id: MyApp.nguoigoi_huyen_id };
+                    $.post("@Url.Action("GetDsPhuongTheoHuyen", "Dvhc")", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsPhuong.push(v);
+                        });
+                    })
+                },
+                getDsDonVi: function () {
+                    $.post("@Url.Action("GetDsDonVi", "DonVi", new { area = "" })", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsDonVi.push(v);
+                        });
+                    });
+                },
+                showModal: function (yeucau_id) {
+                    MyApp.loi = false;
+                    MyApp.thongbao = '';
+                    MyApp.thanhcong = false;
+                    var postData = { yeucau_id: yeucau_id };
+                    $.post("@Url.Action("getphananh", "capdo1", new { area = "" })", postData, function (data) {
+                        MyApp.yeucau_id = data.yeucau_id;
+                        MyApp.tgian_tiepnhan = data.tgian_tiepnhan;
+                        MyApp.yeucau_noidung = data.yeucau_noidung;
+                        MyApp.nguoigoi_hoten = data.nguoigoi_hoten;
+                        MyApp.nguoigoi_sdt = data.nguoigoi_sdt;
+                        MyApp.linhvuc_id = data.linhvuc_id;
+                        MyApp.nguoigoi_cmnd = data.nguoigoi_cmnd;
+                        MyApp.nguoigoi_diachi = data.nguoigoi_diachi;
+                        MyApp.nguoigoi_huyen_id = data.nguoigoi_huyen_id;
+                        MyApp.nguoigoi_phuong_id = data.nguoigoi_phuong_id;
+                        MyApp.nguoigoi_email = data.nguoigoi_email;
+                        MyApp.nguoigoi_nickname = data.nguoigoi_nickname;
+                        MyApp.mangxh_id = data.mangxh_id;
+                        MyApp.doituong_id = data.doituong_id;
+                        MyApp.capdo_id = data.capdo_id;
+                        MyApp.donvi_id = data.donvi_id;
+                        MyApp.donvi_dangxuly_ten = data.donvi_dangxuly_ten;
+                        MyApp.trangthai_id = data.trangthai_id;
+                        MyApp.trangthai_ten = data.trangthai_ten;
+                        MyApp.noidung_c1_xuly = data.noidung_c1_xuly;
+                        MyApp.c1_file_name = data.c1_file_name;
+                        MyApp.c1_file_title = data.c1_file_title;
+                        MyApp.tgian_c1_xuly = data.tgian_c1_xuly;
+                        MyApp.tgian_c2_xuly_tu = data.tgian_c2_xuly_tu;
+                        MyApp.tgian_c2_xuly_den = data.tgian_c2_xuly_den;
+                        MyApp.noidung_c2_xuly = data.noidung_c2_xuly;
+                        MyApp.c2_file_name = data.c2_file_name;
+                        MyApp.c2_file_title = data.c2_file_title;
+                        MyApp.tgian_c2_xuly = data.tgian_c2_xuly;
+                        MyApp.tgian_c3_xuly = data.tgian_c3_xuly;
+                        MyApp.tgian_c3_xuly_den = data.tgian_c3_xuly_den;
+                        MyApp.noidung_c3_xuly = data.noidung_c3_xuly;
+                        MyApp.c3_file_name = data.c3_file_name;
+                        MyApp.c3_file_title = data.c3_file_title;
+                        MyApp.tgian_c4_xuly = data.tgian_c4_xuly;
+                        MyApp.noidung_c4_xuly = data.noidung_c4_xuly;
+                        MyApp.donvi_c2_ten = data.donvi_c2_ten;
+                        MyApp.donvi_c3_ten = data.donvi_c3_ten;
+                        MyApp.donvi_c4_ten = data.donvi_c4_ten;
+                        MyApp.dagoikiem = data.dagoikiem;
+                        MyApp.getDsPhuong();
+                        $('#cboPhuong').focus();
+                        $('#update').modal('show');
+                    });
+                },
+                capnhat: function () {
+                    MyApp.loi = false;
+                    MyApp.thongbao = '';
+                    MyApp.thanhcong = false;
+                    if (MyApp.loaiyc_id == 2) {
+                        if (MyApp.nguoigoi_hoten.trim() == "") {
+                            MyApp.loi = true;
+                            MyApp.thongbao = 'Bạn chưa nhập họ tên của người dân';
+                            return;
+                        }
+                        if (MyApp.nguoigoi_diachi.trim() == "") {
+                            MyApp.loi = true;
+                            MyApp.thongbao = 'Bạn chưa nhập địa chỉ của người dân';
+                            return;
+                        }
+                    }
+                    if (MyApp.yeucau_noidung.trim() == "") {
+                        MyApp.loi = true;
+                        MyApp.thongbao = 'Bạn chưa nhập nội dung hỏi thông tin/phản ánh';
+                        return;
+                    }
+                    MyApp.nguoigoi_phuong_id = $('#cboPhuong').val();
+                    var postData = {
+                        yeucau_id: MyApp.yeucau_id,
+                        yeucau_noidung: MyApp.yeucau_noidung,
+                        nguoigoi_hoten: MyApp.nguoigoi_hoten,
+                        nguoigoi_cmnd: MyApp.nguoigoi_cmnd,
+                        nguoigoi_sdt: MyApp.nguoigoi_sdt,
+                        nguoigoi_diachi: MyApp.nguoigoi_diachi,
+                        nguoigoi_huyen_id: MyApp.nguoigoi_huyen_id,
+                        nguoigoi_phuong_id: MyApp.nguoigoi_phuong_id,
+                        nguoigoi_email: MyApp.nguoigoi_email,
+                        nguoigoi_nickname: MyApp.nguoigoi_nickname,
+                        mangxh_id: MyApp.mangxh_id,
+                        loaiyc_id: MyApp.loaiyc_id,
+                        linhvuc_id: MyApp.linhvuc_id,
+                        doituong_id: MyApp.doituong_id,
+                        hinhthuc_id: MyApp.hinhthuc_id,
+                        noidung_c1_xuly: MyApp.noidung_c1_xuly,
+                        dagoikiem: MyApp.dagoikiem
+                    };
+                    $.post("@Url.Action("CapNhatTiepNhan", "CapDo1", new { area = "" })", postData, function (data) {
+                        if (data > 0) {
+                            MyApp.thanhcong = true;
+                            MyApp.thongbao = 'Cập nhật thành công!';
+                            MyApp.locDuLieu();
+                        }
+                        else {
+                            MyApp.loi = true;
+                            MyApp.thongbao = 'Cập nhật thất bại!';
+                        }
+                    });
+                },
+                chuyenlaiDonVi: function () {
+
+                },
+                xoa: function () {
+                    var postData = { yeucau_id: MyApp.yeucau_id };
+                    $.post("@Url.Action("xoa", "capdo1", new { area = "" })", postData, function (data) {
+                        if (data > 0) {
+                            $('#update').modal('hide');
+                            MyApp.locDuLieu();
+                        }
+                    });
+                }
+            },
+            computed: {
+                downloadUrl_c1: function () {
+                    if (!MyApp || !MyApp.c1_file_name) return "";
+                    return MyApp.c1_file_name;
+                },
+                downloadUrl_c2: function () {
+                    if (!MyApp || !MyApp.c2_file_name) return "";
+                    return MyApp.c2_file_name;
+                },
+                downloadUrl_c3: function () {
+                    if (!MyApp || !MyApp.c3_file_name) return "";
+                    return MyApp.c3_file_name;
+                }
+            }
+        })
+        Vue.filter('formatDate', function (value) {
+            if (value) {
+                return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+            }
+        });
+        MyApp.getDsDoiTuong();
+        MyApp.getDsLinhVuc();
+        MyApp.getDsHuyen();
+        MyApp.getDsDonVi();
+        $(document).ready(function () {
+            $('.nhapngay').datepicker({
+                autoclose: true,
+                dateFormat: 'dd/mm/yy'
+            });
+            $("#startDayString").datepicker().on('change.dp', () => {
+                MyApp.startDayString = $("#startDayString").val();
+            });
+            $("#endDayString").datepicker().on('change.dp', () => {
+                MyApp.endDayString = $("#endDayString").val();
+            });
+        });
+    </script>
+}

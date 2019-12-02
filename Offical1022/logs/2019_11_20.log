@@ -1,0 +1,42 @@
+INFO  2019-11-20 10:46:10,886 5436531ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-20 13:40:09,401 15875046ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-20 13:40:30,105 15895750ms DangNhapController     Index              - do login...
+DEBUG 2019-11-20 13:40:30,230 15895874ms DangNhapController     Index              - user not exist: dienthoaivien01 pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-11-20 13:40:38,464 15904109ms DangNhapController     Index              - do login...
+DEBUG 2019-11-20 13:40:38,480 15904124ms DangNhapController     Index              - user not exist: dienthoaivien01 pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-11-20 13:40:51,605 15917250ms DangNhapController     Index              - do login...
+INFO  2019-11-20 13:40:52,480 15918125ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-20 13:51:22,026 16547671ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-20 13:51:37,183 16562828ms DangNhapController     Index              - do login...
+INFO  2019-11-20 13:51:37,214 16562859ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-20 14:07:53,964 17539609ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-20 14:08:00,792 17546437ms DangNhapController     Index              - do login...
+INFO  2019-11-20 14:08:00,823 17546468ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-20 14:10:37,558 17703203ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 119771
+INFO  2019-11-20 14:10:37,620 17703265ms PlayAudioController    GetAudioURL        - tmp download url: /dl/119771.wav
+INFO  2019-11-20 14:10:37,620 17703265ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722145508.wav
+INFO  2019-11-20 14:10:37,620 17703265ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722145508.wav to c:\tmp\1022staticfiles\119771.wav
+INFO  2019-11-20 14:11:40,542 17766187ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 121359
+INFO  2019-11-20 14:11:40,542 17766187ms PlayAudioController    GetAudioURL        - tmp download url: /dl/121359.wav
+INFO  2019-11-20 14:11:40,542 17766187ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\23\16-209-a-90919867198---20190723100924.wav
+INFO  2019-11-20 14:11:40,558 17766203ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\23\16-209-a-90919867198---20190723100924.wav to c:\tmp\1022staticfiles\121359.wav
+INFO  2019-11-20 14:14:47,245 17952890ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-20 14:14:51,636 17957281ms DangNhapController     Index              - do login...
+INFO  2019-11-20 14:14:51,667 17957312ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-20 15:50:08,292 23673937ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-20 15:50:35,620 23701265ms DangNhapController     Index              - do login...
+INFO  2019-11-20 15:50:35,636 23701281ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-20 15:53:34,323 23879968ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-20 15:55:15,323 23980968ms DangNhapController     Index              - do login...
+INFO  2019-11-20 15:55:15,355 23980999ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-21 07:25:35,714 79801359ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-21 07:25:43,292 79808937ms DangNhapController     Index              - do login...
+DEBUG 2019-11-21 07:25:43,292 79808937ms DangNhapController     Index              - user not exist: dtv01 pass B59C67BF196A4758191E42F76670CEBA
+INFO  2019-11-21 07:25:50,261 79815906ms DangNhapController     Index              - do login...
+INFO  2019-11-21 07:25:50,292 79815937ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-21 07:31:37,386 80163031ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-21 07:50:38,683 81304328ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-21 07:50:41,276 81306921ms DangNhapController     Index              - do login...
+INFO  2019-11-21 07:50:41,292 81306937ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-21 08:38:38,995 84184640ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-21 10:42:54,980 91640624ms HomeController         Index              - Enter Home/Index

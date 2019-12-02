@@ -1,0 +1,190 @@
+INFO  2019-07-22 07:03:45,546   234ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 07:03:49,624  4312ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 07:03:58,577 13265ms DangNhapController     Index              - do login...
+INFO  2019-07-22 07:03:59,624 14312ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 07:06:24,296 158984ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 07:06:25,561 160250ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 07:06:42,952 177640ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 07:06:42,952 177640ms DangNhapController     Index              - user not exist: admin pass 2FDA8F18724033BE2D35C5E54B305E14
+INFO  2019-07-22 07:06:49,061 183750ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 07:06:49,061 183750ms DangNhapController     Index              - user not exist: admin pass 2AE048A1F4114F29DCBFD68E09E71CDC
+INFO  2019-07-22 07:06:54,124 188812ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 07:06:54,124 188812ms DangNhapController     Index              - user not exist: admin pass 84EC87F133979599229F158A71DAB46F
+INFO  2019-07-22 07:07:16,374 211062ms DangNhapController     Index              - do login...
+INFO  2019-07-22 07:07:16,421 211109ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 07:16:39,499 774187ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 07:16:48,436 783125ms DangNhapController     Index              - do login...
+INFO  2019-07-22 07:16:48,483 783171ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 07:38:36,093 2090781ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 07:38:44,374 2099062ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 07:38:44,374 2099062ms DangNhapController     Index              - user not exist: admin pass 2D1A1DD3CE44B5DA194ACD4685731817
+INFO  2019-07-22 08:13:54,030 4208718ms DangNhapController     Index              - do login...
+INFO  2019-07-22 08:13:54,421 4209109ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 10:49:16,881 1150858ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 12:20:38,590 2378953ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 12:20:53,480 2393843ms DangNhapController     Index              - do login...
+INFO  2019-07-22 12:20:54,559 2394921ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 12:21:15,105 2415468ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 12:21:20,684 2421046ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 12:21:20,699 2421062ms DangNhapController     Index              - user not exist: adminv1 pass 202CB962AC59075B964B07152D234B70
+INFO  2019-07-22 12:21:44,871 2445234ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 12:21:44,887 2445250ms DangNhapController     Index              - user not exist: adminv1 pass 202CB962AC59075B964B07152D234B70
+INFO  2019-07-22 12:21:48,434 2448796ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 12:21:48,434 2448796ms DangNhapController     Index              - user not exist: adminv1 pass 202CB962AC59075B964B07152D234B70
+INFO  2019-07-22 12:40:24,368 3564731ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 12:40:26,243 3566606ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 12:40:43,712 3584075ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 12:40:43,712 3584075ms DangNhapController     Index              - user not exist: admin pass 15F1D0441ABD5530EA77A72E70FCF3E1
+INFO  2019-07-22 12:40:49,946 3590309ms DangNhapController     Index              - do login...
+INFO  2019-07-22 12:40:49,977 3590340ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 12:45:41,943 3882306ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 12:45:43,459 3883822ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 12:45:45,193 3885556ms DangNhapController     Index              - do login...
+INFO  2019-07-22 12:45:45,240 3885603ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 13:28:31,836 6452198ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 113649
+INFO  2019-07-22 13:28:31,961 6452323ms PlayAudioController    GetAudioURL        - tmp download url: /dl/113649.wav
+INFO  2019-07-22 13:28:31,961 6452323ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90947857847---20190722132618.wav
+INFO  2019-07-22 13:28:31,961 6452323ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90947857847---20190722132618.wav to c:\tmp\1022staticfiles\113649.wav
+INFO  2019-07-22 13:29:06,992 6487355ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 13:30:29,711 6570073ms DangNhapController     Index              - do login...
+INFO  2019-07-22 13:30:29,742 6570105ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 13:32:23,382 6683745ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 113657
+INFO  2019-07-22 13:32:23,382 6683745ms PlayAudioController    GetAudioURL        - tmp download url: /dl/113657.wav
+INFO  2019-07-22 13:32:23,382 6683745ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90947857847---20190722132618.wav
+INFO  2019-07-22 13:32:23,382 6683745ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90947857847---20190722132618.wav to c:\tmp\1022staticfiles\113657.wav
+INFO  2019-07-22 13:34:40,804 6821167ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 13:34:48,664 6829027ms DangNhapController     Index              - do login...
+INFO  2019-07-22 13:34:48,695 6829058ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 13:44:15,023 7395386ms ServiceCenter          send_sms_citizen   - yeucau_id 94AE7220719 sdt 0918909966
+INFO  2019-07-22 13:44:18,851 7399214ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-22 13:44:32,804 7413167ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 13:44:45,304 7425667ms DangNhapController     Index              - do login...
+INFO  2019-07-22 13:44:45,320 7425683ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-07-22 14:17:06,443 9366806ms PortalController       verifyCaptcha      - verifyCaptcha: from client 192.168.3.254
+DEBUG 2019-07-22 14:17:06,443 9366806ms PortalController       verifyCaptcha      -   token: 03AOLTBLRA6k64FklGhccS8Po-4qgVp9tvm31_RdeApWrgaTNG3iZL4acNthED12jCG1E3eddRLN-9krbaEWPvGWKbUVpjdmCNvoHm9IjewuLfmnPjIfzJHRPjlvKqWVauxY40ez5dzGNOyHuoLR_3jlqLGtqyBkj4fyNEyccChqDOLI1Nqu-BufFHFVWA5y0yzznCQzSRs1whxeH-ovgMex5-7sii66btGHKerQ4LA5n8FuM0wxMy3OtlmhmVDUxLQzVsNsIRH3oDxRVmMk774yGE94XPrzO-QztjGzDcqL4DrH4vWoQSVleQBsOk-aGCZJI10ccB3jJCRmkZX59oEVGFtHg3HXVk5gUMGgmgWFt8nYJ4xGOq3OE
+DEBUG 2019-07-22 14:17:06,443 9366806ms PortalController       verifyCaptcha      -   result: 
+DEBUG 2019-07-22 14:17:06,506 9366869ms PortalController       verifyCaptcha      - Exception: Object reference not set to an instance of an object.
+DEBUG 2019-07-22 14:17:09,428 9369791ms _PageTongHop           createRequest      - portal createRequest displayName Linh, phoneNumber 0919254565 content Linh tét 1231231231233123123123123112312321312312312312
+INFO  2019-07-22 14:22:17,568 9677931ms PhanAnhController      CapNhatKQTL        - nguoidung_id C34B0220719 yeucau_id admin kqtl Linh tét
+INFO  2019-07-22 14:22:17,631 9677994ms ServiceCenter          send_sms_citizen   - yeucau_id C34B0220719 sdt 0919254565
+INFO  2019-07-22 14:22:18,147 9678509ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-22 14:24:11,100 9791463ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 14:24:12,803 9793166ms DangNhapController     Index              - do login...
+INFO  2019-07-22 14:24:12,850 9793213ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 14:49:52,376 11332738ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 14:49:54,329 11334692ms DangNhapController     Index              - do login...
+INFO  2019-07-22 14:49:54,376 11334738ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 14:55:30,422 11670785ms ServiceCenter          send_sms_citizen   - yeucau_id CFE39220719 sdt 0918909966
+INFO  2019-07-22 14:55:30,938 11671301ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-22 14:57:42,454 11802817ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 113727
+INFO  2019-07-22 14:57:42,454 11802817ms PlayAudioController    GetAudioURL        - tmp download url: /dl/113727.wav
+INFO  2019-07-22 14:57:42,454 11802817ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722133556.wav
+INFO  2019-07-22 14:57:42,469 11802832ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722133556.wav to c:\tmp\1022staticfiles\113727.wav
+INFO  2019-07-22 14:58:15,532 11835895ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 14:58:24,251 11844613ms DangNhapController     Index              - do login...
+INFO  2019-07-22 14:58:24,641 11845004ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 14:58:53,329 11873692ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 113739
+INFO  2019-07-22 14:58:53,329 11873692ms PlayAudioController    GetAudioURL        - tmp download url: /dl/113739.wav
+INFO  2019-07-22 14:58:53,329 11873692ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\01-204-a-209---20190722145606.wav
+INFO  2019-07-22 14:58:53,329 11873692ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\01-204-a-209---20190722145606.wav to c:\tmp\1022staticfiles\113739.wav
+INFO  2019-07-22 15:02:50,391 12110754ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 113773
+INFO  2019-07-22 15:02:50,391 12110754ms PlayAudioController    GetAudioURL        - tmp download url: /dl/113773.wav
+INFO  2019-07-22 15:02:50,391 12110754ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\01-204-a-209---20190722145606.wav
+INFO  2019-07-22 15:02:50,391 12110754ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\01-204-a-209---20190722145606.wav to c:\tmp\1022staticfiles\113773.wav
+INFO  2019-07-22 15:03:04,626 12124988ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 113772
+INFO  2019-07-22 15:03:04,626 12124988ms PlayAudioController    GetAudioURL        - tmp download url: /dl/113772.wav
+INFO  2019-07-22 15:03:04,641 12125004ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722145508.wav
+INFO  2019-07-22 15:03:04,641 12125004ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722145508.wav to c:\tmp\1022staticfiles\113772.wav
+INFO  2019-07-22 15:03:47,188 12167551ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 113780
+INFO  2019-07-22 15:03:47,188 12167551ms PlayAudioController    GetAudioURL        - tmp download url: /dl/113780.wav
+INFO  2019-07-22 15:03:47,188 12167551ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722145508.wav
+INFO  2019-07-22 15:03:47,188 12167551ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722145508.wav to c:\tmp\1022staticfiles\113780.wav
+INFO  2019-07-22 15:05:41,235 12281598ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 113727
+INFO  2019-07-22 15:05:41,251 12281613ms PlayAudioController    GetAudioURL        - tmp download url: /dl/113727.wav
+INFO  2019-07-22 15:05:41,251 12281613ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722133556.wav
+INFO  2019-07-22 15:14:47,016 12827379ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 15:14:55,344 12835707ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 15:14:55,360 12835723ms DangNhapController     Index              - user not exist: admin pass 6ECDF23340E13255DFD8C78540347492
+INFO  2019-07-22 15:15:08,594 12848957ms DangNhapController     Index              - do login...
+INFO  2019-07-22 15:15:08,969 12849332ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 15:15:28,329 12868692ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 15:15:40,188 12880551ms DangNhapController     Index              - do login...
+INFO  2019-07-22 15:15:40,579 12880942ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 15:16:08,438 12908801ms PhanAnhController      CapNhatKQTL        - nguoidung_id CFE39220719 yeucau_id hoaltt.hcc kqtl dfsafasfasf
+INFO  2019-07-22 15:16:08,438 12908801ms ServiceCenter          send_sms_citizen   - yeucau_id CFE39220719 sdt 0918909966
+INFO  2019-07-22 15:16:08,985 12909348ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-22 15:17:30,985 12991348ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 15:17:40,641 13001004ms DangNhapController     Index              - do login...
+INFO  2019-07-22 15:17:41,141 13001504ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 15:18:55,954 13076317ms ServiceCenter          send_sms_citizen   - yeucau_id 74EA4220719 sdt 0947957847
+INFO  2019-07-22 15:18:56,532 13076895ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-22 16:10:09,412 1670147ms ServiceCenter          send_sms_citizen   - yeucau_id 8923B220719 sdt 0846967799
+INFO  2019-07-22 16:10:13,037 1673772ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-22 16:13:49,756 1890490ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:13:49,756 1890490ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:13:49,787 1890522ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:13:49,787 1890522ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:13:49,771 1890506ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:13:52,756 1893490ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:13:54,381 1895115ms DangNhapController     Index              - do login...
+INFO  2019-07-22 16:13:54,506 1895240ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 16:15:52,381 2013115ms ServiceCenter          send_sms_citizen   - yeucau_id 8A420220719 sdt 0975113927
+INFO  2019-07-22 16:15:53,240 2013975ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-07-22 16:35:04,756 3165490ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:35:19,256 3179990ms DangNhapController     Index              - do login...
+INFO  2019-07-22 16:35:19,287 3180022ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 16:39:42,318 3443053ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:39:51,349 3452084ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 16:39:51,349 3452084ms DangNhapController     Index              - user not exist: tiepnhan.syt pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-22 16:39:55,552 3456287ms DangNhapController     Index              - do login...
+DEBUG 2019-07-22 16:39:55,568 3456303ms DangNhapController     Index              - user not exist: tiepnhan.syt pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-07-22 16:40:00,787 3461522ms DangNhapController     Index              - do login...
+INFO  2019-07-22 16:40:00,834 3461569ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 16:41:27,631 3548365ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:41:34,381 3555115ms DangNhapController     Index              - do login...
+INFO  2019-07-22 16:41:34,709 3555444ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 16:41:51,303 3572037ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:41:55,709 3576444ms DangNhapController     Index              - do login...
+INFO  2019-07-22 16:41:55,756 3576490ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 16:42:38,381 3619115ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:42:43,131 3623865ms DangNhapController     Index              - do login...
+INFO  2019-07-22 16:42:43,584 3624319ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-22 16:43:10,709 3651444ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-22 16:43:15,052 3655787ms DangNhapController     Index              - do login...
+INFO  2019-07-22 16:43:15,490 3656225ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-23 07:31:40,084 56960819ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-23 07:31:50,865 56971600ms DangNhapController     Index              - do login...
+INFO  2019-07-23 07:31:50,896 56971631ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-23 07:32:00,318 56981053ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-23 07:32:06,771 56987506ms DangNhapController     Index              - do login...
+DEBUG 2019-07-23 07:32:06,771 56987506ms DangNhapController     Index              - user not exist: adminv1 pass 202CB962AC59075B964B07152D234B70
+INFO  2019-07-23 07:32:12,365 56993100ms DangNhapController     Index              - do login...
+DEBUG 2019-07-23 07:32:12,381 56993115ms DangNhapController     Index              - user not exist: adminv1 pass 202CB962AC59075B964B07152D234B70
+INFO  2019-07-23 07:32:22,412 57003147ms DangNhapController     Index              - do login...
+DEBUG 2019-07-23 07:32:22,412 57003147ms DangNhapController     Index              - user not exist: adminv1 pass 202CB962AC59075B964B07152D234B70
+INFO  2019-07-23 07:32:23,177 57003912ms DangNhapController     Index              - do login...
+INFO  2019-07-23 07:32:23,177 57003912ms DangNhapController     Index              - Form Model State is Invalid
+INFO  2019-07-23 07:32:24,099 57004834ms DangNhapController     Index              - do login...
+INFO  2019-07-23 07:32:24,099 57004834ms DangNhapController     Index              - Form Model State is Invalid
+INFO  2019-07-23 07:32:35,677 57016412ms DangNhapController     Index              - do login...
+DEBUG 2019-07-23 07:32:35,677 57016412ms DangNhapController     Index              - user not exist: adminv1 pass 202CB962AC59075B964B07152D234B70
+INFO  2019-07-23 07:41:45,724 57566459ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-23 07:41:48,599 57569334ms DangNhapController     Index              - do login...
+INFO  2019-07-23 07:41:48,631 57569365ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-23 08:38:32,006 60972740ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-23 08:38:40,349 60981084ms DangNhapController     Index              - do login...
+INFO  2019-07-23 08:38:40,396 60981131ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-23 08:41:11,349 61132084ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-23 08:41:14,131 61134865ms DangNhapController     Index              - do login...
+INFO  2019-07-23 08:41:14,162 61134897ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-23 13:12:06,412 77387147ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 120087
+INFO  2019-07-23 13:12:06,506 77387241ms PlayAudioController    GetAudioURL        - tmp download url: /dl/120087.wav
+INFO  2019-07-23 13:12:06,506 77387241ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\23\16-209-a-90919867198---20190723100924.wav
+INFO  2019-07-23 13:12:06,537 77387272ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\23\16-209-a-90919867198---20190723100924.wav to c:\tmp\1022staticfiles\120087.wav
+INFO  2019-07-23 13:13:02,819 77443554ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 120088
+INFO  2019-07-23 13:13:02,834 77443569ms PlayAudioController    GetAudioURL        - tmp download url: /dl/120088.wav
+INFO  2019-07-23 13:13:02,834 77443569ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\23\16-209-a-90919867198---20190723100924.wav
+INFO  2019-07-23 13:13:02,834 77443569ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\23\16-209-a-90919867198---20190723100924.wav to c:\tmp\1022staticfiles\120088.wav
+INFO  2019-07-23 15:07:55,071 84335806ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-23 15:08:06,618 84347353ms DangNhapController     Index              - do login...
+INFO  2019-07-23 15:08:06,634 84347368ms HomeController         Index              - Enter Home/Index

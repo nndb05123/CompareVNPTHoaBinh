@@ -1,0 +1,23 @@
+INFO  2019-05-16 16:30:02,973 10030428ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-05-16 16:30:43,968 10071423ms PortalController       verifyCaptcha      - verifyCaptcha: from client 123.27.62.6
+DEBUG 2019-05-16 16:30:43,969 10071424ms PortalController       verifyCaptcha      -   token: 03AOLTBLS3UPHr6TBV-IIv-kHux_VEPwFojScHNaQTVTXXgJEgEviz61X2Qs75gBFLwkoPycI7QFdmPxilYyTy4_98_7j3BMoTyec5Zod2f9eolDNgyePovM27sOfMJUzBLtMPcXXK2cFZcOeGglD69BP7qfNvu71t3JgBnnRLtcoGbssO2OhqZo7fbUu8QBISh2HhKcnkaudzklvfWXQh7DJ9pUjaC9gFeliJIbUUCYW4557ex64quXaX9SEyVDROCg6FYCPCvuabR-osqQFjI4ZshwZ4lBUUgI_RC3gwf3EPyvF7Livys7UoNxyO5jNxvgdzxAyhbns3HbRaD3Nq9OUbyhPeo2_zBg
+DEBUG 2019-05-16 16:30:43,970 10071425ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-16 16:30:47,746 10075201ms _PageTongHop           createRequest      - portal createRequest displayName tran manh hoa, phoneNumber 0918909966 content dáasdasdasd
+INFO  2019-05-16 16:31:14,585 10102040ms ServiceCenter          send_sms_citizen   - yeucau_id 2E0A8160519 sdt 0918909966
+ERROR 2019-05-16 16:31:15,017 10102472ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-16 16:31:45,012 10132468ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-16 16:31:50,806 10138261ms DangNhapController     Index              - do login...
+INFO  2019-05-16 16:31:50,829 10138284ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-16 16:32:09,591 10157046ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-16 16:32:14,041 10161496ms DangNhapController     Index              - do login...
+INFO  2019-05-16 16:32:14,063 10161518ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-16 16:32:48,874 10196329ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-16 16:32:50,820 10198276ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-16 16:32:54,723 10202179ms DangNhapController     Index              - do login...
+INFO  2019-05-16 16:32:54,738 10202194ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-16 16:33:28,306 10235762ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-16 16:33:32,838 10240293ms DangNhapController     Index              - do login...
+INFO  2019-05-16 16:33:32,962 10240417ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-16 16:33:48,255 10255711ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-16 16:33:52,256 10259711ms DangNhapController     Index              - do login...
+INFO  2019-05-16 16:33:52,280 10259735ms HomeController         Index              - Enter Home/Index

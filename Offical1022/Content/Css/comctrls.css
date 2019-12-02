@@ -1,0 +1,72 @@
+﻿.ipf {
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    padding: 4px;
+}
+
+.ipf-cbox {
+    background: #555;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+    padding: 4px;
+    cursor: pointer;
+}
+
+    .ipf-cbox:after {
+        margin-left: 10px;
+        content: attr(ipf-label); 
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        text-shadow: 0px 1px #000;
+    }
+
+    .ipf-cbox:hover::after {
+        color: #0f0!important;
+        visibility:visible!important;
+    }
+
+    .ipf-cbox label {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+        border-radius: 4px;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+    }
+
+        .ipf-cbox label:after {
+            content: "";
+            width: 12px;
+            height: 8px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border: 3px solid #fcfff4;
+            border-top: none;
+            border-right: none;
+            background: transparent;
+            opacity: 0;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        .ipf-cbox label:hover::after {
+            opacity: 0.3;
+        }
+
+    .ipf-cbox input[type="checkbox"] {
+        visibility: hidden;
+    }
+
+        .ipf-cbox input[type="checkbox"]:checked + label:after {
+            opacity: 1;
+        }

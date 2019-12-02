@@ -1,0 +1,192 @@
+﻿@using WebUI
+@using HotlineCore
+
+@{
+    ViewBag.Title = "Thống kê phản ánh theo thời gian";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div id="MyApp" class="row">
+    <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <label for="startDayString" class="control-label">Từ ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right nhapngay" id="startDayString" v-model="startDayString" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="endDayString" class="control-label">Đến ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right nhapngay" id="endDayString" v-model="endDayString" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <label class="control-label">Đơn vị</label>
+                    <div class="input-group">
+                        <div class="input-group-addon" title="Bỏ chọn để thống kê tất cả đơn vị ( sẽ chậm hơn nhiều so với thống kê từng đơn vị )">
+                            <input id="chkDVFilter" type="checkbox" onchange="onChangeDVFilter(this)" checked />
+                            <span>Lọc theo:</span>
+                        </div>
+                        <select id="dsDonvi" name="donvi" class="form-control pull-right">
+                            @foreach (var dv in Model)
+                            {
+                                if (dv["id"] == "" + ViewBag.donviID)
+                                {
+                                    <option value="@dv["id"]" selected>@dv["ten"]</option>
+                                }
+                                else
+                                {
+                                    <option value="@dv["id"]">@dv["ten"]</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div><i style="color:#ff6a00">{{msg_warn_donvi}}</i></div>
+                </div>
+            </div>
+            <br />
+            <button type="button" class="btn btn-primary" v-on:click="ThongKe">Thống kê</button>
+            <button type="button" class="btn btn-warning" v-on:click="ThongKeTreHen">Thống kê Phản Ánh Trễ Hẹn</button>
+    </div>
+</div>
+@section Foot {
+    <script src="@Url.Content("~/Content/js/main.js")"></script>
+    <script>
+        var reportDownloadCheckTimer;
+        var curReportDownloadToken;
+
+        function _startDownloadReport(actionURL, startDay, endDay, msg) {
+            $('#dlg-wait').find('.wait-msg').text(msg);
+            $('#dlg-wait').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+
+            var dsDonvi = document.getElementById("dsDonvi");
+            var donviID = -1;
+            var chkDVFilter = document.getElementById("chkDVFilter");
+            if (chkDVFilter.checked)
+                donviID = dsDonvi.options[dsDonvi.selectedIndex].value;
+
+            curReportDownloadToken = new Date().getTime();
+
+            window.location.href = actionURL + '?token=' + curReportDownloadToken
+                + '&donviID=' + donviID
+                + '&tn=' + startDay.replace('/', '_').replace('/', '_')
+                + '&dn=' + endDay.replace('/', '_').replace('/', '_');
+
+            reportDownloadCheckTimer = window.setInterval(function () {
+                var cookieValue = $.cookie('reportDownloadToken');
+                if (cookieValue == curReportDownloadToken) {
+                    window.clearInterval(reportDownloadCheckTimer);
+                    $.removeCookie('fileDownloadToken');
+                    $("#dlg-wait").modal('hide');
+                }
+            }, 1000);
+        }
+
+        function onChangeDVFilter(inp) {
+            if (inp.checked) {
+                $('#dsDonvi').removeAttr('disabled');
+                MyApp.msg_warn_donvi = '';
+            }
+            else {
+                $('#dsDonvi').attr('disabled', 'disabled');
+                MyApp.msg_warn_donvi = 'Chú ý: thống kê tất cả đơn vị sẽ chạy lâu hơn nhiều so với thống kê từng đơn vị!';
+            }
+        }
+
+
+        var MyApp = new Vue({
+            el: '#MyApp',
+            data: {
+                listData: [],
+                startDayString: '@ViewBag.startDayString',
+                endDayString: '@ViewBag.endDayString',
+                msg_warn_donvi: ''
+            },
+            methods: {
+                thongKeSNV: function () {
+                    var data = {
+                        startDayString: MyApp.startDayString,
+                        endDayString: MyApp.endDayString,
+                    }
+                    $.post('@Url.Action("ThongKeSNV_Excel", "ThongKe")', data, function (data, status) {
+                        if (data) {
+                            var now = new Date();
+                            //
+                            var temp = document.createElement('a');
+                            temp.href = data.Link;
+                            temp.download = data.TieuDe;
+                            temp.click();
+                        }
+                    });
+                },
+                ThongKe: function () {
+                    //var data = {
+                    //    startDayString: MyApp.startDayString,
+                    //    endDayString: MyApp.endDayString,
+                    //}
+
+                    _startDownloadReport('@Url.Action("ThongKeTheoDonVi", "ThongKe")', MyApp.startDayString, MyApp.endDayString, 'Đang thống kê dữ liệu, xin chờ giây lát...');
+
+                    @*$.post('@Url.Action("ThongKeSTTTT_Excel", "ThongKe")', data, function (data, status) {
+                        if (data) {
+                            var now = new Date();
+                            //
+                            var temp = document.createElement('a');
+                            temp.href = data.Link;
+                            temp.download = data.TieuDe;
+                            temp.click();
+                        }
+                    });*@
+                },
+                ThongKeTreHen: function () {
+                    //var data = {
+                    //    startDayString: MyApp.startDayString,
+                    //    endDayString: MyApp.endDayString,
+                    //}
+
+                    _startDownloadReport('@Url.Action("ThongKeTreHenTheoDonVi", "ThongKe")', MyApp.startDayString, MyApp.endDayString, 'Đang thống kê dữ liệu trễ hẹn, xin chờ giây lát...');
+
+                    @*$.post('@Url.Action("ThongKeSTTTT_TreHen_Excel", "ThongKe")', data, function (data, status) {
+                        if (data) {
+                            var now = new Date();
+                            //
+                            var temp = document.createElement('a');
+                            temp.href = data.Link;
+                            temp.download = data.TieuDe;
+                            temp.click();
+                        }
+                    });*@
+                },
+            }
+        })
+        Vue.filter('formatDate', function (value) {
+            if (value) {
+                return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+            }
+        });
+        $(document).ready(function () {
+            $('.nhapngay').datepicker({
+                autoclose: true,
+                dateFormat: 'dd/mm/yy'
+            });
+            $("#startDayString").datepicker().on('change.dp', () => {
+                MyApp.startDayString = $("#startDayString").val();
+            });
+            $("#endDayString").datepicker().on('change.dp', () => {
+                MyApp.endDayString = $("#endDayString").val();
+            });
+        });
+    </script>
+}

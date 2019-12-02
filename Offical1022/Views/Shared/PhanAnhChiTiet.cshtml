@@ -1,0 +1,781 @@
+﻿@using WebUI
+@using HotlineCore
+
+@{
+                /**/
+
+                Layout = null;
+}
+
+
+<div class="modal dlg-req-detail" id="AppChiTietPhanAnh" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" v-html="dlg_detail_title()"></h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-pills mynav">
+                    <li class="active"><a href="#tab_thong_tin_chung" data-toggle="tab"><strong class="text-primary">Thông tin chung</strong></a></li>
+                    <li><a href="#tab_thong_tin_nguoi_dan" data-toggle="tab"><strong class="text-success">Thông tin người dân</strong></a></li>
+                    <li><a href="#tab_ket_qua_xu_ly" data-toggle="tab"><strong class="text-danger">Kết quả xử lý</strong></a></li>
+                    <li><a href="#tab_lich_su_xu_ly" data-toggle="tab"><strong>Lịch sử xử lý</strong></a></li>
+                    <li><a href="#tab_tai_lieu_hotro" data-toggle="tab"><strong>Tài liệu hỗ trợ</strong></a></li>
+                </ul>
+                <div class="tab-content">
+                    <!-- Thông tin phản ánh -->
+                    @Html.Partial("PACT_TTPA")
+                    <!-- Thông tin người dân -->
+                    @Html.Partial("PACT_TTND")
+                    <!-- Kết quả xử lý -->
+                    @Html.Partial("PACT_KQXL")
+                    <!-- Lịch sử xử lý -->
+                    @Html.Partial("PACT_LSXL")
+                    <!-- Tài liệu hỗ trợ -->
+                    @Html.Partial("PACT_TLHT")
+
+                    <br />
+                    <div v-if="loi || thanhcong">
+                        <div v-if="loi" class="row">
+                            <div class="col-md-12">
+                                <div class="alert alert-danger">
+                                    <i class="icon fa fa-info"></i> {{ thongbao }}
+                                </div>
+                            </div>
+                        </div>
+                        <div v-if="thanhcong" class="row">
+                            <div class="col-md-12">
+                                <div class="alert alert-success">
+                                    <i class="icon fa fa-check"></i> {{ thongbao }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    @if ((int)ViewBag.mp_vaitro == (int)WebUI.VAI_TRO.ADMIN || (int)ViewBag.mp_vaitro == (int)WebUI.VAI_TRO.XU_LY_CAP_DO_1)
+                    {
+                        <button v-if="canDelete" type="button" class="btn btn-danger pull-left" v-on:click="showConfirmDelete">Xóa</button>
+                        <button v-if="canUpdateData" type="button" class="btn btn-primary pull-right" v-on:click="validateInputAndShowConfirmUpdate">Cập nhật</button>
+
+                    }
+                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal"> Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var url_LinhVuc_getListByDonViWithSelectChoice = "@Url.Action("getListByDonViWithSelectChoice", "LinhVuc")";
+    var AppPACT = new Vue({
+        el: '#AppChiTietPhanAnh',
+        data: {
+            lock_edit_xuly_cap_1: true,
+            lock_edit_ttnd_sdt: true,
+            lock_edit_ttnd: true,
+            lock_edit_ttpa: true,
+            lock_edit_ttpa_noidung: false,
+            chuyen_donvi_id: 0,
+            chuyen_linhvuc_id: 0,
+            userHasPermissionToEditAnswer: @ViewBag.canEditFinalAnswer === 1,
+            tra_loi_nguoi_dan: '',
+            danhSachLichSu: [],
+            dsHinhThuc: [],
+            dsLoaiYc: [],
+            dsPhuong: [],
+            dsHuyen: [],
+            dsLinhVuc: [],
+            dsLinhVucChuyen: [],
+            dsDoiTuong: [],
+            dsDonVi: [],
+            dsDocument: [],
+            
+            yeucau_id: '',
+            tgian_tiepnhan: '',
+            yeucau_noidung: '',
+            nguoigoi_hoten: '',
+            nguoigoi_sdt: '',
+            nguoigoi_cmnd: '',
+            nguoigoi_diachi: '',
+            huyen_ten: '',
+            phuong_ten: '',
+            nguoigoi_huyen_id: 0,
+            nguoigoi_phuong_id: 0,
+            nguoigoi_email: '',
+            nguoigoi_nickname: '',
+            mangxh_id: '',
+            loaiyc_id: 0,
+            linhvuc_id: 0,
+            doituong_id: 0,
+            hinhthuc_id: 0,
+            trangthai_id: 0,
+            trangthai_ten: '',
+            capdo_id: 1,
+            donvi_id1: 0,
+            donvi_id: 0,
+            noidung_xuly_baosai: '',
+            noidung_c1_xuly: '',
+            c1_file_name: '',
+            c1_file_title: '',
+            tgian_c1_xuly: '',
+            tgian_c2_xuly_tu: '',
+            tgian_c2_xuly_den: '',
+            tgian_c2_xuly: '',
+            noidung_c2_xuly: '',
+            c2_file_name: '',
+            c2_file_title: '',
+            tgian_c3_xuly: '',
+            tgian_c3_xuly_den: '',
+            noidung_c3_xuly: '',
+            c3_file_name: '',
+            c3_file_title: '',
+            tgian_c4_xuly: '',
+            noidung_c4_xuly: '',
+            donvi_ten: '',
+            donvi_c1_ten: '',
+            donvi_c2_ten: '',
+            donvi_c3_ten: '',
+            donvi_c4_ten: '',
+            dagoikiem: false,
+            thongbao: '',
+            loi: false,
+            thanhcong: false,
+            cache_id_playing_audio: 0,
+            active_yeucau: null,
+            active_audio_url: '',
+            playlist: [],
+            canUploadAudio: false,
+            canDownloadAudio: false,
+            upload_err_msg: '',
+            record_yeucau_noidung: '',
+            ghiam_id_to_delete: '',
+            del_ghiam_item: null,
+            thuTucHanhChinh: true,
+            contentBodyDocument: '',
+            user_capdo_id: 1,
+            ondb_dagoikiem: false,
+            deleteReasons: []
+        },
+        watch: {
+            chuyen_donvi_id: function (newval, oldval) {
+                console.log(`${oldval} to ${newval}`);
+                this.reloadListLinhVucChuyen();
+            }
+        },
+        methods: {
+            reloadListLinhVucChuyen: function () {
+                var postData = { donvi_id: this.chuyen_donvi_id };
+                this.dsLinhVucChuyen = [];
+                $.post(url_LinhVuc_getListByDonViWithSelectChoice, postData, function (data) {
+                    $.each(data, function (i, v) {
+                        AppPACT.dsLinhVucChuyen.push(v);
+                    });
+                    AppPACT.chuyen_linhvuc_id = 0;
+                    //$('#cboLinhVuc').val(AppPACT.linhvuc_id).trigger('change');
+                });
+            },
+            beautyAnswer: function (text) {
+                if (text === null) return text;
+                if (typeof text === 'undefined') return text;
+                return text.replace(/\n/g, '<br/>');
+            },
+            reloadActionHistory: function () {
+                $.post("@Url.Action("getPhanAnhLog", "PhanAnh")", { yeucau_id: AppPACT.yeucau_id }, function (data, textStatus) {
+                    if (textStatus === 'success') {
+                        AppPACT.danhSachLichSu = data;
+                    }
+                });
+            },
+            dlg_detail_title: function () {
+                return `<span class="text-danger text-bold">${this.yeucau_id} - cấp độ ${this.capdo_id} <span class="text-lowercase">${this.trangthai_ten}</span> </span>`;
+            },
+            toggleDaGoiKiem: function () {
+                this.dagoikiem = !this.dagoikiem;
+            },
+            toggleTTHC: function () {
+                this.thuTucHanhChinh = !this.thuTucHanhChinh;
+            },
+            init: function () {
+                AppPACT.danhSachLichSu = [];
+                AppPACT.dsDoiTuong = [];
+                AppPACT.dsHinhThuc = [];
+                AppPACT.dsLinhVuc = [];
+                AppPACT.dsPhuong = [];
+                AppPACT.dsLoaiYc = [];
+                AppPACT.dsHuyen = [];
+                AppPACT.dsDonVi = [];
+                AppPACT.getDsDocument();
+
+                //TODO: use delete reason list
+                AppPACT.deleteReasons = [];
+                $.get("@Url.Action("getDeleteReasonList", "PhanAnh")", function (data) {
+                    var ls = [];
+                    $.each(data, function (i, v) {
+                        ls.push([v.id, v.noidung]);
+                    });
+                    AppPACT.deleteReasons = ls;
+                });
+
+                $.post("@Url.Action("getListWithSelectChoice", "LoaiYc")", function (data) {
+                    $.each(data, function (i, v) {
+                        AppPACT.dsLoaiYc.push(v);
+                    });
+                });
+                $.post("@Url.Action("getListWithSelectChoice", "DoiTuong")", function (data) {
+                    $.each(data, function (i, v) {
+                        AppPACT.dsDoiTuong.push(v);
+                    });
+                });
+                $.post("@Url.Action("getListOfHuyenWithSelectChoice", "KhuVuc")", function (data) {
+                    $.each(data, function (i, v) {
+                        AppPACT.dsHuyen.push(v);
+                    });
+                });
+                $.post("@Url.Action("getListOfPhuongByHuyenWithSelectChoice", "KhuVuc")", { huyen_id: AppPACT.nguoigoi_huyen_id }, function (data) {
+                    $.each(data, function (i, v) {
+                        AppPACT.dsPhuong.push(v);
+                    });
+                });
+                $.post("@Url.Action("getListWithSelectChoice", "HinhThuc")", function (data) {
+                    $.each(data, function (i, v) {
+                        AppPACT.dsHinhThuc.push(v);
+                    });
+                });
+                $.post("@Url.Action("getListWithSelectChoice", "DonVi")", function (data) {
+                    $.each(data, function (i, v) {
+                        AppPACT.dsDonVi.push(v);
+                    });
+                });
+                $.post("@Url.Action("getPhanAnhLog", "PhanAnh")", { yeucau_id: AppPACT.yeucau_id }, function (data, textStatus) {
+                    if (textStatus === 'success') {
+                        AppPACT.danhSachLichSu = data;
+                    }
+                });
+            },
+            getDsLinhVuc: function () {
+                AppPACT.dsLinhVuc = [];
+                $.post("@Url.Action("getListByDonViWithSelectChoice", "LinhVuc")", { donvi_id: AppPACT.donvi_id1 }, function (data) {
+                    $.each(data, function (i, v) {
+                        AppPACT.dsLinhVuc.push(v);
+                    });
+                })
+            },
+            getDsDocument() {
+                
+                $.post("@Url.Action("getListDocument", "TaiLieu")", { yeucau_id: AppPACT.yeucau_id }, function (data) {
+                    AppPACT.dsDocument = [];
+                    $.each(data, function (i, v) {
+                        AppPACT.dsDocument.push(v);
+                    });
+                })
+            },
+            showModal: function (yeucau_id) {
+                AppPACT.loi = false;
+                AppPACT.thongbao = '';
+                AppPACT.thanhcong = false;
+
+                $.post("@Url.Action("getPhanAnh", "PhanAnh", new { area = "" })", { yeucau_id: yeucau_id }, function (data, textStatus) {
+                    //console.log('getPhanAnh...');
+                    if (textStatus === 'success') {
+                        AppPACT.yeucau_id = data.yeucau_id;
+                        AppPACT.tgian_tiepnhan = data.tgian_tiepnhan;
+                        AppPACT.yeucau_noidung = data.yeucau_noidung;
+                        AppPACT.nguoigoi_hoten = data.nguoigoi_hoten;
+                        AppPACT.nguoigoi_sdt = data.nguoigoi_sdt;
+                        AppPACT.linhvuc_id = data.linhvuc_id;
+                        AppPACT.nguoigoi_cmnd = data.nguoigoi_cmnd;
+                        AppPACT.nguoigoi_diachi = data.nguoigoi_diachi;
+                        AppPACT.nguoigoi_huyen_id = data.nguoigoi_huyen_id;
+                        AppPACT.nguoigoi_phuong_id = data.nguoigoi_phuong_id;
+                        AppPACT.huyen_ten = data.huyen_ten;
+                        AppPACT.phuong_ten = data.phuong_ten;
+                        AppPACT.nguoigoi_email = data.nguoigoi_email;
+                        AppPACT.nguoigoi_nickname = data.nguoigoi_nickname;
+                        AppPACT.mangxh_id = data.mangxh_id;
+                        AppPACT.doituong_id = data.doituong_id;
+                        AppPACT.capdo_id = data.capdo_id;
+                        AppPACT.donvi_id1 = AppPACT.donvi_id = data.donvi_id;
+                        AppPACT.trangthai_id = data.trangthai_id;
+                        AppPACT.trangthai_ten = data.trangthai_ten;
+                        AppPACT.c1_file_name = data.c1_file_name;
+                        AppPACT.c1_file_title = data.c1_file_title;
+                        AppPACT.noidung_c1_xuly = data.noidung_c1_xuly;
+                        AppPACT.tgian_c1_xuly = data.tgian_c1_xuly;
+                        AppPACT.tgian_c2_xuly_tu = data.tgian_c2_xuly_tu;
+                        AppPACT.tgian_c2_xuly_den = data.tgian_c2_xuly_den;
+                        AppPACT.noidung_c2_xuly = data.noidung_c2_xuly;
+                        AppPACT.c2_file_name = data.c2_file_name;
+                        AppPACT.c2_file_title = data.c2_file_title;
+                        AppPACT.tgian_c2_xuly = data.tgian_c2_xuly;
+                        AppPACT.tgian_c3_xuly = data.tgian_c3_xuly;
+                        AppPACT.tgian_c3_xuly_den = data.tgian_c3_xuly_den;
+                        AppPACT.noidung_c3_xuly = data.noidung_c3_xuly;
+                        AppPACT.c3_file_name = data.c3_file_name;
+                        AppPACT.c3_file_title = data.c3_file_title;
+                        AppPACT.tgian_c4_xuly = data.tgian_c4_xuly;
+                        AppPACT.noidung_c4_xuly = data.noidung_c4_xuly;
+                        AppPACT.donvi_c2_ten = data.donvi_c2_ten;
+                        AppPACT.donvi_c3_ten = data.donvi_c3_ten;
+                        AppPACT.donvi_c4_ten = data.donvi_c4_ten;
+                        AppPACT.hinhthuc_id = data.hinhthuc_id;
+                        AppPACT.loaiyc_id = data.loaiyc_id;
+                        AppPACT.thuTucHanhChinh = data.thuTucHanhChinh;
+                        AppPACT.dagoikiem = data.dagoikiem;
+                        AppPACT.ondb_dagoikiem = data.dagoikiem;
+                        AppPACT.thuTucHanhChinh = data.phanloaitthc_id === 1 ? true : false;
+                        AppPACT.tra_loi_nguoi_dan = data.kqtl;
+                        AppPACT.tra_loi_nguoi_dan_tgian = data.kqtl_tgian;
+
+                        if (data.donvi_c2_id > 0) {
+                            AppPACT.chuyen_linhvuc_id = data.linhvuc_id;
+                            AppPACT.chuyen_donvi_id = data.donvi_c2_id;
+                        }
+                        else {
+                            AppPACT.chuyen_linhvuc_id = data.linhvuc_id;
+                            AppPACT.chuyen_donvi_id = data.donvi_id;
+                        }
+                        AppPACT.lock_edit_xuly_cap_1 = true;
+                        AppPACT.lock_edit_ttnd = true;
+                        AppPACT.lock_edit_ttnd_sdt = true;
+                        AppPACT.lock_edit_ttpa = true;
+                        AppPACT.lock_edit_ttpa_noidung = true;
+                        if (AppPACT.trangthai_id >= @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DA_XU_LY)) {
+                            if (@ViewBag.iCanEditClosedRequest === 1) {
+                                AppPACT.lock_edit_ttpa_noidung = false;
+                                AppPACT.lock_edit_xuly_cap_1 = false;
+                            }
+                        } else {
+                            if (@Html.Raw((int)ViewBag.mp_vaitro) === @Html.Raw((int)VAI_TRO.XU_LY_CAP_DO_1)) {
+                                AppPACT.lock_edit_xuly_cap_1 = false;
+                                AppPACT.lock_edit_ttpa_noidung = false;
+                                AppPACT.lock_edit_ttpa = false;
+                                AppPACT.lock_edit_ttnd_sdt = false;
+                                AppPACT.lock_edit_ttnd = false;
+                            }
+                        }
+                        
+                        // Bug
+                        $('select[name="donvi_id1"]').val(AppPACT.donvi_id1).trigger('change');
+                        setTimeout(function () {
+                            $('select[name="linhvuc_id"]').val(AppPACT.linhvuc_id).trigger('change');
+                        }, 500);
+                        //
+                        $('#AppChiTietPhanAnh').modal('show');
+
+                        AppPACT.init();
+                    }
+                    else {
+                        alert('Lỗi trong quá trình truy xuất dữ liệu');
+                    }
+                });
+            },
+            capnhat: function () {
+                AppPACT.loi = false;
+                AppPACT.thongbao = '';
+                AppPACT.thanhcong = false;
+                if (AppPACT.loaiyc_id == 2) {
+                    if (AppPACT.nguoigoi_hoten.trim() == "") {
+                        AppPACT.loi = true;
+                        AppPACT.thongbao = 'Bạn chưa nhập họ tên của người dân';
+                        return;
+                    }
+                    if (AppPACT.nguoigoi_diachi.trim() == "") {
+                        AppPACT.loi = true;
+                        AppPACT.thongbao = 'Bạn chưa nhập địa chỉ của người dân';
+                        return;
+                    }
+                }
+                if (AppPACT.yeucau_noidung.trim() == "") {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Bạn chưa nhập nội dung hỏi thông tin/phản ánh';
+                    return;
+                }
+
+                if (AppPACT.doituong_id <= 0) {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn đối tượng người dân';
+                    return;
+                }
+                if (AppPACT.donvi_id1 <= 0 || $('select[name="donvi_id1"]').find(":selected").text() === '') {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn đơn vị';
+                    return;
+                }
+                if (AppPACT.linhvuc_id <= 0 || $('select[name="linhvuc_id"]').find(":selected").text() === '') {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn lĩnh vực';
+                    return;
+                }
+                if (AppPACT.hinhthuc_id <= 0) {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn kênh tiếp nhận';
+                    return;
+                }
+                if (AppPACT.loaiyc_id <= 0) {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn loại yêu cầu';
+                    return;
+                }
+
+                AppPACT.nguoigoi_phuong_id = $('#cboPhuong').val();
+                var postData = {
+                    yeucau_id: AppPACT.yeucau_id,
+                    donvi_id: AppPACT.donvi_id1,
+                    yeucau_noidung: AppPACT.yeucau_noidung,
+                    nguoigoi_hoten: AppPACT.nguoigoi_hoten,
+                    nguoigoi_cmnd: AppPACT.nguoigoi_cmnd,
+                    nguoigoi_sdt: AppPACT.nguoigoi_sdt,
+                    nguoigoi_diachi: AppPACT.nguoigoi_diachi,
+                    nguoigoi_email: AppPACT.nguoigoi_email,
+                    nguoigoi_nickname: AppPACT.nguoigoi_nickname,
+                    mangxh_id: AppPACT.mangxh_id,
+                    loaiyc_id: AppPACT.loaiyc_id,
+                    linhvuc_id: AppPACT.linhvuc_id,
+                    doituong_id: AppPACT.doituong_id,
+                    hinhthuc_id: AppPACT.hinhthuc_id,
+                    noidung_c1_xuly: AppPACT.noidung_c1_xuly,
+                    dagoikiem: AppPACT.dagoikiem,
+                    thuTucHanhChinh: AppPACT.thuTucHanhChinh
+                };
+
+
+                $.post("@Url.Action("CapNhatTiepNhan", "CapDo1", new { area = "" })", postData, function (data) {
+                    if (data > 0) {
+                        AppPACT.ondb_dagoikiem = AppPACT.dagoikiem;
+                        AppPACT.thanhcong = true;
+                        AppPACT.thongbao = 'Cập nhật thành công!';
+
+                        $('#AppChiTietPhanAnh').modal('hide');
+                        App.locDuLieu();
+                    }
+                    else {
+                        AppPACT.loi = true;
+                        AppPACT.thongbao = 'Cập nhật thất bại!';
+                    }
+                });
+            },
+            chuyenlaiDonVi: function () {
+                var postData = {
+                    yeucau_id: AppPACT.yeucau_id,
+                    donvi_id: AppPACT.chuyen_donvi_id,
+                    linhvuc_id: AppPACT.chuyen_linhvuc_id,
+                    noidung_xuly_baosai: AppPACT.noidung_xuly_baosai
+                };
+                $.post("@Url.Action("ChuyenLaiDonVi", "CapDo1", new { area = "" })", postData, function (data) {
+                    if (data > 0) {
+                        AppPACT.showModal(AppPACT.yeucau_id);
+                        AppPACT.thanhcong = true;
+                        AppPACT.thongbao = 'Chuyển đơn vị thành công!';
+                        AppPACT.locDuLieu();
+                    }
+                    else {
+                        AppPACT.loi = true;
+                        AppPACT.thongbao = 'Không thể chuyển đơn vị!';
+                    }
+                });
+            },
+            validateInputAndShowConfirmUpdate: function () {
+                AppPACT.loi = false;
+                AppPACT.thongbao = '';
+                AppPACT.thanhcong = false;
+                if (AppPACT.loaiyc_id == 2) {
+                    if (AppPACT.nguoigoi_hoten.trim() == "") {
+                        AppPACT.loi = true;
+                        AppPACT.thongbao = 'Bạn chưa nhập họ tên của người dân';
+                        return;
+                    }
+                    if (AppPACT.nguoigoi_diachi.trim() == "") {
+                        AppPACT.loi = true;
+                        AppPACT.thongbao = 'Bạn chưa nhập địa chỉ của người dân';
+                        return;
+                    }
+                }
+                if (AppPACT.yeucau_noidung.trim() == "") {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Bạn chưa nhập nội dung hỏi thông tin/phản ánh';
+                    return;
+                }
+
+                if (AppPACT.doituong_id <= 0) {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn đối tượng người dân';
+                    return;
+                }
+                if (AppPACT.donvi_id1 <= 0 || $('select[name="donvi_id1"]').find(":selected").text() === '') {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn đơn vị';
+                    return;
+                }
+                if (AppPACT.linhvuc_id <= 0 || $('select[name="linhvuc_id"]').find(":selected").text() === '') {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn lĩnh vực';
+                    return;
+                }
+                if (AppPACT.hinhthuc_id <= 0) {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn kênh tiếp nhận';
+                    return;
+                }
+                if (AppPACT.loaiyc_id <= 0) {
+                    AppPACT.loi = true;
+                    AppPACT.thongbao = 'Vui lòng chọn loại yêu cầu';
+                    return;
+                }
+
+                showConfirmDialog(`Xác nhận cập nhật [${this.yeucau_id}]`, 'Bạn có chắc muốn cập nhật không?',
+                    function (confirmData) { AppPACT.capnhat(); }, false);
+            },
+            showConfirmDelete: function () {
+                showConfirmDialog(`Xác nhận xóa phiếu [${this.yeucau_id}]`, 'Bạn có chắc muốn xóa không?',
+                    function (confirmData) { AppPACT.doDelete(confirmData); }, true, true, AppPACT.deleteReasons);
+            },
+            doDelete: function (confirmData) {
+                closeConfirmDialog();
+                showPleaseWaitDialog(`Xóa phiếu [${AppPACT.yeucau_id}]...`, 'Đang xóa trên hệ thống, xin chờ giây lát...');
+                var postData = { yeucau_id: AppPACT.yeucau_id, lydo_id: confirmData.reason_id };
+
+                $.post("@Url.Action("xoa", "capdo1", new { area = "" })", postData, function (data) {
+                    if (data > 0) {
+                        $('#AppChiTietPhanAnh').modal('hide');
+                        AppDanhSach.reload_ds_phananh();
+                        closePleaseWaitDialog();
+                        showSuccessNotification(`Đã xóa thành công phiếu [${AppPACT.yeucau_id}]`);
+                    } else {
+                        closePleaseWaitDialog();
+                        showErrorNotification('Lỗi! Không thể xóa phiếu!');
+                    }
+
+                });
+            },
+            onClickPostDocument: function (e) {
+                if (AppPACT.contentBodyDocument === null || AppPACT.contentBodyDocument === "") {
+                    alert('Vui lòng nhập nội dung!');
+                    return;
+                }
+
+                var postData = { yeucau_id: AppPACT.yeucau_id, contentBody: AppPACT.contentBodyDocument };
+                $.post("@Url.Action("PostContent", "TaiLieu", new { area = "" })", postData, function (data) {
+                    if (data === "True") {
+                        AppPACT.contentBodyDocument = "";
+                        AppPACT.getDsDocument();
+                    } else {
+                        alert('Cập nhật không thành công!');
+                    }
+                });
+            },
+            onFileChangeDocument: function (e) {
+                AppPACT.loi = false;
+                AppPACT.thongbao = '';
+                AppPACT.thanhcong = false;
+
+                if (window.FormData !== undefined) {
+                    var fileUpload = $("#fileDocument").get(0);
+                    var files = fileUpload.files;
+                    if (files.length == 0) {
+                        alert("Vui lòng chọn file");
+                        return;
+                    }
+                    var fileData = new FormData();
+                    for (var i = 0; i < files.length; i++) {
+                        fileData.append(files[i].name, files[i]);
+                    }
+                    fileData.append('yeucau_id', AppPACT.yeucau_id);
+
+                    $.ajax({
+                        url: '' + '@Url.Action("AttachFile", "TaiLieu")' + '/yeucau_id=' + AppPACT.yeucau_id,
+                        type: "POST",
+                        contentType: false, // Not to set any content header
+                        processData: false, // Not to process data
+                        data: fileData,
+                        success: function (result) {
+                            AppPACT.getDsDocument();
+                            alert('Attach file thành công!');
+                        },
+                        error: function (err) {
+                            alert('Attach file không thành công!');
+                        }
+                    });
+                } else {
+                    alert("FormData is not supported.");
+                }
+            },
+            onFileChange: function (e) {
+                AppPACT.loi = false;
+                AppPACT.thongbao = '';
+                AppPACT.thanhcong = false;
+                if (window.FormData !== undefined) {
+                    var fileUpload = $("#c1_file_name").get(0);
+                    var files = fileUpload.files;
+                    if (files.length == 0) {
+                        showErrorNotification("Vui lòng chọn 1 tập tin trên máy của bạn làm tập tin đính kèm!");
+                        return;
+                    }
+                    var fileData = new FormData();
+                    for (var i = 0; i < files.length; i++) {
+                        fileData.append(files[i].name, files[i]);
+                    }
+                    fileData.append('yeucau_id', AppPACT.yeucau_id);
+
+                    $.ajax({
+                        url: '' + '@Url.Action("AttachFile","CapDo1")' + '/yeucau_id=' + AppPACT.yeucau_id,
+                        type: "POST",
+                        contentType: false, // Not to set any content header
+                        processData: false, // Not to process data
+                        data: fileData,
+                        success: function (result) {
+                            AppPACT.c1_file_name = result;
+                            if (AppPACT.c1_file_name !== '') {
+                                AppPACT.reloadActionHistory();
+                                showSuccessNotification('Gắn tập tin đính kèm: Xong!', 2000);
+                            } else {
+                                showErrorNotification('Gắn tập tin đính kèm: Lỗi!', 3000);
+                            }
+                        },
+                        error: function (err) {
+                            showErrorNotification('Gắn tập tin đính kèm: Lỗi!', 3000);
+                        }
+                    });
+                } else {
+                    alert("FormData is not supported.");
+                }
+            },
+            askBeforeDeleteDocument: function (doc) {
+                showConfirmDialog('Xóa tài liệu hỗ trợ', 'Bạn có chắc muốn xóa tài liệu hỗ trợ này không?',
+                    function () {
+                        AppPACT.execDeleteDocument(doc);
+                    }
+                );
+            },
+            execDeleteDocument: function (doc) {
+                var postData = {
+                    docid: doc.id
+                };
+                $.post("@Url.Action("DeleteDocumentByID", "CapDo1")", postData, function (data) {
+                    if (data > 0) {
+                        AppPACT.getDsDocument();
+                        showSuccessNotification('Đã xóa tài liệu hỗ trợ!', 2000);
+                    } else {
+                        showErrorNotification('Xóa tài liệu hỗ trợ: Lỗi!', 3000);
+                    }
+                });
+            },
+            askBeforeDeleteAttachmentLevel1: function () {
+                showConfirmDialog('Xóa tập tin đính kèm', 'Bạn có chắc muốn xóa tập tin đính kèm không?',
+                    function () {
+                        AppPACT.execDeleteAttachmentLevel1();
+                    }
+                );
+            },
+            execDeleteAttachmentLevel1: function () {
+                var postData = {
+                    yeucau_id: AppPACT.yeucau_id
+                };
+                $.post("@Url.Action("DetachFile", "CapDo1", new { area = "" })", postData, function (data) {
+                    if (data > 0) {
+                        AppPACT.c1_file_name = '';
+                        AppPACT.reloadActionHistory();
+                        showSuccessNotification('Đã xóa tập tin đính kèm!', 2000);
+                    } else {
+                        showErrorNotification('Xóa tập tin đính kèm: Lỗi!', 3000);
+                    }
+                });
+            },
+            capNhatKQTL: function () {
+                var postData = {
+                    yeucau_id: AppPACT.yeucau_id,
+                    kqtl: AppPACT.tra_loi_nguoi_dan
+                };
+                $.post("@Url.Action("CapNhatKQTL", "CapDo1", new { area = "" })", postData, function (data) {
+                    if (data > 0) {
+                        showSuccessNotification('Cập nhật kết quả trả lời người dân: thành công!', 2000);
+                        App.locDuLieu();
+                    } else {
+                        showErrorNotification('Lỗi: không cập nhật kết quả trả lời người dân được!', 3000);
+                    }
+                });
+            }
+
+        },
+        computed: {
+            disableSelectDonvi: function () {
+                if (this.phieu_dxl) return true;
+                if (this.capdo_id > 1) return true;
+                return false;
+            },
+            canDelete: function () {
+                return true;
+            },
+            canUpdateData: function () {
+            // TODO: disable after client confirm this is done
+                if (this.phieu_dxl) {
+                    if (@ViewBag.iCanEditClosedRequest === 1) return true;
+                    return false;
+                }
+                return true;
+            },
+            phieu_dtb: function () {
+                return this.trangthai_id === @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DA_THONG_BAO_KQ_NGUOI_DAN);
+            },
+            onMyStep: function () {
+                if (this.user_capdo_id === 1 && this.trangthai_id === 2) return true; // sai don vi
+                return this.capdo_id === this.user_capdo_id;
+            },
+            phieu_dxl: function () {
+                //console.log(`[${this.yeucau_id}] trangthai ${this.trangthai_id}`);
+                return this.trangthai_id >= @Constant.layTrangThaiYeuCau(TRANG_THAI_YEU_CAU.DA_XU_LY);
+            },
+            downloadUrl_c1: function () {
+                if (!AppPACT || !AppPACT.c1_file_name) return "";
+                return AppPACT.c1_file_name;
+            },
+            downloadUrl_c2: function () {
+                if (!AppPACT || !AppPACT.c2_file_name) return "";
+                return AppPACT.c2_file_name;
+            },
+            downloadUrl_c3: function () {
+                if (!AppPACT || !AppPACT.c3_file_name) return "";
+                return AppPACT.c3_file_name;
+            },
+            url_word: function () {
+                if (!AppPACT && !AppPACT.yeucau_id)
+                    return "";
+
+                var baseUrl = '@Url.Action("ExportWord","CapDo1")';
+                return baseUrl + '/?yeucau_id=' + AppPACT.yeucau_id;
+            },
+            get_upload_result_msg: function () {
+                if (AppPACT.upload_err_msg == 'ok') {
+                    return 'Xong, tập tin "' + AppPACT.record_file_name + '" đã được tải lên hệ thống!';
+                }
+                return AppPACT.upload_err_msg;
+            }
+        }
+    })
+    Vue.filter('formatDate', function (value) {
+        if (value) {
+            return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+        }
+    });
+        $(document).ready(function () {
+            $('select[name="linhvuc_id"]').select2().on('change', function () {
+                if (this.value) {
+                    AppPACT.linhvuc_id = this.value;
+                }
+            });
+            $('select[name="nguoigoi_huyen_id"]').select2().on('change', function () {
+                if (this.value) {
+                    AppPACT.nguoigoi_huyen_id = this.value;
+                    AppPACT.getDsPhuong();
+                }
+            });
+            $('select[name="donvi_id1"]').select2().on('change', function () {
+                if (this.value) {
+                    AppPACT.donvi_id1 = this.value;
+                    AppPACT.getDsLinhVuc();
+                }
+            });
+        });
+</script>

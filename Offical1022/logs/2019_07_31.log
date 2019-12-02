@@ -1,0 +1,25 @@
+INFO  2019-07-31 08:08:44,967 2432500ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-31 08:08:53,529 2441062ms DangNhapController     Index              - do login...
+INFO  2019-07-31 08:08:54,170 2441703ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 08:32:59,732 3887265ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-31 08:33:03,545 3891078ms DangNhapController     Index              - do login...
+INFO  2019-07-31 08:33:03,576 3891109ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 09:37:35,404 697765ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 10:39:32,701 601359ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 11:01:44,701 18828ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 11:32:25,764 1859890ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 16:35:40,998 14784453ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-31 16:35:42,123 14785578ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-31 16:35:45,842 14789296ms DangNhapController     Index              - do login...
+INFO  2019-07-31 16:35:47,076 14790531ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 16:40:32,607 15076062ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 19:54:20,060 26703515ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-31 19:54:40,920 26724375ms DangNhapController     Index              - do login...
+DEBUG 2019-07-31 19:54:40,920 26724375ms DangNhapController     Index              - user not exist: demo_admin pass 61F7637BBA276751B207DE24A79EEC89
+INFO  2019-07-31 19:54:48,748 26732203ms DangNhapController     Index              - do login...
+DEBUG 2019-07-31 19:54:48,764 26732218ms DangNhapController     Index              - user not exist: demo_admin pass 61F7637BBA276751B207DE24A79EEC89
+INFO  2019-07-31 19:55:10,951 26754406ms DangNhapController     Index              - do login...
+INFO  2019-07-31 19:55:11,014 26754468ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 19:55:25,732 26769187ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-31 19:55:47,279 26790734ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-31 20:07:29,045 27492500ms DangNhapController     Index              - Enter DangNhap/Index

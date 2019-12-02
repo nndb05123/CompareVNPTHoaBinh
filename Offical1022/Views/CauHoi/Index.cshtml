@@ -1,0 +1,31 @@
+﻿
+@using WebUI
+@using HotlineCore
+@using WebUI.Models
+@model IEnumerable<CauHoi>
+@{
+    ViewBag.Title = "Danh sách câu hỏi thường gặp";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <form class="form">
+                @foreach (CauHoi cauhoi in Model)
+                {
+                    <div class="mt-1 col-sm-10 alert alert-info" role="alert">
+                        <div class="row">
+                            <p style="padding: 5px;">@cauhoi.CauHoi1</p>
+                        </div>
+                    </div>
+                    <div class="mt-1 col-sm-offset-2 col-sm-10 alert alert-danger" role="alert">
+                        <div class="row">
+                            <p style="padding: 5px;">@cauhoi.TraLoi</p>
+                        </div>
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+</div>

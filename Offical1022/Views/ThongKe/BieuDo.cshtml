@@ -1,0 +1,248 @@
+﻿@{
+    ViewBag.Title = "Biểu đồ thống kê";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<div id="app">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-5 col-sm-12" style="padding:4px">
+                    <label for="startDayString" class="control-label">Từ ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right nhapngay" id="startDayString" v-model="startDayString" />
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12" style="padding:4px">
+                    <label for="endDayString" class="control-label">Đến ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right nhapngay" id="endDayString" v-model="endDayString" />
+                    </div>
+                </div>
+                    
+                <div class="col-md-2 col-sm-12" style="padding:4px;margin-bottom:4px;">
+                    <br/>
+                    <button type="button" class="btn btn-primary btn-block" style="margin-top:7px" id="btnLocDuLieu">Cập nhật</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="box box-danger">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Tổng số phản ánh đang xử lý/đã xử lý: {{ total_dangxl }}/{{ total_daxl }}</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body" style="display: block;">
+                    <canvas id="pieChart_Homnay" style="height: 100px; width: 300px;" height="100" width="300"></canvas>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="box box-success">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Chi tiết trạng thái xử lý theo lĩnh vực</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body" style="overflow-x:scroll">
+                    <div id="chart-lv-container" class="chart">
+                        <canvas id="barChart_linhvuc_homnay" height="600"></canvas>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</div>
+@section Foot {
+    <script src="@Url.Content("~/Content/lib/chart.js/chart.min.js")"></script>
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    total_dangxl: 0,
+                    total_daxl: 0,
+                    startDayString: '@ViewBag.startDayString',
+                    endDayString: '@ViewBag.endDayString'
+                };
+            }
+        });
+
+        var pieOptions = {
+            //Boolean - Whether we should show a stroke on each segment
+            segmentShowStroke: true,
+            //String - The colour of each segment stroke
+            segmentStrokeColor: "#fff",
+            //Number - The width of each segment stroke
+            segmentStrokeWidth: 2,
+            //Number - The percentage of the chart that we cut out of the middle
+            percentageInnerCutout: 50, // This is 0 for Pie charts
+            //Number - Amount of animation steps
+            animationSteps: 100,
+            //String - Animation easing effect
+            animationEasing: "easeOutBounce",
+            //Boolean - Whether we animate the rotation of the Doughnut
+            animateRotate: true,
+            //Boolean - Whether we animate scaling the Doughnut from the centre
+            animateScale: false,
+            //Boolean - whether to make the chart responsive to window resizing
+            responsive: true,
+            // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+            maintainAspectRatio: true,
+            //String - A legend template
+            legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+        };
+
+        function BieuDo_TinhHinhPhanAnh() {
+            $.ajax({
+                type: 'POST',
+                url: "@Url.Action("BieuDo_TinhHinhPhanAnh", "ThongKe", new { area = "" })",
+                data: {
+                    startDayString: $("#startDayString").val(), endDayString: $("#endDayString").val()
+                }
+            }).done(function (data) {
+                var chartCanvas = $("#pieChart_Homnay").get(0).getContext("2d");
+                var PieData = [];
+                var total = 0;
+                app.total_dangxl = data[0].value;
+                app.total_daxl = data[1].value;
+                $.each(data, function (index, value) {
+                    PieData.push(value);
+                    total += value.value;
+                });
+                if (total === 0) {
+
+                }
+                if (window.pieChart) {
+                    window.pieChart.destroy();
+                }
+                window.pieChart = new Chart(chartCanvas).Doughnut(PieData, pieOptions);
+            });
+        }
+        function BieuDo_TinhHinhPhanAnh_TheoLinhVuc() {
+            $.ajax({
+                type: 'POST',
+                url: "@Url.Action("BieuDo_TinhHinhPhanAnh_TheoLinhVuc", "ThongKe", new { area = "" })",
+                data: {
+                    startDayString: $("#startDayString").val(), endDayString: $("#endDayString").val()
+                }
+            }).done(function (data) {
+                var labels = [];
+                var data_dang_xuly = [];
+                var data_da_xuly = [];
+
+                $.each(data, function (index, value) {
+                    labels.push(value.linhvuc_ten);
+                    data_dang_xuly.push(parseInt( value.tong_so_dang_xu_ly));
+                    data_da_xuly.push(parseInt(value.tong_so_da_xu_ly));
+                });
+
+                var lvw = 60;
+                var totalW = lvw * data_dang_xuly.length;
+                var container = $('#chart-lv-container');
+                if (totalW > container.width()) {
+                    var container = $('#chart-lv-container');
+                    container.css('width', data_dang_xuly.length * 60 + 'px');
+                }
+
+                var areaChartData = {
+                    labels: labels,
+                    datasets: [
+                      {
+                          label: "Đang xử lý",
+                          fillColor: "rgba(221, 75, 57, 1)",
+                          strokeColor: "rgba(221, 75, 57, 1)",
+                          pointColor: "rgba(221, 75, 222, 1)",
+                          pointStrokeColor: "#c1c7d1",
+                          pointHighlightFill: "#fff",
+                          pointHighlightStroke: "rgba(220,220,220,1)",
+                          data: data_dang_xuly
+                      },
+                      {
+                          label: "Đã xử lý",
+                          fillColor: "rgba(60,141,188,0.9)",
+                          strokeColor: "rgba(60,141,188,0.8)",
+                          pointColor: "#3b8bba",
+                          pointStrokeColor: "rgba(60,141,188,1)",
+                          pointHighlightFill: "#fff",
+                          pointHighlightStroke: "rgba(60,141,188,1)",
+                          data: data_da_xuly
+                      }
+                    ]
+                };
+                var chartCanvas = $("#barChart_linhvuc_homnay").get(0).getContext("2d");
+                var barChartData = areaChartData;
+                barChartData.datasets[1].fillColor = "#00a65a";
+                barChartData.datasets[1].strokeColor = "#00a65a";
+                barChartData.datasets[1].pointColor = "#00a65a";
+                var barChartOptions = {
+                    //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+                    scaleBeginAtZero: true,
+                    //Boolean - Whether grid lines are shown across the chart
+                    scaleShowGridLines: true,
+                    //String - Colour of the grid lines
+                    scaleGridLineColor: "rgba(0,0,0,.05)",
+                    //Number - Width of the grid lines
+                    scaleGridLineWidth: 1,
+                    //Boolean - Whether to show horizontal lines (except X axis)
+                    scaleShowHorizontalLines: true,
+                    //Boolean - Whether to show vertical lines (except Y axis)
+                    scaleShowVerticalLines: true,
+                    //Boolean - If there is a stroke on each bar
+                    barShowStroke: false,
+                    //Number - Pixel width of the bar stroke
+                    barStrokeWidth: 2,
+                    //Number - Spacing between each of the X value sets
+                    barValueSpacing: 0,
+                    //Number - Spacing between data sets within X values
+                    barDatasetSpacing: 1,
+                    //String - A legend template
+                    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+                    //Boolean - whether to make the chart responsive
+                    responsive: true,
+                    maintainAspectRatio: false
+                };
+                barChartOptions.datasetFill = true;
+                if (window.barChart) {
+                    window.barChart.destroy();
+                }
+                window.barChart = new Chart(chartCanvas).Bar(barChartData, barChartOptions);
+            });
+        }
+
+        $(function () {
+            $('.nhapngay').datepicker({
+                autoclose: true,
+                dateFormat: 'dd/mm/yy'
+            });
+            $('.fa-calendar').click(function () {
+                var $this = $(this).parent().parent().find('input');
+                $this.datepicker("show");
+            });
+            BieuDo_TinhHinhPhanAnh();
+            BieuDo_TinhHinhPhanAnh_TheoLinhVuc();
+        });
+
+        $("#btnLocDuLieu").click(function () {
+            BieuDo_TinhHinhPhanAnh();
+            BieuDo_TinhHinhPhanAnh_TheoLinhVuc();
+        });
+    </script>
+}

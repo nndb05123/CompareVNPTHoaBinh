@@ -1,0 +1,13 @@
+INFO  2019-07-15 07:51:53,522 962000ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-15 07:52:11,335 979812ms DangNhapController     Index              - do login...
+INFO  2019-07-15 07:52:12,929 981406ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-15 08:32:33,788 1120234ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-15 08:32:39,179 1125624ms DangNhapController     Index              - do login...
+INFO  2019-07-15 08:32:40,351 1126796ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-15 20:17:26,842  1546ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-15 20:17:39,889 14593ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-15 20:17:41,311 16015ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-15 20:17:54,796 29500ms DangNhapController     Index              - do login...
+DEBUG 2019-07-15 20:17:55,796 30499ms DangNhapController     Index              - user not exist: demo_admin pass 61F7637BBA276751B207DE24A79EEC89
+INFO  2019-07-15 20:18:17,139 51843ms DangNhapController     Index              - do login...
+INFO  2019-07-15 20:18:18,483 53187ms HomeController         Index              - Enter Home/Index

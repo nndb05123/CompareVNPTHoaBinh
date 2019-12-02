@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Các hình thức tiếp nhận phản ánh của tổng đài 1022";
+    Layout = "~/Views/Shared/_LayoutPortalCP.cshtml";
+}
+
+<style>
+    .channel-title {
+        font-size: 18px;
+    }
+    .channel-desc {
+        font-size: 16px;
+    }
+</style>
+
+<script>
+    $('#main-navbar .nav-item.channel-list-view').addClass('active');
+</script>
+<div>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <label class="channel-title">Tiếp nhận qua điện thoại: <b>0218.1022</b></label>
+        </li>
+        <li class="list-group-item">
+            <label class="channel-title">Tiếp nhận qua thư điện tử: <b>tthcc@hoabinh.gov.vn</b></label>
+        </li>
+        <li class="list-group-item">
+            <label class="channel-title">Tiếp nhận qua trang web:  <a href="@Url.Action("Index","Portal")">NHẬP PHẢN ÁNH, KIẾN NGHỊ</a></label>
+        </li>
+        @*<label class="channel-title">Tiếp nhận qua trang Facebook: </label>*@
+
+        @*<label class="channel-title">Tiếp nhận qua trang Zalo: </label>*@
+
+    </ul>
+</div>

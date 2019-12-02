@@ -1,0 +1,80 @@
+﻿<div class="modal dlg-wnd" id="dlg-plswait" role="dialog" data-backdrop="static" data-keyboard="false" style="display:none">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header wnd-title-bar">
+                <h4 class="dlg-plswait-title">Đang xử lý</h4>
+            </div>
+            <div class="modal-body">
+                <span class="dlg-plswait-msg nosel">Xin chờ giây lát...</span><img src="~/Content/Images/loading_icon.gif" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal dlg-wnd" id="dlg-msgbox" role="dialog" data-backdrop="static" data-keyboard="false" style="display:none;z-index:2000">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header wnd-title-bar">
+                <h4 class="dlg-msgbox-title">Thông báo</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dlg-msgbox-msg"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-confirm btn-primary pull-right" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal dlg-wnd" id="dlg-confirm" role="dialog" data-backdrop="static" data-keyboard="false" style="display:none;z-index:2000">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header wnd-title-bar">
+                <h4 class="dlg-confirm-title">Thông báo xác nhận</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dlg-confirm-msg">Bạn có chắc không?</div>
+
+                <div class="imgone reason-panel">
+                    <label>Lý do:</label>
+                    <textarea class="imgone inp-reason form-control" rows="5" spellcheck="false" maxlength="500"></textarea>
+                    <select class="imgone confirm-reason-combobox" style="padding: 5px; margin:5px;min-width:100%"></select>
+                    <br />
+                    <br />
+
+                </div>
+
+                <div class="imgone confirm-cmd-panel">
+                    <label id="confirm-code-msg">Xác nhận bằng chữ (nhập "OK"):</label>
+                    <input class="inp-confirm-cmd" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="dlg-confirm-btn-ok" type="button" class="btn btn-danger pull-right">Đồng ý</button>
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Thoát</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal dlg-wnd" id="dlg-obj-editor" role="dialog" data-backdrop="static" data-keyboard="false" style="display:none;z-index:2000">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header wnd-title-bar">
+                <h4 class="dlg-title">Editor</h4>
+            </div>
+            <div class="modal-body">
+                <div class="mbody-top"></div>
+                <div class="mbody-mid"></div>
+                <div class="mbody-bottom"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger js-btn-ok">OK</button>
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Thoát</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="default-notification"></div>

@@ -1,0 +1,207 @@
+﻿@{
+    ViewBag.Title = "Thêm người dùng";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+
+@Html.Partial("DialogPleaseWait")
+@if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+{
+    <div id="MyApp" class="row">
+        <div class="col-md-12">
+            <div class="box box-info">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Thêm mới người dùng</h3>
+                </div>
+                <form class="form-horizontal">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="nguoidung_id_edit" class="col-sm-2 control-label">Mã người dùng<span class="text-danger">*</span></label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="nguoidung_id_edit" v-model="nguoidung_id_edit" />
+                            </div>
+                            <label for="nguoidung_pass_edit" class="col-sm-2 control-label">Mật khẩu <span class="text-danger">*</span></label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="nguoidung_pass_edit" v-model="nguoidung_pass_edit" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="nguoidung_ten" class="col-sm-2 control-label">Họ tên <span class="text-danger">*</span></label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="nguoidung_ten" v-model="nguoidung_ten_edit" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="nguoidung_sdt_edit" class="col-sm-2 control-label">Số ĐT</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="nguoidung_sdt_edit" v-model="nguoidung_sdt_edit" />
+                            </div>
+                            <label for="agent_id_edit" class="col-sm-2 control-label">Danh số</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="agent_id_edit" v-model="agent_id_edit" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cboDonVi2" class="col-sm-2 control-label">Đơn vị <span class="text-danger">*</span></label>
+                            <div class="col-md-10">
+                                <select id="cboDonVi2" class="form-control select2" v-model="donvi_chon_edit">
+                                    <option v-for="item in dsDonVi" v-bind:value="item.donvi_id">{{ item.donvi_ten }}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cboVaiTro" class="col-sm-2 control-label">Vai trò <span class="text-danger">*</span></label>
+                            <div class="col-md-10">
+                                <select id="cboVaiTro" class="form-control select2" v-model="vaitro_chon_edit">
+                                    <option v-for="item in dsVaiTro" v-bind:value="item.vaitro_id">{{ item.vaitro_ten }}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lanhdao_edit" class="col-sm-2 control-label">Lãnh đạo</label>
+                            <div class="col-md-2">
+                                <input id="lanhdao_edit" type="checkbox" v-model="lanhdao_edit" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer">
+                        <div class="row">
+                            <div v-if="showBottomMessage">
+                                <div class="col-md-12" v-if="thanhcong">
+                                    <div class="alert alert-success">
+                                        <i class="icon fa fa-check"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                                <div class="col-md-12" v-if="!thanhcong">
+                                    <div class="alert alert-danger">
+                                        <i class="icon fa fa-info"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <a href="@Url.Action("danhsach", "nguoidung")" class="btn btn-default">
+                                    <i class="fa fa-angle-left"></i>
+                                    Trở về
+                                </a>
+                                <button type="button" class="btn btn-primary pull-right" v-on:click="capnhat">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-footer -->
+                </form>
+            </div>
+        </div>
+    </div>
+    @section Foot {
+        <script>
+            var MyApp = new Vue({
+                el: '#MyApp',
+                data: {
+                    dsDonVi: [],
+                    dsNguoiDung: [],
+                    dsVaiTro: [],
+                    donvi_chon: 0,
+                    nguoidung_id_edit: '',
+                    nguoidung_pass_edit: '',
+                    nguoidung_ten_edit: '',
+                    nguoidung_sdt_edit: '',
+                    agent_id_edit: '',
+                    donvi_chon_edit: 0,
+                    vaitro_chon_edit: 0,
+                    lanhdao_edit: false,
+                    thongbao: '',
+                    thanhcong: false,
+                    isSaving: false,
+                    showBottomMessage: false
+                },
+                methods: {
+                    getDsDonVi: function () {
+                        MyApp.dsDonVi = [{ donvi_id: "0", donvi_ten: "-Chọn-" }];
+                        $.post("@Url.Action("getListWithSelectChoice", "DonVi", new { area = "" })", function (data) {
+                            $.each(data, function (i, v) {
+                                MyApp.dsDonVi.push(v);
+                            });
+                        });
+                    },
+                    getDsVaiTro: function () {
+                        MyApp.dsVaiTro = [{ vaitro_id: "0", vaitro_ten: "-Chọn-" }];
+                        $.post("@Url.Action("getDsVaiTro", "VaiTro", new { area = "" })", function (data) {
+                            $.each(data, function (i, v) {
+                                MyApp.dsVaiTro.push(v);
+                            });
+                        });
+                    },
+                    capnhat: function () {
+                        if (MyApp.isSaving) return;
+
+
+                        MyApp.showBottomMessage = false;
+                        MyApp.isSaving = true;
+                        MyApp.loi = false;
+                        MyApp.thongbao = '';
+                        MyApp.thanhcong = false;
+                        var nguoidung_id_edit = MyApp.nguoidung_id_edit;
+                        if (nguoidung_id_edit.trim() == "") {                            
+                            MyApp.thongbao = 'Bạn chưa nhập Mã người dùng';
+                            MyApp.isSaving = false;
+                            MyApp.showBottomMessage = true;
+                            return;
+                        }
+                        var nguoidung_pass_edit = MyApp.nguoidung_pass_edit;
+                        if (nguoidung_pass_edit.trim() == "") {                            
+                            MyApp.thongbao = 'Bạn chưa nhập Mật khẩu';
+                            MyApp.isSaving = false;
+                            MyApp.showBottomMessage = true;
+                            return;
+                        }
+                        var nguoidung_ten_edit = MyApp.nguoidung_ten_edit;
+                        if (nguoidung_ten_edit.trim() == "") {                            
+                            MyApp.thongbao = 'Bạn chưa nhập tên người dùng';
+                            MyApp.isSaving = false;
+                            MyApp.showBottomMessage = true;
+                            return;
+                        }
+                        if (MyApp.donvi_chon_edit == 0) {
+                            MyApp.thongbao = 'Bạn chưa chọn đơn vị';
+                            MyApp.isSaving = false;
+                            MyApp.showBottomMessage = true;
+                            return;
+                        }
+                        if (MyApp.vaitro_chon_edit == 0) {                            
+                            MyApp.thongbao = 'Bạn chưa chọn vai trò';
+                            MyApp.isSaving = false;
+                            MyApp.showBottomMessage = true;
+                            return;
+                        }
+                        var postData = {
+                            nguoidung_id: MyApp.nguoidung_id_edit,
+                            nguoidung_ten: MyApp.nguoidung_ten_edit,
+                            nguoidung_pass: MyApp.nguoidung_pass_edit,
+                            nguoidung_sdt: MyApp.nguoidung_sdt_edit,
+                            agent_id: MyApp.agent_id_edit,
+                            donvi_id: MyApp.donvi_chon_edit,
+                            vaitro_id: MyApp.vaitro_chon_edit,
+                            lanhdao: MyApp.lanhdao_edit
+                        };
+                        $.post("@Url.Action("themnguoidung", "nguoidung")", postData, function (data) {
+                            var kq = parseInt(data);
+                            
+                            if (kq > 0) {                                
+                                MyApp.thanhcong = true;
+                                MyApp.thongbao = "Cập nhật thành công!";
+                            } else if (kq === -1) {                                
+                                MyApp.thongbao = `Lỗi trùng lặp: Mã người dùng "${MyApp.nguoidung_id_edit}" đã tồn tại trên hệ thống! `;
+                            }
+                            MyApp.isSaving = false;
+                            MyApp.showBottomMessage = true;
+                        });
+                    }
+                }
+            })
+            MyApp.getDsDonVi();
+            MyApp.getDsVaiTro();
+        </script>
+    }
+}

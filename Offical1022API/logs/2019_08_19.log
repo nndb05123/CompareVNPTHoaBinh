@@ -1,0 +1,14 @@
+INFO  2019-08-19 22:20:37,737   265ms RequestModule          <.ctor>b__0_4      - v1/requests/portal/latest/sections
+INFO  2019-08-19 22:20:37,956   484ms RequestModule          <.ctor>b__0_4      - [{"id":3,"ten":"Ðang ký"},{"id":6,"ten":"Góp ý"},{"id":1,"ten":"H?i thông tin"},{"id":2,"ten":"Ph?n ánh"},{"id":4,"ten":"Ph?n ánh ch?m tr?"},{"id":5,"ten":"Ph?n ánh thái d? c?a công ch?c"}]
+INFO  2019-08-19 22:20:37,956   484ms RequestModule          <.ctor>b__0_4      - id = 3ten = Ðang ký
+INFO  2019-08-19 22:20:37,956   484ms RequestModule          <.ctor>b__0_4      - id = 6ten = Góp ý
+INFO  2019-08-19 22:20:37,956   484ms RequestModule          <.ctor>b__0_4      - id = 1ten = H?i thông tin
+INFO  2019-08-19 22:20:37,956   484ms RequestModule          <.ctor>b__0_4      - id = 2ten = Ph?n ánh
+INFO  2019-08-19 22:20:37,956   484ms RequestModule          <.ctor>b__0_4      - id = 4ten = Ph?n ánh ch?m tr?
+INFO  2019-08-19 22:20:37,956   484ms RequestModule          <.ctor>b__0_4      - id = 5ten = Ph?n ánh thái d? c?a công ch?c
+INFO  2019-08-19 22:20:38,893  1421ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/6/0
+INFO  2019-08-19 22:20:39,112  1640ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/4/0
+INFO  2019-08-19 22:20:39,690  2218ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/1/0
+INFO  2019-08-19 22:20:40,284  2812ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/5/0
+INFO  2019-08-19 22:20:40,737  3265ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/2/0
+INFO  2019-08-19 22:20:41,206  3734ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/3/0

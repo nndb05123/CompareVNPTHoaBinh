@@ -1,0 +1,110 @@
+﻿.table th {
+    background-color: #0867b0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-pills .active a strong {
+    color: white
+}
+
+.mynav {
+    margin-bottom: 5px;
+    background: whitesmoke;
+}
+
+.block {
+    padding: 5px;
+}
+
+.debug-mode-warning-bar {
+    font-size:20pt;
+    color : white;
+    background-color:red;
+    display:inline-block;
+    width:auto;
+}
+
+.sheet-tab.active, .sheet-tab.active:focus {
+    background-color: #0e71e0;
+    color: #fff;
+}
+
+.sheet-tab:hover, .sheet-tab:focus {
+    outline: none;
+}
+
+.dlg-wnd .wnd-title-bar {
+    background-color: #004a94;
+    color: #fff;
+    font-weight: bold;
+}
+
+.modal-picklist.big {
+    height:300px;
+    overflow-y:scroll;
+}
+
+.input-group {
+    padding: 4px;
+}
+
+.input-group label {
+    margin: 4px;
+}
+
+/*Important Gone*/
+.imgone {
+    display:none!important; 
+}
+
+.nosel {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+.tooltip-inner {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+
+.dlg-req-detail {
+    min-width:1024px;
+}
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.hiden-btn {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.cell-capdo {
+    padding: 4px 6px;
+    background-color: #0867b0;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.required {
+    color: red;
+}
+
+.text-white {
+    color: #fff;
+}

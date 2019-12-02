@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Cổng tiếp nhận phản ánh";
+    Layout = "~/Views/Shared/_LayoutPortalBlue.cshtml";
+}
+
+<style>
+    body.modal-open {
+        overflow: hidden;
+        position: fixed;
+    }
+</style>
+@*<body style="margin-bottom:0">*@
+
+
+    <script>
+        var confirmCode = @ViewBag.randomCode;
+        var buildinWsUrl = '@ViewBag.urlApi';
+        var recaptcha_v3_public_key = '@ViewBag.recaptcha_v3_public_key';
+        var coreapiURL = '@ViewBag.coreapiURL';
+    </script>
+
+    <div>
+        <div id="app-portal" style="margin-top:6px;">
+            @Html.Partial("DialogDetail")
+
+            <div class="vnpt-content2 vnpt-content-main" v-if="dataLoaded">
+                <div class="vnpt-row-padding">
+                    <section class="content-main">
+
+
+                        @Html.Partial("FormTiepNhanNguoiDan")
+
+                        <br />
+
+                        @Html.Partial("TabsDSPA")
+
+                        <div class="btn-portal-danhsach">
+                            <a class="btn btn-info" href="@Url.Action("DanhSach","Portal")">Danh sách phản ánh</a>
+                        </div>
+                    </section>
+
+                    @Html.Partial("PortalSidebar")
+                </div>
+
+
+            </div>
+
+
+
+            @if (ViewBag.dbgCaptcha)
+            {
+                @*<button class="btn btn-primary" v-on:click="testCaptcha">Test Captcha</button>
+            <div id="dbg"></div>*@
+            }
+        </div>
+
+
+
+        
+    </div>
+    <script src="@Url.Content("~/Scripts/portal_controller.js?v=2")"></script>
+    <script src="@Url.Content("~/Scripts/portal_app.js?v=2")"></script>

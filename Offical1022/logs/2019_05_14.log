@@ -1,0 +1,133 @@
+DEBUG 2019-05-14 07:43:32,358 491375ms PortalController       verifyCaptcha      - verifyCaptcha: from client 113.164.232.218
+DEBUG 2019-05-14 07:43:32,405 491422ms PortalController       verifyCaptcha      -   token: 03AOLTBLTA_ndy7Ns2wVVUpjLYsm3n3ZmoMHiAw9mM7ezZ5uZS8wi4iRrLcUdA21SqelywwahLkuBEskt-YP8yjA3bjwsgbAKCildg-PR5CaWF7Wrx9ZkBuDAokQL9wVkmx7SqtwKpGpc17xPcW4W7zO_k-j0lyTbqMBKvA5DpeRF9nnLWfWab3kYo2kjd-TduMb9tka-Ll9mV54T6SAqvxKNuxRQyLCJLsrK_s_ZBqHYcZQeFJSTW_A0_rNyOIMC_4WngBbM_6pGev_ao7vZViWUNeLel7_11MWVYkMm3pVpNxaALMk5_3qzhJX7hhvuTHYWp8mKrAnEs9NUJ3elNtLVed6BXM1FA-A
+DEBUG 2019-05-14 07:43:32,405 491422ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-14 07:43:44,936 503954ms _PageTongHop           createRequest      - portal createRequest displayName lê anh phuong, phoneNumber 0977602156 content lap
+INFO  2019-05-14 07:44:16,577 535594ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 07:44:31,077 550094ms DangNhapController     Index              - do login...
+DEBUG 2019-05-14 07:44:31,296 550313ms DangNhapController     Index              - user not exist: admin pass E10ADC3949BA59ABBE56E057F20F883E
+INFO  2019-05-14 07:44:35,639 554657ms DangNhapController     Index              - do login...
+INFO  2019-05-14 07:44:35,796 554813ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 07:47:20,249 719267ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 07:47:27,984 727001ms DangNhapController     Index              - do login...
+INFO  2019-05-14 07:47:28,015 727032ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 07:47:43,905 742923ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 07:47:47,780 746798ms DangNhapController     Index              - do login...
+INFO  2019-05-14 07:47:47,812 746829ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 07:50:38,249 917267ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 07:52:26,531 1025548ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 07:52:46,359 1045377ms DangNhapController     Index              - do login...
+INFO  2019-05-14 07:52:46,390 1045408ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 07:54:37,266 1156283ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 07:54:43,328 1162346ms DangNhapController     Index              - do login...
+INFO  2019-05-14 07:54:43,359 1162377ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 09:41:14,131 1214241ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 14:21:24,973 270469ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 14:21:30,129 275625ms DangNhapController     Index              - do login...
+INFO  2019-05-14 14:21:30,723 276219ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 14:34:31,609 1057104ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 14:34:38,312 1063808ms DangNhapController     Index              - do login...
+INFO  2019-05-14 14:34:38,327 1063823ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-05-14 14:38:50,156 1315652ms PortalController       verifyCaptcha      - verifyCaptcha: from client 113.160.141.58
+DEBUG 2019-05-14 14:38:50,156 1315652ms PortalController       verifyCaptcha      -   token: 03AOLTBLQegp0Ot_14SgORmDiIWBXIBjaINvE-8O0GuM5zmmGJsPrCKPaljLON2gp6r6eSIiRuMvXmAEgnd9sDeixVn7fNdCX5xKghLvmFVvhDKOehgFGKhvpODtDBQ9LG8EJKID5fUV3dfzQm7b2j8ygg32TtiabX6VxUPUuHNJxI_oUsUnt0V7AorKcw4Lr4Q2fqia9nV-vVymyMxSaEBsjDsuTu-tFUXgBB-p_-71SbgnInuwzxlsZIZgfC6RfJB4Q3FFblo-HhzQIi5Af57HRyqKXMyVZGwgGRyrcKdcFjULwf2agq0Pm0OmGIJutH84oIZJ8UnpY30mh6-9kpXtg_cjVDNjdJMQ
+DEBUG 2019-05-14 14:38:50,156 1315652ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-14 14:38:58,031 1323527ms _PageTongHop           createRequest      - portal createRequest displayName tr?n m?nh hòa, phoneNumber 0918909966 content làm gi?y phép lái xe ? dâu
+INFO  2019-05-14 14:39:12,344 1337839ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 14:39:16,875 1342371ms DangNhapController     Index              - do login...
+INFO  2019-05-14 14:39:16,891 1342386ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 14:45:15,876 1701371ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 14:45:19,735 1705231ms DangNhapController     Index              - do login...
+INFO  2019-05-14 14:45:19,782 1705278ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-05-14 14:46:23,923 1769418ms PortalController       verifyCaptcha      - verifyCaptcha: from client 113.160.141.58
+DEBUG 2019-05-14 14:46:23,923 1769418ms PortalController       verifyCaptcha      -   token: 03AOLTBLQcz7PAIaphBYY6BHyLrwLK3wmVSSE-oi7Yek4L2-smpyp8WpUR8v52EpaiAvvS1IqJgMAbEKYPlJnI04Z3FLFY6-xlzotewkANQ1a4ehTUeCs9yBTBAT4NeNzFTRJnbqV5oE4CNST_RFXJSExaIY-9kvn6WWHwuambL_c0oKbrTkBMc7Lt-agYHJeijQ_0C5zwdYISmWOTUZqo1GeePH8OCFLQYTEvRiOn7fH0EgxRgQs2fTpaY-Ds1pMnWZAhiQWuG-hz_FzVhHtNinbQBqBftzXXnNTkw8uoSvSYzcIXXT6jrJEcCNu80xPnSvt4R6xbV8rftB6P9tDJbn9kZevuYPI9NA
+DEBUG 2019-05-14 14:46:23,923 1769418ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-14 14:46:33,891 1779387ms _PageTongHop           createRequest      - portal createRequest displayName Bùi th? huong, phoneNumber 0947857847 content H?i v? th? t?c làm gi?y khai sinh
+INFO  2019-05-14 14:48:20,048 1885544ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 14:49:34,720 1960216ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 14:50:27,251 2012747ms DangNhapController     Index              - do login...
+INFO  2019-05-14 14:50:27,282 2012778ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 15:00:42,551 2628047ms PhanAnhController      CapNhatKQTL        - nguoidung_id 947A7140519 yeucau_id dtv01 kqtl test
+INFO  2019-05-14 15:01:32,598 2678093ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 15:01:40,629 2686125ms DangNhapController     Index              - do login...
+INFO  2019-05-14 15:01:40,645 2686140ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 15:02:25,942 2731437ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 15:02:33,926 2739422ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 15:02:38,973 2744469ms DangNhapController     Index              - do login...
+INFO  2019-05-14 15:02:39,004 2744500ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 15:02:40,285 2745781ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 15:02:48,317 2753812ms DangNhapController     Index              - do login...
+INFO  2019-05-14 15:02:48,332 2753828ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 15:35:06,693 67453ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 15:35:09,037 69797ms DangNhapController     Index              - do login...
+INFO  2019-05-14 15:35:09,646 70406ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 15:46:03,741 724501ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 15:46:11,820 732579ms DangNhapController     Index              - do login...
+INFO  2019-05-14 15:46:11,991 732751ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 15:48:52,821 893580ms LinhVucController      SaveNew            - LV: Ðà B?c result: ok
+INFO  2019-05-14 15:51:17,243 1038003ms LinhVucController      Xoa                - LV: 150 result: ok
+INFO  2019-05-14 15:51:32,134 1052893ms LinhVucController      SaveNew            - LV: UBND các huy?n result: ok
+INFO  2019-05-14 15:56:58,416 1379175ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 15:57:07,009 1387769ms DangNhapController     Index              - do login...
+INFO  2019-05-14 15:57:07,056 1387816ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 15:57:52,416 1433175ms PhanAnhController      CapNhatKQTL        - nguoidung_id 623F1140519 yeucau_id dtv01 kqtl ÐÃ x? lý 14/05
+INFO  2019-05-14 17:46:37,398 10859ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 17:46:41,289 14750ms DangNhapController     Index              - do login...
+INFO  2019-05-14 17:46:41,961 15421ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 17:47:44,305 77765ms ServiceCenter          send_sms_citizen   - yeucau_id 07B2D140519 sdt 0919254565
+INFO  2019-05-14 17:49:50,951 204412ms ServiceCenter          send_sms_citizen   - yeucau_id 8F62A140519 sdt 0919254565
+INFO  2019-05-14 17:52:27,016 360477ms ServiceCenter          send_sms_citizen   - yeucau_id DA1D3140519 sdt 0919254565
+INFO  2019-05-14 17:54:07,024 460484ms ServiceCenter          send_sms_citizen   - yeucau_id 02865140519 sdt 0919254565
+INFO  2019-05-14 18:02:47,701  4156ms ServiceCenter          send_sms_citizen   - yeucau_id 8597E140519 sdt 0919254565
+INFO  2019-05-14 18:04:40,644  2312ms ServiceCenter          send_sms_citizen   - yeucau_id 58D00140519 sdt 0919254565
+INFO  2019-05-14 18:10:45,373  4632ms ServiceCenter          send_sms_citizen   - yeucau_id 864B2140519 sdt 0919254565
+INFO  2019-05-14 18:15:41,944 301203ms ServiceCenter          send_sms_citizen   - yeucau_id A2541140519 sdt 0919254565
+INFO  2019-05-14 18:20:56,528 615787ms ServiceCenter          send_sms_citizen   - yeucau_id 6A90D140519 sdt 0919254565
+ERROR 2019-05-14 18:20:57,100 616359ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-14 18:21:46,686 665945ms ServiceCenter          send_sms_citizen   - yeucau_id 35D03140519 sdt 0919254565
+ERROR 2019-05-14 18:21:47,093 666351ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-14 18:24:53,415 852674ms ServiceCenter          send_sms_citizen   - yeucau_id 6135C140519 sdt 0919254565
+ERROR 2019-05-14 18:24:53,853 853111ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-14 18:33:06,094 1345353ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 18:33:07,797 1347056ms DangNhapController     Index              - do login...
+INFO  2019-05-14 18:33:07,938 1347196ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-05-14 20:59:53,085 26453ms PortalController       verifyCaptcha      - verifyCaptcha: from client 14.190.224.16
+DEBUG 2019-05-14 20:59:53,148 26515ms PortalController       verifyCaptcha      -   token: 03AOLTBLSRoNj8prcxEPrlm5aidWx1jn9pS8i4uTvHOyceIGWOV5bejAtM_XvvDHspFPQLiHhhTOQ6jLls3gil-xXRqCdsnl5OSsaJMctzaS_6VRGCNCMhYa3yNp_r7IT1IuNR0p1Y-mbxxWNgTQhC_tqsG8yXod-L75PWxiaDfDdlD7e-lNo2bpjvM9nZ-2Mm_2Mp4yglsiSKimYNe_fqwvc8UJd9ClmmYZe--FgfsHg845bPg4lBP8vATOk5LXWGpG9yBxG6gbDh5KOsfDHEUP5BCsf_kAb7c5kQ7joN5HvYDqp01LfL6x8jLlfK_MRzXwRsiHK1krH8fv90hfSX79Er8NnB7rtwOw
+DEBUG 2019-05-14 20:59:53,148 26515ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-14 20:59:58,460 31828ms _PageTongHop           createRequest      - portal createRequest displayName bùi th? huong, phoneNumber 0947857847 content H?i th? t?c dang ký ô tô
+INFO  2019-05-14 21:00:10,460 43828ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 21:00:16,632 50000ms DangNhapController     Index              - do login...
+INFO  2019-05-14 21:00:16,851 50218ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 21:01:29,476 122843ms ServiceCenter          send_sms_citizen   - yeucau_id 0A7B2140519 sdt 0947857847
+ERROR 2019-05-14 21:01:34,132 127500ms ServiceCenter          send_sms_citizen   -   error ok
+DEBUG 2019-05-14 21:16:13,900 1007267ms PortalController       verifyCaptcha      - verifyCaptcha: from client 14.190.224.16
+DEBUG 2019-05-14 21:16:13,900 1007267ms PortalController       verifyCaptcha      -   token: 03AOLTBLTagC8a3lp8OeV65VncCleI51rQfmdITeGXWnjOuQp3fSqvNl5yuxtLET3hD5y39VLa4oE7adu4oW0NCP-TNtcKqhGmIqqfWnvF89NRtdt8UrT0OEQntXJ3-WVk6DNoE-yjRTGzkMBOES6XIfQV1_2vba6BgFIIcTCLkWtGB4SKwLx2koyVv7vBzLAR60WxDA8sUDh-E_vglSgFsdPAu35QDTCJKzcp-zqDzaMb50MjvkvpkLDkZQcqoOV1q20250NbkTH__AYAG33BpvfyIumUX_mILKvaBraCEm_LPkl7OiG5TtUbinZpNLT3ofLlLvZmWFvdjn5NcNIkQtCHfzTrxTc5Ew
+DEBUG 2019-05-14 21:16:13,900 1007267ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-05-14 21:16:23,025 1016392ms _PageTongHop           createRequest      - portal createRequest displayName Bùi th? huong, phoneNumber 0947857847 content H?i v? th? t?c sang tên nhà d?t
+INFO  2019-05-14 23:30:06,095 10671ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 23:41:38,284 702860ms DangNhapController     Index              - do login...
+INFO  2019-05-14 23:41:38,815 703391ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 23:42:33,659 758235ms ServiceCenter          send_sms_citizen   - yeucau_id 4861C140519 sdt 0947857847
+ERROR 2019-05-14 23:42:38,909 763485ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-14 23:43:08,815 793392ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 23:43:12,143 796720ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 23:43:18,143 802720ms DangNhapController     Index              - do login...
+INFO  2019-05-14 23:43:18,175 802751ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 23:47:25,632 1050208ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 23:47:32,804 1057380ms DangNhapController     Index              - do login...
+DEBUG 2019-05-14 23:47:32,804 1057380ms DangNhapController     Index              - user not exist: admin pass C1E8A000473957B8C5D51542C4C75E0C
+INFO  2019-05-14 23:47:40,335 1064911ms DangNhapController     Index              - do login...
+INFO  2019-05-14 23:47:40,351 1064927ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 23:48:32,070 1116646ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 23:48:38,116 1122693ms DangNhapController     Index              - do login...
+INFO  2019-05-14 23:48:38,148 1122724ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 23:49:14,882 1159458ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 23:49:24,179 1168755ms DangNhapController     Index              - do login...
+INFO  2019-05-14 23:49:24,210 1168787ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-14 23:50:04,445 1209021ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-14 23:50:14,867 1219443ms DangNhapController     Index              - do login...
+INFO  2019-05-14 23:50:14,898 1219474ms HomeController         Index              - Enter Home/Index
+ERROR 2019-05-14 23:55:35,570 1540147ms PhanAnhController      istOfPhanAnh_Excel - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\websites\Offical1022\Content\BaoCao\853f8ecd38bf4062ba15d837a1b052c1.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebUI.Controllers.PhanAnhController.getListOfPhanAnh_Excel(String startDayString, String endDayString, Nullable`1 condition0, Nullable`1 condition1, Nullable`1 condition2, Nullable`1 condition3, Nullable`1 condition4, Nullable`1 condition5, Nullable`1 condition6, Nullable`1 condition7, Nullable`1 condition8) in E:\prjs\HCC_HB\WebUI\Controllers\PhanAnhController.cs:line 213

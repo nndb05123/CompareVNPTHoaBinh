@@ -1,0 +1,130 @@
+﻿@{
+    ViewBag.Title = "Cổng tiếp nhận phản ánh";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 1022 @ViewBag.ten_tinh</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--CSS-->
+    <link rel="stylesheet" href="@Url.Content("~/Content/lib/bs4/bootstrap.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/lib/font-awesome/font-awesome.min.css")">
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/comctrls.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/vnpt.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/style.css")?v=1">
+    <link rel="stylesheet" href="@Url.Content("~/Content/responsive.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/site.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/dvcstyle.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/portal_danhsach.css")" />
+    <!--JS-->
+    <script src="@Url.Content("~/Content/lib/jquery/jquery.min.js")"></script>
+    <script src="@Url.Content("~/Content/lib/jquery/jquery.cookie.js")"></script>
+    <script src="@Url.Content("~/Content/lib/jqueryui/jquery-ui.min.js")"></script>
+    <script src="@Url.Content("~/Content/lib/bs4/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Content/lib/moment.js/moment.min.js")"></script>
+    <script src="@Url.Content("~/Content/lib/vue/vue.min.js")"></script>
+
+    <script src="@Url.Content("~/Content/lib/select2/select2.min.js")"></script>
+    <script src="@Url.Content("~/Content/js/cutils.js?v=4")"></script>
+    <script src="@Url.Content("~/Content/js/notify.min.js")"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=@ViewBag.recaptcha_v3_public_key"></script>
+    <style>
+        body.modal-open {
+            overflow: hidden;
+            position: fixed;
+        }
+    </style>
+</head>
+<body style="margin-bottom:0">
+    <script>
+        var confirmCode = @ViewBag.randomCode;
+        var urlApi = '@ViewBag.urlApi';
+        var recaptcha_v3_public_key = '@ViewBag.recaptcha_v3_public_key';
+        var coreapiURL = '@ViewBag.coreapiURL';
+    </script>
+
+    <header class="header">
+        <div class="vnpt-content2 vnpt-content-main container-header">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <a class="logo vnpt-left">
+                        <img src="~/Content/img/dvc_logo.png" width="60">
+                    </a>
+                    <div style="color:#fff; font-size:30pt">TỔNG ĐÀI 1022</div>
+                    <div style="color:#fff; font-size:10pt">TRUNG TÂM PHỤC VỤ HÀNH CHÍNH CÔNG TỈNH HÒA BÌNH</div>
+
+                </div>
+                <div class="col-md-3 col-sm-12" style="display:block;color:#fff">
+                    <span style="float:right">
+                        <b>Điện thoại:</b> @ViewBag.phone_ubnd_tinh<br />
+                        <b>Email:</b> @ViewBag.email_ubnd_tinh
+                    </span>
+                </div>
+            </div>
+            <div style="color:#fff; font-size:8pt">HỆ THỐNG TIẾP NHẬN, HỖ TRỢ, TƯ VẤN, GIẢI ĐÁP THẮC MẮC VỀ GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH CỦA NGƯỜI DÂN VÀ DOANH NGHIỆP</div>
+
+        </div>
+    </header>
+    <div>
+        @Html.Partial("DialogPleaseWait")
+
+        <style>
+            #displayMsg {
+                border: 1px solid #eee;
+                font-size: 10pt;
+                border-radius: 6px;
+                color: 222;
+                height: 3em;
+                vertical-align: middle;
+                padding: auto;
+                padding: 0.5em 0 0 10px;
+            }
+
+                #displayMsg.normal {
+                }
+
+                #displayMsg.error {
+                    background-color: #ffc9c9;
+                }
+
+                #displayMsg.success {
+                    background-color: #c4ffbe;
+                }
+        </style>
+
+        <div>
+            
+            @RenderBody()
+        </div>
+
+
+        <footer class="portal-footer">
+            <div class="container-fluid">
+                <div style="display:flex; flex-direction:row;">
+                    @*<div class="col-md-1">
+                        <img width="100%" src="~/Content/img/logo_so_thongtintruyenthong.png">
+                    </div>*@
+                    <div style="flex:1; font-size:10pt;border-right:1px solid #094477">
+                        <div style="font-size:10pt;padding-bottom:6px"><b>TỔNG ĐÀI 1022</b></div>
+                        <p><i class="fa fa-th-large"></i>&#160;<b>Quản lý và vận hành:</b>@ViewBag.qlvh</p>
+                        <p><i class="fa fa-phone-square"></i>&#160;<b>Điện thoại:</b> @ViewBag.phone_ubnd_tinh</p>
+                        <p><i class="fa fa-envelope"></i>&#160;<b>Email:</b> @ViewBag.email_ubnd_tinh</p>
+                        <p><i class="fa fa-building-o"></i>&#160;<b>Địa chỉ:</b> @ViewBag.dia_chi_ubnd_tinh</p>
+                    </div>
+                    <div style="flex:0 1 320px; border-left:1px solid #227FD1">
+                        <div style="float:right">
+                            <iframe src="https://maps.google.com/maps?q=20.813596, 105.336693&z=15&output=embed" width="300" height="200" frameborder="0" style="border:0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

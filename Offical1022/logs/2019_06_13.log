@@ -1,0 +1,93 @@
+INFO  2019-06-13 07:35:23,236 22489620ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 07:35:52,846 22519231ms DangNhapController     Index              - do login...
+INFO  2019-06-13 07:35:54,485 22520870ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 07:52:50,738 23537122ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 07:52:59,702 23546086ms DangNhapController     Index              - do login...
+INFO  2019-06-13 07:52:59,746 23546130ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:12:04,108 24690493ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 08:12:12,500 24698885ms DangNhapController     Index              - do login...
+INFO  2019-06-13 08:12:12,542 24698927ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:13:56,400 24802785ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 08:14:05,915 24812299ms DangNhapController     Index              - do login...
+INFO  2019-06-13 08:14:06,367 24812751ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:16:48,791 24975175ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:20:06,674 25173058ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 45266
+INFO  2019-06-13 08:20:06,755 25173140ms PlayAudioController    GetAudioURL        - tmp download url: /dl/45266.wav
+INFO  2019-06-13 08:20:06,755 25173140ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\6\12\16-209-a-90918909966---20190612153344.wav
+INFO  2019-06-13 08:20:14,864 25181248ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 45266
+INFO  2019-06-13 08:20:14,864 25181248ms PlayAudioController    GetAudioURL        - tmp download url: /dl/45266.wav
+INFO  2019-06-13 08:20:14,864 25181248ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\6\12\16-209-a-90918909966---20190612153344.wav
+INFO  2019-06-13 08:20:20,085 25186469ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 45231
+INFO  2019-06-13 08:20:20,095 25186480ms PlayAudioController    GetAudioURL        - tmp download url: /dl/45231.wav
+INFO  2019-06-13 08:20:20,096 25186481ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\6\12\28-211-a-90918909966---20190612152400.wav
+INFO  2019-06-13 08:20:27,642 25194027ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 45231
+INFO  2019-06-13 08:20:27,645 25194030ms PlayAudioController    GetAudioURL        - tmp download url: /dl/45231.wav
+INFO  2019-06-13 08:20:27,646 25194031ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\6\12\28-211-a-90918909966---20190612152400.wav
+INFO  2019-06-13 08:21:21,131 25247515ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 08:21:22,378 25248763ms DangNhapController     Index              - do login...
+DEBUG 2019-06-13 08:21:22,383 25248768ms DangNhapController     Index              - user not exist: demo_admin pass 26CA97D8DA911B45474E3B0DC0B26F4F
+INFO  2019-06-13 08:21:28,021 25254406ms DangNhapController     Index              - do login...
+INFO  2019-06-13 08:21:28,073 25254458ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:22:43,265 25329649ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 08:22:51,182 25337566ms DangNhapController     Index              - do login...
+INFO  2019-06-13 08:22:51,235 25337619ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:24:26,258 25432642ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 08:24:36,574 25442959ms DangNhapController     Index              - do login...
+DEBUG 2019-06-13 08:24:36,574 25442959ms DangNhapController     Index              - user not exist: tiepnhan.bdt pass 6CC713D91037D13CDC69143AC3554D64
+INFO  2019-06-13 08:24:41,207 25447591ms DangNhapController     Index              - do login...
+INFO  2019-06-13 08:24:41,248 25447633ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:27:15,609 25601994ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 08:27:18,178 25604562ms DangNhapController     Index              - do login...
+INFO  2019-06-13 08:27:18,245 25604629ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:47:45,010 26831394ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 08:47:49,894 26836278ms DangNhapController     Index              - do login...
+INFO  2019-06-13 08:47:49,953 26836337ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:52:05,836 27092221ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 08:52:23,035 27109419ms DangNhapController     Index              - do login...
+INFO  2019-06-13 08:52:23,098 27109482ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 08:53:19,751 27166136ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 10:39:06,842 33513227ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 12:12:48,707 39135091ms ServiceCenter          send_sms_citizen   - yeucau_id 6C5A2130619 sdt 0941779777
+INFO  2019-06-13 12:12:52,708 39139092ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-06-13 12:13:15,836 39162220ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 45231
+INFO  2019-06-13 12:13:15,840 39162224ms PlayAudioController    GetAudioURL        - tmp download url: /dl/45231.wav
+INFO  2019-06-13 12:13:15,841 39162225ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\6\12\28-211-a-90918909966---20190612152400.wav
+INFO  2019-06-13 12:13:34,209 39180593ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 45268
+INFO  2019-06-13 12:13:34,215 39180599ms PlayAudioController    GetAudioURL        - tmp download url: /dl/45268.wav
+INFO  2019-06-13 12:13:34,216 39180600ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\6\12\28-211-a-90911953339---20190612153419.wav
+INFO  2019-06-13 12:14:47,657 39254041ms PhanAnhController      CapNhatKQTL        - nguoidung_id 6C5A2130619 yeucau_id demo_admin kqtl 
+INFO  2019-06-13 12:14:47,684 39254069ms ServiceCenter          send_sms_citizen   - yeucau_id 6C5A2130619 sdt 0941779777
+INFO  2019-06-13 12:14:48,142 39254527ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-06-13 12:14:58,132 39264516ms PhanAnhController      CapNhatKQTL        - nguoidung_id 6C5A2130619 yeucau_id demo_admin kqtl abc
+INFO  2019-06-13 12:14:58,149 39264533ms ServiceCenter          send_sms_citizen   - yeucau_id 6C5A2130619 sdt 0941779777
+INFO  2019-06-13 12:14:58,549 39264933ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-06-13 12:17:37,892 39424277ms ServiceCenter          send_sms_citizen   - yeucau_id F1B8F130619 sdt 0941779777
+INFO  2019-06-13 12:17:38,313 39424697ms ServiceCenter          send_sms_citizen   -     return code: ok
+ERROR 2019-06-13 12:18:23,111 39469496ms CapDo2Controller       attachFile         - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\webapps\Offical1022\Content\Docs\F1B8F130619_a1a46ddbc2bb489994cc55fafa6bbe99.zip'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at WebUI.Controllers.BaseCapDoController.attachFile(String yeuCauID, String& uploadFilePath, String& uploadFileTitle) in E:\prjs\HCC_HB\WebUI\Controllers\BaseCapDoController.cs:line 42
+ERROR 2019-06-13 12:19:07,108 39513492ms CapDo2Controller       attachFile         - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\webapps\Offical1022\Content\Docs\F1B8F130619_02ff72f8967f47b39489520f8a419876.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at WebUI.Controllers.BaseCapDoController.attachFile(String yeuCauID, String& uploadFilePath, String& uploadFileTitle) in E:\prjs\HCC_HB\WebUI\Controllers\BaseCapDoController.cs:line 42
+ERROR 2019-06-13 12:19:34,837 39541221ms CapDo2Controller       attachFile         - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\webapps\Offical1022\Content\Docs\F1B8F130619_e44e69b4e98b45688a966ef077e7fb7b.xlsx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at WebUI.Controllers.BaseCapDoController.attachFile(String yeuCauID, String& uploadFilePath, String& uploadFileTitle) in E:\prjs\HCC_HB\WebUI\Controllers\BaseCapDoController.cs:line 42
+INFO  2019-06-13 16:15:12,561 53678945ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 16:15:22,363 53688747ms DangNhapController     Index              - do login...
+INFO  2019-06-13 16:15:22,399 53688783ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-13 16:36:48,137 54974521ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 19:46:00,942 66327326ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-13 19:46:04,225 66330609ms DangNhapController     Index              - do login...
+INFO  2019-06-13 19:46:04,255 66330639ms HomeController         Index              - Enter Home/Index

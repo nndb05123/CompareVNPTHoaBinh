@@ -1,0 +1,26 @@
+INFO  2019-05-21 08:04:26,427 639235ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-21 08:04:39,599 652407ms DangNhapController     Index              - do login...
+INFO  2019-05-21 08:04:41,770 654579ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-21 08:51:09,167 3441975ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-21 08:51:15,807 3448616ms DangNhapController     Index              - do login...
+INFO  2019-05-21 08:51:15,901 3448709ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-21 08:56:11,855 3744663ms ServiceCenter          send_sms_citizen   - yeucau_id B26B0210519 sdt 0823130986
+ERROR 2019-05-21 08:56:16,464 3749272ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-21 08:56:43,808 3776616ms ServiceCenter          send_sms_citizen   - yeucau_id 6E2AD210519 sdt 0823130986
+ERROR 2019-05-21 08:56:44,230 3777038ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-21 08:57:24,855 3817663ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-21 08:57:45,777 3838585ms DangNhapController     Index              - do login...
+INFO  2019-05-21 08:57:45,808 3838616ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-21 09:01:01,480 4034289ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-21 09:01:52,543 4085351ms DangNhapController     Index              - do login...
+INFO  2019-05-21 09:01:52,574 4085382ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-21 09:11:33,622 4666430ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-21 09:12:03,638 4696446ms DangNhapController     Index              - do login...
+INFO  2019-05-21 09:12:03,669 4696477ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-21 11:11:02,394 595815ms ServiceCenter          send_sms_citizen   - yeucau_id A2AB0210519 sdt 847720333
+ERROR 2019-05-21 11:11:06,675 600096ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-21 11:15:50,103 883524ms ServiceCenter          send_sms_citizen   - yeucau_id 9637E210519 sdt 0847720333
+ERROR 2019-05-21 11:15:50,587 884009ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-21 11:22:13,581 1267002ms ServiceCenter          send_sms_citizen   - yeucau_id DE2B7210519 sdt 0918001185
+ERROR 2019-05-21 11:22:14,018 1267440ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-21 11:23:01,387 1314808ms DangNhapController     Index              - Enter DangNhap/Index

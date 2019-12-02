@@ -1,0 +1,62 @@
+﻿<div class="col-md-12">
+    <div class="btn btn-default" v-on:click="clickEnableFilter">Bộ lọc</div><br />
+    <div v-if="enableFilter == 1" class="row">
+        @*@if (ViewBag.UseFilterV2)
+        {*@
+            <div class="col-md-3" v-for="(i,index) in filters" v-if="filters[index].Enabled == true">
+                <label class="control-label">{{ filters[index].Label }}</label>
+                <select :id="'filter-opt-' + filters[index].Id" v-model="filters[index].Value" class="form-control" style="width: 100%" v-on:change="onFilterOptionChange(index)">
+                    <option v-for="item in filtersData[index]" v-bind:value="item.Value">{{ item.Label }}</option>
+                </select>
+            </div>
+        @*}
+        else
+        {
+            <div class="col-md-3" v-for="(i,index) in listFilter" v-if="listFilter[index].ENABLE == true">
+                    <label class="control-label">{{ listFilter[index].VALUE }}</label>
+                    <select v-model="listFilter[index].ID" class="form-control" style="width: 100%">
+                        <option v-for="item in listValue[index]" v-bind:value="item.ID">{{ item.VALUE }}</option>
+                    </select>
+                </div>
+        }*@
+    </div>
+</div>
+
+
+<div class="col-md-12" style="margin: 5px 0px">
+    <div class="row">
+        <div :class="enableSearchByKeyword?'col-md-3':'col-md-6'">
+            <label for="startDayString" class="control-label">Từ ngày</label>
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control pull-right nhapngay" id="startDayString" v-model="startDayString" />
+            </div>
+        </div>
+        <div :class="enableSearchByKeyword?'col-md-3':'col-md-6'">
+            <label for="endDayString" class="control-label">Đến ngày</label>
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control pull-right nhapngay" id="endDayString" v-model="endDayString" />
+            </div>
+        </div>
+        <div class="col-md-6" v-if="enableSearchByKeyword">
+            <label class="control-label">Tìm kiếm</label>
+            <div class="input-group">
+                <div class="input-group-addon"  title="Mã phản ánh, số điện thoại, họ tên người dân hoặc nội dung">
+                    Nội dung tìm kiếm:
+                </div>
+                <input type="text" class="form-control pull-right"  placeholder="Mã phản ánh, số điện thoại, họ tên người dân hoặc nội dung" v-model="keyWord" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="margin:5px 0px;">
+            <button type="button" class="btn btn-primary pull-left" v-on:click="locDuLieu">Lọc dữ liệu</button>
+            <button v-if="enable_xuatExcelDanhSachDaXuLy" type="button" class="btn btn-primary pull-right" v-on:click="xuatExcelDanhSachDaXuLy">Xuất danh sách đã xử lý</button>
+        </div>
+    </div>
+</div>

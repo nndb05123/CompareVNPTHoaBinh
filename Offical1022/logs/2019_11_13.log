@@ -1,0 +1,20 @@
+INFO  2019-11-13 07:58:07,792 16682906ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-13 07:58:12,417 16687531ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-13 07:58:20,620 16695734ms DangNhapController     Index              - do login...
+INFO  2019-11-13 07:58:21,667 16696781ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 08:13:13,589 17588703ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-13 08:13:21,401 17596515ms DangNhapController     Index              - do login...
+INFO  2019-11-13 08:13:21,448 17596562ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 08:31:42,308 18697421ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 09:39:00,776 22735890ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 10:53:10,683 27185796ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 13:15:37,198 35732312ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 15:21:31,355 43286468ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 15:41:38,183 44493296ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 15:51:17,761 45072874ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-13 16:42:43,308 48158421ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-14 07:17:35,542 100650656ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-14 07:17:48,167 100663281ms DangNhapController     Index              - do login...
+DEBUG 2019-11-14 07:17:48,167 100663281ms DangNhapController     Index              - user not exist: dtv01 pass CD2F05CEEB6BE8ED54D6AB6236805900
+INFO  2019-11-14 07:18:03,214 100678328ms DangNhapController     Index              - do login...
+INFO  2019-11-14 07:18:03,386 100678500ms HomeController         Index              - Enter Home/Index

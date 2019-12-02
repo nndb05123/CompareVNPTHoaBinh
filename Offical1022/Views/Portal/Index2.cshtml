@@ -1,0 +1,364 @@
+﻿@{
+    ViewBag.Title = "Cổng tiếp nhận phản ánh";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 1022 @ViewBag.ten_tinh</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--CSS-->
+    <link rel="stylesheet" href="@Url.Content("~/Content/lib/bs4/bootstrap.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/lib/font-awesome/font-awesome.min.css")">
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/comctrls.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/vnpt.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/style.css")?v=1">
+    <link rel="stylesheet" href="@Url.Content("~/Content/responsive.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/site.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/dvcstyle.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/portal_danhsach.css")" />
+    <!--JS-->
+    <script src="@Url.Content("~/Content/lib/jquery/jquery.min.js")"></script>
+    <script src="@Url.Content("~/Content/lib/jquery/jquery.cookie.js")"></script>
+    <script src="@Url.Content("~/Content/lib/jqueryui/jquery-ui.min.js")"></script>
+    <script src="@Url.Content("~/Content/lib/bs4/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Content/lib/moment.js/moment.min.js")"></script>
+    <script src="@Url.Content("~/Content/lib/vue/vue.min.js")"></script>
+
+    <script src="@Url.Content("~/Content/lib/select2/select2.min.js")"></script>
+    <script src="@Url.Content("~/Content/js/cutils.js?v=3")"></script>
+    <script src="@Url.Content("~/Content/js/notify.min.js")"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=@ViewBag.recaptcha_v3_public_key"></script>
+    <style>
+        body.modal-open {
+            overflow: hidden;
+            position: fixed;
+        }
+    </style>
+</head>
+<body style="margin-bottom:0">
+    <script>
+        var confirmCode = @ViewBag.randomCode;
+        var urlApi = '@ViewBag.urlApi';
+        var recaptcha_v3_public_key = '@ViewBag.recaptcha_v3_public_key';
+        var coreapiURL = '@ViewBag.coreapiURL';
+    </script>
+
+    <header class="header">
+        <div class="vnpt-content2 vnpt-content-main container-header">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <a class="logo vnpt-left">
+                        <img src="~/Content/img/quoc_hieu.png" width="60">
+                    </a>
+                    <div style="color:#fff; font-size:30pt">TỔNG ĐÀI 1022</div>
+                    <div style="color:#fff; font-size:10pt">TRUNG TÂM PHỤC VỤ HÀNH CHÍNH CÔNG TỈNH HÒA BÌNH</div>
+
+                </div>
+                <div class="col-md-3 col-sm-12" style="display:block;color:#fff">
+                    <span style="float:right">
+                        <b>Điện thoại:</b> @ViewBag.phone_ubnd_tinh<br/>
+                        <b>Email:</b> @ViewBag.email_ubnd_tinh
+                    </span>
+                </div>
+            </div>
+            <div style="color:#fff; font-size:8pt">HỆ THỐNG TIẾP NHẬN, HỖ TRỢ, TƯ VẤN, GIẢI ĐÁP THẮC MẮC VỀ GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH CỦA NGƯỜI DÂN VÀ DOANH NGHIỆP</div>
+
+        </div>
+    </header>
+    <div>
+        @Html.Partial("DialogPleaseWait")
+
+        <style>
+            #displayMsg {
+                border: 1px solid #eee;
+                font-size: 10pt;
+                border-radius: 6px;
+                color: 222;
+                height: 3em;
+                vertical-align: middle;
+                padding: auto;
+                padding: 0.5em 0 0 10px;
+            }
+
+                #displayMsg.normal {
+                }
+
+                #displayMsg.error {
+                    background-color: #ffc9c9;
+                }
+
+                #displayMsg.success {
+                    background-color: #c4ffbe;
+                }
+        </style>
+        <div id="app-portal" style="margin-top:6px;">
+
+            <div class="vnpt-content2 vnpt-content-main" v-if="dataLoaded">
+                <div class="vnpt-row-padding">
+                    <section class="content-main">
+                        @*<div class="vnpt-round vnpt-padding vnpt-center alert alert-danger vnpt-cell-middle" role="alert">
+                <div style="font-size:12pt;margin-top: 10px">@ViewBag.portal_title3</div>
+            </div>*@
+
+
+                        <!-- FORM TIEP NHAN -->
+                        <div id="divNewRequest" class="panel panel-primary">
+                            <div class="panel-heading status_header">
+                                <h5>TIẾP NHẬN PHẢN ÁNH, KIẾN NGHỊ</h5>
+                            </div>
+                            <div class="panel-body" style="padding:10px;background-color:#eee;">
+                                <i><p style="color:#0070ed">Phản ánh, kiến nghị của bạn sẽ được cơ quan có thẩm quyền tiếp nhận để trả lời. Xin vui lòng gõ tiếng Việt có dấu</p></i>
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="displayName" class="col-sm-2 col-form-label" style="padding-right:0">Người dân</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" v-model="hoten" class="form-control" name="displayName" style="width:100%" placeholder="Nhập họ tên đầy đủ" id="displayName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label" style="padding-right:0">Thông tin liên hệ</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" v-model="email" class="form-control" name="email" placeholder="Nhập địa chỉ thư điện tử">
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <input type="number" v-model="sdt" class="form-control" name="phoneNumber" placeholder="Nhập số điện thoại liên hệ">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="displayName" class="form-control col-sm-2 col-form-label">Địa chỉ liên hệ</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" v-model="diachi" name="address" style="width:100%" placeholder="Địa chỉ liên hệ" id="displayName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <label for="displayName" class="col-form-label">Huyện/Tp</label>
+                                            <select name="addressDistrict" class="custom-select" v-model="curHuyen" v-on:change="onChangeDistrict()">
+                                                <option v-for="x in listHuyen" v-bind:value="x.huyen_id">{{ x.huyen_ten }}</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="displayName" class="col-form-label">Phường</label>
+                                            <select name="addressWard" class="custom-select" v-model="curPhuong">
+                                                <option v-for="x in listPhuong" v-bind:value="x.phuong_id">{{ x.phuong_ten }}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-12 control-label">Nội dung phản ảnh, kiến nghị</label>
+                                        <div class="col-sm-12">
+                                            <textarea name="content" style="overflow: hidden" v-model="noidung" class="form-control" rows="4"
+                                                      placeholder="Nhập tóm tắt nội dung phản ánh, kiến nghị (không quá 3000 ký tự) Hệ thống không tiếp nhận đơn thư khiếu nại, tố cáo giải đáp pháp luật." maxlength="3000"></textarea>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="btn-group btn-group-lg">
+                                        <button type="button" class="btn btn-success" v-on:click="checkBeforeUpload">Gửi phản ánh, kiến nghị</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- FORM TIEP NHAN -->
+
+                        <br />
+
+                        <!-- DANH SACH KET QUA -->
+                        <div id="dspa-container panel panel-primary">
+                            <div class="panel-heading status_header" style="padding:10px">
+                                <div style="font-size:12pt;margin-top: 10px;font-weight:bold">KẾT QUẢ HỖ TRỢ, TƯ VẤN, GIẢI ĐÁP PHẢN ÁNH & KIẾN NGHỊ</div>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-justified" id="dspa-tabs" role="tablist">
+                                    <li class="nav-item" v-for="(section,index) in sections">
+                                        <a class="nav-link" :id="'tabbtn-' + section.id" data-toggle="tab" :href="'#tabcontent-' + section.id" role="tab"
+                                           :aria-controls="'tabcontent-' + section.id" aria-selected="true" v-on:click="dspa_switchTab(section, index)">{{ section.ten }}</a>
+                                    </li>
+                                </ul>
+                                <div class="dspa-list row" v-if="curSection != null" style="min-height:280px;background-color:#eee;margin:0">
+                                    <div v-for="pa in curSection.requests" class="pa-card" v-on:click="showDetail(pa)">
+                                        <div class="pa-title">{{ pa.linhvuc }}</div>
+                                        <div class="pa-content">
+                                            {{ shorten(pa.content) }}
+                                        </div>
+                                        <div class="text-right">{{ pa.sendtime | formatDate }}</div>
+                                        <div class="pa-status-desc">
+                                            <div v-if="pa.status_code == 1">
+                                                <span>Đang xử lý bởi: <b>{{ pa.donvi }}</b></span>
+                                            </div>
+
+                                            <div v-if="pa.status_code == 3">
+                                                <span><b>{{ pa.donvi }}</b> Đang phối hợp với sở/ban/ngành khác để xử lý</span>
+                                            </div>
+
+                                            <div v-if="pa.status_code == 99">
+                                                <span>Đã xử lý bởi: <b>{{ pa.donvi }}</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <img class="imgone loading-img" src="~/Content/Images/loading_icon.gif" />
+                                <br />
+                                <button class="btn btn-success" v-on:click="loadMoreCurrentSection()">Xem thêm</button>
+                            </div>
+                        </div>
+                        <!-- DANH SACH KET QUA -->
+
+                        <div class="btn-portal-danhsach">
+                            <a class="btn btn-info" href="@Url.Action("DanhSach","Portal")">Danh sách phản ánh</a>
+                        </div>
+                    </section>
+
+                    <!-- SIDEBAR -->
+                    <section class="content-sidebar">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading status_header">
+                                <h5><span class="glyphicon glyphicon-search"></span> Tìm kiếm nhanh</h5>
+                            </div>
+                            <div class="panel-body">
+                                <span>Bạn cần nhập chính xác <b>SĐT của bạn</b> và <b>mã phản ánh</b> bạn nhận được qua tin nhắn để tìm kiếm.</span>
+                                <input class="form-control vnpt-margin-bottom" placeholder="số điện thoại" title="sdt liên hệ của bạn khi gửi phản ánh" v-model="searchphone">
+                                <input class="form-control vnpt-margin-bottom" placeholder="mã phản ánh" title="mã bạn nhận được trong tin nhắn từ 1022" v-model="searchcode">
+                                <btn class="btn btn-primary" style="border-radius:17px" v-on:click="verifyBeforeSearch">Tìm kiếm</btn>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary vnpt-margin-top">
+                            <div class="panel-heading status_header">
+                                <h5><img src="~/Content/img/icon-TTHC.png"> Lưu ý:</h5>
+                            </div>
+                            <div class="panel-body">
+                                <b>1. Hệ thống tiếp nhận các phản ánh, kiến nghị về:</b>
+                                <ul>
+                                    <li>Hành vi chậm trễ, gây phiền hà hoặc không thực hiện, thực hiện không đúng quy định của cán bộ, công chức, viên chức trong giải quyết thủ tục hành chính;</li>
+                                    <li>Những cơ chế, chính sách, thủ tục hành chính không phù hợp với thực tế, không đồng bộ, không thống nhất, không hợp pháp, trái với các điều ước quốc tế mà Việt Nam đã ký kết hoặc gia nhập;</li>
+                                    <li>Những giải pháp, sáng kiến ban hành mới quy định về cơ chế, chính sách, thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh và đời sống của người dân.</li>
+                                </ul>
+                                2. Hệ thống không tiếp nhận <b style="color:red">đơn thư khiếu nại, tố cáo và hướng dẫn giải đáp pháp luật</b>, xin liên hệ trực tiếp bộ phận tương ứng tại Trung tâm hành chính công của tỉnh.
+                            </div>
+                        </div>
+                        <div class="panel panel-primary vnpt-margin-top">
+                            <div class="panel-heading status_header">
+                                <h5><img src="~/Content/img/icon-TTHC.png"> Phản ánh, kiến nghị mới tiếp nhận</h5>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li v-for="item in latestList5" :title="item.linhvuc" class="list-group-item" v-on:click="showDetail(item)">
+                                        <div><b>{{item.linhvuc}}</b></div>
+                                        <div>{{ item.summary }}</div>
+                                        <span class="pull-right" style="font-style:italic">Người gửi: <b>{{ item.hoten}}</b></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- SIDEBAR -->
+                </div>
+
+
+            </div>
+
+            <div id="dlg-detail" class="modal dlg-wnd" role="dialog" data-backdrop="static" data-keyboard="false" style="display:none">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header wnd-title-bar">
+                            @*<span>MÃ PHIẾU PHẢN ÁNH: <span class="mono f20">{{ detail.ycid }}</span></span>*@
+                            <span><span class="mono f20">[{{ detail.ycid }}]</span> Lĩnh vực: {{ detail.linhvuc }}</span>
+                        </div>
+                        <div class="modal-body">
+                            <div style="display:block;padding10px;">
+                                <div class="pa-detail">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="detail-content-tab" data-toggle="tab" href="#detail-content" role="tab" aria-controls="detail-content" aria-selected="true">Nội dung</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="detail-answer-tab" data-toggle="tab" href="#detail-answer" role="tab" aria-controls="detail-answer" aria-selected="false">Trả lời</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="detail-tabs">
+                                        <div class="tab-pane fade show active pa-content" id="detail-content" role="tabpanel" aria-labelledby="detail-content-tab">
+                                            <div class="multiline-textbox" v-html="renderMultilineText(detail.content)">
+                                            </div>
+                                            <div class="float-right">Ngày phản ánh: {{detail.sendtime | formatDate}} </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="detail-answer" role="tabpanel" aria-labelledby="detail-answer-tab">
+                                            <div v-if="detail.status_code == 1">
+                                                <div class="section-title">Đang xử lý bởi: {{ detail.donvi }}</div>
+                                            </div>
+
+                                            <div v-if="detail.status_code == 3">
+                                                <div class="section-title">{{ detail.donvi }} đang phối hợp với sở/ban/ngành khác để xử lý</div>                                                
+                                            </div>
+
+                                            <div v-if="detail.status_code == 99">
+                                                <div v-if="coKQTL(detail)">
+                                                    <div class="section-title">Trả lời từ: {{ detail.donvi }}</div>
+                                                    <div class="pa-answer">
+                                                        <div class="multiline-textbox" v-html="renderMultilineText(detail.kqtl)"></div>
+                                                    </div>
+                                                    <div class="d-inline-block text-right float-right">Ngày trả lời: {{detail.kqtl_tgian | formatDate}}</div>
+                                                </div>
+                                                <div v-if="coKQTL(detail) == false">
+                                                    <div class="section-title">Đang xử lý bởi: {{ detail.donvi }}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-primary pull-right" data-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @if (ViewBag.dbgCaptcha)
+            {
+                @*<button class="btn btn-primary" v-on:click="testCaptcha">Test Captcha</button>
+                    <div id="dbg"></div>*@
+            }
+        </div>
+
+
+
+        <footer class="portal-footer">
+            <div class="container-fluid">
+                <div style="display:flex; flex-direction:row;">
+                    @*<div class="col-md-1">
+                            <img width="100%" src="~/Content/img/logo_so_thongtintruyenthong.png">
+                        </div>*@
+                    <div style="flex:1; font-size:10pt;border-right:1px solid #094477">
+                        <div style="font-size:10pt;padding-bottom:6px"><b>TỔNG ĐÀI 1022</b></div>
+                        <p><i class="fa fa-th-large"></i>&#160;<b>Quản lý và vận hành:</b>@ViewBag.qlvh</p>
+                        <p><i class="fa fa-phone-square"></i>&#160;<b>Điện thoại:</b> @ViewBag.phone_ubnd_tinh</p>
+                        <p><i class="fa fa-envelope"></i>&#160;<b>Email:</b> @ViewBag.email_ubnd_tinh</p>                        
+                        <p><i class="fa fa-building-o"></i>&#160;<b>Địa chỉ:</b> @ViewBag.dia_chi_ubnd_tinh</p>
+                    </div>
+                    <div style="flex:0 1 320px; border-left:1px solid #227FD1">
+                        <div style="float:right">
+                            <iframe src="https://maps.google.com/maps?q=20.813596, 105.336693&z=15&output=embed" width="300" height="200" frameborder="0" style="border:0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="@Url.Content("~/Scripts/portal.js?v=2")"></script>
+
+</body>
+</html>

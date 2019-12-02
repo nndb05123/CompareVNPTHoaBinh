@@ -1,0 +1,418 @@
+﻿@using WebUI
+@using HotlineCore
+
+@{
+    ViewBag.Title = "Danh sách đã tiếp nhận";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<!--Anh Linh - PlayList -->
+@Html.Partial("GhiAmPlayListDialog")
+<!--Anh Linh - PlayList -->
+<!--Lâm - Phản ánh chi tiết -->
+@Html.Partial("PhanAnhChiTiet")
+<!--Lâm - Phản ánh chi tiết -->
+@Html.Partial("DialogPleaseWait")
+
+<div id="AppDanhSachPhanAnh" class="row">
+    @Html.Partial("FilterPanel")
+
+    <div class="col-md-12">
+        <div>
+            <ul class="nav nav-pills mynav">
+                <li v-if="userCanViewTab(1)" class="active" v-on:click="dspaFilterByStatus(1)">
+                    <a href="#tab_dang_xu_ly" data-toggle="tab">
+                        <strong class="text-primary">Đang xử lý<span>({{ danhSachDangXuLy.length}})</span></strong>
+                    </a>
+                </li>
+                <li v-if="userCanViewTab(2)" v-on:click="dspaFilterByStatus(2)">
+                    <a href="#tab_sai_don_vi" data-toggle="tab">
+                        <strong class="text-success">Sai đơn vị<span>({{ danhSachSaiDonVi.length}})</span></strong>
+                    </a>
+                </li>
+                <li v-if="userCanViewTab(3)" v-on:click="dspaFilterByStatus(3)">
+                    <a href="#tab_dang_phoi_hop_xu_ly" data-toggle="tab">
+                        <strong class="text-warning">Đang phối hợp xử lý<span>({{ danhSachPhoiHop.length}})</span></strong>
+                    </a>
+                </li>
+                <li v-if="userCanViewTab(4)" v-on:click="dspaFilterByStatus(4)">
+                    <a href="#tab_da_xu_ly" data-toggle="tab">
+                        <strong class="text-danger">Đã xử lý<span>({{ danhSachDaXuLy.length}})</span></strong>
+                    </a>
+                </li>
+                <li v-if="userCanViewTab(5)" v-on:click="dspaFilterByStatus(5)">
+                    <a href="#tab_da_xu_ly" data-toggle="tab">
+                        <strong class="text-danger">Đang trễ hẹn<span>({{ danhSachTreHen.length}})</span></strong>
+                    </a>
+                </li>
+                @if (ViewBag.canViewList_finalAnswer == 1)
+                {
+                    <li v-if="userCanViewTab(6)" v-on:click="dspaFilterByStatus(6)" title="Danh sách phiếu chưa trả lời kết quả cho người dân">
+                        <a href="#tab_sau_xu_ly" data-toggle="tab">
+                            <strong class="text-danger">Chờ trả lời<span>({{ dsChoTraLoi.length}})</span></strong>
+                        </a>
+                    </li>
+                }
+            </ul>
+            <div class="tab-content bg-gray-light">
+                <div class="tab-pane active" id="tab_dang_xu_ly">
+                    <table class="table table-responsive table-bordered">
+                        <tr>
+                            <th></th>
+                            <th>Mã YC</th>
+                            <th>Thời gian</th>
+                            <th>Họ tên</th>
+                            <th>SĐT</th>
+                            <th>Nội dung</th>
+                            <th>Loại YC</th>
+                            <th>Điện thoại viên</th>
+                            <th v-if="currentDanhSachPhanAnh<6" title="Nghe lại ghi âm của phản ánh qua điện thoại"><img src="~/Content/Images/equalizer.gif" /></th>
+                            @*@if (ViewBag.canViewList_finalAnswer)
+                                {
+                                    <th v-if="currentDanhSachPhanAnh==6" title="Đã thông báo kết quả cho người dân chưa?">Xác nhận</th>
+                                }*@
+                        </tr>
+                        <tr v-for="item in danhSachPhanAnh">
+                            <td align="center">
+                                @if (ViewBag.canViewDetail_PL1 == 1)
+                                {
+                                    <a style="cursor:pointer" v-on:click="AppPACT.showModal(item.yeucau_id)"><i class="fa fa-edit text-blue"></i></a>
+                                }
+                            </td>
+                            <td>{{ item.yeucau_id }}</td>
+                            <td>{{ item.tgian_tiepnhan | formatDate }}</td>
+                            <td>{{ item.nguoigoi_hoten }}</td>
+                            <td>{{ item.nguoigoi_sdt }}</td>
+                            <td>{{ item.yeucau_noidung }}</td>
+                            <td>{{ item.loaiyc_ten }}</td>
+                            <td>{{ item.nguoidung_c1_ten }} <br /> {{ item.nguoidung_c1_sdt }}</td>
+                            @*@if (ViewBag.mp_vaitro > WebUI.VAI_TRO.XU_LY_CAP_DO_1 || ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                                {
+                                    <td class="text-center">
+                                        <span v-if="item.dagoikiem==true" class="fa fa-check"></span>
+                                    </td>
+                                }*@
+                            <td class="text-center">
+                                @*<a v-if="currentDanhSachPhanAnh<6" class="btn btn-primary btn-flat" style="display:block;width:auto" v-if="App2.canUploadAudio" href="#" v-on:click="App2.clickButtonUpload(item)">Tải lên</a>*@
+                                <div v-if="currentDanhSachPhanAnh<6">
+                                    <a v-if="item.hinhthuc_id==@WebUI.SystemConfigs.HINH_THUC_TIEP_NHAN_DIEN_THOAI"
+                                       class="btn btn-primary btn-flat btn-play-audio" v-bind:id="item.yeucau_id" style="display:block;width:auto;margin-top:4px" href="#"
+                                       v-on:click="App2.showPlayList(item)">
+                                        <span v-if="item.sl_file_ghi_am < 1">...</span>
+                                        <i v-if="item.sl_file_ghi_am > 0" class="fa fa-volume-up"></i>
+                                    </a>
+                                </div>
+                                @*@if (ViewBag.canAnswerForFinalAnswer)
+                                    {
+                                    <a v-if="currentDanhSachPhanAnh==6" class="btn btn-success btn-flat" style="display:block;width:auto" href="#" v-on:click="App.daThongBao(item)">Đã thông báo</a>
+                                    }*@
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Foot {
+    <script src="@Url.Content("~/Content/js/main.js")"></script>
+    <script>
+        function isAdmin() {
+            var vaitro = @Html.Raw((int)ViewBag.mp_vaitro);
+            return vaitro === @Html.Raw((int)VAI_TRO.ADMIN) || vaitro === @Html.Raw((int)VAI_TRO.ADMIN_READ_ONLY);
+        }
+
+        function isReceptionist() {
+            var vaitro = @Html.Raw((int)ViewBag.mp_vaitro);
+            return vaitro === @Html.Raw((int)VAI_TRO.XU_LY_CAP_DO_1);
+        }
+
+        function canViewAllRequests() {
+            var lanhdao = @Html.Raw(((bool)ViewBag.mp_lanhdao)?1:0);
+            return isAdmin() || isReceptionist() || lanhdao;
+        }
+        function canEditAnswer() {
+            var vaitro = @Html.Raw((int)ViewBag.mp_vaitro);
+            return vaitro === @Html.Raw((int)VAI_TRO.XU_LY_TRA_LOI_NGUOI_DAN);
+        }
+        function userIsFeedbackWriter() {
+            var vaitro = @Html.Raw((int)ViewBag.mp_vaitro);
+            return vaitro === @Html.Raw((int)VAI_TRO.XU_LY_TRA_LOI_NGUOI_DAN);
+        }
+        
+        var App = new Vue({
+            el: '#AppDanhSachPhanAnh',
+            data: {
+                enable_xuatExcelDanhSachDaXuLy: true,
+                enableSearchByKeyword: true,
+                enableFilter: 0,
+                filters: @Html.Raw(ViewBag.filters),
+                filtersData: @Html.Raw(ViewBag.filtersData),
+                //listValue: @Html.Raw(ViewBag.listValue),
+                //listFilter: @Html.Raw(ViewBag.listFilter),
+                startDayString: '@ViewBag.startDayString',
+                endDayString: '@ViewBag.endDayString',
+                keyWord: '',
+                //dsHuyen: [],
+                //dsPhuong: [],
+                //dsDoiTuong: [],
+                //dsLinhVuc: [],
+                //dsDonVi: [],
+                currentDanhSachPhanAnh: 1,
+                danhSachPhanAnh: [],
+                danhSachDangXuLy: [],
+                danhSachSaiDonVi: [],
+                danhSachPhoiHop: [],
+                // danh sach phan anh da xu ly xong
+                danhSachDaXuLy: [],
+                danhSachTreHen: [],
+                danhSachLichSu: [],
+                // danh sach phan anh da xu ly xong, can tra loi cho nguoi dan
+                dsChoTraLoi: [],
+                yeucau_id: '',
+                tgian_tiepnhan: '',
+                yeucau_noidung: '',
+                nguoigoi_hoten: '',
+                nguoigoi_sdt: '',
+                nguoigoi_cmnd: '',
+                nguoigoi_diachi: '',
+                nguoidung_c1_ten: '',
+                nguoidung_c1_sdt: '',
+                thongbao: '',
+                loi: false,
+                thanhcong: false
+            },
+            methods: {
+                userCanViewTab: function (tabIndex) {
+                    if (userIsFeedbackWriter()) {
+                        if (tabIndex === 4 || tabIndex === 6) return true;
+                        return false;
+                    } else {
+                        return true;
+                    }
+                },
+                filter_locLVTheoDV: function () {
+                    var postData = { donvi_id: App.filters[FILTER_INDEX_DONVI].Value };
+                    $.get("@Url.Action("listByDonVi", "LinhVuc")", postData, function (data) {
+                        var ls = [];
+                        $.each(data, function (i, v) {
+                            ls.push({ Value: v.linhvuc_id, Label: v.linhvuc_ten });
+                        });
+                        ls.push({ Value: -1, Label: 'Tất cả' });
+                        App.filtersData[FILTER_INDEX_LINHVUC] = ls;
+                        App.filters[FILTER_INDEX_LINHVUC].Value = -1;
+                    })
+                },
+                onFilterOptionChange: function (filterOptionIndex) {
+                    console.log(`${filterOptionIndex} FILTER ${this.filters[filterOptionIndex].Id} changed...`);
+                    if (this.filters[filterOptionIndex].Id === 'donvi') {
+                        this.filter_locLVTheoDV();
+                    }
+                },
+                reload_ds_phananh: function () {
+                    this.locDuLieu();
+                },
+                xuatExcelDanhSachDaXuLy: function () {
+                    var postData = {
+                        startDayString: App.startDayString,
+                        endDayString: App.endDayString,
+                        condition0: App.condition0,
+                        condition1: App.condition1,
+                        condition2: App.condition2,
+                        condition3: App.condition3,
+                        condition4: App.condition4,
+                        condition5: App.condition5,
+                        condition6: App.condition6,
+                        condition7: App.condition7,
+                        condition8: App.condition8
+                    }
+                    /////////////////////////////// NEW FITLER V2
+                    postData = {
+                        startDayString: App.startDayString,
+                        endDayString: App.endDayString,
+                        keyWord: App.keyWord
+                    }
+
+                    for (var i in App.filters) {
+                        postData[App.filters[i].Id] = App.filters[i].Value;
+                    }
+                    ///////////////////////////////
+
+                    $.post("@Url.Action("getListOfPhanAnh_Excel", "PhanAnh")", postData, function (data) {
+                        if (data) {
+                            var now = new Date();
+                            //
+                            var temp = document.createElement('a');
+                            temp.href = data.Link;
+                            temp.download = data.TieuDe;
+                            temp.click();
+                        }
+                    });
+                },
+                daThongBao: function (item) {
+                    console.log(`da thong bao ${item.yeucau_id}`);
+                    showConfirmDialog(`Thông báo kết quả sau xử lý: ${item.yeucau_id}`,
+                        `Đánh dấu <b style="color:red">Đã thông báo</b> kết quả cho người dân và đóng phiếu này.`, function () {
+                            closeConfirmDialog();
+                            App.setTrangThaiDaThongBao(item.yeucau_id);
+
+                        }, false);
+                },
+                setTrangThaiDaThongBao: function (yeucau_id) {
+                    showPleaseWaitDialog(`Đóng phiếu: ${yeucau_id}`, 'Đang cập nhật, xin chờ giây lát...');
+                    var postData = { yeucau_id: yeucau_id };
+                    $.post("@Url.Action("daTBKQ", "PhanAnh")", postData, function (data) {
+                        closePleaseWaitDialog();
+                        App.locDuLieu();
+                    });
+                },
+                clickEnableFilter: function () {
+                    App.enableFilter = !App.enableFilter;
+                },
+                dspaFilterByStatus: function (statusTabIndex) {
+                    App.currentDanhSachPhanAnh = statusTabIndex;
+                    switch (statusTabIndex) {
+                        case 1:
+                            App.danhSachPhanAnh = new Array().concat(App.danhSachDangXuLy);
+                            break;
+                        case 2:
+                            App.danhSachPhanAnh = new Array().concat(App.danhSachSaiDonVi);
+                            break;
+                        case 3:
+                            App.danhSachPhanAnh = new Array().concat(App.danhSachPhoiHop);
+                            break;
+                        case 4:
+                            App.danhSachPhanAnh = new Array().concat(App.danhSachDaXuLy);
+                            break;
+                        case 5:
+                            App.danhSachPhanAnh = new Array().concat(App.danhSachTreHen);
+                            break;
+                        case 6:
+                            App.danhSachPhanAnh = new Array().concat(App.dsChoTraLoi);
+                            break;
+                    }
+                },
+                locDuLieu: function () {
+                    showPleaseWaitDialog('Lọc dữ liệu', 'Đang lấy danh sách phản ánh, xin chờ giây lát...');
+                    var postData = {
+                        startDayString: App.startDayString,
+                        endDayString: App.endDayString,
+                        keyWord: App.keyWord
+                    }
+
+                    for (var i in App.filters) {
+                        postData[App.filters[i].Id] = App.filters[i].Value;
+                    }
+
+                    App.danhSachDangXuLy = [];
+                    App.danhSachSaiDonVi = [];
+                    App.danhSachPhoiHop = [];
+
+                    App.danhSachDaXuLy = [];
+                    App.danhSachTreHen = [];
+                    App.dsChoTraLoi = [];
+
+                    $.post("@Url.Action("getListOfPhanAnhV2", "PhanAnh")", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            switch (v.trangthai_id) {
+                                case @Html.Raw((int)TRANG_THAI_YEU_CAU.DANG_XU_LY):
+                                    if (canViewAllRequests()) {
+                                        App.danhSachDangXuLy.push(v);
+                                        if (v.capdo_id > 2) {
+                                            App.danhSachTreHen.push(v);
+                                        }
+                                    }
+                                    break;
+                                case @Html.Raw((int)TRANG_THAI_YEU_CAU.SAI_DON_VI):
+                                    if (canViewAllRequests()) {
+                                        App.danhSachSaiDonVi.push(v);
+                                    }
+                                    break;
+                                case @Html.Raw((int)TRANG_THAI_YEU_CAU.DANG_PHOI_HOP_XU_LY):
+                                    if (canViewAllRequests()) {
+                                        App.danhSachPhoiHop.push(v);
+                                    }
+                                    break;
+                                case @Html.Raw((int)TRANG_THAI_YEU_CAU.DA_XU_LY):
+                                    if (canViewAllRequests() || canEditAnswer()) {
+                                        App.danhSachDaXuLy.push(v);
+                                    }
+                                    ///if (ViewBag.mp_vaitro > WebUI.VAI_TRO.XU_LY_CAP_DO_1 || ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                                    if (canViewAllRequests() || canEditAnswer()) {
+                                        if (v.kqtl_tgian) {
+                                            // skip answered
+                                        } else {
+                                            App.dsChoTraLoi.push(v);
+                                        }
+                                    }
+                                    break;
+                            }
+                        });
+                        App.dspaFilterByStatus(App.currentDanhSachPhanAnh);
+                        closePleaseWaitDialog();
+                        showSuccessNotification('Lọc dữ liệu: Xong!', 1000);
+                    })
+					.done(function() {
+							console.log('ok');
+						})
+						.fail(function () {
+                            closePleaseWaitDialog();
+                            showErrorNotification('Lọc dữ liệu: Lỗi hệ thống!', 3000);
+                        });
+                },
+                getDsHuyen: function () {
+                    $.post("@Url.Action("GetDsHuyen", "Dvhc")", function (data) {
+                        $.each(data, function (i, v) {
+                            App.dsHuyen.push(v);
+                        });
+                    })
+                },
+                getDsPhuong: function () {
+                    App.dsPhuong = [];
+                    var postData = { huyen_id: App.nguoigoi_huyen_id };
+                    $.post("@Url.Action("GetDsPhuongTheoHuyen", "Dvhc")", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            App.dsPhuong.push(v);
+                        });
+                    })
+                }
+                
+            },
+            computed: {
+            }
+        })
+        Vue.filter('formatDate', function (value) {
+            if (value) {
+                return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+            }
+        });
+        $(document).ready(function () {
+
+            $('.nhapngay').datepicker({
+                autoclose: true,
+                dateFormat: 'dd/mm/yy'
+            });
+            $('.fa-calendar').click(function () {
+                var $this = $(this).parent().parent().find('input');
+                $this.datepicker("show");
+            });
+            $("#startDayString").datepicker().on('change.dp', () => {
+                App.startDayString = $("#startDayString").val();
+            });
+            $("#endDayString").datepicker().on('change.dp', () => {
+                App.endDayString = $("#endDayString").val();
+            });
+            $('#cboLinhVuc').select2().on('change', function () {
+                App.linhvuc_id = this.value;
+            });
+            //App.dsDoiTuong = App.listValue[4];
+            //App.dsLinhVuc = App.listValue[1];
+            //App.dsDonVi = App.listValue[2];
+            App.locDuLieu();
+        });
+
+
+        var AppDanhSach = App;
+    </script>
+}

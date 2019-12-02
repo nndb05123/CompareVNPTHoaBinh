@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = WebUI.SystemConfigs.APP_NAME;
+    Layout = "~/Views/Shared/_LayoutMainWithoutSiderBar.cshtml";
+}
+<div class="row" style="color:white">
+    <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-aqua">
+            <div class="inner">
+                <h3>@ViewBag.sl_tiepnhan_homnay</h3>
+                <p>Số lượng phản ánh</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-green">
+            <div class="inner">
+                <h3>@ViewBag.sl_tiepnhan_da_xuly</h3>
+                <p>Đã xử lý</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-red">
+            <div class="inner">
+                <h3>@ViewBag.sl_tiepnhan_dang_xuly</h3>
+                <p>Đang xử lý</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-yellow">
+            <div class="inner">
+                <h3>@ViewBag.sl_tiepnhan_sai_donvi</h3>
+                <p>Chuyển sai đơn vị</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p class="h3 text-center text-blue text-bold">Trạng thái xử lý theo lĩnh vực</p>
+        <div class="chart">
+            <canvas id="barChart" height="360"></canvas>
+        </div>
+    </div>
+</div>
+@section Foot {
+    <script type="text/javascript" src="@Url.Content("~/Content/lib/chart.js/chart.2.x.min.js")"></script>
+    <script type="text/javascript">
+        function chart() {
+    $.ajax({
+        type: 'POST',
+        url: '@Url.Action("ThongKeLinhVucHome_WithoutAuth", "ThongKe", new { area = "" })'
+    }).done(function(data, status) {
+        if (status === 'success') {
+            var LinhVuc = [];
+            var TongSo = [];
+            var Cap1DaXuLy = [];
+            var Cap1Chuyen = [];
+            var Cap2DungHan = [];
+            var Cap2TreHan = [];
+            var Cap2DangXuLyTreHen = [];
+            var Cap2DangXuLy = [];
+            var Cap2Chuyen = [];
+            var arrayLength = data.length;
+            for (var i = 0; i < arrayLength; i++) {
+                LinhVuc[i] = data[i].LINHVUC_TEN;
+                TongSo[i] = data[i].TONG_SO_LUONG;
+            }
+            var barChartData = {
+                labels: LinhVuc,
+                datasets: [{
+                    label: 'Tổng số',
+                    backgroundColor: 'darkorange',
+                    data: TongSo
+                }]
+            };
+            var ctx = document.getElementById("barChart").getContext("2d");
+            window.myBar = new Chart(ctx, {
+                type: 'bar',
+                data: barChartData,
+
+                options: {
+                    responsive: true,
+                    title: {
+                        display: false,
+                    },
+                    tooltips: {
+                        mode: 'index',
+                        intersect: true
+                    },
+                }
+            });
+        }
+    });
+};
+$(document).ready(function() {
+    chart();
+});
+    </script>
+}

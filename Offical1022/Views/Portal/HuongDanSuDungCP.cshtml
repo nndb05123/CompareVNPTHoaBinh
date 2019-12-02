@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Hướng dẫn sử dụng";
+    Layout = "~/Views/Shared/_LayoutPortalCP.cshtml";
+}
+
+
+
+<script>
+    var portalIndexURL = "@Url.Action("Index", "Portal")";
+    $('#main-navbar .nav-item.guide-view').addClass('active');
+
+    function openInputFormInNewWindow() {
+        window.open(portalIndexURL);
+    }
+</script>
+<br />
+<div class="col" style="border:1px solid #ddd;border-radius: 6px; padding:8px; margin: 4px">
+    <h5><label><b>1. Nhập thông tin phản ánh, kiến nghị</b></label></h5>
+    <br />
+    <p>Để gửi phản ánh/kiến nghị lên tổng đài 1022 qua trang web, anh/chị cần làm theo các bước sau:</p>
+    <p>- Vào trang web nhập phản ánh/kiến nghị <a href="#" onclick="openInputFormInNewWindow()">Ở ĐÂY</a></p>
+    <p>- Anh/chị <b>phải nhập</b> đầy đủ thông tin vào các trường bắt buộc <b style="color:#f00;">(*)</b></p>
+    <p>- Anh/chị có thể cung cấp thêm thông tin vào các trường còn lại để chuyên viên HCC có thêm thông tin (không bắt buộc).</p>
+    <p>
+        - Sau khi nhập xong thông tin, anh/chị nhấn nút
+        <span type="button" class="btn btn-primary">
+            <i class="fa fa-paper-plane"></i>
+            Gửi phản ánh, kiến nghị
+        </span>
+        để gửi phản ánh/kiến nghị lên hệ thống.
+    </p>
+    <p><i>Anh/chị tham khảo mẫu điền thông tin ở hình bên dưới</i></p>
+    <br />
+    <br />
+    <img src="~/Content/Images/portal_input_form.png" width="100%" />
+</div>
+
+<br />
+
+<div class="col"  style="border:1px solid #ddd;border-radius: 6px; padding:8px">
+    <h5><label><b>2. Tra cứu thông tin / kết quả phản ánh của bạn qua Số điện thoại và Mã phản ánh</b></label></h5>
+    <p>Để tra cứu thông tin, kết quả xử lý của HCC đối với phản ánh của anh/chị, anh/chị cần làm theo các bước sau:</p>
+    <p>- Nhập thông tin vào khung <b>Tìm kiếm nhanh</b> ở bên phải màn hình <i>(Tham khảo hình minh họa bên dưới)</i></p>
+    <p>- Nhập số điện thoại của anh/chị khi anh/chị gửi phản ánh lên hệ thống.</p>
+    <p>- Nhập mã Phản ánh <i>( Mã Phản ánh là mã anh/chị nhận được trong tin nhắn gửi từ <b>TTPVHCC_HB</b> khi bộ phận xử lý HCC tiếp nhận phản ánh của anh/chị trên hệ thống.)</i></p>
+    <p>- Sau đó anh/chị nhấn nút tìm kiếm.</p>
+    <br />
+    <br />
+    <img src="~/Content/Images/portal_search.png"  width="100%" />
+</div>
+
+
+<br />

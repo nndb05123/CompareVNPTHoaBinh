@@ -1,0 +1,17 @@
+INFO  2019-07-19 07:26:30,061 1186421ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-19 07:26:42,436 1198796ms DangNhapController     Index              - do login...
+INFO  2019-07-19 07:26:43,546 1199906ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-19 07:38:25,608 1901968ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-19 07:38:28,905 1905265ms DangNhapController     Index              - do login...
+INFO  2019-07-19 07:38:28,968 1905328ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-07-19 14:04:41,108 121671ms PortalController       verifyCaptcha      - verifyCaptcha: from client 192.168.3.254
+DEBUG 2019-07-19 14:04:41,217 121781ms PortalController       verifyCaptcha      -   token: 03AOLTBLQ0nbrE0bUZPul0Vgk7qCl1_FMGReik6kzjDGiMlLP14-ab0T8ZzcxgW49c3s8BT9HZxMZTw-HdSu__lNuTMLjtpTPX0E2YHWULJdJ6x_r7puzCcl6nYfCH2JfeCti3RMnGl8I2t9ZwGpcr3_BBNNekp8etFb1hpmLh3y0ghcvrmkWJH-X8UJgi02fJVoqZdVXK1u1w1zZdlusxFTCzzp8Zip9Km5Li2FVbGoTQ4hhyQIVNvruG0c23a2TdQP_E63Ev1q-8gLuxFMhLUBtzEX62DAtJTp_fes9NCc_NV9lS9zfRAu4HmHcieWXdkbObvsn1h2MIehIjRJUtgLONc4qFcDSO7A
+DEBUG 2019-07-19 14:04:41,217 121781ms PortalController       verifyCaptcha      -   result: 
+DEBUG 2019-07-19 14:04:41,296 121859ms PortalController       verifyCaptcha      - Exception: Object reference not set to an instance of an object.
+DEBUG 2019-07-19 14:04:47,530 128093ms _PageTongHop           createRequest      - portal createRequest displayName Ð? anh d?c, phoneNumber 0918684596 content H?i v? l?ch di tuy?n xe bus l?c th?y; m?t ngày có bao nhiêu chuy?n, m?i chuy?n cách nhau bao nhiêu phút. m?y gi? chuy?n d?u tiên ? b?n xe trung tâm
+INFO  2019-07-19 14:05:02,999 143562ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-19 14:05:09,983 150546ms DangNhapController     Index              - do login...
+DEBUG 2019-07-19 14:05:10,139 150703ms DangNhapController     Index              - user not exist: admin pass 21232F297A57A5A743894A0E4A801FC3
+INFO  2019-07-19 14:05:15,780 156343ms DangNhapController     Index              - do login...
+DEBUG 2019-07-19 14:05:15,780 156343ms DangNhapController     Index              - user not exist: admin pass 21232F297A57A5A743894A0E4A801FC3
+INFO  2019-07-19 15:12:50,874   671ms HomeController         Index              - Enter Home/Index

@@ -1,0 +1,232 @@
+﻿@{
+    ViewBag.Title = WebUI.SystemConfigs.APP_NAME;
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+@Html.Partial("DialogPleaseWait")
+<div id="app">
+    @if (ViewBag.showSwitchUserUI)
+    {
+        <div class="col-md-12 dbg-panel-user-switch" style="background-color:#ffd3d3;margin:20px;color:#f00;">
+            <h1>Debug: User Switch</h1>
+            <div class="input-group">
+                <label>Don Vi</label>
+                <select name="swdonvi" v-model="swSelectedDonVi" v-on:change="donViChanged">
+                    <option v-for="dv in dsDonVi" v-bind:key="dv.donvi_id" v-bind:value="dv.donvi_id">{{ dv.donvi_ten }}</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>User</label>
+                <select name="swuser" v-model="swSelectedUserID">
+                    <option v-for="u in dsUsers" :key="u.Id" :value="u.Id">
+                        {{ '[' + u.Id + ']-[' + u.nguoidung_id + '] ' + u.nguoidung_ten + ' Vai tro: ' + u.vaitro_id}}
+                    </option>
+                </select>
+            </div>
+
+            <button class="btn btn-danger" v-on:click="switchUser">Switch User</button>
+        </div>
+    }
+
+    <div class="row" style="color:white">
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3>@ViewBag.sl_tiepnhan_homnay</h3>
+                    <p>Số lượng phản ánh trong ngày</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>@ViewBag.sl_tiepnhan_da_xuly</h3>
+                    <p>Đã xử lý</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>@ViewBag.sl_tiepnhan_dang_xuly</h3>
+                    <p>Đang xử lý</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>@ViewBag.sl_tiepnhan_sai_donvi</h3>
+                    <p>Chuyển sai đơn vị</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-success">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Chi tiết trạng thái xử lý theo lĩnh vực trong tháng @ViewBag.s_thang</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="chart">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+
+</div>
+@section Foot {
+    <script src="@Url.Content("~/Content/lib/chart.js/chart.2.x.min.js")"></script>
+    <script>
+
+
+        function chart() {
+    $.ajax({
+        type: 'POST',
+        url: '@Url.Action("ThongKeLinhVucHome_Month", "ThongKe", new { area = "" })'
+    }).done(function(data, status) {
+        if (status === 'success') {
+            var LinhVuc = [];
+            var TongSo = [];
+            var Cap1DaXuLy = [];
+            var Cap1Chuyen = [];
+            var Cap2DungHan = [];
+            var Cap2TreHan = [];
+            var Cap2DangXuLyTreHen = [];
+            var Cap2DangXuLy = [];
+            var Cap2Chuyen = [];
+            var arrayLength = data.length;
+            for (var i = 0; i < arrayLength; i++) {
+                LinhVuc[i] = data[i].LINHVUC_TEN;
+                TongSo[i] = data[i].TONG_SO_LUONG;
+                Cap1DaXuLy[i] = data[i].CAP_DO_1_XU_LY;
+                Cap1Chuyen[i] = data[i].CAP_DO_1_CHUYEN;
+                Cap2DungHan[i] = data[i].CAP_DO_2_DA_XU_LY_DUNG_HAN;
+                Cap2TreHan[i] = data[i].CAP_DO_2_DA_XU_LY_TRE_HAN;
+                Cap2DangXuLyTreHen[i] = data[i].CAP_DO_2_DANG_XU_LY_TRE_HEN;
+                Cap2DangXuLy[i] = data[i].CAP_DO_2_DANG_XU_LY;
+                Cap2Chuyen[i] = data[i].CAP_DO_2_CHUYEN;
+            }
+            var barChartData = {
+                labels: LinhVuc,
+                datasets: [{
+                    label: 'Tổng số',
+                    backgroundColor: 'darkorange',
+                    data: TongSo
+                }, {
+                    label: 'Cấp 1 xử lý',
+                    backgroundColor: 'darkcyan',
+                    data: Cap1DaXuLy
+                }, {
+                    label: 'Cấp 1 chuyển',
+                    backgroundColor: 'darkgreen',
+                    data: Cap1Chuyen
+                }, {
+                    label: 'Cấp 2 xử lý đúng hạn',
+                    backgroundColor: 'darkcyan',
+                    data: Cap2DungHan
+                }, {
+                    label: 'Cấp 2 xử lý trễ hạn',
+                    backgroundColor: 'darkred',
+                    data: Cap2TreHan
+                }, {
+                        label: 'Cấp 2 đang xử lý trễ hạn',
+                        backgroundColor: 'darkred',
+                        data: Cap2DangXuLyTreHen
+                }, {
+                    label: 'Cấp 2 đang xử lý',
+                    data: Cap2DangXuLy
+                }, {
+                    label: 'Cấp 2 chuyển',
+                    backgroundColor: 'darkgreen',
+                    data: Cap2Chuyen
+                }]
+            };
+            var ctx = document.getElementById("barChart").getContext("2d");
+            window.myBar = new Chart(ctx, {
+                type: 'bar',
+                data: barChartData,
+
+                options: {
+                    responsive: true,
+                    title: {
+                        display: false,
+                    },
+                    tooltips: {
+                        mode: 'index',
+                        intersect: true
+                    },
+                }
+            });
+        }
+                });
+        };
+
+
+$(document).ready(function() {
+    chart();
+    var app = new Vue({
+        el: '#app',
+        data: {
+            swSelectedDonVi: 1,
+            swSelectedUserID: -1,
+            dsUsers: [],
+            dsDonVi: @Html.Raw(ViewBag.dsDonVi)
+        },
+        mounted() {
+            // this.dsDonVi.map(f => console.log(f.donvi_id));
+            this.donViChanged();
+        },
+        methods: {
+            donViChanged: function () {
+                console.log(`sw_onDonViChanged ${this.swSelectedDonVi}`);
+                // var sel = $('select[name="swdonvi"]');
+                // var opt = sel.find('option:selected');
+                // console.log(opt.val());
+
+                $.get('@Url.Action("dsUser", "Home")',
+                    { dvid: this.swSelectedDonVi },
+                    function (result) {
+                        // console.log(result);
+                        app.dsUsers = result;
+                    }
+                );
+            },
+            switchUser: function () {
+                $.post('@Url.Action("switchUser", "Home")',
+                    { userid: this.swSelectedUserID },
+                    function (result) {
+                        window.location.reload();
+                    }
+                );
+            }
+        }
+    });
+
+});
+
+
+    </script>
+}

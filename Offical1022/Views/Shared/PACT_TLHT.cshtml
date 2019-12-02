@@ -1,0 +1,50 @@
+﻿@using WebUI
+@using HotlineCore
+
+<div id="tab_tai_lieu_hotro" class="tab-pane">
+    <div class="panel panel-danger">
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <colgroup>
+                    <col width="20%" />
+                    <col width="auto" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Nội dung</th>
+                    </tr>
+                    <tr v-for="item in dsDocument">
+                        <td>{{ item.created_date | formatDate }}</td>
+                        <td v-if="item.content_type_id == 1">{{ item.content_body }}</td>
+                        <td v-if="item.content_type_id == 2">
+                            <a v-bind:href="item.content_body">{{item.content_header}}</a>
+                            <a v-if="phieu_dxl == false" href="#" v-on:click="askBeforeDeleteDocument(item)">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <textarea :disabled="phieu_dxl" v-model="contentBodyDocument" class="form-control" spellcheck="false" placeholder="Nhập thông tin cần đăng lên ở đây hoặc chọn 'Tải lên tập tin'"></textarea>
+                </div>
+                <div class="col-sm-4" style="margin: 5px 0px">
+                    <div v-if="phieu_dxl == false" class="btn-upload-wrapper">
+                        <label for="fileDocument" class="btn btn-primary">Tải lên tập tin</label>
+                        <input v-if="!phieu_dxl" type="file" id="fileDocument" name="fileDocument" v-on:change="onFileChangeDocument" class="hiden-btn" />
+                    </div>
+                    @*<input v-if="!phieu_dxl" class="form-control btn btn-info" type="file" id="fileDocument" v-on:change="onFileChangeDocument" value="Đính kèm tệp tin" />*@
+                </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4" style="margin: 5px 0px">
+                    <input v-if="!phieu_dxl" class="form-control btn btn-primary" value="Đăng nội dung" v-on:click="onClickPostDocument" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

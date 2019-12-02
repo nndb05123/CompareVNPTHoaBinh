@@ -1,0 +1,192 @@
+INFO  2019-06-27 10:24:30,360 69749457ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:25:00,709 69779806ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:25:31,052 69810148ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:26:01,377 69840474ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:26:31,707 69870803ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:27:02,028 69901125ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:27:32,344 69931440ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:28:02,646 69961743ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:28:32,852 69991949ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:29:03,192 70022288ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:29:33,523 70052620ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:30:03,854 70082950ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:30:35,619 70114716ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:31:05,950 70145046ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:31:36,293 70175390ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:32:06,650 70205747ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:32:36,985 70236082ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:33:07,307 70266404ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:33:37,644 70296740ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:34:08,021 70327118ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:34:38,355 70357451ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:35:08,701 70387798ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:35:39,040 70418137ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:36:09,377 70448473ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:36:39,722 70478819ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:37:10,051 70509147ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:37:40,381 70539478ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:38:10,710 70569807ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:38:41,043 70600139ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:39:11,379 70630476ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:39:41,739 70660835ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:40:12,070 70691166ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:40:42,349 70721446ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:41:12,554 70751650ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:41:42,886 70781983ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:42:13,216 70812313ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:42:43,549 70842645ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:43:13,893 70872990ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:43:44,217 70903313ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:44:14,580 70933676ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:44:44,949 70964046ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:45:15,288 70994385ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:45:45,619 71024715ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:46:15,955 71055051ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:46:46,297 71085394ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:47:16,640 71115736ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:47:46,980 71146077ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:48:17,272 71176368ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:48:47,498 71206595ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:49:17,829 71236925ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:49:48,159 71267256ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:50:18,501 71297597ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:50:48,829 71327926ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:51:19,157 71358253ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:51:49,487 71388584ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:52:19,814 71418910ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:52:50,147 71449244ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:53:20,478 71479575ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:53:50,808 71509904ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:54:21,137 71540234ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:54:51,471 71570567ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:55:21,802 71600899ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:55:52,132 71631229ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:56:22,466 71661562ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:56:52,796 71691893ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:57:23,137 71722233ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:57:53,468 71752565ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:58:23,808 71782905ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:58:54,148 71813244ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:59:24,481 71843578ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 10:59:54,815 71873911ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:00:25,143 71904240ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:00:55,476 71934573ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:01:25,820 71964917ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:01:56,150 71995247ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:02:26,488 72025585ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:02:56,774 72055871ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:03:27,059 72086156ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:03:57,254 72116350ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:04:27,460 72146556ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:04:57,805 72176902ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:05:28,145 72207242ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:05:58,481 72237577ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:06:28,784 72267880ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:06:59,131 72298228ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:07:29,456 72328553ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:07:59,797 72358893ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:08:30,144 72389241ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:09:00,497 72419594ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:09:30,837 72449933ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:10:01,178 72480275ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:10:31,538 72510635ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:11:01,867 72540963ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:11:32,219 72571316ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:12:02,562 72601659ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:12:32,894 72631990ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:13:03,225 72662322ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:13:33,553 72692650ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:14:03,885 72722981ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:14:34,218 72753315ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:15:04,550 72783647ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:15:34,885 72813981ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:16:05,217 72844314ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:16:35,571 72874668ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:17:05,796 72904892ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:17:36,139 72935236ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:18:06,475 72965572ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:18:36,809 72995906ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:19:07,151 73026247ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:19:37,489 73056585ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:20:07,841 73086938ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:20:38,172 73117269ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:21:08,501 73147597ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:21:38,859 73177956ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:22:09,193 73208290ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:22:39,527 73238623ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:23:09,860 73268957ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:23:40,190 73299286ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:24:10,517 73329614ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:24:40,857 73359953ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:25:11,193 73390290ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:25:41,543 73420639ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:26:11,882 73450979ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:26:42,226 73481323ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:27:12,500 73511597ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:27:43,252 73542349ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:28:13,582 73572678ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:28:43,915 73603012ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:29:14,223 73633319ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:29:44,554 73663651ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:30:14,884 73693981ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:30:45,226 73724322ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:31:15,568 73754665ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:31:45,899 73784995ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:32:16,231 73815328ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:32:46,568 73845665ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:33:16,912 73876008ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:33:47,248 73906345ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:34:17,589 73936685ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:34:47,920 73967016ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:35:18,271 73997368ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:35:48,606 74027703ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:36:18,943 74058039ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:36:49,281 74088378ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:37:19,617 74118714ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:37:35,374 74134471ms RequestModule          <.ctor>b__0_4      - v1/requests/portal/latest/sections
+INFO  2019-06-27 11:37:35,380 74134477ms RequestModule          <.ctor>b__0_3      - v1/requests/portal/latest/acceptedlist
+INFO  2019-06-27 11:37:35,382 74134479ms RequestModule          <.ctor>b__0_4      - [{"id":3,"ten":"Ðang ký"},{"id":6,"ten":"Góp ý"},{"id":1,"ten":"H?i thông tin"},{"id":2,"ten":"Ph?n ánh"},{"id":4,"ten":"Ph?n ánh ch?m tr?"},{"id":5,"ten":"Ph?n ánh thái d? c?a công ch?c"}]
+INFO  2019-06-27 11:37:35,383 74134480ms RequestModule          <.ctor>b__0_4      - id = 3ten = Ðang ký
+INFO  2019-06-27 11:37:35,383 74134480ms RequestModule          <.ctor>b__0_4      - id = 6ten = Góp ý
+INFO  2019-06-27 11:37:35,384 74134481ms RequestModule          <.ctor>b__0_4      - id = 1ten = H?i thông tin
+INFO  2019-06-27 11:37:35,385 74134482ms RequestModule          <.ctor>b__0_4      - id = 2ten = Ph?n ánh
+INFO  2019-06-27 11:37:35,385 74134482ms RequestModule          <.ctor>b__0_4      - id = 4ten = Ph?n ánh ch?m tr?
+INFO  2019-06-27 11:37:35,386 74134483ms RequestModule          <.ctor>b__0_4      - id = 5ten = Ph?n ánh thái d? c?a công ch?c
+DEBUG 2019-06-27 11:37:35,393 74134490ms RequestModule          <.ctor>b__0_3      - []
+INFO  2019-06-27 11:37:35,464 74134561ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/3/0
+INFO  2019-06-27 11:37:35,465 74134562ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/4/0
+INFO  2019-06-27 11:37:35,470 74134567ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/2/0
+INFO  2019-06-27 11:37:35,471 74134568ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/5/0
+INFO  2019-06-27 11:37:35,476 74134573ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/1/0
+INFO  2019-06-27 11:37:35,476 74134573ms RequestModule          <.ctor>b__0_5      - v1/requests/portal/section/loadmore/6/0
+INFO  2019-06-27 11:37:38,196 74137293ms AudioModuleV2          <.ctor>b__18_0     - dev/dora from client 192.168.3.254
+INFO  2019-06-27 11:37:49,946 74149042ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:38:20,301 74179397ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:38:50,629 74209726ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:39:20,962 74240058ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:39:51,239 74270335ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:40:21,448 74300545ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:40:51,779 74330875ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:41:04,053 74343150ms AudioModuleV2          <.ctor>b__18_0     - dev/dora from client 192.168.3.254
+INFO  2019-06-27 11:41:22,128 74361224ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:41:52,463 74391560ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:42:22,798 74421894ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:42:53,134 74452231ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:43:23,482 74482579ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:43:53,817 74512913ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:44:24,167 74543264ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:44:54,608 74573705ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:45:24,940 74604036ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:45:55,278 74634375ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:46:25,610 74664707ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:46:31,187 74670283ms AudioModuleV2          <.ctor>b__18_0     - dev/dora from client 192.168.3.254
+INFO  2019-06-27 11:46:53,836 74692932ms AudioModuleV2          <.ctor>b__18_0     - dev/dora from client 192.168.3.254
+INFO  2019-06-27 11:46:55,954 74695050ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:47:19,396 74718492ms AudioModuleV2          <.ctor>b__18_0     - dev/dora from client 192.168.3.254
+INFO  2019-06-27 11:47:26,289 74725386ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:47:56,624 74755721ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:48:01,169 74760265ms AudioModuleV2          <.ctor>b__18_0     - dev/dora from client 192.168.3.254
+INFO  2019-06-27 11:48:01,237 74760333ms AudioModuleV2          <.ctor>b__18_0     - dev/dora from client 192.168.3.254
+INFO  2019-06-27 11:48:26,960 74786056ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626
+INFO  2019-06-27 11:48:39,695 74798792ms AudioModuleV2          <.ctor>b__18_0     - dev/dora from client 192.168.3.254
+INFO  2019-06-27 11:48:57,292 74816389ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190626/20190626

@@ -1,0 +1,60 @@
+INFO  2019-07-05 07:34:32,564 47939144ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-05 07:34:44,705 47951286ms DangNhapController     Index              - do login...
+DEBUG 2019-07-05 07:34:44,955 47951536ms DangNhapController     Index              - user not exist: dtv01 pass 89F7FD65B8F98E2472E10899AB305D05
+INFO  2019-07-05 07:34:51,549 47958130ms DangNhapController     Index              - do login...
+INFO  2019-07-05 07:34:51,971 47958551ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-05 09:09:02,181 53608761ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-05 09:09:04,869 53611449ms DangNhapController     Index              - do login...
+INFO  2019-07-05 09:09:04,947 53611527ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-05 09:09:14,885 53621465ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 112765
+INFO  2019-07-05 09:09:14,963 53621543ms PlayAudioController    GetAudioURL        - tmp download url: /dl/112765.wav
+INFO  2019-07-05 09:09:14,963 53621543ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\4\16-209-a-90911013311---20190704164758.wav
+INFO  2019-07-05 09:09:14,963 53621543ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\4\16-209-a-90911013311---20190704164758.wav to c:\tmp\1022staticfiles\112765.wav
+INFO  2019-07-05 10:33:47,750 58694330ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-05 10:36:54,727 58881308ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-05 10:37:05,556 58892136ms DangNhapController     Index              - do login...
+INFO  2019-07-05 10:37:05,603 58892183ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-05 10:37:50,542 58937123ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 112765
+INFO  2019-07-05 10:37:50,542 58937123ms PlayAudioController    GetAudioURL        - tmp download url: /dl/112765.wav
+INFO  2019-07-05 10:37:50,542 58937123ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\4\16-209-a-90911013311---20190704164758.wav
+INFO  2019-07-05 10:38:13,137 58959717ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 112765
+INFO  2019-07-05 10:38:13,137 58959717ms PlayAudioController    GetAudioURL        - tmp download url: /dl/112765.wav
+INFO  2019-07-05 10:38:13,137 58959717ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\4\16-209-a-90911013311---20190704164758.wav
+INFO  2019-07-05 10:38:25,012 58971592ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-05 10:39:49,562 59056142ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-05 10:39:59,391 59065971ms DangNhapController     Index              - do login...
+DEBUG 2019-07-05 10:39:59,391 59065971ms DangNhapController     Index              - user not exist: admin pass 2FDA8F18724033BE2D35C5E54B305E14
+INFO  2019-07-05 10:40:07,235 59073815ms DangNhapController     Index              - do login...
+INFO  2019-07-05 10:40:07,266 59073846ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-05 10:49:56,434 59663014ms DangNhapController     Index              - Enter DangNhap/Index
+DEBUG 2019-07-05 11:52:28,714 63415294ms PortalController       verifyCaptcha      - verifyCaptcha: from client 192.168.3.254
+DEBUG 2019-07-05 11:52:28,714 63415294ms PortalController       verifyCaptcha      -   token: 03AOLTBLQjnWOW5Gwp0Oy5XRrSpQr-elsOiFK_qjMXRYk5MHa8mdU676oQoQO2hq9_e03Lp06sIhI2Lr2qJIA3x5mh3CWBNcLXJEQS07p4yI869pkyK6gBMgAtZgBkHZkStvPwCg_znMMX1WyGQgZpmG6__5ALEE6stpaYiiUSGDPW8YjtMOTaW_2Z55z8TCdTYrkJvjqOQJ0VbuiqoyBVrFNJj-pST4d8pBxEBquu98tEA-lIP4pwLEr3qMUoFNS2-TMuFHD_ToEIZBtVyWJD1d93OP5gNn5PVmjfNXkLcPwW342LNX11A-tYQYU2JIgMHNRpoNTctK8kKQ8vsAq724v6RQa2ETI4A4le0xYA3tJfjUmkexkqd88
+DEBUG 2019-07-05 11:52:28,714 63415294ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-07-05 11:52:55,230 63441810ms _PageTongHop           createRequest      - portal createRequest displayName Nguy?n minh nghia, phoneNumber 0375327359 content M?t tuy?n du?ng chính kéo dài hon 20km c?a ngu?i dân xã An bình dã xu?ng c?p t? nam 2011 và dã du?c chính quy?n  các c?p c?a t?nh hòa bình dã cho tu s?a vào nam 2016 nhung cung m?i ch? có thi công du?c ph?n c?u c?ng và h? th?ng thoát nu?c còn ph?n lòng du?ng  chua thi công d? cho khá nhi?u ? gà ? voi xu?t hi?n trên du?ng và mua gió xu?ng r?t khó di l?i trong m?y nam nay vì v?y e xin thay m?t t?t c? ngu?i dân xã An bình kh?n xin các c?p chính quy?n t?nh hòa bình mau chóng cho thi công do?n du?ng Dt479B cho ngu?i dân di l?i d? dàng hon.
+Kính mong du?c ch?p thu?n ki?n ngh?
+INFO  2019-07-05 15:45:26,934 77393514ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-05 15:45:37,138 77403718ms DangNhapController     Index              - do login...
+INFO  2019-07-05 15:45:37,169 77403749ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-05 15:45:56,717 77423297ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 112765
+INFO  2019-07-05 15:45:56,717 77423297ms PlayAudioController    GetAudioURL        - tmp download url: /dl/112765.wav
+INFO  2019-07-05 15:45:56,717 77423297ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\4\16-209-a-90911013311---20190704164758.wav
+INFO  2019-07-05 15:53:38,769 77885349ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-07-05 15:53:53,176 77899756ms DangNhapController     Index              - do login...
+INFO  2019-07-05 15:53:53,207 77899787ms HomeController         Index              - Enter Home/Index
+INFO  2019-07-05 15:54:32,912 77939492ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 112765
+INFO  2019-07-05 15:54:32,912 77939492ms PlayAudioController    GetAudioURL        - tmp download url: /dl/112765.wav
+INFO  2019-07-05 15:54:32,912 77939492ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\4\16-209-a-90911013311---20190704164758.wav
+INFO  2019-07-05 15:58:09,640 78156220ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 112764
+INFO  2019-07-05 15:58:09,656 78156236ms PlayAudioController    GetAudioURL        - tmp download url: /dl/112764.wav
+INFO  2019-07-05 15:58:09,656 78156236ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\4\16-209-a-90942628680---20190704092428.wav
+INFO  2019-07-05 15:58:09,656 78156236ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\4\16-209-a-90942628680---20190704092428.wav to c:\tmp\1022staticfiles\112764.wav
+INFO  2019-07-05 16:00:53,882 78320462ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 106269
+INFO  2019-07-05 16:00:53,882 78320462ms PlayAudioController    GetAudioURL        - tmp download url: /dl/106269.wav
+INFO  2019-07-05 16:00:53,882 78320462ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\6\26\16-209-a-90918909966---20190626134020.wav
+INFO  2019-07-05 16:00:53,882 78320462ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\6\26\16-209-a-90918909966---20190626134020.wav to c:\tmp\1022staticfiles\106269.wav
+INFO  2019-07-05 16:01:41,415 78367995ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 108850
+INFO  2019-07-05 16:01:41,431 78368011ms PlayAudioController    GetAudioURL        - tmp download url: /dl/108850.wav
+INFO  2019-07-05 16:01:41,431 78368011ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701085904.wav
+INFO  2019-07-05 16:02:29,089 78415669ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 108852
+INFO  2019-07-05 16:02:29,105 78415685ms PlayAudioController    GetAudioURL        - tmp download url: /dl/108852.wav
+INFO  2019-07-05 16:02:29,105 78415685ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\1\28-211-a-90823130986---20190701135440.wav

@@ -1,0 +1,158 @@
+INFO  2019-05-30 10:22:36,461 2170007ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 10:22:42,633 2176179ms DangNhapController     Index              - do login...
+INFO  2019-05-30 10:22:43,836 2177382ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 10:39:27,030 3180576ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14285
+INFO  2019-05-30 10:39:27,108 3180655ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14285.wav
+INFO  2019-05-30 10:39:27,108 3180655ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085516.wav
+INFO  2019-05-30 10:39:27,124 3180670ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085516.wav to c:\tmp\1022staticfiles\14285.wav
+INFO  2019-05-30 10:39:28,077 3181623ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14286
+INFO  2019-05-30 10:39:28,093 3181639ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14286.wav
+INFO  2019-05-30 10:39:28,093 3181639ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085657.wav
+INFO  2019-05-30 10:39:28,093 3181639ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085657.wav to c:\tmp\1022staticfiles\14286.wav
+INFO  2019-05-30 10:39:28,718 3182264ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14287
+INFO  2019-05-30 10:39:28,734 3182280ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14287.wav
+INFO  2019-05-30 10:39:28,734 3182280ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085752.wav
+INFO  2019-05-30 10:39:28,734 3182280ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085752.wav to c:\tmp\1022staticfiles\14287.wav
+INFO  2019-05-30 10:39:30,249 3183795ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14288
+INFO  2019-05-30 10:39:30,249 3183795ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14288.wav
+INFO  2019-05-30 10:39:30,265 3183811ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085850.wav
+INFO  2019-05-30 10:39:30,265 3183811ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085850.wav to c:\tmp\1022staticfiles\14288.wav
+INFO  2019-05-30 10:39:30,656 3184202ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14289
+INFO  2019-05-30 10:39:30,656 3184202ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14289.wav
+INFO  2019-05-30 10:39:30,656 3184202ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530080239.wav
+INFO  2019-05-30 10:39:30,656 3184202ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530080239.wav to c:\tmp\1022staticfiles\14289.wav
+INFO  2019-05-30 10:39:31,234 3184780ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14290
+INFO  2019-05-30 10:39:31,249 3184795ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14290.wav
+INFO  2019-05-30 10:39:31,249 3184795ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530083833.wav
+INFO  2019-05-30 10:39:31,249 3184795ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530083833.wav to c:\tmp\1022staticfiles\14290.wav
+INFO  2019-05-30 10:39:33,312 3186858ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14291
+INFO  2019-05-30 10:39:33,328 3186874ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14291.wav
+INFO  2019-05-30 10:39:33,328 3186874ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530084005.wav
+INFO  2019-05-30 10:39:33,328 3186874ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530084005.wav to c:\tmp\1022staticfiles\14291.wav
+INFO  2019-05-30 10:39:34,046 3187592ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14293
+INFO  2019-05-30 10:39:34,046 3187592ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14293.wav
+INFO  2019-05-30 10:39:34,046 3187592ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\28-211-a-90823130986---20190530085620.wav
+INFO  2019-05-30 10:39:34,046 3187592ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\28-211-a-90823130986---20190530085620.wav to c:\tmp\1022staticfiles\14293.wav
+INFO  2019-05-30 11:24:54,153 5907699ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14285
+INFO  2019-05-30 11:24:54,153 5907699ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14285.wav
+INFO  2019-05-30 11:24:54,153 5907699ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90846967799---20190530085516.wav
+INFO  2019-05-30 13:22:27,441   531ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 13:22:30,972  4062ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 13:22:44,379 17469ms DangNhapController     Index              - do login...
+INFO  2019-05-30 13:22:45,926 19016ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 13:45:22,046 1375136ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14309
+INFO  2019-05-30 13:45:22,125 1375215ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14309.wav
+INFO  2019-05-30 13:45:22,125 1375215ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530080239.wav
+INFO  2019-05-30 13:45:22,125 1375215ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530080239.wav to c:\tmp\1022staticfiles\14309.wav
+INFO  2019-05-30 13:57:45,198 2118288ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 13:57:52,323 2125413ms DangNhapController     Index              - do login...
+INFO  2019-05-30 13:57:52,354 2125444ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 14:00:18,267 2271357ms ServiceCenter          send_sms_citizen   - yeucau_id 60242300519 sdt 0918909966
+ERROR 2019-05-30 14:00:22,564 2275654ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 14:02:36,753 2409843ms ServiceCenter          send_sms_citizen   - yeucau_id 747F3300519 sdt 0918909966
+ERROR 2019-05-30 14:02:37,190 2410280ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 14:13:19,458 3052548ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14843
+INFO  2019-05-30 14:13:19,490 3052580ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14843.wav
+INFO  2019-05-30 14:13:19,490 3052580ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530140001.wav
+INFO  2019-05-30 14:13:19,490 3052580ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530140001.wav to c:\tmp\1022staticfiles\14843.wav
+INFO  2019-05-30 14:13:20,958 3054048ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14844
+INFO  2019-05-30 14:13:21,005 3054095ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14844.wav
+INFO  2019-05-30 14:13:21,005 3054095ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530140219.wav
+INFO  2019-05-30 14:13:21,005 3054095ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530140219.wav to c:\tmp\1022staticfiles\14844.wav
+INFO  2019-05-30 14:15:19,465 3172555ms ServiceCenter          send_sms_citizen   - yeucau_id 51163300519 sdt 0918909966
+ERROR 2019-05-30 14:15:19,902 3172992ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 14:37:16,940 4490030ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14860
+INFO  2019-05-30 14:37:16,971 4490061ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14860.wav
+INFO  2019-05-30 14:37:16,971 4490061ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530141503.wav
+INFO  2019-05-30 14:37:16,971 4490061ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530141503.wav to c:\tmp\1022staticfiles\14860.wav
+INFO  2019-05-30 14:37:18,159 4491249ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 14860
+INFO  2019-05-30 14:37:18,159 4491249ms PlayAudioController    GetAudioURL        - tmp download url: /dl/14860.wav
+INFO  2019-05-30 14:37:18,159 4491249ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530141503.wav
+INFO  2019-05-30 14:52:46,068 5419158ms ServiceCenter          send_sms_citizen   - yeucau_id C2608300519 sdt 0918909966
+ERROR 2019-05-30 14:52:46,490 5419580ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 14:57:20,862 5693952ms ServiceCenter          send_sms_citizen   - yeucau_id 27AAC300519 sdt 0918909966
+ERROR 2019-05-30 14:57:21,299 5694389ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 15:06:01,682 6214772ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 15:06:01,682 6214772ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 15:06:01,682 6214772ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 15:06:01,682 6214772ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 15:06:01,682 6214772ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 15:06:05,885 6218975ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 15:06:12,167 6225257ms DangNhapController     Index              - do login...
+DEBUG 2019-05-30 15:06:12,167 6225257ms DangNhapController     Index              - user not exist: admin pass C1E8A000473957B8C5D51542C4C75E0C
+INFO  2019-05-30 15:06:18,433 6231523ms DangNhapController     Index              - do login...
+INFO  2019-05-30 15:06:18,480 6231570ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 15:06:31,730 6244820ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 15393
+INFO  2019-05-30 15:06:31,730 6244820ms PlayAudioController    GetAudioURL        - tmp download url: /dl/15393.wav
+INFO  2019-05-30 15:06:31,730 6244820ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530145703.wav
+INFO  2019-05-30 15:06:31,730 6244820ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530145703.wav to c:\tmp\1022staticfiles\15393.wav
+INFO  2019-05-30 15:06:49,184 6262274ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 15336
+INFO  2019-05-30 15:06:49,184 6262274ms PlayAudioController    GetAudioURL        - tmp download url: /dl/15336.wav
+INFO  2019-05-30 15:06:49,184 6262274ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530145229.wav
+INFO  2019-05-30 15:06:49,184 6262274ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530145229.wav to c:\tmp\1022staticfiles\15336.wav
+INFO  2019-05-30 15:07:15,404 6288494ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 15393
+INFO  2019-05-30 15:07:15,420 6288510ms PlayAudioController    GetAudioURL        - tmp download url: /dl/15393.wav
+INFO  2019-05-30 15:07:15,420 6288510ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530145703.wav
+INFO  2019-05-30 15:08:07,188 6340278ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 15:08:08,579 6341669ms DangNhapController     Index              - do login...
+INFO  2019-05-30 15:08:08,610 6341700ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 15:13:04,335 6637425ms ServiceCenter          send_sms_citizen   - yeucau_id 702D6300519 sdt 0918909966
+ERROR 2019-05-30 15:13:04,757 6637847ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 15:14:47,855 6740945ms ServiceCenter          send_sms_citizen   - yeucau_id 1E681300519 sdt 0947857847
+ERROR 2019-05-30 15:14:48,324 6741414ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 15:15:38,123 6791213ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 15828
+INFO  2019-05-30 15:15:38,123 6791213ms PlayAudioController    GetAudioURL        - tmp download url: /dl/15828.wav
+INFO  2019-05-30 15:15:38,123 6791213ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530151214.wav
+INFO  2019-05-30 15:15:38,123 6791213ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90918909966---20190530151214.wav to c:\tmp\1022staticfiles\15828.wav
+INFO  2019-05-30 15:16:17,984 6831074ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 15901
+INFO  2019-05-30 15:16:17,984 6831074ms PlayAudioController    GetAudioURL        - tmp download url: /dl/15901.wav
+INFO  2019-05-30 15:16:17,984 6831074ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\28-211-a-90947857847---20190530151237.wav
+INFO  2019-05-30 15:16:17,984 6831074ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\28-211-a-90947857847---20190530151237.wav to c:\tmp\1022staticfiles\15901.wav
+INFO  2019-05-30 15:23:26,565 7259655ms ServiceCenter          send_sms_citizen   - yeucau_id 094E5300519 sdt 0911953339
+ERROR 2019-05-30 15:23:27,002 7260092ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-30 16:48:42,135 12375225ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 16:48:52,698 12385788ms DangNhapController     Index              - do login...
+INFO  2019-05-30 16:48:52,745 12385835ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-30 18:02:00,679 16773769ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 18:02:00,695 16773785ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 20:42:11,808 26384898ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-30 20:42:11,808 26384898ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 07:44:08,995 66102085ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 07:44:25,105 66118195ms DangNhapController     Index              - do login...
+INFO  2019-05-31 07:44:25,121 66118211ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 07:46:00,329 66213419ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 07:46:01,235 66214325ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 07:46:06,641 66219731ms DangNhapController     Index              - do login...
+INFO  2019-05-31 07:46:06,719 66219809ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 07:46:11,563 66224654ms DangNhapController     Index              - do login...
+INFO  2019-05-31 07:46:11,595 66224685ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 13:13:28,309 85861399ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 13:13:36,513 85869603ms DangNhapController     Index              - do login...
+INFO  2019-05-31 13:13:36,529 85869619ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 13:25:15,684 86568774ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 13:25:22,762 86575852ms DangNhapController     Index              - do login...
+INFO  2019-05-31 13:25:22,778 86575868ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 14:42:44,078 91217168ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 14:42:50,703 91223793ms DangNhapController     Index              - do login...
+INFO  2019-05-31 14:42:50,750 91223840ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 14:43:14,751 91247841ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 16812
+INFO  2019-05-31 14:43:14,751 91247841ms PlayAudioController    GetAudioURL        - tmp download url: /dl/16812.wav
+INFO  2019-05-31 14:43:14,751 91247841ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90911953339---20190530151728.wav
+INFO  2019-05-31 14:43:14,751 91247841ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\5\30\16-209-a-90911953339---20190530151728.wav to c:\tmp\1022staticfiles\16812.wav
+INFO  2019-05-31 14:43:48,393 91281483ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 14:43:51,003 91284093ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 14:43:51,050 91284140ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 15:36:15,615 94428705ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 15:36:22,802 94435892ms DangNhapController     Index              - do login...
+INFO  2019-05-31 15:36:22,834 94435924ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 15:40:25,017 94678107ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 15:40:30,267 94683357ms DangNhapController     Index              - do login...
+INFO  2019-05-31 15:40:30,298 94683388ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 15:43:32,244 94865334ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 15:43:49,885 94882975ms DangNhapController     Index              - do login...
+INFO  2019-05-31 15:43:49,917 94883007ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-31 15:46:16,236 95029326ms ServiceCenter          send_sms_citizen   - yeucau_id 20EE4310519 sdt 0918909966
+ERROR 2019-05-31 15:46:19,502 95032592ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-31 15:50:37,592 95290682ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-31 15:50:42,967 95296057ms DangNhapController     Index              - do login...
+INFO  2019-05-31 15:50:43,014 95296104ms HomeController         Index              - Enter Home/Index

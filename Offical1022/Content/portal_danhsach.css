@@ -1,0 +1,97 @@
+/*prevent body from scrolling when show modal*/
+
+
+.dspa-listview {
+    padding: 10px;
+}
+
+.modal-lg {
+    min-width: 90%;
+}
+
+.section-title {
+    background-color: #428bca;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 100px 4px 6px;
+    display: inline-block;
+    border-top-right-radius: 90px;
+}
+
+.dspa-section {
+    margin-bottom: 30px;
+}
+
+
+.pa-card {
+    background-color: #eee;
+    margin: 4px;
+    display: inline-block;
+    min-width: 200px;
+    max-width: 250px;
+    border: 1px solid #ddd;
+    max-height: 500px;
+    box-shadow: 2px 2px 3px #0008;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 640px) {
+    .pa-card {
+        display: block;
+        margin-bottom: 10px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+.pa-card .pa-title {
+    padding: 4px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+.pa-card .pa-content {
+    padding: 4px;
+    font-style: italic;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    display: block;
+    min-height:100px;
+}
+
+.pa-card .pa-status-desc {
+    padding: 4px;
+    font-style: italic;
+    color: #004aa4;
+}
+
+    .pa-detail .pa-content {
+        color: #000;
+        border-bottom: 1px solid #ddd;
+        padding: 4px;
+        margin-bottom: 10px;
+        /*max-height: 400px;*/
+    }
+    .pa-detail .pa-answer {
+        padding: 4px;
+        border-bottom: 1px solid #ddd;
+        color: #004aa4;
+        margin-bottom: 10px;
+        /*max-height: 400px;*/
+    }
+
+    .pa-detail .section-title {
+        color: #fff;
+    }
+
+@media only screen and (max-height: 1024px) {
+    .pa-detail .pa-content {
+        /*max-height: 200px;*/
+    }
+
+    .pa-detail .pa-answer {
+        /*max-height: 400px;*/
+    }
+}

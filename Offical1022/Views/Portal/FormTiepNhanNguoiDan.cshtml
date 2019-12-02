@@ -1,0 +1,69 @@
+﻿<!-- FORM TIEP NHAN -->
+<div id="divNewRequest" class="panel panel-primary">
+    <div class="panel-heading status_header">
+        <h5>TIẾP NHẬN PHẢN ÁNH, KIẾN NGHỊ</h5>
+    </div>
+    <div class="panel-body" style="padding:10px;background-color:#eee;">
+        <i><p style="color:#0070ed">Phản ánh, kiến nghị của bạn sẽ được cơ quan có thẩm quyền tiếp nhận để trả lời. Xin vui lòng gõ tiếng Việt có dấu</p></i>
+        <form>
+            <div class="form-group row">
+                <label for="displayName" class="col-sm-2 col-form-label" style="padding-right:0">Người dân</label>
+                <div class="col-sm-5">
+                    <input type="text" v-model="hoten" class="form-control" name="displayName" style="width:100%" placeholder="Nhập họ tên đầy đủ" id="displayName" maxlength="250">
+                </div>
+                <label for="email" class="col-sm-1 col-form-label" style="padding-right:0">Email</label>
+                <div class="col-sm-4">
+                    <input type="text" v-model="email" class="form-control" name="email" placeholder="Nhập địa chỉ thư điện tử" maxlength="300">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="phoneNumber" class="col-sm-2 col-form-label" style="padding-right:0">SĐT liên hệ <span class="required">(*)</span></label>
+                <div class="col-sm-5">
+                    <input type="number" v-model="sdt" class="form-control" name="phoneNumber" placeholder="Số điện thoại" maxlength="12">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="displayName" class="col-sm-2 col-form-label">Địa chỉ liên hệ</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" v-model="diachi" name="address" style="width:100%" placeholder="Địa chỉ liên hệ" id="displayName">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="displayName" class="col-form-label">Huyện/Tp</label>
+                    <select name="addressDistrict" class="custom-select" v-model="curHuyen" v-on:change="onChangeDistrict()">
+                        <option v-for="x in listHuyen" v-bind:value="x.huyen_id">{{ x.huyen_ten }}</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="displayName" class="col-form-label">Phường</label>
+                    <select name="addressWard" class="custom-select" v-model="curPhuong">
+                        <option v-for="x in listPhuong" v-bind:value="x.phuong_id">{{ x.phuong_ten }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-12 control-label">Nội dung phản ảnh, kiến nghị <span class="required">(*)</span></label>
+                <div class="col-sm-12">
+                    <textarea name="content" style="overflow: hidden" v-model="noidung" class="form-control" rows="4"
+                              placeholder="Xin nhập tóm tắt nội dung phản ánh, kiến nghị ở đây." maxlength="4000"></textarea>
+                    <span><i>Độ dài nội dung: {{noidung.length}}</i></span>
+                </div>
+                <div class="col">
+                    <i style="color:red">
+                        - Chú ý: nội dung phản ánh không ít hơn 50 ký tự và không nhiều hơn 4000 ký tự.<br />
+                        - Hệ thống không tiếp nhận đơn thư khiếu nại, tố cáo giải đáp pháp luật.<br />
+                        - (*): bắt buộc nhập
+                    </i>
+                </div>
+            </div>
+            <br />
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-success" v-on:click="checkBeforeUpload">Gửi phản ánh, kiến nghị</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- FORM TIEP NHAN -->

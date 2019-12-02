@@ -1,0 +1,150 @@
+﻿@{
+    ViewBag.Title = "Danh sách phản ánh từ Cổng tiếp nhận";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+@Html.Partial("DialogPleaseWait")
+<div id="MyApp" class="row">
+    <div class="col-md-12">
+        <form class="form-group">
+            <label for="startDayString" class="control-label">Từ ngày</label>
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control pull-right nhapngay" id="startDayString" v-model="startDayString" />
+            </div>
+            <label for="endDayString" class="control-label">Đến ngày</label>
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control pull-right nhapngay" id="endDayString" v-model="endDayString" />
+            </div>
+            <br />
+            <button type="button" class="btn btn-primary" v-on:click="locDuLieu">Lọc dữ liệu</button>
+        </form>
+    </div>
+    <div class="col-md-12">
+        <div>
+            <ul class="nav nav-pills mynav">
+                <li class="active"><a href="#tab_1" data-toggle="tab"><span>(<b>{{ listObj.length}}</b>)</span> Phản ánh mới </a></li>
+            </ul>
+            <div class="tab-content bg-gray-light">
+                <div class="tab-pane active" id="tab_1">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>STT</th>
+                            <th>Thời gian</th>
+                            <th>Họ và tên</th>
+                            <th>Số điện thoại</th>
+                            <th>Địa chỉ</th>
+                            <th>Email</th>
+                            <th>Nội dung</th>
+                            <th></th>
+                        </tr>
+                        <tr v-for="item in listObj">
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.tgian_tiepnhan | formatDate }}</td>
+                            <td>{{ item.nguoigoi_hoten }}</td>
+                            <td>{{ item.nguoigoi_sdt }}</td>
+                            <td>{{ item.nguoigoi_diachi }}</td>
+                            <td>{{ item.nguoigoi_email }}</td>
+                            <td>{{ shorten(item.yeucau_noidung) }}</td>
+                            <td class="text-center">
+                                @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN || ViewBag.mp_vaitro == WebUI.VAI_TRO.XU_LY_CAP_DO_1)
+                                {
+                                    <btn class="btn btn-primary" v-on:click="tiepNhanPhanAnh(item)">Tiếp nhận</btn>
+                                    <btn class="btn btn-danger" v-on:click="askBeforeDelete(item)">Xóa</btn>
+                                }
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Foot {
+    <script>
+        var MyApp = new Vue({
+            el: '#MyApp',
+            data: {
+                startDayString: '@ViewBag.startDayString',
+                endDayString: '@ViewBag.endDayString',
+                listObj: [],
+                tiepNhanPhanAnh: function (pa) {
+                    window.location.href = "/CapDo1/NhapPhanAnh?webId=" + encodeURI(pa.id);
+                }
+            },
+            methods: {
+                shorten: function (text) {
+                    if (text === null || text === undefined) return '';
+                    if (text.length > 150) return text.substring(0, 100) + '...';
+                    return text;
+                },
+                locDuLieu: function () {
+                    var postData = {
+                        startDayString: MyApp.startDayString,
+                        endDayString: MyApp.endDayString
+                    }
+                    MyApp.listObj = [];
+                    MyApp.dsSaiDonVi = [];
+                    MyApp.dsDaXuLy = [];
+                    $.post("@Url.Action("danhSachTiepNhan", "TiepNhanWeb")", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.listObj.push(v);
+                        });
+                    });
+                },
+                getUrl: function () {
+
+                },
+                askBeforeDelete: function (item) {
+                    showConfirmDialog('Xóa phản ánh', 'Bạn có chắc muốn xóa phản ánh này?<br/><i style="color:#00f">' + clampText(item.yeucau_noidung, 2000) + '</i>',
+                        function () {
+                            MyApp.doDelete(item);
+                        },
+                        false, false, [], 'ok'
+                    );
+                },
+                doDelete: function (item) {
+                    var postData = { id: item.id };
+                    $.post("@Url.Action("Xoa", "TiepNhanWeb")", postData, function (data) {
+                        if (data.result === 'ok') {
+                            closeConfirmDialog();
+                            showSuccessNotification('Đã xóa phản ánh!', 2000);
+                            MyApp.locDuLieu();
+                        } else {
+                            closeConfirmDialog();
+                            showSuccessNotification('Lỗi hệ thống: không xóa phản ánh được!', 3000);
+                        }
+                    })
+                        .fail(
+                        function () {
+                            closeConfirmDialog();
+                            showErrorNotification('Lỗi hệ thống: không xóa phản ánh được!', 3000);
+                        });
+                    
+                }
+            }
+        });
+        Vue.filter('formatDate', function (value) {
+            if (value) {
+                return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+            }
+        });
+        $(document).ready(function () {
+            $('.nhapngay').datepicker({
+                autoclose: true,
+                dateFormat: 'dd/mm/yy'
+            });
+            $("#startDayString").datepicker().on('change.dp', () => {
+                MyApp.startDayString = $("#startDayString").val();
+            });
+            $("#endDayString").datepicker().on('change.dp', () => {
+                MyApp.endDayString = $("#endDayString").val();
+            });
+            MyApp.locDuLieu();
+        });
+    </script>
+}

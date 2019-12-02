@@ -1,0 +1,11 @@
+INFO  2019-06-14 07:26:24,407 4581627ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-14 07:26:40,559 4597779ms DangNhapController     Index              - do login...
+INFO  2019-06-14 07:26:42,445 4599666ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-14 09:26:14,038 11771259ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-14 09:26:22,303 11779524ms DangNhapController     Index              - do login...
+INFO  2019-06-14 09:26:22,331 11779552ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-14 09:35:57,706 12354927ms ServiceCenter          send_sms_citizen   - yeucau_id 7DA92140619 sdt 0848399622
+INFO  2019-06-14 09:36:01,581 12358802ms ServiceCenter          send_sms_citizen   -     return code: ok
+INFO  2019-06-15 09:56:40,383 99997603ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-15 09:56:42,490 99999710ms DangNhapController     Index              - do login...
+INFO  2019-06-15 09:56:42,549 99999769ms HomeController         Index              - Enter Home/Index

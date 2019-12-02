@@ -1,0 +1,38 @@
+﻿<div class="row">
+    <div class="col-md-6 col-sm-12" style="padding:4px">
+        <label for="startDayString" class="control-label">Từ ngày</label>
+        <div class="input-group date">
+            <div class="input-group-addon">
+                <i class="fa fa-calendar"></i>
+            </div>
+            <input type="text" class="form-control pull-right nhapngay" id="startDayString" v-model="startDayString" />
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12" style="padding:4px">
+        <label for="endDayString" class="control-label">Đến ngày</label>
+        <div class="input-group date">
+            <div class="input-group-addon">
+                <i class="fa fa-calendar"></i>
+            </div>
+            <input type="text" class="form-control pull-right nhapngay" id="endDayString" v-model="endDayString" />
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.nhapngay').datepicker({
+            autoclose: true,
+            dateFormat: 'dd/mm/yy'
+        });
+        $('.fa-calendar').click(function () {
+            var $this = $(this).parent().parent().find('input');
+            $this.datepicker("show");
+        });
+        $("#startDayString").datepicker().on('change.dp', () => {
+            App.startDayString = $("#startDayString").val();
+        });
+        $("#endDayString").datepicker().on('change.dp', () => {
+            App.endDayString = $("#endDayString").val();
+        });
+    });
+</script>

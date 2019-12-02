@@ -1,0 +1,256 @@
+﻿@using HotlineCore
+@{
+    ViewBag.Title = "Danh sách đơn vị";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+@section breadcrumb  {
+    <li class="active">Danh sách đơn vị</li>
+}
+
+@Html.Partial("DialogPleaseWait")
+
+<div id="MyApp1" class="row">
+    <div class="col-md-12">
+        <table>
+            <tr>
+                <td style="padding: 10px">
+                    <label for="cboDonVi" class="control-label">Cấp độ</label>
+                </td>
+                <td style="width: 300px; padding: 10px">
+                    <select id="cboCapDo" class="form-control select2" v-model="capdo_chon">
+                        <option v-for="item in dsCapDo" v-bind:value="item.capdo_id">{{ item.capdo_ten }}</option>
+                    </select>
+                </td>
+                <td style="padding:10px">
+                    <button class="btn btn-default" v-on:click="getDsDonVi">Tìm kiếm</button>
+                </td>
+                <td>
+                    @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                    {
+                        <a href="@Url.Action("them","donvi")" class="btn btn-primary btn-flat">Thêm</a>
+                    }
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-12">
+        <table id="dgDonVi" class="table table-bordered table-striped">
+            <tr>
+                <th></th>
+                <th>Đơn vị</th>
+                <th>Địa chỉ</th>
+                <th>Số ĐT</th>
+                <th>Website</th>
+                <th></th>
+            </tr>
+            <tbody v-for="item in dsDonVi">
+                <tr>
+                    <td align="center">
+                        @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                        {
+                            <a style="cursor:pointer" v-on:click="showModal(item.donvi_id)"><i class="fa fa-edit text-blue"></i></a>
+                        }
+                    </td>
+                    <td>{{ item.donvi_ten }}</td>
+                    <td>{{ item.donvi_diachi }}</td>
+                    <td>{{ item.donvi_sdt }}</td>
+                    <td>{{ item.donvi_website }}</td>
+                    <td align="center">
+                        @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                        {
+                            <a style="cursor:pointer" v-on:click="showDlgConfirmDelete(item)"><i class="fa fa-trash-o text-red"></i></a>
+                        }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal" id="update" role="dialog">
+        <div class="modal-dialog modal-lg">
+            Modal content
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thông tin đơn vị</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="donvi_ten" class="col-sm-2 control-label">Tên đơn vị <span class="text-danger">*</span></label>
+                                <div class="col-sm-10">
+                                    <input type="hidden" v-model="donvi_id_edit" />
+                                    <input type="text" class="form-control" id="donvi_ten" v-model="donvi_ten_edit" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="donvi_diachi" class="col-sm-2 control-label">Địa chỉ</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="donvi_diachi" v-model="donvi_diachi_edit" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="donvi_sdt" class="col-sm-2 control-label">Số ĐT</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="donvi_sdt" v-model="donvi_sdt_edit" />
+                                </div>
+                                <label for="donvi_website" class="col-sm-2 control-label">Website</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="donvi_website" v-model="donvi_website_edit" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="donvi_cha_id" class="col-sm-2 control-label">Đơn vị cha</label>
+                                <div class="col-sm-10">
+                                    <select id="donvi_cha_id" class="form-control select2" v-model="donvi_cha_chon_edit">
+                                        <option v-for="item in dsDonVi_edit" v-bind:value="item.donvi_id">{{ item.donvi_ten }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="capdo_id" class="col-sm-2 control-label">Cấp độ</label>
+                                <div class="col-sm-10">
+                                    <select id="capdo_id" class="form-control select2" v-model="capdo_chon_edit">
+                                        <option v-for="item in dsCapDo" v-bind:value="item.capdo_id">{{ item.capdo_ten }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <div class="row">
+                                <div class="col-md-12" v-if="loi">
+                                    <div class="alert alert-danger">
+                                        <i class="icon fa fa-info"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                                <div class="col-md-12" v-if="thanhcong">
+                                    <div class="alert alert-success">
+                                        <i class="icon fa fa-check"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-footer -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" v-on:click="capnhat">Cập nhật</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"> Đóng</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Foot {
+    <script>
+        var MyApp1 = new Vue({
+            el: '#MyApp1',
+            data: {
+                dsCapDo: [],
+                dsDonVi: [],
+                dsDonVi_edit: [],
+                capdo_chon: 1,
+                donvi_id_edit: 0,
+                donvi_ten_edit: '',
+                donvi_diachi_edit: '',
+                donvi_sdt_edit: '',
+                donvi_website_edit: '',
+                capdo_chon_edit: 1,
+                donvi_cha_chon_edit: 1,
+                thongbao: '',
+                thanhcong: false,
+                loi: false
+            },
+            methods: {
+                getDsCapDo: function () {
+                    $.post("@Url.Action("GetDsCapDo","CapDo",new { area = ""})", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp1.dsCapDo.push(v);
+                        });
+                        MyApp1.getDsDonVi();
+                    });
+                },
+                getDsDonVi: function () {
+                    this.dsDonVi = [];
+                    var postData = { capdo_id: MyApp1.capdo_chon };
+                    $.post("@Url.Action("GetDsDonViTheoCapDo", "DonVi", new { area = "" })", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp1.dsDonVi.push(v);
+                        });
+                    });
+                },
+                getDsDonVi_All: function () {
+                    // MyApp1.dsDonVi_edit = [{ donvi_id: "0", donvi_ten: "-Không-" }];
+                    @*$.post("@Url.Action("GetDsDonVi", "DonVi", new { area = "" })", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp1.dsDonVi_edit.push(v);
+                        });
+                    });*@
+                },
+                showModal: function (donvi_id) {
+                    MyApp1.loi = false;
+                    MyApp1.thongbao = '';
+                    MyApp1.thanhcong = false;
+                    var postData = { donvi_id: donvi_id };
+                    $.post("@Url.Action("getthongtin", "DonVi", new { area = "" })", postData, function (data) {
+                        MyApp1.donvi_id_edit = data.donvi_id;
+                        MyApp1.donvi_ten_edit = data.donvi_ten;
+                        MyApp1.donvi_diachi_edit = data.donvi_diachi;
+                        MyApp1.donvi_website_edit = data.donvi_website;
+                        MyApp1.donvi_sdt_edit = data.donvi_sdt;
+                        MyApp1.donvi_cha_chon_edit = data.donvi_cha_id;
+                        MyApp1.capdo_chon_edit = data.capdo_id;
+
+                        $('#update').modal('show');
+                    });
+                },
+                capnhat: function () {
+                    MyApp1.loi = false;
+                    MyApp1.thongbao = '';
+                    MyApp1.thanhcong = false;
+                    var donvi_ten_edit = MyApp1.donvi_ten_edit;
+                    if (donvi_ten_edit.trim() == "") {
+                        MyApp1.loi = true;
+                        MyApp1.thongbao = 'Bạn chưa nhập tên đơn vị';
+                        return;
+                    }
+                    var postData = {
+                        donvi_id: MyApp1.donvi_id_edit,
+                        donvi_ten: MyApp1.donvi_ten_edit,
+                        donvi_diachi: MyApp1.donvi_diachi_edit,
+                        donvi_website: MyApp1.donvi_website_edit,
+                        donvi_sdt: MyApp1.donvi_sdt_edit,
+                        donvi_cha_id: MyApp1.donvi_cha_chon_edit,
+                        capdo_id: MyApp1.capdo_chon_edit
+                    };
+                    $.post("@Url.Action("capnhat", "DonVi")", postData, function (data) {
+                        if (data > 0) {
+                            MyApp1.thanhcong = true;
+                            MyApp1.thongbao = "Cập nhật thành công!";
+                            MyApp1.getDsDonVi();
+                        }
+                    });
+                },
+                showDlgConfirmDelete: function (dv) {
+                    showConfirmDialog(`Xóa Đơn Vị: ${dv.donvi_ten}`, 'Bạn có chắc muốn xóa không?', function () {
+                        closeConfirmDialog();
+                        MyApp1.doDeleteDonVi(dv);
+                    }, true);
+                },
+                doDeleteDonVi: function (dv) {
+                    var postData = { donvi_id: dv.donvi_id };
+                    showPleaseWaitDialog(`Xóa Đơn Vị: ${dv.donvi_ten}`, 'Đang xóa trên hệ thống, xin chờ giây lát...');
+                    $.post("@Url.Action("xoa", "DonVi", new { area = "" })", postData, function (data) {
+                        console.log(`delete donvi ${data}`);
+                        closePleaseWaitDialog();
+                        MyApp1.getDsDonVi();
+                    });
+                }
+            }
+        })
+        MyApp1.getDsCapDo();
+        //MyApp1.getDsDonVi_All();
+    </script>
+}

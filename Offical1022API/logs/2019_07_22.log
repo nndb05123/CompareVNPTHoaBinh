@@ -1,0 +1,485 @@
+INFO  2019-07-23 20:01:28,289 101876705ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:01:28,320 101876736ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:01:28,320 101876736ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:01:28,320 101876736ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:01:28,320 101876736ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:01:58,336 101906752ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:01:58,930 101907346ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:01:58,930 101907346ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:01:58,930 101907346ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:01:58,930 101907346ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:01:58,930 101907346ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:02:28,977 101937392ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:02:29,555 101937971ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:02:29,555 101937971ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:02:29,555 101937971ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:02:29,555 101937971ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:02:29,555 101937971ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:02:59,586 101968002ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:03:00,180 101968596ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:03:00,180 101968596ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:03:00,180 101968596ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:03:00,180 101968596ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:03:00,180 101968596ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:03:30,195 101998611ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:03:30,789 101999205ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:03:30,789 101999205ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:03:30,789 101999205ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:03:30,789 101999205ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:03:30,789 101999205ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:04:00,820 102029236ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:04:01,414 102029830ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:04:01,414 102029830ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:04:01,414 102029830ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:04:01,414 102029830ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:04:01,414 102029830ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:04:31,430 102059846ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:04:32,024 102060439ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:04:32,024 102060439ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:04:32,024 102060439ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:04:32,024 102060439ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:04:32,039 102060455ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:05:02,055 102090471ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:05:02,649 102091064ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:05:02,649 102091064ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:05:02,649 102091064ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:05:02,649 102091064ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:05:02,649 102091064ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:05:32,664 102121080ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:05:33,258 102121674ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:05:33,258 102121674ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:05:33,258 102121674ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:05:33,258 102121674ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:05:33,274 102121689ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:06:03,305 102151721ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:06:03,899 102152314ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:06:03,899 102152314ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:06:03,899 102152314ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:06:03,899 102152314ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:06:03,899 102152314ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:06:33,914 102182330ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:06:34,289 102182705ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:06:34,289 102182705ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:06:34,289 102182705ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:06:34,289 102182705ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:06:34,305 102182721ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:07:04,320 102212736ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:07:04,914 102213330ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:07:04,914 102213330ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:07:04,914 102213330ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:07:04,914 102213330ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:07:04,914 102213330ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:07:34,945 102243361ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:07:35,539 102243955ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:07:35,539 102243955ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:07:35,539 102243955ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:07:35,539 102243955ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:07:35,539 102243955ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:08:05,570 102273986ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:08:05,852 102274267ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:08:05,852 102274267ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:08:05,852 102274267ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:08:05,852 102274267ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:08:05,852 102274267ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:08:35,867 102304283ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:08:36,461 102304877ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:08:36,461 102304877ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:08:36,461 102304877ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:08:36,461 102304877ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:08:36,477 102304892ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:09:06,507 102334923ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:09:07,147 102335563ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:09:07,148 102335564ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:09:07,149 102335565ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:09:07,149 102335565ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:09:07,152 102335568ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:09:37,183 102365599ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:09:37,777 102366193ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:09:37,777 102366193ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:09:37,777 102366193ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:09:37,777 102366193ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:09:37,793 102366208ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:10:07,824 102396240ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:10:08,418 102396833ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:10:08,418 102396833ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:10:08,418 102396833ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:10:08,418 102396833ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:10:08,418 102396833ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:10:38,449 102426865ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:10:39,043 102427458ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:10:39,043 102427458ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:10:39,043 102427458ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:10:39,043 102427458ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:10:39,043 102427458ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:11:09,058 102457474ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:11:09,652 102458068ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:11:09,652 102458068ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:11:09,652 102458068ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:11:09,652 102458068ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:11:09,652 102458068ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:11:39,668 102488083ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:11:40,261 102488677ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:11:40,261 102488677ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:11:40,261 102488677ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:11:40,261 102488677ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:11:40,261 102488677ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:12:10,293 102518708ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:12:10,886 102519302ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:12:10,886 102519302ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:12:10,886 102519302ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:12:10,886 102519302ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:12:10,886 102519302ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:12:40,918 102549333ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:12:41,511 102549927ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:12:41,511 102549927ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:12:41,511 102549927ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:12:41,511 102549927ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:12:41,511 102549927ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:13:11,543 102579958ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:13:12,136 102580552ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:13:12,136 102580552ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:13:12,136 102580552ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:13:12,136 102580552ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:13:12,136 102580552ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:13:42,168 102610583ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:13:42,761 102611177ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:13:42,761 102611177ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:13:42,761 102611177ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:13:42,761 102611177ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:13:42,761 102611177ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:14:12,793 102641208ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:14:13,308 102641724ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:14:13,308 102641724ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:14:13,308 102641724ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:14:13,308 102641724ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:14:13,308 102641724ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:14:43,324 102671740ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:14:43,918 102672333ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:14:43,918 102672333ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:14:43,918 102672333ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:14:43,918 102672333ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:14:43,918 102672333ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:15:13,949 102702365ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:15:14,230 102702646ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:15:14,230 102702646ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:15:14,230 102702646ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:15:14,230 102702646ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:15:14,230 102702646ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:15:44,261 102732677ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:15:44,840 102733255ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:15:44,840 102733255ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:15:44,840 102733255ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:15:44,840 102733255ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:15:44,855 102733271ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:16:14,871 102763287ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:16:15,402 102763818ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:16:15,402 102763818ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:16:15,402 102763818ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:16:15,402 102763818ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:16:15,418 102763833ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:16:45,433 102793849ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:16:46,027 102794443ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:16:46,027 102794443ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:16:46,027 102794443ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:16:46,027 102794443ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:16:46,027 102794443ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:17:16,058 102824474ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:17:16,652 102825068ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:17:16,652 102825068ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:17:16,652 102825068ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:17:16,652 102825068ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:17:16,652 102825068ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:17:46,683 102855099ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:17:47,277 102855693ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:17:47,277 102855693ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:17:47,277 102855693ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:17:47,277 102855693ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:17:47,293 102855708ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:18:17,308 102885724ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:18:17,902 102886318ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:18:17,902 102886318ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:18:17,902 102886318ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:18:17,902 102886318ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:18:17,902 102886318ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:18:47,933 102916349ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:18:48,527 102916943ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:18:48,527 102916943ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:18:48,527 102916943ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:18:48,527 102916943ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:18:48,527 102916943ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:19:18,558 102946974ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:19:19,152 102947568ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:19:19,152 102947568ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:19:19,152 102947568ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:19:19,152 102947568ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:19:19,152 102947568ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:19:49,183 102977599ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:19:49,777 102978193ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:19:49,777 102978193ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:19:49,777 102978193ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:19:49,777 102978193ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:19:49,793 102978208ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:20:19,808 103008224ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:20:20,402 103008818ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:20:20,402 103008818ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:20:20,402 103008818ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:20:20,402 103008818ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:20:20,402 103008818ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:20:50,433 103038849ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:20:51,027 103039443ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:20:51,027 103039443ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:20:51,027 103039443ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:20:51,027 103039443ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:20:51,027 103039443ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:21:21,058 103069474ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:21:21,652 103070068ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:21:21,652 103070068ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:21:21,652 103070068ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:21:21,652 103070068ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:21:21,652 103070068ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:21:51,683 103100099ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:21:52,277 103100693ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:21:52,277 103100693ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:21:52,277 103100693ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:21:52,277 103100693ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:21:52,293 103100708ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:22:22,308 103130724ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:22:22,902 103131318ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:22:22,902 103131318ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:22:22,902 103131318ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:22:22,902 103131318ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:22:22,902 103131318ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:22:52,933 103161349ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:22:53,371 103161787ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:22:53,371 103161787ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:22:53,371 103161787ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:22:53,371 103161787ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:22:53,371 103161787ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:23:23,386 103191802ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:23:23,980 103192396ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:23:23,980 103192396ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:23:23,980 103192396ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:23:23,980 103192396ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:23:23,980 103192396ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:23:54,011 103222427ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:23:54,324 103222740ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:23:54,324 103222740ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:23:54,324 103222740ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:23:54,324 103222740ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:23:54,340 103222755ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:24:24,355 103252771ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:24:24,949 103253365ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:24:24,949 103253365ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:24:24,949 103253365ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:24:24,949 103253365ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:24:24,949 103253365ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:24:54,965 103283380ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:24:55,558 103283974ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:24:55,558 103283974ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:24:55,558 103283974ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:24:55,558 103283974ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:24:55,558 103283974ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:25:25,574 103313990ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:25:26,168 103314583ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:25:26,168 103314583ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:25:26,168 103314583ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:25:26,168 103314583ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:25:26,168 103314583ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:25:56,183 103344599ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:25:56,777 103345193ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:25:56,777 103345193ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:25:56,777 103345193ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:25:56,777 103345193ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:25:56,777 103345193ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:26:26,824 103375240ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:26:27,418 103375833ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:26:27,418 103375833ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:26:27,418 103375833ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:26:27,418 103375833ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:26:27,418 103375833ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:26:57,433 103405849ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:26:57,730 103406146ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:26:57,730 103406146ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:26:57,730 103406146ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:26:57,730 103406146ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:26:57,730 103406146ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:27:27,746 103436162ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:27:28,340 103436755ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:27:28,340 103436755ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:27:28,340 103436755ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:27:28,340 103436755ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:27:28,340 103436755ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:27:58,371 103466787ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:27:58,965 103467380ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:27:58,965 103467380ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:27:58,965 103467380ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:27:58,965 103467380ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:27:58,965 103467380ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:28:28,980 103497396ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:28:29,574 103497990ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:28:29,574 103497990ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:28:29,574 103497990ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:28:29,574 103497990ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:28:29,574 103497990ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:28:59,605 103528021ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:29:00,199 103528615ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:29:00,199 103528615ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:29:00,199 103528615ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:29:00,199 103528615ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:29:00,199 103528615ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:29:30,230 103558646ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:29:30,824 103559240ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:29:30,824 103559240ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:29:30,824 103559240ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:29:30,824 103559240ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:29:30,824 103559240ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:30:00,840 103589255ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:30:01,433 103589849ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:30:01,433 103589849ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:30:01,433 103589849ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:30:01,433 103589849ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:30:01,449 103589865ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:30:31,465 103619880ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:30:32,058 103620474ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:30:32,058 103620474ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:30:32,058 103620474ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:30:32,058 103620474ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:30:32,058 103620474ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:31:02,090 103650505ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:31:02,683 103651099ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:31:02,683 103651099ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:31:02,683 103651099ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:31:02,683 103651099ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:31:02,683 103651099ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:31:32,715 103681130ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:31:33,308 103681724ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:31:33,308 103681724ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:31:33,308 103681724ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:31:33,308 103681724ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:31:33,308 103681724ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:32:03,340 103711755ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:32:03,933 103712349ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:32:03,933 103712349ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:32:03,933 103712349ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:32:03,933 103712349ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:32:03,933 103712349ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:32:33,965 103742380ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:32:34,558 103742974ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:32:34,558 103742974ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:32:34,558 103742974ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:32:34,558 103742974ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:32:34,558 103742974ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:33:04,590 103773005ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:33:05,183 103773599ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:33:05,183 103773599ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:33:05,183 103773599ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:33:05,183 103773599ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:33:05,199 103773615ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:33:35,215 103803630ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:33:35,761 103804177ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:33:35,761 103804177ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:33:35,761 103804177ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:33:35,761 103804177ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:33:35,761 103804177ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:34:05,777 103834193ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:34:06,371 103834787ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:34:06,371 103834787ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:34:06,371 103834787ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:34:06,371 103834787ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:34:06,371 103834787ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:34:36,402 103864818ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:34:36,996 103865412ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:34:36,996 103865412ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:34:36,996 103865412ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:34:36,996 103865412ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:34:36,996 103865412ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:35:07,027 103895443ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:35:07,621 103896037ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:35:07,621 103896037ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:35:07,621 103896037ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:35:07,621 103896037ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:35:07,636 103896052ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:35:37,652 103926068ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:35:38,246 103926662ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:35:38,246 103926662ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:35:38,246 103926662ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:35:38,246 103926662ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:35:38,246 103926662ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:36:08,293 103956708ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:36:08,715 103957130ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:36:08,715 103957130ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:36:08,715 103957130ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:36:08,715 103957130ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:36:08,730 103957146ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:36:38,746 103987162ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:36:39,340 103987755ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:36:39,340 103987755ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:36:39,340 103987755ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:36:39,340 103987755ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:36:39,340 103987755ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:37:09,371 104017787ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:37:09,730 104018146ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:37:09,730 104018146ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:37:09,730 104018146ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:37:09,730 104018146ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:37:09,730 104018146ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:37:39,761 104048177ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:37:40,136 104048552ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:37:40,136 104048552ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:37:40,136 104048552ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:37:40,136 104048552ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:37:40,136 104048552ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:38:10,168 104078583ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:38:10,761 104079177ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:38:10,761 104079177ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:38:10,761 104079177ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:38:10,761 104079177ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:38:10,761 104079177ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:38:40,793 104109208ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:38:41,386 104109802ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:38:41,386 104109802ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:38:41,386 104109802ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:38:41,386 104109802ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:38:41,386 104109802ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:39:11,430 104139845ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:39:12,067 104140482ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:39:12,068 104140483ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:39:12,069 104140484ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:39:12,069 104140484ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:39:12,073 104140488ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:39:42,105 104170521ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:39:42,683 104171099ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:39:42,683 104171099ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:39:42,699 104171115ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:39:42,699 104171115ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:39:42,699 104171115ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:40:12,714 104201130ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:40:13,293 104201708ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:40:13,293 104201708ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:40:13,293 104201708ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:40:13,308 104201724ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:40:13,308 104201724ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:40:43,340 104231755ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:40:43,933 104232349ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:40:43,933 104232349ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:40:43,933 104232349ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:40:43,933 104232349ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:40:43,933 104232349ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:41:13,949 104262365ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:41:14,230 104262646ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:41:14,230 104262646ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:41:14,230 104262646ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:41:14,230 104262646ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:41:14,230 104262646ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:41:44,261 104292677ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:41:44,855 104293271ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:41:44,855 104293271ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:41:44,855 104293271ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:41:44,855 104293271ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:41:44,855 104293271ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav
+INFO  2019-07-23 20:42:14,871 104323287ms RequestModule          <.ctor>b__0_7      - GET v1/requests/phonecall/fdtd/20190723/20190812
+INFO  2019-07-23 20:42:15,465 104323880ms AudioModuleV2          <.ctor>b__0_2      - POST v2/audio/binding
+INFO  2019-07-23 20:42:15,465 104323880ms AudioModuleV2          <.ctor>b__0_2      - parse item: {"date":"20190723","fn":"16-209-A-90919867198---20190723100924.wav","id":"16-209-A-90919867198---20190723100924.wav","type":"A","dno":"209","fp":"C:\\soft\\dbtool\\syncfiles\\2019\\7\\23\\16-209-A-90919867198---20190723100924.wav","fs":"100","time":"100924","sdt":"919867198","rid":"85606230719","lno":"16"}
+INFO  2019-07-23 20:42:15,465 104323880ms AudioModuleV2          <.ctor>b__0_2      - ymdhms: 20190723 100924
+INFO  2019-07-23 20:42:15,465 104323880ms AudioModuleV2          <.ctor>b__0_2      - record_time: 7/23/2019 10:09:24 AM
+INFO  2019-07-23 20:42:15,465 104323880ms AudioModuleV2          <.ctor>b__0_2      - upload audio info and bind to request [85606230719] success: C:\soft\dbtool\syncfiles\2019\7\23\16-209-A-90919867198---20190723100924.wav

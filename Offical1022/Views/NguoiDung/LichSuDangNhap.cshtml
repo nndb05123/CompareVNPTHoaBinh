@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Danh sách người dùng";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+@section breadcrumb  {
+    <li class="active">Danh sách người dùng</li>
+}
+<div id="MyApp" class="row">
+    <div class="col-md-12">
+        <div class="box box-success">
+            <div class="box-header with-border">
+                <h3 class="box-title">Danh sách chi tiết</h3>
+            </div>
+            <div class="box-body">
+                <table class="table table-bordered table-striped">
+                    <colgroup>
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="auto" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>Họ và tên</th>
+                            <th>Đơn vị</th>
+                            <th>Thời gian đăng nhập</th>
+                        </tr>
+                        <tr v-for="item in danhSachTruyCap">
+                            <td>{{ item.nguoidung_ten }}</td>
+                            <td>{{ item.donvi_ten }}</td>
+                            <td>{{ item.log_tgian | formatDate }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@section Foot {
+    <script>
+        var MyApp = new Vue({
+            el: '#MyApp',
+            data: {
+                danhSachTruyCap: [],
+            },
+            methods: {
+                GetDsLogNguoiDung: function () {
+                    $.post("@Url.Action("GetDsLogNguoiDung", "NguoiDung", new { area = "" })", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.danhSachTruyCap.push(v);
+                        });
+                    });
+                },
+            }
+        })
+        Vue.filter('formatDate', function (value) {
+            if (value) {
+                return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+            }
+        });
+        MyApp.GetDsLogNguoiDung();
+    </script>
+}

@@ -1,0 +1,229 @@
+﻿@{
+    ViewBag.Title = "Báo cáo số liệu tháng";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+@Html.Partial("DialogPleaseWait")
+<div id="App" class="row">
+    <div class="col-md-12" style="margin: 5px 0px">
+            @Html.Partial("FromDateToDate")
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary" v-on:click="App.thongke()">Thống kê</button>
+                <button class="btn btn-warning" v-on:click="App.xuatFileExcel()">Xuất file Excel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="report-result">
+        <ul class="nav nav-tabs ">
+            <li class="nav-item" v-for="sheet in sheets">
+                <a class="nav-link sheet-tab" href="#" v-bind:sheetid="sheet.id" v-on:click="App.showSheetByID(sheet.id)">{{sheet.title}}</a>
+            </li>
+        </ul>
+        <table id="report-table" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th v-for="col in sheets[activeSheetIndex].columns">{{col.title}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="row,index in curSheetRows">
+                    <td>{{index + 1}}</td>
+                    <td v-for="col in sheets[activeSheetIndex].columns">
+                        {{row[col.id]}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@section Foot {
+    <script src="@Url.Content("~/Content/js/main.js")"></script>
+    <script>
+
+    var reportDownloadCheckTimer;
+    var curReportDownloadToken;
+
+    function _startDownloadReport(actionURL, startDay, endDay, msg) {
+        showPleaseWaitDialog('Đang tải...', msg);
+        curReportDownloadToken = new Date().getTime();
+
+        window.location.href = actionURL + '?token=' + curReportDownloadToken
+            + '&tn=' + startDay.replace('/', '_').replace('/', '_')
+            + '&dn=' + endDay.replace('/', '_').replace('/', '_');
+
+        reportDownloadCheckTimer = window.setInterval(function () {
+            var cookieValue = $.cookie('reportDownloadToken');
+            if (cookieValue == curReportDownloadToken) {
+                window.clearInterval(reportDownloadCheckTimer);
+                $.removeCookie('fileDownloadToken');
+                closePleaseWaitDialog();
+            }
+        }, 1000);
+    }
+
+    var App = new Vue({
+        el: '#App',
+        data: {
+            startDayString: '@ViewBag.startDayString',
+            endDayString: '@ViewBag.endDayString',
+            activeSheetIndex: 0,
+            activeSheetID: 'hinhthuc',
+            curSheetRows: [],
+            sheets: [
+                {
+                    id: 'hinhthuc',
+                    title: 'Hình thức',
+                    columns: [
+                        { id: 'hinhthuc', title: 'Hình thức' },
+                        { id: 'n_total', title: 'Số lượng' },
+                        { id: 'tile', title: 'Phần trăm' }
+                    ]
+                },
+                {
+                    id: 'lyc',
+                    title: 'Loại Yêu Cầu',
+                    columns: [
+                        { id: 'lyc', title: 'Loại yêu cầu' },
+                        { id: 'n_total', title: 'Số lượng' },
+                        { id: 'tile', title: 'Phần trăm' },
+                        { id: 'n_solved', title: 'Đã GQ' },
+                        { id: 'p_solved', title: '% đã GQ' }
+                    ],
+                    rows: []
+                },
+                {
+                    id: 'tthc',
+                    title: 'Thủ tục H.Chính',
+                    columns: [
+                        { id: 'tthc', title: 'Phân loại' },
+                        { id: 'n_total', title: 'Số lượng' },
+                        { id: 'tile', title: 'Phần trăm' },
+                        { id: 'n_solved', title: 'Đã GQ' },
+                        { id: 'p_solved', title: '% đã GQ' }
+                    ],
+                    rows: []
+                },
+                {
+                    id: 'capdo',
+                    title: 'Cấp độ',
+                    columns: [
+                        { id: 'capdo', title: 'Cấp độ' },
+                        { id: 'n_total', title: 'Số lượng' },
+                        { id: 'tile', title: 'Phần trăm' },
+                        { id: 'n_solved', title: 'Đã GQ' },
+                        { id: 'p_solved', title: '% đã GQ' }
+                    ],
+                    rows: []
+                },
+                {
+                    id: 'donvi',
+                    title: 'Đơn vị',
+                    columns: [
+                        { id: 'donvi', title: 'Đơn vị' },
+                        { id: 'n_total', title: 'Số lượng' },
+                        { id: 'n_solved', title: 'Đã GQ' },
+                        { id: 'n_unsolved', title: 'Chưa GQ' },
+                        { id: 'p_solved', title: '% đã GQ' },
+                        { id: 'p_unsolved', title: '% chưa GQ' }
+                    ],
+                    rows: []
+                },
+                {
+                    id: 'linhvuc',
+                    title: 'Lĩnh vực',
+                    columns: [
+                        { id: 'linhvuc', title: 'Lĩnh vực' },
+                        { id: 'n_total', title: 'Số lượng' },
+                        { id: 'n_solved', title: 'Đã GQ' },
+                        { id: 'n_unsolved', title: 'Chưa GQ' },
+                        { id: 'p_solved', title: '% đã GQ' },
+                        { id: 'p_unsolved', title: '% chưa GQ' }
+                    ],
+                    rows: []
+                }
+            ]
+        },
+        methods: {
+            showSheetByID: function (sheetID) {
+                $('.sheet-tab').removeClass('active');
+                $(`.sheet-tab[sheetid='${sheetID}']`).addClass('active');
+                for (var i in this.sheets) {
+                    var sh = this.sheets[i];
+                    if (sh.id === sheetID) {
+                        this.activeSheetIndex = i;
+                        this.activeSheetID = sh.id;
+                        this.curSheetRows = this.sheets[i].rows;
+                        return;
+                    }
+                }
+            },
+            thongke: function () {
+                var postData = {
+                    dayFrom: App.startDayString,
+                    dayTo: App.endDayString
+                };
+
+                for (var i in App.sheets) {
+                    var sheet = App.sheets[i];
+                    sheet.rows = [];
+                }
+
+                showPleaseWaitDialog('Thống kê dữ liệu', 'Đang xử lý, xin chờ giây lát...');
+
+                App.showSheetByID(App.sheets[0].id);
+
+                $.post("@Url.Action("BCSLTTNDN", "ThongKe")", postData, function (result) {
+                    if (result !== null && typeof result !== 'undefined') {
+                        for (var i in App.sheets) {
+                            var sheet = App.sheets[i];
+                            sheet.rows = result[sheet.id];
+                        }
+                        App.showSheetByID(App.sheets[0].id);
+                        closePleaseWaitDialog();
+                    } else {
+                        closePleaseWaitDialog();
+                    }
+                })
+                    .fail(function () {
+                        closePleaseWaitDialog();
+                        showWarningNotification('Lỗi hệ thống: không lấy được thông tin thống kê!');
+                    });
+            },
+            xuatFileExcel: function () {
+                _startDownloadReport(
+                    '@Url.Action("XuatBCSL_TNDN", "ThongKe")',
+                    App.startDayString, App.endDayString,
+                    'Đang thống kê dữ liệu và tải file Excel, xin chờ giây lát...');
+                //var csvsheets = {};
+                //for (var i in App.sheets) {
+                //    App.showSheetByID(i);
+                //    var csv_datauri = exportTable_CSVDataURI($('#report-table'));
+                //    csvsheets[App.activeSheetID] = csv_datauri;
+                //}
+                //var uri = 'data:application/vnd.ms-excel;base64,'
+                //    , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+                //    , base64 = function (s) { return window.btoa(unescape(encodeURIComponent(s))) }
+                //    , format = function (s, c) { return s.replace(/{(\w+)}/g, function (m, p) { return c[p]; }) }
+
+                //var table = document.getElementById('report-table');
+                //var ctx = { worksheet: 'baocao' || 'Worksheet', table: table.innerHTML };
+                //window.location.href = uri + base64(format(template, ctx));
+            }
+        }
+        });
+
+        $(document).ready(function () {
+            $("#startDayString").datepicker().on('change.dp', () => {
+                App.startDayString = $("#startDayString").val();
+            });
+            $("#endDayString").datepicker().on('change.dp', () => {
+                App.endDayString = $("#endDayString").val();
+            });
+        });
+    </script>
+}

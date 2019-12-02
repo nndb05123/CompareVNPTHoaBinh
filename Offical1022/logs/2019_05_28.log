@@ -1,0 +1,284 @@
+INFO  2019-05-28 08:03:41,059 1495752ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 08:03:55,497 1510190ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 08:03:55,685 1510378ms DangNhapController     Index              - user not exist: admin pass 89BF4623AF7287EDECDC7AB2B126A10F
+INFO  2019-05-28 08:03:58,482 1513175ms DangNhapController     Index              - do login...
+INFO  2019-05-28 08:03:59,138 1513831ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 08:05:13,704 1588397ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 08:13:34,553 2089246ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 08:13:49,444 2104137ms DangNhapController     Index              - do login...
+INFO  2019-05-28 08:13:49,475 2104168ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 08:29:52,097 149881ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 08:29:59,676 157460ms DangNhapController     Index              - do login...
+INFO  2019-05-28 08:30:00,754 158538ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 08:30:20,880 178664ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 08:30:30,084 187868ms DangNhapController     Index              - do login...
+INFO  2019-05-28 08:30:30,115 187899ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 08:31:46,650 264433ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 08:31:57,041 274825ms DangNhapController     Index              - do login...
+INFO  2019-05-28 08:31:57,088 274872ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 08:42:17,131 319488ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 08:42:21,459 323816ms DangNhapController     Index              - do login...
+INFO  2019-05-28 08:42:22,334 324691ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 09:07:02,362 1804719ms ServiceCenter          send_sms_citizen   - yeucau_id 08FB1280519 sdt 0919254565
+ERROR 2019-05-28 09:07:06,831 1809188ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-28 09:20:51,265 495933ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 09:20:59,171 503840ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 09:20:59,359 504027ms DangNhapController     Index              - user not exist: dtv01 pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 09:21:04,390 509059ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 09:21:04,390 509059ms DangNhapController     Index              - user not exist: dtv01 pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 09:21:24,376   593ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 09:21:27,485  3703ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 09:21:29,282  5500ms DangNhapController     Index              - user not exist: daoad.hbh pass 2072BFF7E6E09AB9B153C55D6DDE782B
+INFO  2019-05-28 09:21:29,485  5703ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 09:21:33,689  9906ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 09:21:33,704  9922ms DangNhapController     Index              - user not exist: daoad.hbh pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 09:21:39,595 15813ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 09:21:39,595 15813ms DangNhapController     Index              - user not exist: dtv01 pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 09:21:40,830 17047ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 09:21:47,002 23219ms DangNhapController     Index              - do login...
+INFO  2019-05-28 09:21:48,158 24376ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 09:21:49,815 26032ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 09:21:49,815 26032ms DangNhapController     Index              - user not exist: daoad.hbh pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 09:21:59,143 35361ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 09:22:00,924 37142ms DangNhapController     Index              - do login...
+INFO  2019-05-28 09:22:00,987 37204ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 09:22:11,112 47330ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 09:22:11,128 47346ms DangNhapController     Index              - user not exist: dtv01 pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 09:22:16,860 53078ms DangNhapController     Index              - do login...
+INFO  2019-05-28 09:22:16,920 53138ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 09:25:07,879 91740ms ServiceCenter          send_sms_citizen   - yeucau_id 75359280519 sdt 0918909966
+ERROR 2019-05-28 09:25:08,473 92334ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-28 09:50:32,940 1399429ms ServiceCenter          send_sms_citizen   - yeucau_id ECA1A280519 sdt 0918909966
+ERROR 2019-05-28 09:50:33,721 1400210ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-28 10:09:25,015 2531505ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 44
+INFO  2019-05-28 10:09:25,109 2531598ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:15:26,219 2892708ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 44
+INFO  2019-05-28 10:15:26,219 2892708ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:15:32,875 2899365ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 44
+INFO  2019-05-28 10:15:32,875 2899365ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:15:36,422 2902912ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 44
+INFO  2019-05-28 10:15:36,422 2902912ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:15:44,704 2911193ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 44
+INFO  2019-05-28 10:15:44,704 2911193ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:21:12,723 3239212ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 10:21:18,348 3244838ms DangNhapController     Index              - do login...
+INFO  2019-05-28 10:21:18,426 3244916ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 10:22:34,523 3321013ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 10:24:56,780 3463269ms ServiceCenter          send_sms_citizen   - yeucau_id 86156280519 sdt 0919254565
+ERROR 2019-05-28 10:25:00,811 3467301ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-28 10:27:18,974 3605463ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 10:27:18,974 3605463ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:29:22,068  7000ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 10:29:22,240  7172ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:29:35,022 19954ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 10:29:35,022 19954ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:57:29,436 58657ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 10:57:29,671 58892ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 10:57:39,499 68720ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 10:57:39,499 68720ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 11:11:21,114 101501ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 11:11:21,317 101704ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 11:13:40,339 29001ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 11:13:40,573 29235ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 11:28:32,606 921268ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 11:28:32,606 921268ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 11:44:40,415 257808ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 11:44:40,665 258058ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 11:44:48,665 266058ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 11:44:48,665 266058ms PlayAudioController    GetAudioURL        - return audio download: /Content/dl//notfound
+INFO  2019-05-28 12:31:17,727 185462ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 12:31:17,977 185712ms PlayAudioController    GetAudioURL        - origin virtual path: audiosrc\2019\5\28\14-105-b-0919254565---20190527145957.wav
+ERROR 2019-05-28 12:31:17,977 185712ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'audiosrc\2019\5\28\14-105-b-0919254565---20190527145957.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id) in E:\prjs\HCC_HB\WebUI\Controllers\PlayAudioController.cs:line 128
+INFO  2019-05-28 13:09:19,861 2467596ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 13:09:19,861 2467596ms PlayAudioController    GetAudioURL        - origin virtual path: audiosrc\2019\5\28\14-105-b-0919254565---20190527145957.wav
+ERROR 2019-05-28 13:09:19,876 2467612ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'audiosrc\2019\5\28\14-105-b-0919254565---20190527145957.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id) in E:\prjs\HCC_HB\WebUI\Controllers\PlayAudioController.cs:line 128
+INFO  2019-05-28 13:09:29,471 2477206ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 13:09:29,471 2477206ms PlayAudioController    GetAudioURL        - origin virtual path: audiosrc\2019\5\28\14-105-b-0919254565---20190527145957.wav
+ERROR 2019-05-28 13:09:29,471 2477206ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'audiosrc\2019\5\28\14-105-b-0919254565---20190527145957.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id) in E:\prjs\HCC_HB\WebUI\Controllers\PlayAudioController.cs:line 128
+INFO  2019-05-28 13:43:17,109 20797ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 13:43:17,343 21032ms PlayAudioController    GetAudioURL        - tmp download url: /dl/97.wav
+INFO  2019-05-28 13:43:17,343 21032ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+INFO  2019-05-28 13:45:36,761 160449ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 13:45:36,776 160465ms PlayAudioController    GetAudioURL        - tmp download url: /dl/97.wav
+INFO  2019-05-28 13:45:36,776 160465ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+INFO  2019-05-28 13:45:49,824 173512ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 97
+INFO  2019-05-28 13:45:49,824 173512ms PlayAudioController    GetAudioURL        - tmp download url: /dl/97.wav
+INFO  2019-05-28 13:45:49,824 173512ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+INFO  2019-05-28 13:54:48,041 44001ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 493
+INFO  2019-05-28 13:54:48,275 44236ms PlayAudioController    GetAudioURL        - tmp download url: /dl/493.wav
+INFO  2019-05-28 13:54:48,291 44251ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+ERROR 2019-05-28 13:54:48,291 44251ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path '/dl/493.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-28 13:58:22,265 18860ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 500
+INFO  2019-05-28 13:58:22,452 19047ms PlayAudioController    GetAudioURL        - tmp download url: /dl/500.wav
+INFO  2019-05-28 13:58:22,452 19047ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+INFO  2019-05-28 13:58:22,452 19047ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav to /dl/500.wav
+ERROR 2019-05-28 13:58:22,452 19047ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path '/dl/500.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-28 14:13:43,797 74690ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 530
+INFO  2019-05-28 14:13:43,984 74878ms PlayAudioController    GetAudioURL        - tmp download url: /dl/530.wav
+INFO  2019-05-28 14:13:43,984 74878ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+INFO  2019-05-28 14:13:44,000 74894ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav to c:\tmp\1022staticfiles\530.wav
+INFO  2019-05-28 15:21:26,812 4137705ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 664
+INFO  2019-05-28 15:21:26,812 4137705ms PlayAudioController    GetAudioURL        - tmp download url: /dl/664.wav
+INFO  2019-05-28 15:21:26,812 4137705ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+INFO  2019-05-28 15:21:26,812 4137705ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav to c:\tmp\1022staticfiles\664.wav
+INFO  2019-05-28 15:27:44,344 4515238ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 15:27:53,032 4523926ms DangNhapController     Index              - do login...
+INFO  2019-05-28 15:27:53,876 4524770ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 15:28:27,503 4558396ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 15:53:11,007 6041901ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 16:00:16,442 6467335ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 16:00:16,457 6467351ms DangNhapController     Index              - user not exist: dtv01 pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 16:00:39,224 6490117ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 16:00:39,224 6490117ms DangNhapController     Index              - user not exist: dtv01.hcc pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 16:00:57,100 6507993ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 16:00:57,100 6507993ms DangNhapController     Index              - user not exist: dtv02.hcc pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 16:01:07,491 6518384ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 16:01:39,055 6549948ms DangNhapController     Index              - do login...
+DEBUG 2019-05-28 16:01:39,055 6549948ms DangNhapController     Index              - user not exist: dtv01 pass 81E76E36F2A7D3AFA893BD2372FDBB9E
+INFO  2019-05-28 16:18:15,591 7546485ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 16:18:25,076 7555970ms DangNhapController     Index              - do login...
+INFO  2019-05-28 16:18:25,482 7556376ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 16:23:59,792 7890686ms DangNhapController     Index              - do login...
+INFO  2019-05-28 16:23:59,839 7890733ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 16:24:03,120 7894014ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-28 16:24:21,059 7911952ms DangNhapController     Index              - do login...
+INFO  2019-05-28 16:24:21,121 7912015ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-28 17:02:27,417 10198311ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 07:43:06,359 63037253ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 07:43:08,375 63039268ms DangNhapController     Index              - do login...
+INFO  2019-05-29 07:43:08,531 63039425ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 07:50:30,412 63481305ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 07:50:34,162 63485056ms DangNhapController     Index              - do login...
+INFO  2019-05-29 07:50:34,209 63485103ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 08:28:39,109 65770003ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 08:28:46,375 65777269ms DangNhapController     Index              - do login...
+INFO  2019-05-29 08:28:46,453 65777347ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 08:29:29,502 65820396ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 08:29:33,971 65824865ms DangNhapController     Index              - do login...
+INFO  2019-05-29 08:29:33,971 65824865ms DangNhapController     Index              - Form Model State is Invalid
+INFO  2019-05-29 09:36:58,530 69869424ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 09:37:06,296 69877190ms DangNhapController     Index              - do login...
+INFO  2019-05-29 09:37:06,328 69877221ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 09:37:46,783 69917676ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 09:59:18,925 71209818ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 09:59:20,628 71211522ms DangNhapController     Index              - do login...
+INFO  2019-05-29 09:59:20,659 71211553ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 09:59:27,738 71218631ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1691
+INFO  2019-05-29 09:59:27,738 71218631ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1691.wav
+INFO  2019-05-29 09:59:27,738 71218631ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+INFO  2019-05-29 09:59:27,738 71218631ms PlayAudioController    GetAudioURL        - copy  from C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav to c:\tmp\1022staticfiles\1691.wav
+INFO  2019-05-29 10:07:22,078 71692971ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 10:07:27,844 71698737ms DangNhapController     Index              - do login...
+INFO  2019-05-29 10:07:27,890 71698784ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 10:07:42,125 71713019ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 10:20:12,202 72463095ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 10:43:36,013 73866907ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 10:43:44,388 73875282ms DangNhapController     Index              - do login...
+INFO  2019-05-29 10:43:44,466 73875360ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 10:45:14,642 73965536ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1691
+INFO  2019-05-29 10:45:14,642 73965536ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1691.wav
+INFO  2019-05-29 10:45:14,642 73965536ms PlayAudioController    GetAudioURL        - origin virtual path: C:\soft\dbtool\syncfiles\2019\5\28\14-105-B-0919254565---20190527145957.wav
+INFO  2019-05-29 10:46:27,021 74037914ms ServiceCenter          send_sms_citizen   - yeucau_id 6EC4D290519 sdt 0918909966
+ERROR 2019-05-29 10:46:31,568 74042461ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 10:51:19,190 74330083ms ServiceCenter          send_sms_citizen   - yeucau_id 81BA2290519 sdt 0918909966
+ERROR 2019-05-29 10:51:19,690 74330583ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 10:53:31,539 74462432ms ServiceCenter          send_sms_citizen   - yeucau_id B9B89290519 sdt 0918909966
+ERROR 2019-05-29 10:53:31,992 74462886ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 10:56:28,172 74639065ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 10:56:35,609 74646503ms DangNhapController     Index              - do login...
+INFO  2019-05-29 10:56:35,656 74646550ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 10:57:36,097 74706990ms ServiceCenter          send_sms_citizen   - yeucau_id 659B5290519 sdt 0918909966
+ERROR 2019-05-29 10:57:36,534 74707428ms ServiceCenter          send_sms_citizen   -   error ok
+INFO  2019-05-29 11:09:52,473 75443367ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 11:10:01,177 75452070ms DangNhapController     Index              - do login...
+INFO  2019-05-29 11:10:01,208 75452102ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 11:10:12,115 75463008ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-29 11:10:22,615 75473509ms DangNhapController     Index              - do login...
+INFO  2019-05-29 11:10:23,678 75474571ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-29 11:54:09,649 78100543ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1957
+INFO  2019-05-29 11:54:09,664 78100558ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1957.wav
+INFO  2019-05-29 11:54:09,664 78100558ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 11:54:09,664 78100558ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\1957.wav
+ERROR 2019-05-29 11:54:09,664 78100558ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:54:13,930 78104824ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1956
+INFO  2019-05-29 11:54:13,946 78104839ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1956.wav
+INFO  2019-05-29 11:54:13,946 78104839ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 11:54:13,946 78104839ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\1956.wav
+ERROR 2019-05-29 11:54:13,946 78104839ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:54:15,024 78105918ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1955
+INFO  2019-05-29 11:54:15,040 78105933ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1955.wav
+INFO  2019-05-29 11:54:15,040 78105933ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 11:54:15,040 78105933ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\1955.wav
+ERROR 2019-05-29 11:54:15,040 78105933ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:54:22,728 78113621ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1957
+INFO  2019-05-29 11:54:22,728 78113621ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1957.wav
+INFO  2019-05-29 11:54:22,728 78113621ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 11:54:22,728 78113621ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\1957.wav
+ERROR 2019-05-29 11:54:22,728 78113621ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:54:36,353 78127247ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1956
+INFO  2019-05-29 11:54:36,353 78127247ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1956.wav
+INFO  2019-05-29 11:54:36,353 78127247ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 11:54:36,353 78127247ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\1956.wav
+ERROR 2019-05-29 11:54:36,353 78127247ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:54:36,838 78127731ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1955
+INFO  2019-05-29 11:54:36,838 78127731ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1955.wav
+INFO  2019-05-29 11:54:36,838 78127731ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 11:54:36,838 78127731ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\1955.wav
+ERROR 2019-05-29 11:54:36,838 78127731ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:55:41,685 78192578ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1957
+INFO  2019-05-29 11:55:41,685 78192578ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1957.wav
+INFO  2019-05-29 11:55:41,700 78192594ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav
+INFO  2019-05-29 11:55:41,700 78192594ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav to c:\tmp\1022staticfiles\1957.wav
+ERROR 2019-05-29 11:55:41,700 78192594ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529105725.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:55:42,169 78193062ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1956
+INFO  2019-05-29 11:55:42,184 78193078ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1956.wav
+INFO  2019-05-29 11:55:42,184 78193078ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav
+INFO  2019-05-29 11:55:42,184 78193078ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav to c:\tmp\1022staticfiles\1956.wav
+ERROR 2019-05-29 11:55:42,184 78193078ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529104814.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)
+INFO  2019-05-29 11:55:42,606 78193500ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 1955
+INFO  2019-05-29 11:55:42,622 78193516ms PlayAudioController    GetAudioURL        - tmp download url: /dl/1955.wav
+INFO  2019-05-29 11:55:42,622 78193516ms PlayAudioController    GetAudioURL        - origin virtual path: syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav
+INFO  2019-05-29 11:55:42,622 78193516ms PlayAudioController    GetAudioURL        - copy  from syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav to c:\tmp\1022staticfiles\1955.wav
+ERROR 2019-05-29 11:55:42,622 78193516ms PlayAudioController    GetAudioURL        - System.IO.DirectoryNotFoundException: Could not find a part of the path 'syncfiles\2019\5\29\16-209-A-90918909966---20190529104416.wav'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at WebUI.Controllers.PlayAudioController.GetAudioURL(Int32 audio_id)

@@ -1,0 +1,60 @@
+﻿<div id="dlg-detail" class="modal dlg-wnd" role="dialog" data-backdrop="static" data-keyboard="false" style="display:none">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header wnd-title-bar">
+                @*<span>MÃ PHIẾU PHẢN ÁNH: <span class="mono f20">{{ detail.ycid }}</span></span>*@
+                <span><span class="mono f20">[{{ detail.ycid }}]</span> Lĩnh vực: {{ detail.linhvuc }}</span>
+            </div>
+            <div class="modal-body">
+                <div style="display:block;padding10px;">
+                    <div class="pa-detail">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="detail-content-tab" data-toggle="tab" href="#detail-content" role="tab" aria-controls="detail-content" aria-selected="true">Nội dung</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="detail-answer-tab" data-toggle="tab" href="#detail-answer" role="tab" aria-controls="detail-answer" aria-selected="false">Trả lời</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="detail-tabs">
+                            <div class="tab-pane fade show active pa-content" id="detail-content" role="tabpanel" aria-labelledby="detail-content-tab">
+                                <div class="multiline-textbox" style="font-size:14pt;" v-html="renderMultilineText(detail.content)">
+                                </div>
+                                <div class="float-right">Ngày phản ánh: {{detail.sendtime | formatDate}} </div>
+                            </div>
+                            <div class="tab-pane fade" id="detail-answer" role="tabpanel" aria-labelledby="detail-answer-tab">
+                                <div v-if="detail.status_code == 1">
+                                    <div class="section-title">Đang xử lý bởi: {{ detail.donvi }}</div>
+                                </div>
+
+                                <div v-if="detail.status_code == 3">
+                                    <div class="section-title">{{ detail.donvi }} đang phối hợp với sở/ban/ngành khác để xử lý</div>
+                                </div>
+
+                                <div v-if="detail.status_code == 99">
+                                    <div v-if="portalController.coKQTL(detail)">
+                                        <div class="section-title">Trả lời từ: {{ detail.donvi }}</div>
+                                        <div class="pa-answer">
+                                            <div class="multiline-textbox"  style="font-size:14pt;" v-html="renderMultilineText(detail.kqtl)"></div>
+                                        </div>
+                                        <div class="d-inline-block text-right float-right">Ngày trả lời: {{detail.kqtl_tgian | formatDate}}</div>
+                                    </div>
+                                    <div v-if="portalController.coKQTL(detail) == false">
+                                        <div class="section-title">Đang xử lý bởi: {{ detail.donvi }}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary pull-right" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

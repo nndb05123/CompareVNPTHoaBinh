@@ -1,0 +1,41 @@
+﻿<!-- DANH SACH KET QUA -->
+<div id="dspa-container panel panel-primary">
+    <div class="panel-heading status_header" style="padding:10px">
+        <div style="font-size:12pt;margin-top: 10px;font-weight:bold">KẾT QUẢ HỖ TRỢ, TƯ VẤN, GIẢI ĐÁP PHẢN ÁNH & KIẾN NGHỊ</div>
+    </div>
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-justified" id="dspa-tabs" role="tablist">
+            <li class="nav-item" v-for="(section,index) in sections">
+                <a class="nav-link" :id="'tabbtn-' + section.id" data-toggle="tab" :href="'#tabcontent-' + section.id" role="tab"
+                   :aria-controls="'tabcontent-' + section.id" aria-selected="true" v-on:click="dspa_switchTab(section, index)">{{ section.ten }}</a>
+            </li>
+        </ul>
+        <div class="dspa-list row" v-if="curSection != null" style="min-height:280px;background-color:#eee;margin:0">
+            <div v-for="pa in curSection.requests" class="pa-card" v-on:click="showDetail(pa)">
+                <div class="pa-title">{{ pa.linhvuc }}</div>
+                <div class="pa-content">
+                    {{ clampText(pa.content, 100) }}
+                </div>
+                <div class="text-right">{{ pa.sendtime | formatDate }}</div>
+                <div class="pa-status-desc">
+                    <div v-if="pa.status_code == 1">
+                        <span>Đang xử lý bởi: <b>{{ pa.donvi }}</b></span>
+                    </div>
+
+                    <div v-if="pa.status_code == 3">
+                        <span><b>{{ pa.donvi }}</b> Đang phối hợp với sở/ban/ngành khác để xử lý</span>
+                    </div>
+
+                    <div v-if="pa.status_code == 99">
+                        <span>Đã xử lý bởi: <b>{{ pa.donvi }}</b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="imgone dspa-loading-img" src="~/Content/Images/loading_icon.gif" />
+        <br />
+        <button class="btn btn-success" v-on:click="loadMoreCurrentSection()">Xem thêm</button>
+    </div>
+</div>
+<!-- DANH SACH KET QUA -->

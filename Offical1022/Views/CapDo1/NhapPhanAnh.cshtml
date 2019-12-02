@@ -1,0 +1,663 @@
+﻿@using HotlineCore
+@using WebUI
+
+@{
+    ViewBag.Title = "Nhập phản ánh của người dân";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+@section breadcrumb  {
+    <li class="active">Nhập phản ánh</li>
+}
+
+<style>
+    .panel-body label {
+        font-size: 8pt;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .stat-cell.scfield {
+        display: table;
+        padding: 0;
+    }
+    .stat-cell.scfield .scvalue {
+        display: table-cell;
+        text-align: center;
+        color: red;
+        font-size: 1em;
+        padding: 5px 10px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border: 1px solid #888;
+        margin: 0!important;
+        background-color: #fff;
+    }
+        .stat-cell.scfield .sctitle {
+            min-width: 80px;
+            font-size: 1em;
+            margin: 0 !important;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            display: table-cell;
+            padding: 5px 10px;
+            text-align: center;
+            color: #fff;
+            background-color: #222;
+        }
+
+    .ipcc_title {
+        vertical-align: middle;
+        font-size: 1em;
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+</style>
+
+@Html.Partial("DialogPleaseWait")
+
+@if (ViewBag.canAccessMenu_TiepNhan == 1)
+{
+    <div id="App" class="row">
+        <div class="col-md-12">
+            <div id="ipcc" class="row" style="margin-bottom: 10px">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            Line tiếp nhận
+                        </div>
+                        <select v-model="ipcc_lineno" name="ipcc_lineno" class="form-control">
+                            <option v-for="lineno in dsLineTiepNhan" v-bind:value="lineno">{{ getLineName(lineno) }}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            Số Máy
+                        </div>
+                        <select v-model="ipcc_deviceid" name="ipcc_deviceid" class="form-control">
+                            <option v-for="device in lineDevices[ipcc_lineno]" v-bind:value="device.id">[{{device.id}}] {{ device.name }}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+                <div class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Thông tin người dân</div>
+                        <div class="panel-body">
+                            <form id="form-ttng" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="nguoigoi_sdt" class="control-label col-sm-1" style="color:red">Số ĐT (*)</label>
+                                    <div class="col-sm-5">
+                                        <div class="input-group">
+                                            <div v-on:click="traCuuTheoSdt" class="input-group-addon" title="Click để tự động điền thông tin người dân theo SĐT">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                            <input v-on:keyup.13="traCuuTheoSdt" id="nguoigoi_sdt" type="text" v-model="nguoigoi_sdt" name="nguoigoi_sdt" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <label for="nguoigoi_email" class="control-label col-sm-2">Email</label>
+                                    <div class="col-sm-4">
+                                        <input id="nguoigoi_email" type="text" v-model="nguoigoi_email" name="nguoigoi_email" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nguoigoi_hoten" class="control-label col-sm-1">Họ tên</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" v-model="nguoigoi_hoten" id="nguoigoi_hoten" name="nguoigoi_hoten" class="form-control" />
+                                    </div>
+                                    <label for="nguoigoi_cmnd" class="control-label col-sm-2">CMND</label>
+                                    <div class="col-sm-4">
+                                        <input id="nguoigoi_cmnd" type="text" v-model="nguoigoi_cmnd" name="nguoigoi_cmnd" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-1">Địa chỉ</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" v-model="nguoigoi_diachi" class="form-control" placeholder="số nhà, tên đường, khu phố" />
+                                    </div>
+                                    <label class="control-label col-sm-2">Đ/tượng</label>
+                                    <div class="col-sm-4">
+                                        <select v-model="doituong_id" name="doituong_id" class="form-control">
+                                            <option v-for="item in dsDoiTuong" v-bind:value="item.doituong_id">{{ item.doituong_ten }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-1">Huyện/Tp</label>
+                                    <div class="col-sm-5">
+                                        <select v-model="nguoigoi_huyen_id" name="nguoigoi_huyen_id" class="form-control" style="width: 100%">
+                                            <option v-for="item in dsHuyen" v-bind:value="item.huyen_id">{{ item.huyen_ten }}</option>
+                                        </select>
+                                    </div>
+                                    <label class="control-label col-sm-2">Phường</label>
+                                    <div class="col-sm-4">
+                                        <select v-model="nguoigoi_phuong_id" name="nguoigoi_phuong_id" class="form-control">
+                                            <option v-for="item in dsPhuong" v-bind:value="item.phuong_id">{{ item.phuong_ten }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!---->
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Thông tin phản ánh</div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label-static col-sm-12" style="color:red;padding-left:10px">Nội dung (*)</label>
+                                    <div class="col-sm-12">
+                                        <textarea v-model="yeucau_noidung" class="form-control " rows="5" spellcheck="false"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <label class="control-label col-sm-1" style="color:red">Đơn vị (*)</label>
+                                        <div class="col-sm-5">
+                                            <select id="donvi_id" v-model="donvi_id" name="donvi_id" class="form-control select2" style="width: 100%">
+                                                <option v-for="item in dsDonVi" v-bind:value="item.donvi_id">{{ item.donvi_ten }}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <label class="control-label col-sm-2" style="color:red">Lĩnh vực (*)</label>
+                                    <div class="col-sm-4">
+                                        <select v-model="linhvuc_id" id="linhvuc_id" name="linhvuc_id" class="form-control select2" style="width: 100%">
+                                            <option v-for="item in dsLinhVuc" v-bind:value="item.linhvuc_id">{{ item.linhvuc_ten }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-1" style="color:red">Kênh (*)</label>
+                                    <div class="col-sm-5">
+                                        <select v-model="hinhthuc_id" name="hinhthuc_id" class="form-control">
+                                            <option v-for="item in dsHinhThuc" v-bind:value="item.hinhthuc_id">{{ item.hinhthuc_ten }}</option>
+                                        </select>
+                                    </div>
+                                    <label class="control-label col-sm-2" style="color:red">Loại Y/C (*)</label>
+                                    <div class="col-sm-4">
+                                        <select v-model="loaiyc_id" name="loaiyc_id" class="form-control">
+                                            <option v-for="item in dsLoaiYc" v-bind:value="item.loaiyc_id">{{ item.loaiyc_ten }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                @*<div v-if="need2pick_ipcc_info" class="form-group">
+            <label class="control-label col-sm-1" style="color:red">Line</label>
+            <div class="col-sm-5">
+                <select v-model="ipcc_lineno" name="ipcc_lineno" class="form-control">
+                    <option v-for="lineno in dsLineno" v-bind:value="lineno">{{ lineno }}</option>
+                </select>
+            </div>
+            <label class="control-label col-sm-1" style="color:red">Số máy</label>
+            <div class="col-sm-5">
+                <select v-model="ipcc_deviceid" name="ipcc_deviceid" class="form-control">
+                    <option v-for="dID in lineDevices[ipcc_lineno]" v-bind:value="dID">{{ dID }}</option>
+                </select>
+            </div>
+        </div>*@
+
+                                <div class="form-group">
+                                    @if (FeatureManager.EnableModule_BanHanhDongDoanhNghiep)
+                                    {
+                                        <div class="ipf col-sm-3" v-on:click="toggleTTHC()">
+                                            <div class="ipf-cbox" title="Liên quan đến Thủ tục hành chính" ipf-label="Thủ tục HC">
+                                                <input type="checkbox" value="None" v-model="ThuTucHanhChinh" />
+                                                <label for="ipf-cbox"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="ipf col-sm-3" v-on:click="toggleBHD_DN()">
+                                            <div class="ipf-cbox" title="Liên quan đến Ban hành động Doanh Nghiệp" ipf-label="Ban hành động DN">
+                                                <input type="checkbox" value="None" v-model="BanHanhDongDN" />
+                                                <label for="ipf-cbox"></label>
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="ipf col-sm-3" v-on:click="toggleTTHC()">
+                                            <div class="ipf-cbox" title="Đánh dấu chọn nếu liên quan đến Thủ tục hành chính" ipf-label="Thủ tục hành chính">
+                                                <input type="checkbox" value="None" v-model="ThuTucHanhChinh" />
+                                                <label for="ipf-cbox"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="ipf col-sm-3">
+                                            <div class="ipf-cbox" v-on:click="chuyenLine = !chuyenLine" title="Chuyển cuộc gọi của người dân đến trực tiếp máy của chuyên viên" ipf-label="Chuyển cuộc gọi">
+                                                <input type="checkbox" value="None" v-model="chuyenLine" />
+                                                <label for="ipf-cbox"></label>
+                                            </div>
+                                        </div>
+                                    }
+
+
+                                    @*<label class="control-label col-sm-1">Thủ tục HC</label>
+            <div class="col-sm-2">
+                <input type="checkbox" v-model="ThuTucHanhChinh">
+            </div>*@
+
+
+                                    @*<label class="control-label col-sm-1">Ban hành động DN</label>
+            <div class="col-sm-2">
+                <input type="checkbox" v-model="BanHanhDongDN">
+            </div>*@
+
+                                    <label class="control-label col-sm-2" style="color:red">Cấp 1 xử lý (*)</label>
+                                    <div class="col-sm-4">
+                                        <select v-model="trangthai_id" class="form-control">
+                                            <option value="1">Chuyển cấp 2</option>
+                                            <option value="99">Đã xử lý</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" v-if="chuyenLine">
+                                    <div id="ipcc_to" class="row" style="margin-bottom: 10px">
+                                        <div class="col-xs-12 col-sm-5 col-md-5">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    Chuyển đến Line
+                                                </div>
+                                                <select v-model="to_ipcc_lineno" name="to_ipcc_lineno" class="form-control">
+                                                    <option v-for="lineno in dsLineno" v-bind:value="lineno">
+                                                        {{ getLineName(lineno) }}
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-7 col-md-7">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    Số Máy
+                                                </div>
+                                                <select v-model="to_ipcc_deviceid" name="to_ipcc_deviceid" class="form-control">
+                                                    <option v-for="device in lineDevices[to_ipcc_lineno]" v-bind:value="device.id">[{{device.id}}] {{ device.name }}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label-static col-sm-12 text-danger" style="color:red;padding-left:10px">Nội dung cấp 1 xử lý (*)</label>
+                                    <div class="col-sm-12">
+                                        <textarea v-model="noidung_c1_xuly" class="form-control" rows="5" spellcheck="false"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-12" v-if="loi">
+            <div class="alert alert-danger">
+                <i class="icon fa fa-info"></i> {{ thongbao }}
+            </div>
+        </div>
+        <div class="col-md-12" v-if="thanhcong">
+            <div class="alert alert-success">
+                <i class="icon fa fa-check"></i> {{ thongbao }}
+            </div>
+        </div>
+        <div class="col-md-12">
+            <button type="reset" class="btn btn-default pull-left" v-on:click="reset"><b>Phản ánh mới</b></button>
+            <button type="button" class="btn btn-primary pull-right" v-on:click="capnhat"><b>Cập nhật</b></button>
+        </div>
+    </div>
+
+    @section Foot {
+        <script>
+            var url_DoiTuong_getListWithSelectChoice = "@Url.Action("getListWithSelectChoice", "DoiTuong")";
+            var url_LinhVuc_getListByDonViWithSelectChoice = "@Url.Action("getListByDonViWithSelectChoice", "LinhVuc")";
+            var url_HinhThuc_getListWithSelectChoice = "@Url.Action("getListWithSelectChoice", "HinhThuc")";
+            var url_LoaiYc_getListWithSelectChoice = "@Url.Action("getListWithSelectChoice", "LoaiYc")";
+            var url_KhuVuc_getListOfHuyenWithSelectChoice = "@Url.Action("getListOfHuyenWithSelectChoice", "KhuVuc")";
+            var url_KhuVuc_getListOfPhuongByHuyenWithSelectChoice = "@Url.Action("getListOfPhuongByHuyenWithSelectChoice", "KhuVuc")";
+            var url_DonVi_getListWithSelectChoice = "@Url.Action("getListWithSelectChoice", "DonVi")";
+            var url_NguoiDan_searchByPhone = "@Url.Action("searchByPhone", "NguoiDan")";
+
+            var App = new Vue({
+                el: '#App',
+                data: {
+                    chuyenLine: false,
+                    dsLineTiepNhan: JSON.parse('@Html.Raw(@ViewBag.dsLineTiepNhan)'),
+                    lineDevices: JSON.parse('@Html.Raw(@ViewBag.lineDevices)'),
+                    dsLineno: JSON.parse('@Html.Raw(@ViewBag.dsLineno)'),
+                    ipcc_lineno: -1,
+                    ipcc_deviceid: null,
+                    to_ipcc_lineno: -1,
+                    to_ipcc_deviceid: null,
+                    dsHuyen: [],
+                    dsPhuong: [],
+                    dsDoiTuong: [],
+                    dsLinhVuc: [],
+                    dsHinhThuc: [],
+                    dsLoaiYc: [],
+                    dsDonVi: [],
+                    yeucau_noidung: '@Html.Raw(ViewBag.content)'.replaceAll("__LINE_BREAK__", '\n'),
+                    nguoigoi_hoten: '@Html.Raw(ViewBag.name)',
+                    nguoigoi_sdt: '@Html.Raw(ViewBag.phoneNumber)',
+                    nguoigoi_cmnd: '@Html.Raw(ViewBag.nguoigoi_cmnd)',
+                    nguoigoi_email: '@Html.Raw(ViewBag.email)',
+                    nguoigoi_nickname: '',
+                    nguoigoi_diachi: '@Html.Raw(ViewBag.address)'.replaceAll("__LINE_BREAK__", '\n'),
+                    nguoigoi_huyen_id: 0,
+                    nguoigoi_phuong_id: 0,
+                    mangxh_id: '',
+                    loaiyc_id: 0,
+                    doituong_id: 1,
+                    linhvuc_id: 0,
+                    donvi_id: 0,
+                    ThuTucHanhChinh: true,
+                    BanHanhDongDN: false,
+                    hinhthuc_id: @Html.Raw(ViewBag.webId) > 0 ? 5 : 0,
+                    trangthai_id: @Html.Raw((int)TRANG_THAI_YEU_CAU.DA_XU_LY),
+                    noidung_c1_xuly: '',
+                    webId: @Html.Raw(ViewBag.webId),
+                    thongbao: '',
+                    thanhcong: false,
+                    loi: false
+                },
+                computed: {
+                    need2pick_ipcc_info: function () {
+                        return this.hinhthuc_id === 1; // hinh thuc = dien thoai
+                    }
+                },
+                watch: {
+                    ipcc_lineno: function (newval, oldval) {
+                        //this.lineDevices = this.getDeviceListInLine(this.ipcc_lineno);
+                        this.ipcc_deviceid = this.lineDevices[newval][0].id;
+                    },
+                    to_ipcc_lineno: function (newval, oldval) {
+                        console.log(`to line ${newval}`);
+                        this.to_ipcc_deviceid = this.lineDevices[newval][0].id;
+                        this.$forceUpdate();
+                    },
+                    hinhthuc_id: function (newval, oldval) {
+                        console.log(`old ${oldval} new ${newval}`);
+                    }
+                },
+                methods: {
+                    getLineName: function (lineno) {
+                        var ls = this.lineDevices[lineno];
+                        if (typeof ls === 'undefined') {
+                            return '-- Xin chọn line --';
+                        } else {
+                            if (ls.length === 1)
+                                return `[${lineno}] ${ls[0].name}`;
+                        }
+                        return lineno;
+                    },
+                    toggleBHD_DN: function () {
+                        this.BanHanhDongDN = !this.BanHanhDongDN;
+                    },
+                    toggleTTHC: function () {
+                        this.ThuTucHanhChinh = !this.ThuTucHanhChinh;
+                    },
+                    //onSelectDonViChanged: function () {
+                    //    setTimeout(function () {
+                    //        $('select[name="donvi_id"]').select2().on('change', function () {
+                    //            App.donvi_id = this.value;
+                    //        });
+                    //    }, 200);
+                    //},
+                    getDsDoiTuong: function () {
+                        $.post(url_DoiTuong_getListWithSelectChoice, function (data) {
+                            $.each(data, function (i, v) {
+                                App.dsDoiTuong.push(v);
+                            });
+                        })
+                    },
+                    getDsLinhVuc: function () {
+                        var postData = { donvi_id: App.donvi_id };
+                        App.dsLinhVuc = [];
+                        $.post(url_LinhVuc_getListByDonViWithSelectChoice, postData, function (data) {
+                            $.each(data, function (i, v) {
+                                App.dsLinhVuc.push(v);
+                            });
+                            App.linhvuc_id = data[0].linhvuc_id;
+                        })
+                    },
+                    getDsHinhThuc: function () {
+                        $.post(url_HinhThuc_getListWithSelectChoice, function (data) {
+                            $.each(data, function (i, v) {
+                                App.dsHinhThuc.push(v);
+                            });
+                        })
+                    },
+                    getDsLoaiYc: function () {
+                        $.post(url_LoaiYc_getListWithSelectChoice, function (data) {
+                            $.each(data, function (i, v) {
+                                App.dsLoaiYc.push(v);
+                            });
+                        })
+                    },
+                    getDsHuyen: function () {
+                        $.post(url_KhuVuc_getListOfHuyenWithSelectChoice, function (data) {
+                            $.each(data, function (i, v) {
+                                App.dsHuyen.push(v);
+                            });
+                        })
+                    },
+                    getDsPhuong: function () {
+                        App.dsPhuong = [];
+                        var postData = { huyen_id: App.nguoigoi_huyen_id };
+                        $.post(url_KhuVuc_getListOfPhuongByHuyenWithSelectChoice, postData, function (data) {
+                            $.each(data, function (i, v) {
+                                App.dsPhuong.push(v);
+                            });
+                        })
+                    },
+                    getDsDonVi: function () {
+                        $.post(url_DonVi_getListWithSelectChoice, function (data) {
+                            $.each(data, function (i, v) {
+                                App.dsDonVi.push(v);
+                            });
+                        });
+                    },
+                    traCuuTheoSdt: function () {
+                        var sdt = App.nguoigoi_sdt;
+                        var postData = {
+                            sdt: sdt
+                        };
+
+                        $.post(url_NguoiDan_searchByPhone, postData, function (data) {
+                            App.nguoigoi_hoten = data.nguoidan_hoten;
+                            App.nguoigoi_cmnd = data.nguoidan_cmnd;
+                            App.nguoigoi_email = data.nguoidan_email;
+                            App.nguoigoi_nickname = data.nguoidan_nickname;
+                            App.nguoigoi_diachi = data.nguoidan_diachi;
+                            App.nguoigoi_sdt = data.nguoidan_sdt;
+                            //
+                            App.nguoigoi_huyen_id = data.quan_id;
+                            $('select[name="nguoigoi_huyen_id"]').val(App.nguoigoi_huyen_id).change();
+                            setTimeout(function () {
+                                App.nguoigoi_phuong_id = data.huyen_id;
+                                $('select[name="nguoigoi_phuong_id"]').val(App.nguoigoi_phuong_id).change();
+                            }, 500);
+
+                            showSuccessNotification(`Tự động điền thông tin người dân theo SDT [${sdt}]: Xong!`);
+                        })
+                            .fail(function () {
+                                showWarningNotification(`Không tìm thấy người dân có SDT [${sdt}] trên hệ thống 1022!`);
+                            });
+                    },
+                    reset: function ()
+                    {
+                        App.loi = false;
+                        App.thanhcong = false;
+                        App.thongbao = '';
+                        App.yeucau_noidung = '';
+                        App.nguoigoi_hoten = '';
+                        App.nguoigoi_sdt = '';
+                        App.nguoigoi_cmnd = '';
+                        App.nguoigoi_email = '';
+                        App.nguoigoi_sdt = '';
+                        App.nguoigoi_nickname = '';
+                        App.nguoigoi_diachi = '';
+                        App.noidung_c1_xuly = '';
+                    },
+                    capnhat: function ()
+                    {
+                        if (this.ipcc_lineno === -1 || this.ipcc_deviceid === '' || this.ipcc_deviceid === null) {
+                            if (App.hinhthuc_id === 2) {
+                                showMessageBoxDialog('Thông báo', 'Bạn cần chọn LINE điện thoại/Số máy lẻ bạn đang trực để hệ thống có thể lấy ghi âm cuộc gọi.');
+                                $('#ipcc')[0].scrollIntoView();
+                                return;
+                            }
+                        }
+
+                        showPleaseWaitDialog('Thông báo', 'Chương trình đang lưu dữ liệu lên hệ thống, xin chờ giây lát...');
+                        App.loi = false;
+                        App.thanhcong = false;
+                        App.thongbao = '';
+
+                        //if (App.loaiyc_id == 2) { // Phan anh
+                        //    if (App.nguoigoi_hoten.trim() == "") {
+                        //        //closePleaseWaitDialog();
+                        //        //showErrorNotification('Bạn chưa nhập họ tên của người dân');
+                        //        //return;
+                        //    }
+                        //    if (App.nguoigoi_diachi.trim() == "") {
+                        //        //closePleaseWaitDialog();
+                        //        //showErrorNotification('Bạn chưa nhập địa chỉ của người dân');
+                        //        //return;
+                        //    }
+                        //} else if (App.loaiyc_id == 1) { // Thong tin
+                            
+                        //}
+
+                        if (App.nguoigoi_sdt.trim() == "") {
+                            closePleaseWaitDialog();
+                            showErrorNotification('Bạn chưa nhập số điện thoại');
+                            return;
+                        }
+                        //if (App.doituong_id <= 0) {
+                        //    closePleaseWaitDialog();
+                        //    showErrorNotification('Vui lòng chọn đối tượng người dân');
+                        //    return;
+                        //}
+                        if (App.donvi_id <= 0 || $('select[name="donvi_id"]').find(":selected").text() === '') {
+                            closePleaseWaitDialog();
+                            showErrorNotification('Vui lòng chọn đơn vị');
+                            return;
+                        }
+                        if (App.linhvuc_id <= 0 || $('select[name="linhvuc_id"]').find(":selected").text() === '') {
+                            closePleaseWaitDialog();
+                            showErrorNotification('Vui lòng chọn lĩnh vực');
+                            return;
+                        }
+                        if (App.hinhthuc_id <= 0) {
+                            closePleaseWaitDialog();
+                            showErrorNotification('Vui lòng chọn kênh tiếp nhận');
+                            return;
+                        }
+                        if (App.loaiyc_id <= 0) {
+                            closePleaseWaitDialog();
+                            showErrorNotification('Vui lòng chọn loại yêu cầu');
+                            return;
+                        }
+
+                        if (this.chuyenLine) {
+                            if (App.hinhthuc_id !== 2) {
+                                closePleaseWaitDialog();
+                                showErrorNotification('Bạn chỉ có thể chuyển cuộc gọi đến cấp 2 khi Kênh tiếp nhận là "Điện thoại"!', 4000);
+                                return;
+                            }
+                            if (App.trangthai_id !== "1") {
+                                closePleaseWaitDialog();
+                                showErrorNotification('Bạn chỉ có thể chuyển cuộc gọi đến cấp 2 khi trạng thái xử lý là "Chuyển cấp 2"!', 4000);
+                                return;
+                            }
+
+                            if (App.to_ipcc_lineno === -1) {
+                                closePleaseWaitDialog();
+                                showErrorNotification('Bạn chưa chọn Line của chuyên viên cần chuyển đến!', 4000);
+                                return;
+                            }
+
+                            if (App.to_ipcc_deviceid === -1) {
+                                closePleaseWaitDialog();
+                                showErrorNotification('Bạn chưa chọn số máy của chuyên viên cần chuyển đến!', 4000);
+                                return;
+                            }
+                        }
+
+                        var postData = {
+                            yeucau_noidung: App.yeucau_noidung,
+                            nguoigoi_hoten: App.nguoigoi_hoten,
+                            nguoigoi_cmnd: App.nguoigoi_cmnd,
+                            nguoigoi_sdt: App.nguoigoi_sdt,
+                            nguoigoi_diachi: App.nguoigoi_diachi,
+                            nguoigoi_huyen_id: App.nguoigoi_huyen_id,
+                            nguoigoi_phuong_id: App.nguoigoi_phuong_id,
+                            nguoigoi_email: App.nguoigoi_email,
+                            nguoigoi_nickname: App.nguoigoi_nickname,
+                            mangxh_id: App.mangxh_id,
+                            loaiyc_id: App.loaiyc_id,
+                            linhvuc_id: App.linhvuc_id,
+                            doituong_id: App.doituong_id,
+                            hinhthuc_id: App.hinhthuc_id,
+                            trangthai_id: App.trangthai_id,
+                            noidung_c1_xuly: App.noidung_c1_xuly,
+                            donvi_c2_id: App.donvi_id,
+                            webId: App.webId,
+                            ThuTucHanhChinh: App.ThuTucHanhChinh,
+                            BanHanhDongDN: App.BanHanhDongDN,
+                            ipcc_lineno: App.ipcc_lineno,
+                            ipcc_deviceid: App.ipcc_deviceid,
+                            chuyenLine: App.chuyenLine,
+                            c2_lineno: App.to_ipcc_lineno,
+                            c2_deviceid: App.to_ipcc_deviceid
+                        };
+                        $.post("@Url.Action("Create", "PhanAnh")", postData, function (data) {
+                            closePleaseWaitDialog();
+
+                            if (data !== "") {
+                                closePleaseWaitDialog();
+                                showMessageBoxDialog('Thông báo', 'Phiếu phản ánh đã được lưu lên hệ thống!');
+                                //showSuccessNotification(data);
+                            }
+                            else {
+                                App.loi = true;
+                                App.thongbao = 'Lỗi trong quá trình cập nhật';
+                            }
+                        });
+                    }
+                }
+            })
+
+            $(document).ready(function () {
+                App.getDsHuyen();
+                App.getDsDoiTuong();
+                App.getDsHinhThuc();
+                App.getDsLoaiYc();
+                App.getDsDonVi();
+                $('select[name="linhvuc_id"]').select2().on('change', function () {
+                    if (this.value) {
+                        App.linhvuc_id = this.value;
+                    }
+                });
+                $('select[name="nguoigoi_huyen_id"]').select2().on('change', function () {
+                    if (this.value)
+                    {
+                        App.nguoigoi_huyen_id = this.value;
+                        App.getDsPhuong();
+                    }
+                });
+                $('select[name="donvi_id"]').select2().on('change', function () {
+                    if (this.value) {
+                        App.donvi_id = this.value;
+                        App.getDsLinhVuc();
+                    }
+                });
+            });
+        </script>
+    }
+}

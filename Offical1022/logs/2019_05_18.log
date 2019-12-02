@@ -1,0 +1,6 @@
+INFO  2019-05-18 08:01:45,563  7687ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-18 08:01:55,766 17890ms DangNhapController     Index              - do login...
+INFO  2019-05-18 08:01:56,375 18500ms HomeController         Index              - Enter Home/Index
+INFO  2019-05-18 20:55:10,115   375ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-05-18 20:55:28,740 19000ms DangNhapController     Index              - do login...
+INFO  2019-05-18 20:55:30,083 20343ms HomeController         Index              - Enter Home/Index

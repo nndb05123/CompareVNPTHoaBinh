@@ -1,0 +1,346 @@
+﻿@{
+    ViewBag.Title = "Danh sách người dùng";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+@section breadcrumb  {
+    <li class="active">Danh sách người dùng</li>
+}
+<style>
+    .leader td {
+        background-color: #0094ff;
+        color: #fff;
+    }
+    .chuyenvien td {
+        color: #00f;
+    }
+    .tlkq {
+        background-color: #ffd7ba!important;
+        color: #222;
+    }
+</style>
+
+@Html.Partial("DialogPleaseWait")
+
+<div id="MyApp" class="row">
+    <div class="col-md-12">
+        <table>
+            <tr>
+                <td style="padding: 10px">
+                    <label for="cboDonVi" class="control-label">Đơn vị</label>
+                </td>
+                <td style="width: 300px; padding: 10px">
+                    <select id="cboDonVi" class="form-control select2" v-model="donvi_chon">
+                        <option v-for="item in dsDonVi" v-bind:value="item.donvi_id">{{ item.donvi_ten }}</option>
+                    </select>
+                </td>
+                <td style="padding:10px">
+                    <button class="btn btn-default" v-on:click="getDsNguoiDung">Lọc dữ liệu</button>
+                </td>
+                <td>
+                    @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                    {
+                        <a href="@Url.Action("them", "nguoidung")" class="btn btn-primary btn-flat">Thêm</a>
+                    }
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-12">
+        <div class="box box-success">
+            <div class="box-header with-border">
+                <h3 class="box-title">Danh sách chi tiết</h3>
+                <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table id="dgNguoiDung" class="table table-bordered table-striped">
+                    <tr>
+                        @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                        {
+                            <th>ID</th>
+                        }
+
+                        <th>Username</th>
+                        <th>Họ và tên</th>
+                        <th>Số ĐT</th>
+                        <th>Đơn vị</th>
+                        <th>Vai trò</th>
+                        <th>Thời gian đăng nhập</th>
+                        <th>Lãnh đạo?</th>
+                        <th>Khóa?</th>
+                        <th></th>
+                    </tr>
+                    <tr v-for="item in dsNguoiDung" :class="{leader: item.lanhdao || item.vaitro_id==99, chuyenvien: item.vaitro_id==2, tlkq: item.vaitro_id==5}">
+                        @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                        {
+                            <td align="center">
+                                @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                                    {
+                                        <a style="cursor:pointer" 
+                                           v-on:click="showModal(item.nguoidung_id)">
+                                            <i :class="['fa fa-edit',  (item.lanhdao || item.vaitro_id==99)?'text-white':'text-blue']"></i>
+                                        </a>
+                                    }
+                                {{ item.Id }}
+                            </td>
+                        }
+                        <td>{{ item.nguoidung_id }}</td>
+                        <td>{{ item.nguoidung_ten }}</td>
+                        <td>{{ item.nguoidung_sdt }}</td>
+                        <td>{{ item.donvi_ten }}</td>
+                        <td>{{ item.vaitro_ten }}</td>
+                        <td>{{ item.tgian_dangnhap | formatDate }}</td>
+                        <td class="text-center">
+                            <span v-if="item.lanhdao==true" class="fa fa-check"></span>
+                        </td>
+                        <td class="text-center">
+                            <span v-if="item.khoa_acc==true" class="fa fa-check"></span>
+                        </td>
+                        <td align="center">
+                            @if (ViewBag.mp_vaitro == WebUI.VAI_TRO.ADMIN)
+                            {
+                                <a style="cursor:pointer" v-on:click="showDlgConfirmDeleteUser(item)"><i class="fa fa-trash-o text-red"></i></a>
+                            }
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- /.box-body -->
+        </div>
+    </div>
+    <div class="modal" id="update" role="dialog">
+        <div class="modal-dialog modal-lg">
+            Modal content
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thông tin người dùng</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="nguoidung_id_edit" class="col-sm-2 control-label">Username</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="nguoidung_id_edit" v-model="nguoidung_id_edit" readonly />
+                                </div>
+                                <label for="nguoidung_ten" class="col-sm-2 control-label">Họ tên <span class="text-danger">*</span></label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="nguoidung_ten" v-model="nguoidung_ten_edit" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="nguoidung_sdt_edit" class="col-sm-2 control-label">Số ĐT</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="nguoidung_sdt_edit" v-model="nguoidung_sdt_edit" />
+                                </div>
+                                <label for="agent_id_edit" class="col-sm-2 control-label">Danh số</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="agent_id_edit" v-model="agent_id_edit" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cboDonVi2" class="col-sm-2 control-label">Đơn vị</label>
+                                <div class="col-md-10">
+                                    <select id="cboDonVi2" class="form-control select2" v-model="donvi_chon_edit">
+                                        <option v-for="item in dsDonVi" v-bind:value="item.donvi_id">{{ item.donvi_ten }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cboVaiTro" class="col-sm-2 control-label">Vai trò</label>
+                                <div class="col-md-10">
+                                    <select id="cboVaiTro" class="form-control select2" v-model="vaitro_chon_edit">
+                                        <option v-for="item in dsVaiTro" v-bind:value="item.vaitro_id">{{ item.vaitro_ten }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lanhdao_edit" class="col-sm-2 control-label">Lãnh đạo</label>
+                                <div class="col-md-2">
+                                    <input id="lanhdao_edit" type="checkbox" v-model="lanhdao_edit" />
+                                </div>
+                                <label for="khoa_acc_edit" class="col-sm-2 control-label">Khóa Account</label>
+                                <div class="col-md-2">
+                                    <input id="khoa_acc_edit" type="checkbox" v-model="khoa_acc_edit" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <div class="row">
+                                <div class="col-md-12" v-if="loi">
+                                    <div class="alert alert-danger">
+                                        <i class="icon fa fa-info"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                                <div class="col-md-12" v-if="thanhcong">
+                                    <div class="alert alert-success">
+                                        <i class="icon fa fa-check"></i> {{ thongbao }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-footer -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button v-if="@Html.Raw(ViewBag.userCanResetPass) == 1" type="button" class="btn btn-warning" v-on:click="askResetUserPass">Tạo lại mật khẩu</button>
+                    <button v-if="@Html.Raw(ViewBag.userCanUpdateUsers) == 1" type="button" class="btn btn-primary" v-on:click="capnhat">Cập nhật</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"> Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Foot {
+    <script>
+        var MyApp = new Vue({
+            el: '#MyApp',
+            data: {
+                dsDonVi: [],
+                dsNguoiDung: [],
+                dsVaiTro: [],
+                donvi_chon: @WebUI.SystemConfigs.SELECT_ALL_VALUE,
+                nguoidung_id_edit: '',
+                nguoidung_ten_edit: '',
+                nguoidung_sdt_edit: '',
+                nguoidung_sdt: '',
+                agent_id_edit: '',
+                donvi_chon_edit: @WebUI.SystemConfigs.SELECT_ALL_VALUE,
+                vaitro_chon_edit: 1,
+                khoa_acc_edit: false,
+                lanhdao_edit: false,
+                thongbao: '',
+                thanhcong: false,
+                loi: false,
+                userUID: -1
+            },
+            methods: {
+                getDsDonVi: function () {
+                    MyApp.dsDonVi = [{ donvi_id: @WebUI.SystemConfigs.SELECT_ALL_VALUE, donvi_ten: "@WebUI.SystemConfigs.SELECT_ALL_TEXT" }];
+                    $.post("@Url.Action("getListWithSelectChoice", "DonVi", new { area = "" })", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsDonVi.push(v);
+                        });
+                        MyApp.getDsNguoiDung();
+                    });
+                },
+                getDsVaiTro: function () {
+                    $.post("@Url.Action("getDsVaiTro", "VaiTro", new { area = "" })", function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsVaiTro.push(v);
+                        });
+                    });
+                },
+                getDsNguoiDung: function () {
+                    MyApp.dsNguoiDung = [];
+                    var postData = { donvi_id: MyApp.donvi_chon };
+                    $.post("@Url.Action("GetDsNguoiDungTheoDonVi", "NguoiDung", new { area = "" })", postData, function (data) {
+                        $.each(data, function (i, v) {
+                            MyApp.dsNguoiDung.push(v);
+                        });
+                    });
+                },
+                showModal: function (nguoidung_id) {
+                    MyApp.loi = false;
+                    MyApp.thongbao = '';
+                    MyApp.thanhcong = false;
+                    var postData = { nguoidung_id: nguoidung_id };
+                    $.post("@Url.Action("getthongtin", "nguoidung", new { area = "" })", postData, function (data) {
+                        MyApp.userUID = data.id;
+                        MyApp.nguoidung_sdt = data.nguoidung_sdt;
+                        MyApp.nguoidung_id_edit = data.nguoidung_id;
+                        MyApp.nguoidung_ten_edit = data.nguoidung_ten;
+                        MyApp.nguoidung_sdt_edit = data.nguoidung_sdt;
+                        MyApp.agent_id_edit = data.agent_id;
+                        MyApp.donvi_chon_edit = data.donvi_id;
+                        MyApp.vaitro_chon_edit = data.vaitro_id;
+                        MyApp.lanhdao_edit = data.lanhdao;
+                        MyApp.khoa_acc_edit = data.khoa_acc;
+
+                        $('#update').modal('show');
+                    });
+                },
+                showDlgConfirmDeleteUser: function (user) {
+                    showConfirmDialog(`Xóa tài khoản người dùng: [${user.nguoidung_id}] ${user.nguoidung_ten}`, 'Bạn có chắc muốn xóa không?', function () {
+                        closeConfirmDialog();
+                        MyApp.doDeleteUser(user.nguoidung_id, user.nguoidung_ten);
+                    }, true);
+                },
+                doDeleteUser: function (nguoidung_id, userName) {
+                    var postData = { nguoidung_id: nguoidung_id };
+                    showPleaseWaitDialog(`Xóa tài khoản người dùng: [${nguoidung_id}] ${userName}`, 'Đang xóa trên hệ thống, xin chờ giây lát...');
+                    $.post("@Url.Action("xoa", "nguoidung", new { area = "" })", postData, function (data) {
+                        closePleaseWaitDialog();
+                        MyApp.getDsNguoiDung();
+                        MyApp.thongbao = `Đã xóa tài khoản người dùng: [${nguoidung_id}] ${userName}`;
+                    });
+                },
+                capnhat: function () {
+                    MyApp.loi = false;
+                    MyApp.thongbao = '';
+                    MyApp.thanhcong = false;
+                    var nguoidung_ten_edit = MyApp.nguoidung_ten_edit;
+                    if (nguoidung_ten_edit.trim() == "") {
+                        MyApp.loi = true;
+                        MyApp.thongbao = 'Bạn chưa nhập tên người dùng';
+                        return;
+                    }
+                    var postData = {
+                        nguoidung_id: MyApp.nguoidung_id_edit,
+                        nguoidung_ten: MyApp.nguoidung_ten_edit,
+                        nguoidung_sdt: MyApp.nguoidung_sdt_edit,
+                        agent_id: MyApp.agent_id_edit,
+                        donvi_id: MyApp.donvi_chon_edit,
+                        vaitro_id: MyApp.vaitro_chon_edit,
+                        lanhdao: MyApp.lanhdao_edit,
+                        khoa_acc: MyApp.khoa_acc_edit
+                    };
+                    $.post("@Url.Action("capnhat", "nguoidung")", postData, function (data) {
+                        if (data > 0) {
+                            MyApp.thanhcong = true;
+                            MyApp.thongbao = "Cập nhật thành công!";
+                            MyApp.getDsNguoiDung();
+                        }
+                    });
+                },
+                askResetUserPass: function () {
+                    showConfirmDialog('Tạo lại mật khẩu',
+                        'Xóa mật khẩu cũ, tự động tạo lại mật khẩu mới và gửi tin nhắn mật khẩu mới cho người dùng, bạn có chắc không?',
+                        function () {
+                            MyApp.doResetPass();
+                        },
+                        true, false, null, 'ok'
+                    );
+                },
+                doResetPass: function () {
+                    closeConfirmDialog();
+                    showPleaseWaitDialog('Tạo lại mật khẩu', 'Đang cập nhật lên hệ thống, xin chờ giây lát...');
+                    $.post("@Url.Action("resetPass", "nguoidung")", postData, function (result) {
+                        closePleaseWaitDialog();
+                        if (result === 'ok') {
+                            showSuccessNotification(`Đã gửi tin nhắn mật khẩu mới đến số: ${MyApp.nguoidung_sdt}`, 3000);
+                        }
+                        else if (result === 'err_sms') {
+                            showErrorNotification(`Lỗi, không gửi sms đến số: ${MyApp.nguoidung_sdt} được!`, 5000);
+                        }
+                        else {
+                            showErrorNotification(`Lỗi, không cập nhật lên hệ thống được!`, 3000);
+                        }
+
+                    });
+                }
+
+            }
+        })
+        Vue.filter('formatDate', function (value) {
+            if (value) {
+                return moment(String(value)).format('DD/MM/YYYY HH:mm:ss')
+            }
+        });
+        MyApp.getDsDonVi();
+        MyApp.getDsVaiTro();
+    </script>
+}

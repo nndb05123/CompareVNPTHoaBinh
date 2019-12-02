@@ -1,0 +1,9 @@
+DEBUG 2019-12-01 17:04:16,529 311093ms _PageTongHop           createRequest      - portal createRequest displayName , phoneNumber 0886899277 content mu?n xem th? g?i sms ki?u gì mà ra du?c nên d?ng quan tâm t?i s? này
+DEBUG 2019-12-01 17:04:20,951 315515ms PortalController       verifyCaptcha      - verifyCaptcha: from client 171.233.160.143
+DEBUG 2019-12-01 17:04:20,951 315515ms PortalController       verifyCaptcha      -   token: 03AOLTBLR77VD4X9mvO1-NOl98Z-6Dho_58YOf_puHDeWr0HlBh8bNTSqwgi_K9KQ_AuQqAAyRzC6Q5Tux955uIYgZyiY2gyvM7D6WEp2pk1VftSigWwVo32xmcd0QWOP4X9ongzkpRbOdOZspAEOC7XtE8qLzY0dNFhf9GfhXbbwa2kC3wJJxvNShdNoh0AFhQWPZb9nVsrr9L-HLD4xpMvUcuJoaCO1sH0j-wwIM9JEYZuHC9YZLWMhmeLwNOoEevmDcF83SpLy-wbqmfQK6hWWbVhozcEuGcMYM499VEHDzRPQdVMqEqOApEunNX5og_RhOcInxNiYr4n3zQD4E6WbsD1K6B_U_NRC6GkNDpXTK0luQzGf_x0wy20BXGFsHzx4I8O_te0YGfI8oJiEHMl8665hOoEFMn_D0xFVp80vXXbUZg1GEuFtIHOUeVF9hzto_WIGM62f-Hwae9yixgsCvxOFuxqvu2arw6I1Nh-HAupzssJBzkkCA8rH1TdmhqE9KDQDngyn-IkvdfGgD_mUVLrN2IyuHWw
+DEBUG 2019-12-01 17:04:20,951 315515ms PortalController       verifyCaptcha      -   result: 
+DEBUG 2019-12-01 17:04:21,014 315578ms PortalController       verifyCaptcha      - Exception: Object reference not set to an instance of an object.
+INFO  2019-12-01 17:04:29,654 324218ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-12-01 17:04:31,248 325812ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-12-01 17:04:34,998 329562ms DangNhapController     Index              - do login...
+INFO  2019-12-01 17:04:35,248 329812ms HomeController         Index              - Enter Home/Index

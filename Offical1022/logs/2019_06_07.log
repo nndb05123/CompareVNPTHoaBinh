@@ -1,0 +1,16 @@
+INFO  2019-06-07 07:33:27,625 615935ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-07 07:33:39,594 627904ms DangNhapController     Index              - do login...
+INFO  2019-06-07 07:33:40,657 628967ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-07 07:39:22,249 970559ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-07 07:39:25,109 973419ms DangNhapController     Index              - do login...
+INFO  2019-06-07 07:39:25,140 973450ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-07 08:40:02,940 542118ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-07 08:42:16,133 675311ms DangNhapController     Index              - do login...
+INFO  2019-06-07 08:42:17,133 676311ms HomeController         Index              - Enter Home/Index
+INFO  2019-06-07 08:47:42,803 1001981ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-06-07 08:47:45,647 1004824ms DangNhapController     Index              - do login...
+INFO  2019-06-07 08:47:45,678 1004856ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-06-07 16:41:40,599 1095019ms PortalController       verifyCaptcha      - verifyCaptcha: from client 192.168.3.254
+DEBUG 2019-06-07 16:41:40,677 1095098ms PortalController       verifyCaptcha      -   token: 03AOLTBLR4VTkYSH-JwYus5iLqiESHNtQ9poku751SvZwv3M1gGwcqR0p18ckbDOemaJpPXF8kWd7P1zA_pG4m88piI0_XussvHEMZQRcLVzN1C-DGFUasB5tGO7kTWzsD3Xu92YJQvNce38Quu-1VjdBT0ZM0QaiYjxtRax_8l8A_Evfq_FvZpCNzfT3sXOKZiCIpWcy0t9MwdLi2V4svUPjWsLkRlKM4Fkl7-zPEko712jSG9tJCUW-uhFzWii9i-pudcBdr3T1gao6Ah9g75BGeCL0TIgNFAgHycCkDJf-Mp-BhjSr7eI3azJ7fY1eFDvAtV1Mz9Qhw1hrTFmMDpftTEHmKDpPpAexTsznzHl98Rk7yyGUd04sepAY7XFrEYQQSQ_ge8VM6DZL3HtCgMJOHjH2vXl2fTg
+DEBUG 2019-06-07 16:41:40,693 1095113ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-06-07 16:41:45,130 1099551ms _PageTongHop           createRequest      - portal createRequest displayName Hoang Thanh Ngan, phoneNumber 0976558930 content không dang kí du?c tài kho?n d?ch v?, h? th?ng x? lý quá ch?m và b? treo

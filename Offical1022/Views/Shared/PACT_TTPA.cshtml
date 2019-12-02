@@ -1,0 +1,64 @@
+﻿@using WebUI
+@using HotlineCore
+
+<div class="tab-pane active" id="tab_thong_tin_chung">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2">T.gian tiếp nhận</label>
+                    <div class="col-sm-10">
+                        <span class="form-control" readonly>{{ tgian_tiepnhan | formatDate }}</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">                        
+                        <textarea :disabled="lock_edit_ttpa_noidung" class="form-control" v-model="yeucau_noidung" rows="5" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label class="col-sm-1">Đơn vị</label>
+                        <div class="col-sm-5">
+                            <select :disabled="disableSelectDonvi" id="donvi_id1" v-model="donvi_id1" name="donvi_id1" class="form-control select2" style="width: 100%">
+                                <option v-for="item in dsDonVi" v-bind:value="item.donvi_id">{{ item.donvi_ten }}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label class="col-sm-1">Lĩnh vực</label>
+                    <div class="col-sm-5">
+                        <select :disabled="lock_edit_ttpa" v-model="linhvuc_id" id="linhvuc_id" name="linhvuc_id" class="form-control select2" style="width: 100%">
+                            <option v-for="item in dsLinhVuc" v-bind:value="item.linhvuc_id">{{ item.linhvuc_ten }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1">Kênh</label>
+                    <div class="col-sm-5">
+                        <select :disabled="disableSelectDonvi" v-model="hinhthuc_id" name="hinhthuc_id" class="form-control">
+                            <option v-for="item in dsHinhThuc" v-bind:value="item.hinhthuc_id">{{ item.hinhthuc_ten }}</option>
+                        </select>
+                    </div>
+                    <label class="col-sm-1">Loại Y/C</label>
+                    <div class="col-sm-5">
+                        <select :disabled="lock_edit_ttpa" v-model="loaiyc_id" name="loaiyc_id" class="form-control">
+                            <option v-for="item in dsLoaiYc" v-bind:value="item.loaiyc_id">{{ item.loaiyc_ten }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ipf col-sm-6" v-on:click="if(!lock_edit_ttpa) toggleTTHC()">
+                        <div class="ipf-cbox" title="Liên quan đến Thủ tục hành chính" ipf-label="Thủ tục HC">
+                            <input type="checkbox" value="None" v-model="thuTucHanhChinh" />
+                            <label for="ipf-cbox"></label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div v-if="dagoikiem" style="color:#fff;background-color:#76bb60;padding:5px">
+                <span>Đã trả lời kết quả cho người dân</span>
+            </div>
+        </div>
+    </div>
+</div>
