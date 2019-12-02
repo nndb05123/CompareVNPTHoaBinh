@@ -1,9 +1,15 @@
-DEBUG 2019-12-01 17:04:16,529 311093ms _PageTongHop           createRequest      - portal createRequest displayName , phoneNumber 0886899277 content mu?n xem th? g?i sms ki?u gì mà ra du?c nên d?ng quan tâm t?i s? này
-DEBUG 2019-12-01 17:04:20,951 315515ms PortalController       verifyCaptcha      - verifyCaptcha: from client 171.233.160.143
-DEBUG 2019-12-01 17:04:20,951 315515ms PortalController       verifyCaptcha      -   token: 03AOLTBLR77VD4X9mvO1-NOl98Z-6Dho_58YOf_puHDeWr0HlBh8bNTSqwgi_K9KQ_AuQqAAyRzC6Q5Tux955uIYgZyiY2gyvM7D6WEp2pk1VftSigWwVo32xmcd0QWOP4X9ongzkpRbOdOZspAEOC7XtE8qLzY0dNFhf9GfhXbbwa2kC3wJJxvNShdNoh0AFhQWPZb9nVsrr9L-HLD4xpMvUcuJoaCO1sH0j-wwIM9JEYZuHC9YZLWMhmeLwNOoEevmDcF83SpLy-wbqmfQK6hWWbVhozcEuGcMYM499VEHDzRPQdVMqEqOApEunNX5og_RhOcInxNiYr4n3zQD4E6WbsD1K6B_U_NRC6GkNDpXTK0luQzGf_x0wy20BXGFsHzx4I8O_te0YGfI8oJiEHMl8665hOoEFMn_D0xFVp80vXXbUZg1GEuFtIHOUeVF9hzto_WIGM62f-Hwae9yixgsCvxOFuxqvu2arw6I1Nh-HAupzssJBzkkCA8rH1TdmhqE9KDQDngyn-IkvdfGgD_mUVLrN2IyuHWw
-DEBUG 2019-12-01 17:04:20,951 315515ms PortalController       verifyCaptcha      -   result: 
-DEBUG 2019-12-01 17:04:21,014 315578ms PortalController       verifyCaptcha      - Exception: Object reference not set to an instance of an object.
-INFO  2019-12-01 17:04:29,654 324218ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-12-01 17:04:31,248 325812ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-12-01 17:04:34,998 329562ms DangNhapController     Index              - do login...
-INFO  2019-12-01 17:04:35,248 329812ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-12-01 16:58:19,210 35455ms PortalController       verifyCaptcha      - verifyCaptcha: from client 171.233.160.143
+DEBUG 2019-12-01 16:58:19,476 35721ms PortalController       verifyCaptcha      -   token: 03AOLTBLSEoKrrf1Hjys5RU1A-3p9uF_7urqaunLmp-2At2xli4KWBAoBobThjRk9ouUWYNlG8WJ8e7AZVsrnx-F0ChXtzc2UbJ-EqygDbS0rJ8a4bMn-mx29nGaB1UrhiA8WRm6_F1KiJef75Evfocm7y3E4qPCUAvl8D-8fyEV9B1yh6Ju1ucuuC6UF1WEIT4rkPGOsYDEq_Dk5bJos0BUvi8HB6RWchSOUS8sMowH8AT9xn2-3smg8c1pPE_aKsnkYVseqJjTLlFj2hyShI7CNJB22tX6AURAJsYulFhLf4udRnYrJI_Ju01MWoJh402uQTXuhch7LUpTlvl_5p4TKBPGtbsG7DowLuIqMpbGhVZphUnVLVlT-A5MZNFLL0eUi2e282PTywWEsd8SRzCknLLFZBNLwT8QBl66jYvw37XN4_pgSpt8pp8R93UYVN2fw7SMRhRrnIsbDRxIo7PN1a_hKMQBMoGjUiqF5NYwW8TrcGTmTrW8NVmXIizffz3Dz39pIwGXme
+DEBUG 2019-12-01 16:58:19,476 35721ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-12-01 16:58:27,960 44205ms _PageTongHop           createRequest      - portal createRequest displayName b?o duy, phoneNumber 0886899277 content xxc zxczxczxc xxc zxczx cox czxczxczxcz xczxczxczxzx czx czx czx czx czx czx
+INFO  2019-12-01 16:59:58,778 135023ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-12-01 17:00:07,677 143922ms DangNhapController     Index              - do login...
+INFO  2019-12-01 17:00:08,131 144376ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-12-01 17:06:01,527 497772ms PortalController       verifyCaptcha      - verifyCaptcha: from client 171.233.160.143
+DEBUG 2019-12-01 17:06:01,527 497772ms PortalController       verifyCaptcha      -   token: 03AOLTBLS6HBVLMDzgJj_J85TQ5LE4tnK5iDgR14PZBbkNU_ZiFvKihPZp5SQMPoFFgyotk-yFyoo--zeArSCADpytnNl0N5__FH16LL7yqPrLLoe3jFLkidGPrCT-JffDCDRf_A9Ulonql3ddmIOON6ASOiL_qI5BkTZ1CI0LrsegE4JmgrM-gBE7POoyTUTc5I_7CQUYdsw2KUTtvU6w9bwChz9TOrUvh2M-_bdBBweb4buNtHn-pXo9IReBdAwRlnmucmBztztL7Mnre5V3MyJFW49h9vPrdY3YzigsSa6imlvtvEf4IHa7tOnhWEBq0C4JVsdgUXKx2sf8FhbORJIaYrYeS5ycg-UL_SfwHWOQzS97ao32UAkFh1IMo9hdbUnWEebihyoLAo6kL5fkFRQvHPn6lR0fqqFr_aXF7P7DFNW1XbeXoFpf8y7fMp23VUV-3Qiv3QRBVhxX6Tihepae7K0KFMgp8bJ_sNYzrbGz_BJXGFYBjNV2TfTNuqb6JDIWcwgUv6t1
+DEBUG 2019-12-01 17:06:01,527 497772ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-12-01 17:06:17,019 513264ms _PageTongHop           createRequest      - portal createRequest displayName , phoneNumber 0886899277 content mã ph?n ánh là gì. k có cái này r sao mà choi du?c dây
+INFO  2019-12-01 17:15:11,537 1047782ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-12-01 17:15:12,725 1048970ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-12-01 17:15:17,065 1053310ms DangNhapController     Index              - do login...
+INFO  2019-12-01 17:15:17,113 1053358ms HomeController         Index              - Enter Home/Index

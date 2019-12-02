@@ -1,67 +1,354 @@
-INFO  2019-11-26 10:09:16,011 175781ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:09:24,823 184593ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:09:25,558 185328ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 10:18:59,636 759406ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:19:05,151 764921ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:19:05,276 765046ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 10:39:12,542 1972312ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:39:18,120 1977890ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:39:18,151 1977921ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 10:40:20,448 2040218ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:40:26,308 2046078ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:40:26,323 2046093ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 10:40:56,839 2076609ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:41:05,151 2084921ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:41:05,230 2085000ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 10:41:33,448 2113218ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:41:41,948 2121718ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:41:41,995 2121765ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 10:42:02,011 2141781ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:42:15,636 2155406ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:42:15,667 2155437ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 10:43:58,230 2258000ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:44:05,573 2265343ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:44:05,589 2265359ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 10:56:00,542 2980312ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 10:56:06,448 2986218ms DangNhapController     Index              - do login...
-INFO  2019-11-26 10:56:06,480 2986250ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 11:00:19,667 3239437ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 11:00:24,026 3243796ms DangNhapController     Index              - do login...
-INFO  2019-11-26 11:00:24,058 3243828ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 11:10:59,230 3879000ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 11:11:01,401 3881171ms DangNhapController     Index              - do login...
-INFO  2019-11-26 11:11:01,433 3881203ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 11:12:29,292 3969062ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 11:12:30,526 3970296ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 11:13:01,495 4001265ms DangNhapController     Index              - do login...
-DEBUG 2019-11-26 11:13:01,495 4001265ms DangNhapController     Index              - user not exist: admin pass 15F1D0441ABD5530EA77A72E70FCF3E1
-INFO  2019-11-26 11:13:07,167 4006937ms DangNhapController     Index              - do login...
-INFO  2019-11-26 11:13:07,198 4006968ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 13:32:13,011 12352781ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 14:21:39,511 15319281ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 14:21:40,980 15320750ms DangNhapController     Index              - do login...
-INFO  2019-11-26 14:21:40,995 15320765ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 15:06:56,292 18036062ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 15:07:02,245 18042015ms DangNhapController     Index              - do login...
-INFO  2019-11-26 15:07:02,292 18042062ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 15:09:09,151 18168921ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 15:09:26,292 18186062ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-26 15:09:27,636 18187406ms DangNhapController     Index              - do login...
-INFO  2019-11-26 15:09:27,667 18187437ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-26 15:31:16,823 19496593ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 119771
-INFO  2019-11-26 15:31:16,855 19496625ms PlayAudioController    GetAudioURL        - tmp download url: /dl/119771.wav
-INFO  2019-11-26 15:31:16,855 19496625ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\16-209-a-90918909966---20190722145508.wav
-INFO  2019-11-26 15:31:32,136 19511906ms PlayAudioController    GetAudioURL        - Get audio download URL for cacheid 119772
-INFO  2019-11-26 15:31:32,136 19511906ms PlayAudioController    GetAudioURL        - tmp download url: /dl/119772.wav
-INFO  2019-11-26 15:31:32,136 19511906ms PlayAudioController    GetAudioURL        - origin virtual path: c:\soft\dbtool\syncfiles\2019\7\22\01-204-a-209---20190722145606.wav
-INFO  2019-11-26 15:31:32,136 19511906ms PlayAudioController    GetAudioURL        - copy  from c:\soft\dbtool\syncfiles\2019\7\22\01-204-a-209---20190722145606.wav to c:\tmp\1022staticfiles\119772.wav
-INFO  2019-11-27 07:30:01,964 77021734ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-27 07:30:11,542 77031312ms DangNhapController     Index              - do login...
-INFO  2019-11-27 07:30:11,589 77031359ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-27 07:43:52,323 77852093ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-27 07:43:53,855 77853625ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-27 07:43:56,839 77856609ms DangNhapController     Index              - do login...
-INFO  2019-11-27 07:43:56,917 77856687ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-27 07:56:43,026 78622796ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-27 10:30:14,605 87834375ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-27 14:35:00,995 102520765ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 08:03:27,745 42419ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 08:05:55,180 189854ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 08:05:55,339 190014ms DangNhapController     Index              - user not exist: admin pass B346E4FFF0B0403DAAA83AEE71F84390
+INFO  2019-11-26 08:07:11,359 266033ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 08:07:11,363 266038ms DangNhapController     Index              - user not exist: admin pass 83EDEE96DCCEEC4D1A05CD8B55733731
+INFO  2019-11-26 08:07:19,014 273689ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 08:07:19,016 273691ms DangNhapController     Index              - user not exist: admin pass 83EDEE96DCCEEC4D1A05CD8B55733731
+INFO  2019-11-26 08:18:08,598 923272ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 08:18:08,631 923305ms DangNhapController     Index              - user not exist: admin pass 83EDEE96DCCEEC4D1A05CD8B55733731
+INFO  2019-11-26 08:18:16,072 930747ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 08:18:21,274 935948ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 08:18:21,276 935950ms DangNhapController     Index              - user not exist: admin pass 91911D1AA7E9BAA63E03D29D0B4917F4
+INFO  2019-11-26 08:43:17,820  2361ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 08:43:26,834 11375ms DangNhapController     Index              - user not exist: admin pass 91911D1AA7E9BAA63E03D29D0B4917F4
+INFO  2019-11-26 08:43:45,246 29787ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 08:43:45,249 29791ms DangNhapController     Index              - user not exist: admin pass 83EDEE96DCCEEC4D1A05CD8B55733731
+INFO  2019-11-26 09:08:23,808 35831ms DangNhapController     Index              - do login...
+INFO  2019-11-26 09:08:28,265 40288ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 09:08:29,524 41547ms DangNhapController     Index              - user not exist: admin pass 74D839D98630E280DF752E8939454A6B
+DEBUG 2019-11-26 09:08:29,530 41553ms DangNhapController     Index              - user not exist: admin pass 74D839D98630E280DF752E8939454A6B
+INFO  2019-11-26 09:08:53,838 65861ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 09:09:05,625 77647ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 09:09:05,629 77652ms DangNhapController     Index              - user not exist: admin pass 6C730343D2A8C8342EC0DC19DA629443
+INFO  2019-11-26 09:09:31,693 103716ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 09:09:31,697 103720ms DangNhapController     Index              - user not exist: admin pass 6C730343D2A8C8342EC0DC19DA629443
+INFO  2019-11-26 09:09:33,810 105833ms DangNhapController     Index              - do login...
+INFO  2019-11-26 09:09:35,156 107179ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 09:09:55,505 127528ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 09:09:59,769 131792ms DangNhapController     Index              - do login...
+INFO  2019-11-26 09:09:59,786 131809ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 09:13:41,575 353598ms LinhVucController      Xoa                - LV: 1 result: ok
+INFO  2019-11-26 09:14:09,346 381368ms LinhVucController      Xoa                - LV: 87 result: ok
+INFO  2019-11-26 09:14:12,407 384430ms LinhVucController      Xoa                - LV: 18 result: ok
+INFO  2019-11-26 09:14:15,652 387675ms LinhVucController      Xoa                - LV: 30 result: ok
+INFO  2019-11-26 09:14:18,678 390701ms LinhVucController      Xoa                - LV: 38 result: ok
+INFO  2019-11-26 09:15:17,593 449616ms LinhVucController      Xoa                - LV: 90 result: ok
+INFO  2019-11-26 09:15:20,235 452258ms LinhVucController      Xoa                - LV: 41 result: ok
+INFO  2019-11-26 09:15:23,196 455219ms LinhVucController      Xoa                - LV: 31 result: ok
+INFO  2019-11-26 09:15:26,069 458092ms LinhVucController      Xoa                - LV: 40 result: ok
+INFO  2019-11-26 09:15:29,179 461202ms LinhVucController      Xoa                - LV: 32 result: ok
+INFO  2019-11-26 09:15:32,102 464125ms LinhVucController      Xoa                - LV: 49 result: ok
+INFO  2019-11-26 09:15:34,947 466970ms LinhVucController      Xoa                - LV: 8 result: ok
+INFO  2019-11-26 09:15:37,807 469830ms LinhVucController      Xoa                - LV: 42 result: ok
+INFO  2019-11-26 09:15:40,725 472747ms LinhVucController      Xoa                - LV: 11 result: ok
+INFO  2019-11-26 09:15:43,087 475110ms LinhVucController      Xoa                - LV: 36 result: ok
+INFO  2019-11-26 09:15:45,801 477824ms LinhVucController      Xoa                - LV: 79 result: ok
+INFO  2019-11-26 09:15:48,078 480101ms LinhVucController      Xoa                - LV: 13 result: ok
+INFO  2019-11-26 09:15:50,650 482673ms LinhVucController      Xoa                - LV: 60 result: ok
+INFO  2019-11-26 09:15:52,946 484969ms LinhVucController      Xoa                - LV: 55 result: ok
+INFO  2019-11-26 09:15:55,102 487125ms LinhVucController      Xoa                - LV: 5 result: ok
+INFO  2019-11-26 09:15:57,315 489338ms LinhVucController      Xoa                - LV: 69 result: ok
+INFO  2019-11-26 09:15:59,595 491618ms LinhVucController      Xoa                - LV: 65 result: ok
+INFO  2019-11-26 09:16:04,756 496779ms LinhVucController      Xoa                - LV: 92 result: ok
+INFO  2019-11-26 09:16:07,483 499506ms LinhVucController      Xoa                - LV: 20 result: ok
+INFO  2019-11-26 09:16:10,026 502049ms LinhVucController      Xoa                - LV: 59 result: ok
+INFO  2019-11-26 09:16:13,364 505387ms LinhVucController      Xoa                - LV: 22 result: ok
+INFO  2019-11-26 09:16:15,718 507741ms LinhVucController      Xoa                - LV: 15 result: ok
+INFO  2019-11-26 09:16:19,661 511684ms LinhVucController      Xoa                - LV: 58 result: ok
+INFO  2019-11-26 09:16:22,222 514244ms LinhVucController      Xoa                - LV: 4 result: ok
+INFO  2019-11-26 09:16:24,792 516815ms LinhVucController      Xoa                - LV: 45 result: ok
+INFO  2019-11-26 09:16:28,254 520276ms LinhVucController      Xoa                - LV: 84 result: ok
+INFO  2019-11-26 09:16:30,799 522822ms LinhVucController      Xoa                - LV: 78 result: ok
+INFO  2019-11-26 09:16:33,672 525694ms LinhVucController      Xoa                - LV: 86 result: ok
+INFO  2019-11-26 09:16:37,048 529071ms LinhVucController      Xoa                - LV: 74 result: ok
+INFO  2019-11-26 09:16:39,719 531742ms LinhVucController      Xoa                - LV: 83 result: ok
+INFO  2019-11-26 09:16:42,429 534451ms LinhVucController      Xoa                - LV: 67 result: ok
+INFO  2019-11-26 09:16:45,197 537220ms LinhVucController      Xoa                - LV: 44 result: ok
+INFO  2019-11-26 09:16:47,732 539755ms LinhVucController      Xoa                - LV: 19 result: ok
+INFO  2019-11-26 09:16:50,092 542115ms LinhVucController      Xoa                - LV: 66 result: ok
+INFO  2019-11-26 09:16:52,376 544399ms LinhVucController      Xoa                - LV: 26 result: ok
+INFO  2019-11-26 09:16:54,829 546852ms LinhVucController      Xoa                - LV: 76 result: ok
+INFO  2019-11-26 09:16:57,061 549084ms LinhVucController      Xoa                - LV: 23 result: ok
+INFO  2019-11-26 09:16:59,966 551989ms LinhVucController      Xoa                - LV: 80 result: ok
+INFO  2019-11-26 09:17:02,385 554408ms LinhVucController      Xoa                - LV: 73 result: ok
+INFO  2019-11-26 09:17:04,667 556690ms LinhVucController      Xoa                - LV: 98 result: ok
+INFO  2019-11-26 09:17:06,905 558928ms LinhVucController      Xoa                - LV: 34 result: ok
+INFO  2019-11-26 09:17:10,246 562269ms LinhVucController      Xoa                - LV: 7 result: ok
+INFO  2019-11-26 09:17:12,780 564803ms LinhVucController      Xoa                - LV: 64 result: ok
+INFO  2019-11-26 09:17:17,397 569420ms LinhVucController      Xoa                - LV: 77 result: ok
+INFO  2019-11-26 09:17:22,488 574511ms LinhVucController      Xoa                - LV: 47 result: ok
+INFO  2019-11-26 09:17:24,921 576944ms LinhVucController      Xoa                - LV: 53 result: ok
+INFO  2019-11-26 09:17:35,050 587073ms LinhVucController      Xoa                - LV: 57 result: ok
+INFO  2019-11-26 09:17:37,576 589599ms LinhVucController      Xoa                - LV: 51 result: ok
+INFO  2019-11-26 09:17:39,815 591838ms LinhVucController      Xoa                - LV: 2 result: ok
+INFO  2019-11-26 09:17:42,132 594155ms LinhVucController      Xoa                - LV: 75 result: ok
+INFO  2019-11-26 09:17:44,701 596724ms LinhVucController      Xoa                - LV: 28 result: ok
+INFO  2019-11-26 09:17:47,002 599025ms LinhVucController      Xoa                - LV: 89 result: ok
+INFO  2019-11-26 09:17:52,152 604175ms LinhVucController      Xoa                - LV: 82 result: ok
+INFO  2019-11-26 09:17:55,789 607812ms LinhVucController      Xoa                - LV: 68 result: ok
+INFO  2019-11-26 09:18:14,153 626176ms LinhVucController      Xoa                - LV: 88 result: ok
+INFO  2019-11-26 09:18:17,040 629063ms LinhVucController      Xoa                - LV: 95 result: ok
+INFO  2019-11-26 09:18:19,356 631379ms LinhVucController      Xoa                - LV: 72 result: ok
+INFO  2019-11-26 09:18:21,449 633472ms LinhVucController      Xoa                - LV: 14 result: ok
+INFO  2019-11-26 09:18:23,464 635487ms LinhVucController      Xoa                - LV: 81 result: ok
+INFO  2019-11-26 09:18:25,647 637669ms LinhVucController      Xoa                - LV: 61 result: ok
+INFO  2019-11-26 09:18:27,759 639781ms LinhVucController      Xoa                - LV: 99 result: ok
+INFO  2019-11-26 09:18:30,005 642027ms LinhVucController      Xoa                - LV: 94 result: ok
+INFO  2019-11-26 09:18:32,375 644398ms LinhVucController      Xoa                - LV: 62 result: ok
+INFO  2019-11-26 09:18:34,873 646896ms LinhVucController      Xoa                - LV: 33 result: ok
+INFO  2019-11-26 09:18:37,057 649080ms LinhVucController      Xoa                - LV: 85 result: ok
+INFO  2019-11-26 09:18:39,142 651165ms LinhVucController      Xoa                - LV: 35 result: ok
+INFO  2019-11-26 09:18:41,327 653350ms LinhVucController      Xoa                - LV: 54 result: ok
+INFO  2019-11-26 09:18:43,273 655296ms LinhVucController      Xoa                - LV: 29 result: ok
+INFO  2019-11-26 09:18:45,280 657303ms LinhVucController      Xoa                - LV: 16 result: ok
+INFO  2019-11-26 09:18:47,196 659219ms LinhVucController      Xoa                - LV: 21 result: ok
+INFO  2019-11-26 09:18:49,277 661300ms LinhVucController      Xoa                - LV: 46 result: ok
+INFO  2019-11-26 09:18:51,189 663212ms LinhVucController      Xoa                - LV: 93 result: ok
+INFO  2019-11-26 09:18:53,856 665879ms LinhVucController      Xoa                - LV: 25 result: ok
+INFO  2019-11-26 09:18:56,670 668693ms LinhVucController      Xoa                - LV: 50 result: ok
+INFO  2019-11-26 09:18:58,673 670696ms LinhVucController      Xoa                - LV: 37 result: ok
+INFO  2019-11-26 09:19:01,146 673169ms LinhVucController      Xoa                - LV: 71 result: ok
+INFO  2019-11-26 09:19:03,411 675434ms LinhVucController      Xoa                - LV: 52 result: ok
+INFO  2019-11-26 09:19:05,851 677874ms LinhVucController      Xoa                - LV: 24 result: ok
+INFO  2019-11-26 09:19:08,058 680081ms LinhVucController      Xoa                - LV: 48 result: ok
+INFO  2019-11-26 09:19:10,470 682493ms LinhVucController      Xoa                - LV: 17 result: ok
+INFO  2019-11-26 09:19:12,517 684540ms LinhVucController      Xoa                - LV: 39 result: ok
+INFO  2019-11-26 09:19:14,504 686527ms LinhVucController      Xoa                - LV: 56 result: ok
+INFO  2019-11-26 09:19:16,453 688476ms LinhVucController      Xoa                - LV: 91 result: ok
+INFO  2019-11-26 09:19:19,537 691560ms LinhVucController      Xoa                - LV: 27 result: ok
+INFO  2019-11-26 09:19:21,570 693592ms LinhVucController      Xoa                - LV: 63 result: ok
+INFO  2019-11-26 09:19:24,292 696315ms LinhVucController      Xoa                - LV: 43 result: ok
+INFO  2019-11-26 09:19:30,691 702714ms LinhVucController      Xoa                - LV: 12 result: ok
+INFO  2019-11-26 09:19:32,832 704855ms LinhVucController      Xoa                - LV: 70 result: ok
+INFO  2019-11-26 09:19:43,112 715135ms LinhVucController      SaveNew            - LV: VNPT His L2 result: ok
+INFO  2019-11-26 09:19:52,296 724319ms LinhVucController      SaveNew            - LV: VNPT His L3 result: ok
+INFO  2019-11-26 09:21:04,942 796964ms LinhVucController      SaveNew            - LV: eoffic result: ok
+INFO  2019-11-26 09:21:12,950 804973ms LinhVucController      Xoa                - LV: 102 result: ok
+INFO  2019-11-26 09:21:47,714 839737ms LinhVucController      SaveNew            - LV: IOFFICE result: ok
+INFO  2019-11-26 09:22:25,801 877824ms LinhVucController      SaveNew            - LV: Qu?n lý luu trú result: ok
+INFO  2019-11-26 09:22:41,848 893871ms LinhVucController      SaveNew            - LV: Ecabinet result: ok
+INFO  2019-11-26 09:23:34,511 946534ms LinhVucController      SaveNew            - LV: Phát tri?n thuê bao result: ok
+DEBUG 2019-11-26 10:07:26,373 64915ms PortalController       verifyCaptcha      - verifyCaptcha: from client ::1
+DEBUG 2019-11-26 10:07:26,457 64999ms PortalController       verifyCaptcha      -   token: 03AOLTBLRLjVZu4RuTTBc6dTI2sT00PIoNBD3LI_dTA81dKt1_y3ikvwzElPTgBy2S_6HMZU38XOlwnQCkmua2Pl7j-cVi__aTzlwj2WWM7h1R04FMopCthOlxqyST4MPwv5ghac4z_ny1eHKfxg9ousSLMXC7kve7FRFHWs9V-AJWC8vCrZx1NdNZ0RwOyjpDvIBeRnyXy006WvuJA_SrR8gz7P-Y_rIF8T2WVZj1wsCzCVY0L4ErUQolmL7BjLzVMyz0rvXMliTQx2G8LplJGyQNRCTYv2OrS6tL6lERvjcDRVX3OrVN0FP-T1h8u93zevdUtdmwCGv5F7sehQwpmbqTzbIT8Q1NxW48EqhS25fLNNVB8j96UNm0Yvc3I8XR2gIlPNZA2BhtpdrW7rcnj3OEyA2xJYlIyceadMf5jQbg_azuyuAvY4bJVxoC-TfKe3nJp-HILD2CrYz-VcmAg0vZPyXE6xgTh_xbc_zAErebV_2i8XmJsnQ
+DEBUG 2019-11-26 10:07:26,470 65012ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-11-26 10:07:36,960 75502ms _PageTongHop           createRequest      - portal createRequest displayName test, phoneNumber 0983983023 content aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa Ph?n ánh Test
+INFO  2019-11-26 10:08:47,369 145911ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:09:07,121 165663ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 10:09:07,231 165773ms DangNhapController     Index              - user not exist: tamkm.hbh pass B346E4FFF0B0403DAAA83AEE71F84390
+INFO  2019-11-26 10:09:13,698 172240ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:09:13,831 172373ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:12:31,748 370290ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:12:36,400 374942ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:12:36,413 374955ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:14:49,488 508030ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:14:56,821 515363ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:14:56,840 515382ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:15:28,146 546688ms PhanAnhController      CapNhatKQTL        - nguoidung_id 0E75C261119 yeucau_id anhtt.hbh kqtl fgsoduihsdohigsdsf
+INFO  2019-11-26 10:15:28,262 546804ms ServiceCenter          send_sms_citizen   - yeucau_id 0E75C261119 sdt 0983983023
+ERROR 2019-11-26 10:15:28,276 546818ms ServiceCenter          send_sms_citizen   - System.ArgumentNullException: Value cannot be null.
+Parameter name: baseUrl
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at WebUI.ServiceCenter.send_sms_citizen(HotlineEntities db, YeuCau newYC, Int32 msgType) in E:\prjs\HCC_HB\WebUI\ServiceCenter.cs:line 82
+INFO  2019-11-26 10:16:51,779 630320ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:16:55,462 634004ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:16:55,495 634036ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-11-26 10:18:08,846 707388ms PortalController       verifyCaptcha      - verifyCaptcha: from client ::1
+DEBUG 2019-11-26 10:18:08,848 707390ms PortalController       verifyCaptcha      -   token: 03AOLTBLTjM5R6Dafn_5LVqvy6_bV07d9Gb2ShVm638qEZkW2Pp9e0Zj8IYg5CN1jpzkIqYH7NEBenjRdovP0Lf3b_aRHBSZd_FTdIaemS4ZMwbt0cn3L24hvvb8nkMHABNWLBzbWYrbg_kKNHEyK-U726z0zJXpoyZC-Fqhh0XgVA--q17xyw3qVl9N5oG2OQ5RnV38Tg8UY0LMs9MjUxQ73B2OmJmnzF884A656yylUfJSQespOUfx4vn-B-DqGmtwkMnrHAcLg5utCO8buqhxb4aWkU5kmRVYQVKiwFApaR9ZJe_wr8SfupC1fpHQgvE7jfbkOuEK-4npM2vlc3pB_fvMnEWXin1eBbZvnoIszCgmEoNVbbwxTKJsOlOs-w9O4SpAHm916UHRlgCgCsusZWGsGangziZ-OwsntonA80V_4FkdMulIm17gfxiOZxlx3ib7i5i8LCCsKEknKZ5WkWkol3_3pCrnUs-UOBBK0uDAjG_pM9jaQ
+DEBUG 2019-11-26 10:18:08,849 707391ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-11-26 10:18:15,692 714234ms _PageTongHop           createRequest      - portal createRequest displayName test 1, phoneNumber 0983983023 content aaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaa
+INFO  2019-11-26 10:18:23,920 722462ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:18:30,247 728789ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:18:30,261 728803ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:20:14,564 833106ms ServiceCenter          send_sms_citizen   - yeucau_id 59E8D261119 sdt 0983983023
+ERROR 2019-11-26 10:20:14,581 833123ms ServiceCenter          send_sms_citizen   - System.ArgumentNullException: Value cannot be null.
+Parameter name: baseUrl
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at WebUI.ServiceCenter.send_sms_citizen(HotlineEntities db, YeuCau newYC, Int32 msgType) in E:\prjs\HCC_HB\WebUI\ServiceCenter.cs:line 82
+INFO  2019-11-26 10:20:24,456 842997ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:20:34,181 852722ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:20:34,197 852738ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:21:05,226 883768ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:21:14,614 893155ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:21:14,630 893171ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:22:30,911 969452ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:22:37,461 976003ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:22:37,486 976028ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:22:59,627 998169ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:23:03,519 1002061ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:23:03,532 1002074ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:26:56,798 1235340ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:27:02,472 1241013ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:27:02,486 1241028ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:27:47,202 1285744ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:27:51,567 1290109ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:27:51,581 1290123ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:29:14,177 1372718ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:29:23,683 1382225ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:29:23,705 1382247ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:29:44,544 1403086ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:29:49,542 1408084ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:29:49,555 1408097ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:34:52,212 1710754ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:34:57,620 1716162ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:34:57,636 1716178ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:35:28,341 1746883ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:35:34,844 1753385ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:35:34,858 1753399ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:42:55,784 2194325ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:42:59,833 2198374ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:42:59,859 2198400ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:50:01,435 2619977ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:50:13,202 2631744ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:50:13,242 2631784ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 10:52:36,946 2775488ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 10:52:40,186 2778727ms DangNhapController     Index              - do login...
+INFO  2019-11-26 10:52:40,198 2778739ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:21:33,328 4511870ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:21:40,266 4518807ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:21:40,290 4518831ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:23:13,720 4612262ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:23:21,411 4619953ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:23:21,424 4619966ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-11-26 11:23:56,240 4654782ms PortalController       verifyCaptcha      - verifyCaptcha: from client ::1
+DEBUG 2019-11-26 11:23:56,243 4654785ms PortalController       verifyCaptcha      -   token: 03AOLTBLR68Z_qX01TXO3oiaS6O5pfniYz0YAnA9HEjbI9DarMYeqTYbibQn9WREL1uHocCNmzSY8RWbjGdMqKMbjmdpaV5Wi5p05_C4nqyz1liPl-09I3mWkt6m8nFSC-P7sXyb0I8KOz96SKkwRV2p1TkE_fiZacjZEtGUaBhyj5ENROHlWQ3LSGRA8UxIyCVLrZR4phdJcWP-WUQQElP4NMkqkbbF91OEEWnZsRyiZoD6Nb6asvTYKDX6m5oMdtKOqfVTHoqqQbXPvo1rUU9S_DtX2QgcrQU3GQ4s2jMC7DhZnj5PniTSt6sBczV7QaiYcjhwsQ8EfQhjBRp3qXrjBgZyoLIqrbc0WhRiyiRIIDXfqP7trOFvS2oOcUrhiwHdGfdymb89iSAEYPcpxSA1NffpS-KssDHiD0YPC2StbT6CBvbihSLF40FFHjzAMKHSjjtU_kcSB-rATODE6doulAzFn2_WMS9vMNRyyhxnHZUcbzdNrTWnA
+DEBUG 2019-11-26 11:23:56,245 4654787ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-11-26 11:24:03,524 4662066ms _PageTongHop           createRequest      - portal createRequest displayName test 11, phoneNumber 0983983023 content fffffffffffffffffffffffffffffffffffffdddddddddddddddddd
+INFO  2019-11-26 11:24:12,136 4670678ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:24:18,513 4677055ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:24:18,527 4677069ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:24:54,337 4712879ms ServiceCenter          send_sms_citizen   - yeucau_id 57B2B261119 sdt 0983983023
+ERROR 2019-11-26 11:24:54,365 4712907ms ServiceCenter          send_sms_citizen   - System.ArgumentNullException: Value cannot be null.
+Parameter name: baseUrl
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at WebUI.ServiceCenter.send_sms_citizen(HotlineEntities db, YeuCau newYC, Int32 msgType) in E:\prjs\HCC_HB\WebUI\ServiceCenter.cs:line 82
+INFO  2019-11-26 11:24:59,876 4718418ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:25:05,955 4724497ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:25:05,965 4724507ms HomeController         Index              - Enter Home/Index
+ERROR 2019-11-26 11:26:22,196 4800738ms CapDo2Controller       attachFile         - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\webapps\Offical1022\Content\Docs\57B2B261119_01d152809f6c4114a075c44d67b29bef.txt'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at WebUI.Controllers.BaseCapDoController.attachFile(String yeuCauID, String& uploadFilePath, String& uploadFileTitle) in E:\prjs\HCC_HB\WebUI\Controllers\BaseCapDoController.cs:line 43
+ERROR 2019-11-26 11:26:38,574 4817115ms CapDo2Controller       attachFile         - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\webapps\Offical1022\Content\Docs\57B2B261119_a49f6a43955e4dd1ae958a1e42d3dafa.png'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at WebUI.Controllers.BaseCapDoController.attachFile(String yeuCauID, String& uploadFilePath, String& uploadFileTitle) in E:\prjs\HCC_HB\WebUI\Controllers\BaseCapDoController.cs:line 43
+INFO  2019-11-26 11:27:10,628 4849170ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:27:14,653 4853194ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:27:14,666 4853207ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:27:30,375 4868917ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:27:36,375 4874917ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:27:36,391 4874933ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:27:52,550 4891092ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:27:55,529 4894071ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:27:55,549 4894091ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:28:11,548 4910090ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:28:20,297 4918839ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:28:20,316 4918858ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:28:47,124 4945666ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:28:51,964 4950506ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:28:51,985 4950527ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:29:21,671 4980212ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:29:27,868 4986410ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:29:27,881 4986423ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-11-26 11:33:51,868 5250410ms PortalController       verifyCaptcha      - verifyCaptcha: from client ::1
+DEBUG 2019-11-26 11:33:51,869 5250410ms PortalController       verifyCaptcha      -   token: 03AOLTBLQuXEMCUEtyEG5CRBQgvIgkwHhfB3jlmiTKa4Z7lC3_Ma-M5jDWmS9xRU6mjG-xpQZiKHsdTOGPv8Igmre5GG9NmQ3VCOUPbr0kOp0gzZQKkVplGtVKBOwnUkanlam-cwPFM9xIsajrOmSQOLCvTl3kQpGm0YDiE2T2GsWKD_YTbbDFSGIbo5x-W_XbcjzpVjj4rpFfdrzxavKGKRL_9ix9Iddf_euIwIZN6Jm80uBzKzeEY0om53ARUBFLH0LlgXLt8HQxrEOHGXLApcK24EDCk30gq-WAD7UXtcJcEfxtIXnh0abLoLK_4v88bwsso2nKdwBuFgGHgTfsbR06n3_o9KZrxjp_t5l8eFUq-uCL086idYmshaJXsuw75zLUFObLjKYVy8KYG4Ify_n2UqwxG-9MaDrQKYE0KcR7mxwMiqDFPly_qW6Bi1THyZ3KgBzOMhpJhHTlgVeEt2NAsIOPPv-qOzLPqkmi-rJE93-jTX4sEFs
+DEBUG 2019-11-26 11:33:51,870 5250412ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-11-26 11:33:58,606 5257148ms _PageTongHop           createRequest      - portal createRequest displayName dfsdgsd, phoneNumber 0983983022 content qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwwwwwwwwwwwwwwwwwwwwwwwwwwww
+INFO  2019-11-26 11:34:25,959 5284501ms ServiceCenter          send_sms_citizen   - yeucau_id D587B261119 sdt 0983983022
+ERROR 2019-11-26 11:34:25,959 5284501ms ServiceCenter          send_sms_citizen   - System.ArgumentNullException: Value cannot be null.
+Parameter name: baseUrl
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at WebUI.ServiceCenter.send_sms_citizen(HotlineEntities db, YeuCau newYC, Int32 msgType) in E:\prjs\HCC_HB\WebUI\ServiceCenter.cs:line 82
+INFO  2019-11-26 11:34:30,656 5289198ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:34:36,569 5295111ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:34:36,586 5295128ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:36:47,150 5425692ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:36:55,299 5433840ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:36:55,337 5433878ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:37:42,165 5480707ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:37:46,643 5485185ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:37:46,659 5485201ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:38:05,401 5503943ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:38:11,209 5509751ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:38:11,233 5509775ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 11:38:32,164 5530706ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 11:38:36,507 5535048ms DangNhapController     Index              - do login...
+INFO  2019-11-26 11:38:36,520 5535061ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:37:36,551 12675093ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:37:41,023 12679565ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:37:41,041 12679582ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:41:30,384 12908926ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:41:38,431 12916972ms DangNhapController     Index              - do login...
+DEBUG 2019-11-26 13:41:38,436 12916977ms DangNhapController     Index              - user not exist: tamkm.hbh pass B346E4FFF0B0403DAAA83AEE71F84390
+INFO  2019-11-26 13:41:48,331 12926873ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:41:48,344 12926886ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:42:45,920 12984461ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:43:05,981 13004523ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:43:05,995 13004537ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:44:01,695 13060237ms ServiceCenter          send_sms_citizen   - yeucau_id 05527261119 sdt 0983983023
+ERROR 2019-11-26 13:44:01,697 13060239ms ServiceCenter          send_sms_citizen   - System.ArgumentNullException: Value cannot be null.
+Parameter name: baseUrl
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at WebUI.ServiceCenter.send_sms_citizen(HotlineEntities db, YeuCau newYC, Int32 msgType) in E:\prjs\HCC_HB\WebUI\ServiceCenter.cs:line 82
+INFO  2019-11-26 13:44:06,984 13065526ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:44:17,336 13075877ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:44:17,348 13075890ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:44:34,714 13093256ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:44:38,193 13096735ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:44:38,207 13096748ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:45:16,559 13135101ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:45:23,423 13141964ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:45:23,438 13141979ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:45:55,611 13174153ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:45:59,403 13177945ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:45:59,416 13177958ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:46:21,780 13200321ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:46:26,083 13204625ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:46:26,097 13204639ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:46:45,845 13224386ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:46:50,570 13229111ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:46:50,582 13229123ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:47:23,139 13261681ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:47:28,678 13267220ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:47:28,691 13267233ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-11-26 13:49:31,257 13389799ms PortalController       verifyCaptcha      - verifyCaptcha: from client ::1
+DEBUG 2019-11-26 13:49:31,273 13389814ms PortalController       verifyCaptcha      -   token: 03AOLTBLQq_DodPnwACVm9BWDj4ml2XXs9d-8aThp45Cnaka_WWEFgEneFkrBLJxbhHcYcglbbu8jiLkyndkAL_Wh1VjzhhqJ5D76ALzdSGtBHOugcRrg69qlGRBcKAjz393nAWboQP6PqNJ5l6L0TWfGxCd7Bcis6lKBKNCge6ubL_cJhDdF0gVvYmWbMjff9ynfZ3NFzGVoCjn_MMSV3T2-V-27QFY6VhAJ8UfjhT17ZAwQrzZ9hzHxSJBhaJRhRnmJSHrksbLB6OpUlz82ddAGz4hsrMzNfyyTa0sQ10cd7q768lpXkW9g65JWkhCTPWKK70CZxrVx73k7NW8Zvr90jOtSczQYKXprXS5l6-aUsYtACFuAJR6ll7rvigyamsbqHYDvjmqtwDVW_4pfkPOK6y9YPNxoE_DKSIqRKHbkh1gbpZNH5WqWsEli5QbO0SHBgxKtOPEx3Kl-Kss9xudIXas3A6U_UfGnw7C3uTo0wOZB_DNDkIDo
+DEBUG 2019-11-26 13:49:31,273 13389814ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-11-26 13:49:39,169 13397710ms _PageTongHop           createRequest      - portal createRequest displayName , phoneNumber 45468754894 content fffffffffffffffffffffffffffffffffffffffffffffffffffff
+INFO  2019-11-26 13:58:00,579 13899121ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:58:05,396 13903938ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:58:05,436 13903977ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:58:16,980 13915522ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 13:58:25,446 13923988ms DangNhapController     Index              - do login...
+INFO  2019-11-26 13:58:25,460 13924002ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 13:58:48,173 13946714ms PhanAnhController      CapNhatKQTL        - nguoidung_id 57B2B261119 yeucau_id anhtt.hbh kqtl àqwfasfasfasdw
+INFO  2019-11-26 13:58:48,306 13946847ms ServiceCenter          send_sms_citizen   - yeucau_id 57B2B261119 sdt 0983983023
+ERROR 2019-11-26 13:58:48,307 13946848ms ServiceCenter          send_sms_citizen   - System.ArgumentNullException: Value cannot be null.
+Parameter name: baseUrl
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at WebUI.ServiceCenter.send_sms_citizen(HotlineEntities db, YeuCau newYC, Int32 msgType) in E:\prjs\HCC_HB\WebUI\ServiceCenter.cs:line 82
+INFO  2019-11-26 14:02:25,321 14163863ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 14:02:31,024 14169566ms DangNhapController     Index              - do login...
+INFO  2019-11-26 14:02:31,040 14169582ms HomeController         Index              - Enter Home/Index
+DEBUG 2019-11-26 15:14:31,198 18489739ms PortalController       verifyCaptcha      - verifyCaptcha: from client ::1
+DEBUG 2019-11-26 15:14:31,202 18489744ms PortalController       verifyCaptcha      -   token: 03AOLTBLRomO2hv2yBdQhYrzpH0nOYwx51EgVLeyqYNqnO9fzySvvLkd5yjGR6VEaUCM4LDVoiGu4GBvgqmIpPywazBvBZ7fFSczuKeG4aO8jJ-QsiWHFvIgSpe5ckpyZ56L122HVz1cA46NojOAZ85KpW3RPE_018ej2dyOGUtF5SZAryH06CWwkdpfIt4qredtrFwjLv5W0nDtWFpcAlX3gbAFAIKb1drhAy6oq2eCgxqzoLYt0-pU2u7T2QtJFt-1oGwaU26z7Q2WW3VE-EFpPc32EL012v7tPpZtoQZhrDuYM6PSct7wtlf6QpC061eKtz6J8gLLpboNHe8SEfRHbfaOLs6rrzrsEyUiOwlwDP-eL-ieY9iPjnL4pPCKAcpUsi8WB00XWabUaSQRIgCYMdiKpIBYBIeTb8SgruilbU7ecRzOJdGXQwTnrN-IhmLY0XRSmltAht5bbnnSAY0Cn47Z1j7OxTrclU7wyAYCGNTtWsKQpcySE
+DEBUG 2019-11-26 15:14:31,204 18489746ms PortalController       verifyCaptcha      - Exception: Input string was not in a correct format.
+DEBUG 2019-11-26 15:14:37,143 18495685ms _PageTongHop           createRequest      - portal createRequest displayName test 11, phoneNumber 0915217759 content hoàn thi?n server tru?c ngày 28...........................
+INFO  2019-11-26 15:14:48,333 18506875ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 15:14:55,112 18513653ms DangNhapController     Index              - do login...
+INFO  2019-11-26 15:14:55,125 18513666ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-26 15:16:49,305 18627847ms ServiceCenter          send_sms_citizen   - yeucau_id 8729B261119 sdt 0915217759
+ERROR 2019-11-26 15:16:49,323 18627864ms ServiceCenter          send_sms_citizen   - System.ArgumentNullException: Value cannot be null.
+Parameter name: baseUrl
+   at RestSharp.RestClient..ctor(String baseUrl)
+   at WebUI.ServiceCenter.send_sms_citizen(HotlineEntities db, YeuCau newYC, Int32 msgType) in E:\prjs\HCC_HB\WebUI\ServiceCenter.cs:line 82
+INFO  2019-11-26 15:25:49,227 19167769ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-26 15:25:57,467 19176009ms DangNhapController     Index              - do login...
+INFO  2019-11-26 15:25:57,515 19176057ms HomeController         Index              - Enter Home/Index

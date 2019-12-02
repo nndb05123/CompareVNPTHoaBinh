@@ -201,7 +201,7 @@
             </div>
         </div>*@
 
-                                <div class="form-group">
+                    <div class="form-group">
                                     @if (FeatureManager.EnableModule_BanHanhDongDoanhNghiep)
                                     {
                                         <div class="ipf col-sm-3" v-on:click="toggleTTHC()">
@@ -233,6 +233,10 @@
                                                 <label for="ipf-cbox"></label>
                                             </div>
                                         </div>
+
+
+
+            
                                     }
 
 
@@ -485,7 +489,7 @@
                             showSuccessNotification(`Tự động điền thông tin người dân theo SDT [${sdt}]: Xong!`);
                         })
                             .fail(function () {
-                                showWarningNotification(`Không tìm thấy người dân có SDT [${sdt}] trên hệ thống 1022!`);
+                                showWarningNotification(`Không tìm thấy người dân có SDT [${sdt}] trên hệ thống tổng đài VNPT Hòa Bình!`);
                             });
                     },
                     reset: function ()

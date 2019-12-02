@@ -1,15 +1,65 @@
-INFO  2019-11-29 07:41:01,607   515ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-29 07:41:13,936 12843ms DangNhapController     Index              - do login...
-INFO  2019-11-29 07:41:15,217 14125ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-29 07:48:54,998 473906ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-29 07:48:56,467 475375ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-29 07:48:58,857 477765ms DangNhapController     Index              - do login...
-INFO  2019-11-29 07:48:58,889 477796ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-29 08:25:11,467 2650375ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-29 08:43:26,029 3744937ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-29 13:45:34,779 1700671ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-29 16:24:58,342 47265ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-29 16:24:59,482 48406ms DangNhapController     Index              - Enter DangNhap/Index
-INFO  2019-11-29 16:25:01,154 50078ms DangNhapController     Index              - do login...
-INFO  2019-11-29 16:25:01,686 50609ms HomeController         Index              - Enter Home/Index
-INFO  2019-11-29 16:45:44,045 1292968ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 07:54:55,516 586532ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 07:55:48,725 639741ms DangNhapController     Index              - do login...
+INFO  2019-11-29 07:55:55,587 646604ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 07:56:54,564 705581ms LinhVucController      SaveNew            - LV: Qu?n lý CCVC result: ok
+INFO  2019-11-29 07:57:44,429 755446ms LinhVucController      SaveNew            - LV: Camera giám sát result: ok
+INFO  2019-11-29 08:26:07,789 2458806ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 08:26:15,117 2466134ms DangNhapController     Index              - do login...
+INFO  2019-11-29 08:26:15,332 2466349ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 08:31:43,520 2794537ms LinhVucController      SaveNew            - LV: Luu trí ORM result: ok
+INFO  2019-11-29 08:32:01,599 2812615ms LinhVucController      SaveNew            - LV: Phát tri?n thêu bao HPG result: ok
+INFO  2019-11-29 08:32:10,197 2821213ms LinhVucController      SaveNew            - LV: VNPT LIS result: ok
+INFO  2019-11-29 08:32:20,896 2831913ms LinhVucController      SaveNew            - LV: H? so s?c kh?e cá nhân result: ok
+INFO  2019-11-29 08:32:38,099 2849115ms LinhVucController      SaveNew            - LV: EOFFICE result: ok
+INFO  2019-11-29 08:32:54,818 2865834ms LinhVucController      SaveNew            - LV: Hóa don di?n t? result: ok
+INFO  2019-11-29 08:33:03,787 2874803ms LinhVucController      SaveNew            - LV: B?nh án di?n t? result: ok
+INFO  2019-11-29 08:33:13,084 2884100ms LinhVucController      SaveNew            - LV: D?ch v? công result: ok
+INFO  2019-11-29 10:38:52,586 369279ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 10:38:58,283 374977ms DangNhapController     Index              - do login...
+INFO  2019-11-29 10:39:00,147 376841ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 11:01:09,635 461223ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 11:01:19,449 471037ms DangNhapController     Index              - do login...
+DEBUG 2019-11-29 11:01:19,465 471053ms DangNhapController     Index              - user not exist: ducad.hbh pass B346E4FFF0B0403DAAA83AEE71F84390
+INFO  2019-11-29 11:01:20,572 472160ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 11:01:29,072 480660ms DangNhapController     Index              - do login...
+DEBUG 2019-11-29 11:01:29,072 480660ms DangNhapController     Index              - user not exist: ducad.hbh pass B05A3C7FB8CD42512DCA1AFD44990B55
+INFO  2019-11-29 11:01:35,901 487489ms DangNhapController     Index              - do login...
+DEBUG 2019-11-29 11:01:35,901 487489ms DangNhapController     Index              - user not exist: ducad.hbh pass B346E4FFF0B0403DAAA83AEE71F84390
+INFO  2019-11-29 11:01:36,340 487928ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 11:01:39,457 491045ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 11:01:42,256 493844ms DangNhapController     Index              - do login...
+INFO  2019-11-29 11:01:42,286 493874ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 11:01:48,762 500350ms DangNhapController     Index              - do login...
+INFO  2019-11-29 11:01:49,552 501140ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 11:01:59,194 510782ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 11:02:02,147 513735ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 11:02:04,616 516204ms DangNhapController     Index              - do login...
+INFO  2019-11-29 11:02:04,639 516228ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 11:03:09,840 581428ms DangNhapController     Index              - do login...
+INFO  2019-11-29 11:03:09,871 581459ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 11:03:42,201 613789ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 11:06:47,075 798663ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 11:06:52,353 803941ms DangNhapController     Index              - do login...
+INFO  2019-11-29 11:06:52,386 803974ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 11:19:51,447 1583035ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 13:20:59,826 602358ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 13:21:02,572 605104ms DangNhapController     Index              - do login...
+INFO  2019-11-29 13:21:03,328 605860ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 14:08:27,640 3450173ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 14:08:37,590 3460122ms DangNhapController     Index              - do login...
+INFO  2019-11-29 14:08:37,620 3460152ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 14:09:23,399 3505931ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 14:09:32,321 3514853ms DangNhapController     Index              - do login...
+INFO  2019-11-29 14:09:32,367 3514899ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 14:52:09,496 1517857ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 14:52:16,324 1524685ms DangNhapController     Index              - do login...
+DEBUG 2019-11-29 14:52:16,355 1524717ms DangNhapController     Index              - user not exist: admin pass B346E4FFF0B0403DAAA83AEE71F84390
+INFO  2019-11-29 14:52:22,246 1530607ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 15:06:17,394 84516ms DangNhapController     Index              - do login...
+INFO  2019-11-29 15:06:17,786 84908ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 15:07:08,312 135434ms LinhVucController      Xoa                - LV: 104 result: ok
+INFO  2019-11-29 15:12:09,471   158ms DangNhapController     Index              - Enter DangNhap/Index
+INFO  2019-11-29 15:12:33,867 24554ms DangNhapController     Index              - do login...
+INFO  2019-11-29 15:12:34,575 25262ms HomeController         Index              - Enter Home/Index
+INFO  2019-11-29 15:44:21,799  6091ms LinhVucController      SaveNew            - LV: Linh v?c khác result: ok
+INFO  2019-11-29 16:50:09,022   573ms HomeController         Index              - Enter Home/Index
